@@ -1,0 +1,2442 @@
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    1
+
+       1                    ;******************************************************************************
+       2                    ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
+       3                    ;* Date/Time created: Tue Oct 18 10:42:39 2016                                *
+       4                    ;******************************************************************************
+       5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
+       6 00000000                   .thumb
+       7                    
+       8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                            .dwattr $C$DW$CU, DW_AT_name("../Drivers/uartstdio.c")
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v15.12.1.LTS Copyright (c) 1996-2
+      11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("C:\TI_ARM_Tiva_Projects\Proj2_Magnetometer\Debug")
+      13                    
+      14                    $C$DW$1 .dwtag  DW_TAG_subprogram
+      15                            .dwattr $C$DW$1, DW_AT_name("SysCtlPeripheralPresent")
+      16                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("SysCtlPeripheralPresent")
+      17                            .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$73)
+      18                            .dwattr $C$DW$1, DW_AT_declaration
+      19                            .dwattr $C$DW$1, DW_AT_external
+      20                            .dwattr $C$DW$1, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/driverlib/sysctl.h")
+      21                            .dwattr $C$DW$1, DW_AT_decl_line(0x249)
+      22                            .dwattr $C$DW$1, DW_AT_decl_column(0x0d)
+      23                    $C$DW$2 .dwtag  DW_TAG_formal_parameter
+      24                            .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$20)
+      25                    
+      26                            .dwendtag $C$DW$1
+      27                    
+      28                    
+      29                    $C$DW$3 .dwtag  DW_TAG_subprogram
+      30                            .dwattr $C$DW$3, DW_AT_name("SysCtlPeripheralEnable")
+      31                            .dwattr $C$DW$3, DW_AT_TI_symbol_name("SysCtlPeripheralEnable")
+      32                            .dwattr $C$DW$3, DW_AT_declaration
+      33                            .dwattr $C$DW$3, DW_AT_external
+      34                            .dwattr $C$DW$3, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/driverlib/sysctl.h")
+      35                            .dwattr $C$DW$3, DW_AT_decl_line(0x24e)
+      36                            .dwattr $C$DW$3, DW_AT_decl_column(0x0d)
+      37                    $C$DW$4 .dwtag  DW_TAG_formal_parameter
+      38                            .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$20)
+      39                    
+      40                            .dwendtag $C$DW$3
+      41                    
+      42                    
+      43                    $C$DW$5 .dwtag  DW_TAG_subprogram
+      44                            .dwattr $C$DW$5, DW_AT_name("UARTConfigSetExpClk")
+      45                            .dwattr $C$DW$5, DW_AT_TI_symbol_name("UARTConfigSetExpClk")
+      46                            .dwattr $C$DW$5, DW_AT_declaration
+      47                            .dwattr $C$DW$5, DW_AT_external
+      48                            .dwattr $C$DW$5, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/driverlib/uart.h")
+      49                            .dwattr $C$DW$5, DW_AT_decl_line(0xc8)
+      50                            .dwattr $C$DW$5, DW_AT_decl_column(0x0d)
+      51                    $C$DW$6 .dwtag  DW_TAG_formal_parameter
+      52                            .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$20)
+      53                    
+      54                    $C$DW$7 .dwtag  DW_TAG_formal_parameter
+      55                            .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$20)
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    2
+
+      56                    
+      57                    $C$DW$8 .dwtag  DW_TAG_formal_parameter
+      58                            .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$20)
+      59                    
+      60                    $C$DW$9 .dwtag  DW_TAG_formal_parameter
+      61                            .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$20)
+      62                    
+      63                            .dwendtag $C$DW$5
+      64                    
+      65                    
+      66                    $C$DW$10        .dwtag  DW_TAG_subprogram
+      67                            .dwattr $C$DW$10, DW_AT_name("UARTEnable")
+      68                            .dwattr $C$DW$10, DW_AT_TI_symbol_name("UARTEnable")
+      69                            .dwattr $C$DW$10, DW_AT_declaration
+      70                            .dwattr $C$DW$10, DW_AT_external
+      71                            .dwattr $C$DW$10, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/driverlib/uart.h")
+      72                            .dwattr $C$DW$10, DW_AT_decl_line(0xcc)
+      73                            .dwattr $C$DW$10, DW_AT_decl_column(0x0d)
+      74                    $C$DW$11        .dwtag  DW_TAG_formal_parameter
+      75                            .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$20)
+      76                    
+      77                            .dwendtag $C$DW$10
+      78                    
+      79                    
+      80                    $C$DW$12        .dwtag  DW_TAG_subprogram
+      81                            .dwattr $C$DW$12, DW_AT_name("UARTCharGet")
+      82                            .dwattr $C$DW$12, DW_AT_TI_symbol_name("UARTCharGet")
+      83                            .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$48)
+      84                            .dwattr $C$DW$12, DW_AT_declaration
+      85                            .dwattr $C$DW$12, DW_AT_external
+      86                            .dwattr $C$DW$12, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/driverlib/uart.h")
+      87                            .dwattr $C$DW$12, DW_AT_decl_line(0xd5)
+      88                            .dwattr $C$DW$12, DW_AT_decl_column(0x10)
+      89                    $C$DW$13        .dwtag  DW_TAG_formal_parameter
+      90                            .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$20)
+      91                    
+      92                            .dwendtag $C$DW$12
+      93                    
+      94                    
+      95                    $C$DW$14        .dwtag  DW_TAG_subprogram
+      96                            .dwattr $C$DW$14, DW_AT_name("UARTCharPut")
+      97                            .dwattr $C$DW$14, DW_AT_TI_symbol_name("UARTCharPut")
+      98                            .dwattr $C$DW$14, DW_AT_declaration
+      99                            .dwattr $C$DW$14, DW_AT_external
+     100                            .dwattr $C$DW$14, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/driverlib/uart.h")
+     101                            .dwattr $C$DW$14, DW_AT_decl_line(0xd7)
+     102                            .dwattr $C$DW$14, DW_AT_decl_column(0x0d)
+     103                    $C$DW$15        .dwtag  DW_TAG_formal_parameter
+     104                            .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$20)
+     105                    
+     106                    $C$DW$16        .dwtag  DW_TAG_formal_parameter
+     107                            .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$6)
+     108                    
+     109                            .dwendtag $C$DW$14
+     110                    
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    3
+
+     111 00000000                   .data
+     112                            .align  4
+     113                            .elfsym g_ui32Base,SYM_SIZE(4)
+     114 00000000           g_ui32Base:
+     115 00000000 00000000          .bits   0,32                    ; g_ui32Base @ 0
+     116                    
+     117                    $C$DW$17        .dwtag  DW_TAG_variable
+     118                            .dwattr $C$DW$17, DW_AT_name("g_ui32Base")
+     119                            .dwattr $C$DW$17, DW_AT_TI_symbol_name("g_ui32Base")
+     120                            .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$20)
+     121                            .dwattr $C$DW$17, DW_AT_location[DW_OP_addr g_ui32Base]
+     122                            .dwattr $C$DW$17, DW_AT_decl_file("../Drivers/uartstdio.c")
+     123                            .dwattr $C$DW$17, DW_AT_decl_line(0x7e)
+     124                            .dwattr $C$DW$17, DW_AT_decl_column(0x11)
+     125                    
+     126 00000000                   .sect   ".const"
+     127                            .align  4
+     128                            .elfsym g_pcHex,SYM_SIZE(4)
+     129 00000000           g_pcHex:
+     130 00000000 00000000!         .bits   $C$SL1,32               ; g_pcHex @ 0
+     131                    
+     132                    $C$DW$18        .dwtag  DW_TAG_variable
+     133                            .dwattr $C$DW$18, DW_AT_name("g_pcHex")
+     134                            .dwattr $C$DW$18, DW_AT_TI_symbol_name("g_pcHex")
+     135                            .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$76)
+     136                            .dwattr $C$DW$18, DW_AT_location[DW_OP_addr g_pcHex]
+     137                            .dwattr $C$DW$18, DW_AT_decl_file("../Drivers/uartstdio.c")
+     138                            .dwattr $C$DW$18, DW_AT_decl_line(0x86)
+     139                            .dwattr $C$DW$18, DW_AT_decl_column(0x1b)
+     140                    
+     141 00000000                   .sect   ".const:g_ui32UARTBase"
+     142                            .clink
+     143                            .align  4
+     144                            .elfsym g_ui32UARTBase,SYM_SIZE(12)
+     145 00000000           g_ui32UARTBase:
+     146 00000000 4000C000          .bits   1073790976,32                   ; g_ui32UARTBase[0] @ 0
+     147 00000004 4000D000          .bits   1073795072,32                   ; g_ui32UARTBase[1] @ 32
+     148 00000008 4000E000          .bits   1073799168,32                   ; g_ui32UARTBase[2] @ 64
+     149                    
+     150                    $C$DW$19        .dwtag  DW_TAG_variable
+     151                            .dwattr $C$DW$19, DW_AT_name("g_ui32UARTBase")
+     152                            .dwattr $C$DW$19, DW_AT_TI_symbol_name("g_ui32UARTBase")
+     153                            .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$58)
+     154                            .dwattr $C$DW$19, DW_AT_location[DW_OP_addr g_ui32UARTBase]
+     155                            .dwattr $C$DW$19, DW_AT_decl_file("../Drivers/uartstdio.c")
+     156                            .dwattr $C$DW$19, DW_AT_decl_line(0x8d)
+     157                            .dwattr $C$DW$19, DW_AT_decl_column(0x17)
+     158                    
+     159 00000000                   .sect   ".const:g_ui32UARTPeriph"
+     160                            .clink
+     161                            .align  4
+     162                            .elfsym g_ui32UARTPeriph,SYM_SIZE(12)
+     163 00000000           g_ui32UARTPeriph:
+     164 00000000 F0001800          .bits   -268429312,32                   ; g_ui32UARTPeriph[0] @ 0
+     165 00000004 F0001801          .bits   -268429311,32                   ; g_ui32UARTPeriph[1] @ 32
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    4
+
+     166 00000008 F0001802          .bits   -268429310,32                   ; g_ui32UARTPeriph[2] @ 64
+     167                    
+     168                    $C$DW$20        .dwtag  DW_TAG_variable
+     169                            .dwattr $C$DW$20, DW_AT_name("g_ui32UARTPeriph")
+     170                            .dwattr $C$DW$20, DW_AT_TI_symbol_name("g_ui32UARTPeriph")
+     171                            .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$58)
+     172                            .dwattr $C$DW$20, DW_AT_location[DW_OP_addr g_ui32UARTPeriph]
+     173                            .dwattr $C$DW$20, DW_AT_decl_file("../Drivers/uartstdio.c")
+     174                            .dwattr $C$DW$20, DW_AT_decl_line(0xaa)
+     175                            .dwattr $C$DW$20, DW_AT_decl_column(0x17)
+     176                    
+     177 00000004                   .data
+     178                            .align  1
+     179                            .elfsym bLastWasCR$1,SYM_SIZE(1)
+     180 00000004           bLastWasCR$1:
+     181 00000004 00000000          .bits   0,8                     ; bLastWasCR$1 @ 0
+     182                    
+     183                    ;       C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\R
+     184 00000000                   .sect   ".text"
+     185                            .clink
+     186                            .thumbfunc UARTStdioConfig
+     187 00000000                   .thumb
+     188                            .global UARTStdioConfig
+     189                    
+     190                    $C$DW$21        .dwtag  DW_TAG_subprogram
+     191                            .dwattr $C$DW$21, DW_AT_name("UARTStdioConfig")
+     192                            .dwattr $C$DW$21, DW_AT_low_pc(UARTStdioConfig)
+     193                            .dwattr $C$DW$21, DW_AT_high_pc(0x00)
+     194                            .dwattr $C$DW$21, DW_AT_TI_symbol_name("UARTStdioConfig")
+     195                            .dwattr $C$DW$21, DW_AT_external
+     196                            .dwattr $C$DW$21, DW_AT_TI_begin_file("../Drivers/uartstdio.c")
+     197                            .dwattr $C$DW$21, DW_AT_TI_begin_line(0x14e)
+     198                            .dwattr $C$DW$21, DW_AT_TI_begin_column(0x01)
+     199                            .dwattr $C$DW$21, DW_AT_decl_file("../Drivers/uartstdio.c")
+     200                            .dwattr $C$DW$21, DW_AT_decl_line(0x14e)
+     201                            .dwattr $C$DW$21, DW_AT_decl_column(0x01)
+     202                            .dwattr $C$DW$21, DW_AT_TI_max_frame_size(0x10)
+     203                            .dwpsn  file "../Drivers/uartstdio.c",line 335,column 1,is_stmt,address UARTStdioConfig,isa 1
+     204                    
+     205                            .dwfde $C$DW$CIE, UARTStdioConfig
+     206                    $C$DW$22        .dwtag  DW_TAG_formal_parameter
+     207                            .dwattr $C$DW$22, DW_AT_name("ui32PortNum")
+     208                            .dwattr $C$DW$22, DW_AT_TI_symbol_name("ui32PortNum")
+     209                            .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$20)
+     210                            .dwattr $C$DW$22, DW_AT_location[DW_OP_reg0]
+     211                    
+     212                    $C$DW$23        .dwtag  DW_TAG_formal_parameter
+     213                            .dwattr $C$DW$23, DW_AT_name("ui32Baud")
+     214                            .dwattr $C$DW$23, DW_AT_TI_symbol_name("ui32Baud")
+     215                            .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$20)
+     216                            .dwattr $C$DW$23, DW_AT_location[DW_OP_reg1]
+     217                    
+     218                    $C$DW$24        .dwtag  DW_TAG_formal_parameter
+     219                            .dwattr $C$DW$24, DW_AT_name("ui32SrcClock")
+     220                            .dwattr $C$DW$24, DW_AT_TI_symbol_name("ui32SrcClock")
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    5
+
+     221                            .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$20)
+     222                            .dwattr $C$DW$24, DW_AT_location[DW_OP_reg2]
+     223                    
+     224                    
+     225                    ;*****************************************************************************
+     226                    ;* FUNCTION NAME: UARTStdioConfig                                            *
+     227                    ;*                                                                           *
+     228                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     229                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     230                    ;*                           FPEXC,FPSCR                                     *
+     231                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     232                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     233                    ;*                           FPEXC,FPSCR                                     *
+     234                    ;*   Local Frame Size  : 0 Args + 12 Auto + 4 Save = 16 byte                 *
+     235                    ;*****************************************************************************
+     236 00000000           UARTStdioConfig:
+     237                    ;* --------------------------------------------------------------------------*
+     238                            .dwcfi  cfa_offset, 0
+     239 00000000 B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     240                            .dwcfi  cfa_offset, 16
+     241                            .dwcfi  save_reg_to_mem, 14, -4
+     242                            .dwcfi  save_reg_to_mem, 3, -8
+     243                            .dwcfi  save_reg_to_mem, 2, -12
+     244                            .dwcfi  save_reg_to_mem, 1, -16
+     245                    $C$DW$25        .dwtag  DW_TAG_variable
+     246                            .dwattr $C$DW$25, DW_AT_name("ui32PortNum")
+     247                            .dwattr $C$DW$25, DW_AT_TI_symbol_name("ui32PortNum")
+     248                            .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$20)
+     249                            .dwattr $C$DW$25, DW_AT_location[DW_OP_breg13 0]
+     250                    
+     251                    $C$DW$26        .dwtag  DW_TAG_variable
+     252                            .dwattr $C$DW$26, DW_AT_name("ui32Baud")
+     253                            .dwattr $C$DW$26, DW_AT_TI_symbol_name("ui32Baud")
+     254                            .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$20)
+     255                            .dwattr $C$DW$26, DW_AT_location[DW_OP_breg13 4]
+     256                    
+     257                    $C$DW$27        .dwtag  DW_TAG_variable
+     258                            .dwattr $C$DW$27, DW_AT_name("ui32SrcClock")
+     259                            .dwattr $C$DW$27, DW_AT_TI_symbol_name("ui32SrcClock")
+     260                            .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$20)
+     261                            .dwattr $C$DW$27, DW_AT_location[DW_OP_breg13 8]
+     262                    
+     263 00000002 9202              STR       A3, [SP, #8]          ; [DPU_3_PIPE] |335|  ; [ORIG 16-BIT INS]
+     264 00000004 9101              STR       A2, [SP, #4]          ; [DPU_3_PIPE] |335|  ; [ORIG 16-BIT INS]
+     265 00000006 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |335|  ; [ORIG 16-BIT INS]
+     266                            .dwpsn  file "../Drivers/uartstdio.c",line 352,column 5,is_stmt,isa 1
+     267 00000008 4954              LDR       A2, $C$CON1           ; [DPU_3_PIPE] |352|  ; [ORIG 16-BIT INS]
+     268 0000000a 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |352|  ; [ORIG 16-BIT INS]
+     269 0000000c 0020F851          LDR       A1, [A2, +A1, LSL #2] ; [DPU_3_PIPE] |352|  ; [KEEP 32-BIT INS]
+     270                    $C$DW$28        .dwtag  DW_TAG_TI_branch
+     271                            .dwattr $C$DW$28, DW_AT_low_pc(0x00)
+     272                            .dwattr $C$DW$28, DW_AT_name("SysCtlPeripheralPresent")
+     273                            .dwattr $C$DW$28, DW_AT_TI_call
+     274                    
+     275 00000010 FFFEF7FF!         BL        SysCtlPeripheralPresent ; [DPU_3_PIPE] |352|  ; [KEEP 32-BIT INS]
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    6
+
+     276                            ; CALL OCCURS {SysCtlPeripheralPresent }  ; [] |352| 
+     277 00000014 B1B0              CBZ       A1, ||$C$L1||         ; []  ; [ORIG 16-BIT INS]
+     278                            ; BRANCHCC OCCURS {||$C$L1||}    ; [] |352| 
+     279                    ;* --------------------------------------------------------------------------*
+     280                            .dwpsn  file "../Drivers/uartstdio.c",line 354,column 9,is_stmt,isa 1
+     281                            .dwpsn  file "../Drivers/uartstdio.c",line 360,column 5,is_stmt,isa 1
+     282 00000016 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |360|  ; [ORIG 16-BIT INS]
+     283 00000018 4A52              LDR       A3, $C$CON3           ; [DPU_3_PIPE] |360|  ; [ORIG 16-BIT INS]
+     284 0000001a 4951              LDR       A2, $C$CON2           ; [DPU_3_PIPE] |360|  ; [ORIG 16-BIT INS]
+     285 0000001c 0020F852          LDR       A1, [A3, +A1, LSL #2] ; [DPU_3_PIPE] |360|  ; [KEEP 32-BIT INS]
+     286 00000020 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |360|  ; [ORIG 16-BIT INS]
+     287                            .dwpsn  file "../Drivers/uartstdio.c",line 365,column 5,is_stmt,isa 1
+     288 00000022 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |365|  ; [ORIG 16-BIT INS]
+     289 00000024 494D              LDR       A2, $C$CON1           ; [DPU_3_PIPE] |365|  ; [ORIG 16-BIT INS]
+     290 00000026 0020F851          LDR       A1, [A2, +A1, LSL #2] ; [DPU_3_PIPE] |365|  ; [KEEP 32-BIT INS]
+     291                    $C$DW$29        .dwtag  DW_TAG_TI_branch
+     292                            .dwattr $C$DW$29, DW_AT_low_pc(0x00)
+     293                            .dwattr $C$DW$29, DW_AT_name("SysCtlPeripheralEnable")
+     294                            .dwattr $C$DW$29, DW_AT_TI_call
+     295                    
+     296 0000002a FFFEF7FF!         BL        SysCtlPeripheralEnable ; [DPU_3_PIPE] |365|  ; [KEEP 32-BIT INS]
+     297                            ; CALL OCCURS {SysCtlPeripheralEnable }  ; [] |365| 
+     298                            .dwpsn  file "../Drivers/uartstdio.c",line 370,column 5,is_stmt,isa 1
+     299 0000002e 484C              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |370|  ; [ORIG 16-BIT INS]
+     300 00000030 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |370|  ; [ORIG 16-BIT INS]
+     301 00000032 9A01              LDR       A3, [SP, #4]          ; [DPU_3_PIPE] |370|  ; [ORIG 16-BIT INS]
+     302 00000034 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |370|  ; [ORIG 16-BIT INS]
+     303 00000036 2360              MOVS      A4, #96               ; [DPU_3_PIPE] |370|  ; [ORIG 16-BIT INS]
+     304                    $C$DW$30        .dwtag  DW_TAG_TI_branch
+     305                            .dwattr $C$DW$30, DW_AT_low_pc(0x00)
+     306                            .dwattr $C$DW$30, DW_AT_name("UARTConfigSetExpClk")
+     307                            .dwattr $C$DW$30, DW_AT_TI_call
+     308                    
+     309 00000038 FFFEF7FF!         BL        UARTConfigSetExpClk   ; [DPU_3_PIPE] |370|  ; [KEEP 32-BIT INS]
+     310                            ; CALL OCCURS {UARTConfigSetExpClk }  ; [] |370| 
+     311                            .dwpsn  file "../Drivers/uartstdio.c",line 406,column 5,is_stmt,isa 1
+     312 0000003c 4848              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |406|  ; [ORIG 16-BIT INS]
+     313 0000003e 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |406|  ; [ORIG 16-BIT INS]
+     314                    $C$DW$31        .dwtag  DW_TAG_TI_branch
+     315                            .dwattr $C$DW$31, DW_AT_low_pc(0x00)
+     316                            .dwattr $C$DW$31, DW_AT_name("UARTEnable")
+     317                            .dwattr $C$DW$31, DW_AT_TI_call
+     318                    
+     319 00000040 FFFEF7FF!         BL        UARTEnable            ; [DPU_3_PIPE] |406|  ; [KEEP 32-BIT INS]
+     320                            ; CALL OCCURS {UARTEnable }      ; [] |406| 
+     321                            .dwpsn  file "../Drivers/uartstdio.c",line 407,column 1,is_stmt,isa 1
+     322                    ;* --------------------------------------------------------------------------*
+     323                    ||$C$L1||:    
+     324                    $C$DW$32        .dwtag  DW_TAG_TI_branch
+     325                            .dwattr $C$DW$32, DW_AT_low_pc(0x00)
+     326                            .dwattr $C$DW$32, DW_AT_TI_return
+     327                    
+     328 00000044 BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     329                            .dwcfi  cfa_offset, 0
+     330                            ; BRANCH OCCURS                  ; [] 
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    7
+
+     331                            .dwattr $C$DW$21, DW_AT_TI_end_file("../Drivers/uartstdio.c")
+     332                            .dwattr $C$DW$21, DW_AT_TI_end_line(0x197)
+     333                            .dwattr $C$DW$21, DW_AT_TI_end_column(0x01)
+     334                            .dwendentry
+     335                            .dwendtag $C$DW$21
+     336                    
+     337 00000046                   .sect   ".text"
+     338                            .clink
+     339                            .thumbfunc UARTwrite
+     340 00000046                   .thumb
+     341                            .global UARTwrite
+     342                    
+     343                    $C$DW$33        .dwtag  DW_TAG_subprogram
+     344                            .dwattr $C$DW$33, DW_AT_name("UARTwrite")
+     345                            .dwattr $C$DW$33, DW_AT_low_pc(UARTwrite)
+     346                            .dwattr $C$DW$33, DW_AT_high_pc(0x00)
+     347                            .dwattr $C$DW$33, DW_AT_TI_symbol_name("UARTwrite")
+     348                            .dwattr $C$DW$33, DW_AT_external
+     349                            .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$10)
+     350                            .dwattr $C$DW$33, DW_AT_TI_begin_file("../Drivers/uartstdio.c")
+     351                            .dwattr $C$DW$33, DW_AT_TI_begin_line(0x1b4)
+     352                            .dwattr $C$DW$33, DW_AT_TI_begin_column(0x01)
+     353                            .dwattr $C$DW$33, DW_AT_decl_file("../Drivers/uartstdio.c")
+     354                            .dwattr $C$DW$33, DW_AT_decl_line(0x1b4)
+     355                            .dwattr $C$DW$33, DW_AT_decl_column(0x01)
+     356                            .dwattr $C$DW$33, DW_AT_TI_max_frame_size(0x10)
+     357                            .dwpsn  file "../Drivers/uartstdio.c",line 437,column 1,is_stmt,address UARTwrite,isa 1
+     358                    
+     359                            .dwfde $C$DW$CIE, UARTwrite
+     360                    $C$DW$34        .dwtag  DW_TAG_formal_parameter
+     361                            .dwattr $C$DW$34, DW_AT_name("pcBuf")
+     362                            .dwattr $C$DW$34, DW_AT_TI_symbol_name("pcBuf")
+     363                            .dwattr $C$DW$34, DW_AT_type(*$C$DW$T$30)
+     364                            .dwattr $C$DW$34, DW_AT_location[DW_OP_reg0]
+     365                    
+     366                    $C$DW$35        .dwtag  DW_TAG_formal_parameter
+     367                            .dwattr $C$DW$35, DW_AT_name("ui32Len")
+     368                            .dwattr $C$DW$35, DW_AT_TI_symbol_name("ui32Len")
+     369                            .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$20)
+     370                            .dwattr $C$DW$35, DW_AT_location[DW_OP_reg1]
+     371                    
+     372                    
+     373                    ;*****************************************************************************
+     374                    ;* FUNCTION NAME: UARTwrite                                                  *
+     375                    ;*                                                                           *
+     376                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     377                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     378                    ;*                           FPEXC,FPSCR                                     *
+     379                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     380                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     381                    ;*                           FPEXC,FPSCR                                     *
+     382                    ;*   Local Frame Size  : 0 Args + 12 Auto + 4 Save = 16 byte                 *
+     383                    ;*****************************************************************************
+     384 00000046           UARTwrite:
+     385                    ;* --------------------------------------------------------------------------*
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    8
+
+     386                            .dwcfi  cfa_offset, 0
+     387 00000046 B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     388                            .dwcfi  cfa_offset, 16
+     389                            .dwcfi  save_reg_to_mem, 14, -4
+     390                            .dwcfi  save_reg_to_mem, 3, -8
+     391                            .dwcfi  save_reg_to_mem, 2, -12
+     392                            .dwcfi  save_reg_to_mem, 1, -16
+     393                    $C$DW$36        .dwtag  DW_TAG_variable
+     394                            .dwattr $C$DW$36, DW_AT_name("pcBuf")
+     395                            .dwattr $C$DW$36, DW_AT_TI_symbol_name("pcBuf")
+     396                            .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$30)
+     397                            .dwattr $C$DW$36, DW_AT_location[DW_OP_breg13 0]
+     398                    
+     399                    $C$DW$37        .dwtag  DW_TAG_variable
+     400                            .dwattr $C$DW$37, DW_AT_name("ui32Len")
+     401                            .dwattr $C$DW$37, DW_AT_TI_symbol_name("ui32Len")
+     402                            .dwattr $C$DW$37, DW_AT_type(*$C$DW$T$20)
+     403                            .dwattr $C$DW$37, DW_AT_location[DW_OP_breg13 4]
+     404                    
+     405                    $C$DW$38        .dwtag  DW_TAG_variable
+     406                            .dwattr $C$DW$38, DW_AT_name("uIdx")
+     407                            .dwattr $C$DW$38, DW_AT_TI_symbol_name("uIdx")
+     408                            .dwattr $C$DW$38, DW_AT_type(*$C$DW$T$11)
+     409                            .dwattr $C$DW$38, DW_AT_location[DW_OP_breg13 8]
+     410                    
+     411 00000048 9101              STR       A2, [SP, #4]          ; [DPU_3_PIPE] |437|  ; [ORIG 16-BIT INS]
+     412 0000004a 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |437|  ; [ORIG 16-BIT INS]
+     413                            .dwpsn  file "../Drivers/uartstdio.c",line 515,column 9,is_stmt,isa 1
+     414 0000004c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     415 0000004e 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     416                            .dwpsn  file "../Drivers/uartstdio.c",line 515,column 19,is_stmt,isa 1
+     417 00000050 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     418 00000052 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     419 00000054 4288              CMP       A1, A2                ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     420 00000056 D917              BLS       ||$C$L4||             ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     421                            ; BRANCHCC OCCURS {||$C$L4||}    ; [] |515| 
+     422                    ;* --------------------------------------------------------------------------*
+     423                    ;*   BEGIN LOOP ||$C$L2||
+     424                    ;*
+     425                    ;*   Loop source line                : 515
+     426                    ;*   Loop closing brace source line  : 530
+     427                    ;*   Known Minimum Trip Count        : 1
+     428                    ;*   Known Maximum Trip Count        : 4294967295
+     429                    ;*   Known Max Trip Count Factor     : 1
+     430                    ;* --------------------------------------------------------------------------*
+     431 00000058           ||$C$L2||:    
+     432                            .dwpsn  file "../Drivers/uartstdio.c",line 521,column 9,is_stmt,isa 1
+     433 00000058 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |521|  ; [ORIG 16-BIT INS]
+     434 0000005a 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |521|  ; [ORIG 16-BIT INS]
+     435 0000005c 5C08              LDRB      A1, [A2, +A1]         ; [DPU_3_PIPE] |521|  ; [ORIG 16-BIT INS]
+     436 0000005e 280A              CMP       A1, #10               ; [DPU_3_PIPE] |521|  ; [ORIG 16-BIT INS]
+     437 00000060 D104              BNE       ||$C$L3||             ; [DPU_3_PIPE] |521|  ; [ORIG 16-BIT INS]
+     438                            ; BRANCHCC OCCURS {||$C$L3||}    ; [] |521| 
+     439                    ;* --------------------------------------------------------------------------*
+     440                            .dwpsn  file "../Drivers/uartstdio.c",line 523,column 13,is_stmt,isa 1
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE    9
+
+     441 00000062 483F              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |523|  ; [ORIG 16-BIT INS]
+     442 00000064 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |523|  ; [ORIG 16-BIT INS]
+     443 00000066 210D              MOVS      A2, #13               ; [DPU_3_PIPE] |523|  ; [ORIG 16-BIT INS]
+     444                    $C$DW$39        .dwtag  DW_TAG_TI_branch
+     445                            .dwattr $C$DW$39, DW_AT_low_pc(0x00)
+     446                            .dwattr $C$DW$39, DW_AT_name("UARTCharPut")
+     447                            .dwattr $C$DW$39, DW_AT_TI_call
+     448                    
+     449 00000068 FFFEF7FF!         BL        UARTCharPut           ; [DPU_3_PIPE] |523|  ; [KEEP 32-BIT INS]
+     450                            ; CALL OCCURS {UARTCharPut }     ; [] |523| 
+     451                    ;* --------------------------------------------------------------------------*
+     452 0000006c           ||$C$L3||:    
+     453                            .dwpsn  file "../Drivers/uartstdio.c",line 529,column 9,is_stmt,isa 1
+     454 0000006c 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |529|  ; [ORIG 16-BIT INS]
+     455 0000006e 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |529|  ; [ORIG 16-BIT INS]
+     456 00000070 4A3B              LDR       A3, $C$CON2           ; [DPU_3_PIPE] |529|  ; [ORIG 16-BIT INS]
+     457 00000072 5C09              LDRB      A2, [A2, +A1]         ; [DPU_3_PIPE] |529|  ; [ORIG 16-BIT INS]
+     458 00000074 6810              LDR       A1, [A3, #0]          ; [DPU_3_PIPE] |529|  ; [ORIG 16-BIT INS]
+     459                    $C$DW$40        .dwtag  DW_TAG_TI_branch
+     460                            .dwattr $C$DW$40, DW_AT_low_pc(0x00)
+     461                            .dwattr $C$DW$40, DW_AT_name("UARTCharPut")
+     462                            .dwattr $C$DW$40, DW_AT_TI_call
+     463                    
+     464 00000076 FFFEF7FF!         BL        UARTCharPut           ; [DPU_3_PIPE] |529|  ; [KEEP 32-BIT INS]
+     465                            ; CALL OCCURS {UARTCharPut }     ; [] |529| 
+     466                            .dwpsn  file "../Drivers/uartstdio.c",line 515,column 35,is_stmt,isa 1
+     467 0000007a 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     468 0000007c 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     469 0000007e 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     470                            .dwpsn  file "../Drivers/uartstdio.c",line 515,column 19,is_stmt,isa 1
+     471 00000080 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     472 00000082 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     473 00000084 4288              CMP       A1, A2                ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     474 00000086 D8E7              BHI       ||$C$L2||             ; [DPU_3_PIPE] |515|  ; [ORIG 16-BIT INS]
+     475                            ; BRANCHCC OCCURS {||$C$L2||}    ; [] |515| 
+     476                    ;* --------------------------------------------------------------------------*
+     477 00000088           ||$C$L4||:    
+     478                            .dwpsn  file "../Drivers/uartstdio.c",line 535,column 5,is_stmt,isa 1
+     479 00000088 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |535|  ; [ORIG 16-BIT INS]
+     480                            .dwpsn  file "../Drivers/uartstdio.c",line 537,column 1,is_stmt,isa 1
+     481                    $C$DW$41        .dwtag  DW_TAG_TI_branch
+     482                            .dwattr $C$DW$41, DW_AT_low_pc(0x00)
+     483                            .dwattr $C$DW$41, DW_AT_TI_return
+     484                    
+     485 0000008a BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     486                            .dwcfi  cfa_offset, 0
+     487                            ; BRANCH OCCURS                  ; [] 
+     488                            .dwattr $C$DW$33, DW_AT_TI_end_file("../Drivers/uartstdio.c")
+     489                            .dwattr $C$DW$33, DW_AT_TI_end_line(0x219)
+     490                            .dwattr $C$DW$33, DW_AT_TI_end_column(0x01)
+     491                            .dwendentry
+     492                            .dwendtag $C$DW$33
+     493                    
+     494 0000008c                   .sect   ".text"
+     495                            .clink
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   10
+
+     496                            .thumbfunc UARTgets
+     497 0000008c                   .thumb
+     498                            .global UARTgets
+     499                    
+     500                    $C$DW$42        .dwtag  DW_TAG_subprogram
+     501                            .dwattr $C$DW$42, DW_AT_name("UARTgets")
+     502                            .dwattr $C$DW$42, DW_AT_low_pc(UARTgets)
+     503                            .dwattr $C$DW$42, DW_AT_high_pc(0x00)
+     504                            .dwattr $C$DW$42, DW_AT_TI_symbol_name("UARTgets")
+     505                            .dwattr $C$DW$42, DW_AT_external
+     506                            .dwattr $C$DW$42, DW_AT_type(*$C$DW$T$10)
+     507                            .dwattr $C$DW$42, DW_AT_TI_begin_file("../Drivers/uartstdio.c")
+     508                            .dwattr $C$DW$42, DW_AT_TI_begin_line(0x239)
+     509                            .dwattr $C$DW$42, DW_AT_TI_begin_column(0x01)
+     510                            .dwattr $C$DW$42, DW_AT_decl_file("../Drivers/uartstdio.c")
+     511                            .dwattr $C$DW$42, DW_AT_decl_line(0x239)
+     512                            .dwattr $C$DW$42, DW_AT_decl_column(0x01)
+     513                            .dwattr $C$DW$42, DW_AT_TI_max_frame_size(0x18)
+     514                            .dwpsn  file "../Drivers/uartstdio.c",line 570,column 1,is_stmt,address UARTgets,isa 1
+     515                    
+     516                            .dwfde $C$DW$CIE, UARTgets
+     517                    $C$DW$43        .dwtag  DW_TAG_variable
+     518                            .dwattr $C$DW$43, DW_AT_name("bLastWasCR")
+     519                            .dwattr $C$DW$43, DW_AT_TI_symbol_name("bLastWasCR$1")
+     520                            .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$35)
+     521                            .dwattr $C$DW$43, DW_AT_location[DW_OP_addr bLastWasCR$1]
+     522                    
+     523                    $C$DW$44        .dwtag  DW_TAG_formal_parameter
+     524                            .dwattr $C$DW$44, DW_AT_name("pcBuf")
+     525                            .dwattr $C$DW$44, DW_AT_TI_symbol_name("pcBuf")
+     526                            .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$46)
+     527                            .dwattr $C$DW$44, DW_AT_location[DW_OP_reg0]
+     528                    
+     529                    $C$DW$45        .dwtag  DW_TAG_formal_parameter
+     530                            .dwattr $C$DW$45, DW_AT_name("ui32Len")
+     531                            .dwattr $C$DW$45, DW_AT_TI_symbol_name("ui32Len")
+     532                            .dwattr $C$DW$45, DW_AT_type(*$C$DW$T$20)
+     533                            .dwattr $C$DW$45, DW_AT_location[DW_OP_reg1]
+     534                    
+     535                    
+     536                    ;*****************************************************************************
+     537                    ;* FUNCTION NAME: UARTgets                                                   *
+     538                    ;*                                                                           *
+     539                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     540                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     541                    ;*                           FPEXC,FPSCR                                     *
+     542                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     543                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     544                    ;*                           FPEXC,FPSCR                                     *
+     545                    ;*   Local Frame Size  : 0 Args + 16 Auto + 4 Save = 20 byte                 *
+     546                    ;*****************************************************************************
+     547 0000008c           UARTgets:
+     548                    ;* --------------------------------------------------------------------------*
+     549                            .dwcfi  cfa_offset, 0
+     550 0000008c B500              PUSH      {LR}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   11
+
+     551                            .dwcfi  cfa_offset, 4
+     552                            .dwcfi  save_reg_to_mem, 14, -4
+     553 0000008e 0D14F1AD          SUB       SP, SP, #20           ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
+     554                            .dwcfi  cfa_offset, 24
+     555                    $C$DW$46        .dwtag  DW_TAG_variable
+     556                            .dwattr $C$DW$46, DW_AT_name("pcBuf")
+     557                            .dwattr $C$DW$46, DW_AT_TI_symbol_name("pcBuf")
+     558                            .dwattr $C$DW$46, DW_AT_type(*$C$DW$T$46)
+     559                            .dwattr $C$DW$46, DW_AT_location[DW_OP_breg13 0]
+     560                    
+     561                    $C$DW$47        .dwtag  DW_TAG_variable
+     562                            .dwattr $C$DW$47, DW_AT_name("ui32Len")
+     563                            .dwattr $C$DW$47, DW_AT_TI_symbol_name("ui32Len")
+     564                            .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$20)
+     565                            .dwattr $C$DW$47, DW_AT_location[DW_OP_breg13 4]
+     566                    
+     567                    $C$DW$48        .dwtag  DW_TAG_variable
+     568                            .dwattr $C$DW$48, DW_AT_name("ui32Count")
+     569                            .dwattr $C$DW$48, DW_AT_TI_symbol_name("ui32Count")
+     570                            .dwattr $C$DW$48, DW_AT_type(*$C$DW$T$20)
+     571                            .dwattr $C$DW$48, DW_AT_location[DW_OP_breg13 8]
+     572                    
+     573                    $C$DW$49        .dwtag  DW_TAG_variable
+     574                            .dwattr $C$DW$49, DW_AT_name("cChar")
+     575                            .dwattr $C$DW$49, DW_AT_TI_symbol_name("cChar")
+     576                            .dwattr $C$DW$49, DW_AT_type(*$C$DW$T$35)
+     577                            .dwattr $C$DW$49, DW_AT_location[DW_OP_breg13 12]
+     578                    
+     579 00000092 9101              STR       A2, [SP, #4]          ; [DPU_3_PIPE] |570|  ; [ORIG 16-BIT INS]
+     580 00000094 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |570|  ; [ORIG 16-BIT INS]
+     581                            .dwpsn  file "../Drivers/uartstdio.c",line 643,column 24,is_stmt,isa 1
+     582 00000096 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |643|  ; [ORIG 16-BIT INS]
+     583 00000098 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |643|  ; [ORIG 16-BIT INS]
+     584                            .dwpsn  file "../Drivers/uartstdio.c",line 658,column 5,is_stmt,isa 1
+     585 0000009a 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |658|  ; [ORIG 16-BIT INS]
+     586 0000009c 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |658|  ; [ORIG 16-BIT INS]
+     587 0000009e 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |658|  ; [ORIG 16-BIT INS]
+     588                            .dwpsn  file "../Drivers/uartstdio.c",line 663,column 11,is_stmt,isa 1
+     589                    ;* --------------------------------------------------------------------------*
+     590                    ;*   BEGIN LOOP ||$C$L5||
+     591                    ;*
+     592                    ;*   Loop source line                : 663
+     593                    ;*   Loop closing brace source line  : 751
+     594                    ;*   Known Minimum Trip Count        : 1
+     595                    ;*   Known Maximum Trip Count        : 4294967295
+     596                    ;*   Known Max Trip Count Factor     : 1
+     597                    ;* --------------------------------------------------------------------------*
+     598 000000a0           ||$C$L5||:    
+     599                            .dwpsn  file "../Drivers/uartstdio.c",line 668,column 9,is_stmt,isa 1
+     600 000000a0 482F              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |668|  ; [ORIG 16-BIT INS]
+     601 000000a2 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |668|  ; [ORIG 16-BIT INS]
+     602                    $C$DW$50        .dwtag  DW_TAG_TI_branch
+     603                            .dwattr $C$DW$50, DW_AT_low_pc(0x00)
+     604                            .dwattr $C$DW$50, DW_AT_name("UARTCharGet")
+     605                            .dwattr $C$DW$50, DW_AT_TI_call
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   12
+
+     606                    
+     607 000000a4 FFFEF7FF!         BL        UARTCharGet           ; [DPU_3_PIPE] |668|  ; [KEEP 32-BIT INS]
+     608                            ; CALL OCCURS {UARTCharGet }     ; [] |668| 
+     609 000000a8 000CF88D          STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |668|  ; [KEEP 32-BIT INS]
+     610                            .dwpsn  file "../Drivers/uartstdio.c",line 673,column 9,is_stmt,isa 1
+     611 000000ac 000CF99D          LDRSB     A1, [SP, #12]         ; [DPU_3_PIPE] |673|  ; [KEEP 32-BIT INS]
+     612 000000b0 2808              CMP       A1, #8                ; [DPU_3_PIPE] |673|  ; [ORIG 16-BIT INS]
+     613 000000b2 D10A              BNE       ||$C$L6||             ; [DPU_3_PIPE] |673|  ; [ORIG 16-BIT INS]
+     614                            ; BRANCHCC OCCURS {||$C$L6||}    ; [] |673| 
+     615                    ;* --------------------------------------------------------------------------*
+     616                            .dwpsn  file "../Drivers/uartstdio.c",line 679,column 13,is_stmt,isa 1
+     617 000000b4 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |679|  ; [ORIG 16-BIT INS]
+     618 000000b6 2800              CMP       A1, #0                ; [DPU_3_PIPE] |679|  ; [ORIG 16-BIT INS]
+     619 000000b8 D0F2              BEQ       ||$C$L5||             ; [DPU_3_PIPE] |679|  ; [ORIG 16-BIT INS]
+     620                            ; BRANCHCC OCCURS {||$C$L5||}    ; [] |679| 
+     621                    ;* --------------------------------------------------------------------------*
+     622                            .dwpsn  file "../Drivers/uartstdio.c",line 684,column 17,is_stmt,isa 1
+     623 000000ba A026              ADR       A1, $C$SL2            ; [DPU_3_PIPE] |684|  ; [ORIG 16-BIT INS]
+     624 000000bc 2103              MOVS      A2, #3                ; [DPU_3_PIPE] |684|  ; [ORIG 16-BIT INS]
+     625                    $C$DW$51        .dwtag  DW_TAG_TI_branch
+     626                            .dwattr $C$DW$51, DW_AT_low_pc(0x00)
+     627                            .dwattr $C$DW$51, DW_AT_name("UARTwrite")
+     628                            .dwattr $C$DW$51, DW_AT_TI_call
+     629                    
+     630 000000be FFC2F7FF          BL        UARTwrite             ; [DPU_3_PIPE] |684|  ; [KEEP 32-BIT INS]
+     631                            ; CALL OCCURS {UARTwrite }       ; [] |684| 
+     632                            .dwpsn  file "../Drivers/uartstdio.c",line 689,column 17,is_stmt,isa 1
+     633 000000c2 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |689|  ; [ORIG 16-BIT INS]
+     634 000000c4 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |689|  ; [ORIG 16-BIT INS]
+     635 000000c6 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |689|  ; [ORIG 16-BIT INS]
+     636                            .dwpsn  file "../Drivers/uartstdio.c",line 695,column 13,is_stmt,isa 1
+     637 000000c8 E7EA              B         ||$C$L5||             ; [DPU_3_PIPE] |695|  ; [ORIG 16-BIT INS]
+     638                            ; BRANCH OCCURS {||$C$L5||}      ; [] |695| 
+     639                    ;* --------------------------------------------------------------------------*
+     640 000000ca           ||$C$L6||:    
+     641                            .dwpsn  file "../Drivers/uartstdio.c",line 702,column 9,is_stmt,isa 1
+     642 000000ca 000CF99D          LDRSB     A1, [SP, #12]         ; [DPU_3_PIPE] |702|  ; [KEEP 32-BIT INS]
+     643 000000ce 280A              CMP       A1, #10               ; [DPU_3_PIPE] |702|  ; [ORIG 16-BIT INS]
+     644 000000d0 D107              BNE       ||$C$L7||             ; [DPU_3_PIPE] |702|  ; [ORIG 16-BIT INS]
+     645                            ; BRANCHCC OCCURS {||$C$L7||}    ; [] |702| 
+     646                    ;* --------------------------------------------------------------------------*
+     647 000000d2 4825              LDR       A1, $C$CON4           ; [DPU_3_PIPE] |702|  ; [ORIG 16-BIT INS]
+     648 000000d4 0000F990          LDRSB     A1, [A1, #0]          ; [DPU_3_PIPE] |702|  ; [KEEP 32-BIT INS]
+     649 000000d8 B118              CBZ       A1, ||$C$L7||         ; []  ; [ORIG 16-BIT INS]
+     650                            ; BRANCHCC OCCURS {||$C$L7||}    ; [] |702| 
+     651                    ;* --------------------------------------------------------------------------*
+     652                            .dwpsn  file "../Drivers/uartstdio.c",line 704,column 13,is_stmt,isa 1
+     653 000000da 4923              LDR       A2, $C$CON4           ; [DPU_3_PIPE] |704|  ; [ORIG 16-BIT INS]
+     654 000000dc 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |704|  ; [ORIG 16-BIT INS]
+     655 000000de 7008              STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |704|  ; [ORIG 16-BIT INS]
+     656                            .dwpsn  file "../Drivers/uartstdio.c",line 705,column 13,is_stmt,isa 1
+     657 000000e0 E7DE              B         ||$C$L5||             ; [DPU_3_PIPE] |705|  ; [ORIG 16-BIT INS]
+     658                            ; BRANCH OCCURS {||$C$L5||}      ; [] |705| 
+     659                    ;* --------------------------------------------------------------------------*
+     660 000000e2           ||$C$L7||:    
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   13
+
+     661                            .dwpsn  file "../Drivers/uartstdio.c",line 711,column 9,is_stmt,isa 1
+     662 000000e2 000CF99D          LDRSB     A1, [SP, #12]         ; [DPU_3_PIPE] |711|  ; [KEEP 32-BIT INS]
+     663 000000e6 280D              CMP       A1, #13               ; [DPU_3_PIPE] |711|  ; [ORIG 16-BIT INS]
+     664 000000e8 D007              BEQ       ||$C$L8||             ; [DPU_3_PIPE] |711|  ; [ORIG 16-BIT INS]
+     665                            ; BRANCHCC OCCURS {||$C$L8||}    ; [] |711| 
+     666                    ;* --------------------------------------------------------------------------*
+     667 000000ea 000CF99D          LDRSB     A1, [SP, #12]         ; [DPU_3_PIPE] |711|  ; [KEEP 32-BIT INS]
+     668 000000ee 280A              CMP       A1, #10               ; [DPU_3_PIPE] |711|  ; [ORIG 16-BIT INS]
+     669 000000f0 D003              BEQ       ||$C$L8||             ; [DPU_3_PIPE] |711|  ; [ORIG 16-BIT INS]
+     670                            ; BRANCHCC OCCURS {||$C$L8||}    ; [] |711| 
+     671                    ;* --------------------------------------------------------------------------*
+     672 000000f2 000CF99D          LDRSB     A1, [SP, #12]         ; [DPU_3_PIPE] |711|  ; [KEEP 32-BIT INS]
+     673 000000f6 281B              CMP       A1, #27               ; [DPU_3_PIPE] |711|  ; [ORIG 16-BIT INS]
+     674 000000f8 D107              BNE       ||$C$L9||             ; [DPU_3_PIPE] |711|  ; [ORIG 16-BIT INS]
+     675                            ; BRANCHCC OCCURS {||$C$L9||}    ; [] |711| 
+     676                    ;* --------------------------------------------------------------------------*
+     677 000000fa           ||$C$L8||:    
+     678                            .dwpsn  file "../Drivers/uartstdio.c",line 718,column 13,is_stmt,isa 1
+     679 000000fa 000CF99D          LDRSB     A1, [SP, #12]         ; [DPU_3_PIPE] |718|  ; [KEEP 32-BIT INS]
+     680 000000fe 280D              CMP       A1, #13               ; [DPU_3_PIPE] |718|  ; [ORIG 16-BIT INS]
+     681 00000100 D116              BNE       ||$C$L10||            ; [DPU_3_PIPE] |718|  ; [ORIG 16-BIT INS]
+     682                            ; BRANCHCC OCCURS {||$C$L10||}   ; [] |718| 
+     683                    ;* --------------------------------------------------------------------------*
+     684                            .dwpsn  file "../Drivers/uartstdio.c",line 720,column 17,is_stmt,isa 1
+     685 00000102 4919              LDR       A2, $C$CON4           ; [DPU_3_PIPE] |720|  ; [ORIG 16-BIT INS]
+     686 00000104 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |720|  ; [ORIG 16-BIT INS]
+     687 00000106 7008              STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |720|  ; [ORIG 16-BIT INS]
+     688                            .dwpsn  file "../Drivers/uartstdio.c",line 726,column 13,is_stmt,isa 1
+     689 00000108 E012              B         ||$C$L10||            ; [DPU_3_PIPE] |726|  ; [ORIG 16-BIT INS]
+     690                            ; BRANCH OCCURS {||$C$L10||}     ; [] |726| 
+     691                    ;* --------------------------------------------------------------------------*
+     692 0000010a           ||$C$L9||:    
+     693                            .dwpsn  file "../Drivers/uartstdio.c",line 734,column 9,is_stmt,isa 1
+     694 0000010a 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |734|  ; [ORIG 16-BIT INS]
+     695 0000010c 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |734|  ; [ORIG 16-BIT INS]
+     696 0000010e 4288              CMP       A1, A2                ; [DPU_3_PIPE] |734|  ; [ORIG 16-BIT INS]
+     697 00000110 D9C6              BLS       ||$C$L5||             ; [DPU_3_PIPE] |734|  ; [ORIG 16-BIT INS]
+     698                            ; BRANCHCC OCCURS {||$C$L5||}    ; [] |734| 
+     699                    ;* --------------------------------------------------------------------------*
+     700                            .dwpsn  file "../Drivers/uartstdio.c",line 739,column 13,is_stmt,isa 1
+     701 00000112 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |739|  ; [ORIG 16-BIT INS]
+     702 00000114 9A02              LDR       A3, [SP, #8]          ; [DPU_3_PIPE] |739|  ; [ORIG 16-BIT INS]
+     703 00000116 000CF89D          LDRB      A1, [SP, #12]         ; [DPU_3_PIPE] |739|  ; [KEEP 32-BIT INS]
+     704 0000011a 5450              STRB      A1, [A3, +A2]         ; [DPU_3_PIPE] |739|  ; [ORIG 16-BIT INS]
+     705                            .dwpsn  file "../Drivers/uartstdio.c",line 744,column 13,is_stmt,isa 1
+     706 0000011c 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |744|  ; [ORIG 16-BIT INS]
+     707 0000011e 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |744|  ; [ORIG 16-BIT INS]
+     708 00000120 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |744|  ; [ORIG 16-BIT INS]
+     709                            .dwpsn  file "../Drivers/uartstdio.c",line 749,column 13,is_stmt,isa 1
+     710 00000122 480F              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |749|  ; [ORIG 16-BIT INS]
+     711 00000124 100CF89D          LDRB      A2, [SP, #12]         ; [DPU_3_PIPE] |749|  ; [KEEP 32-BIT INS]
+     712 00000128 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |749|  ; [ORIG 16-BIT INS]
+     713                    $C$DW$52        .dwtag  DW_TAG_TI_branch
+     714                            .dwattr $C$DW$52, DW_AT_low_pc(0x00)
+     715                            .dwattr $C$DW$52, DW_AT_name("UARTCharPut")
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   14
+
+     716                            .dwattr $C$DW$52, DW_AT_TI_call
+     717                    
+     718 0000012a FFFEF7FF!         BL        UARTCharPut           ; [DPU_3_PIPE] |749|  ; [KEEP 32-BIT INS]
+     719                            ; CALL OCCURS {UARTCharPut }     ; [] |749| 
+     720                            .dwpsn  file "../Drivers/uartstdio.c",line 663,column 11,is_stmt,isa 1
+     721 0000012e E7B7              B         ||$C$L5||             ; [DPU_3_PIPE] |663|  ; [ORIG 16-BIT INS]
+     722                            ; BRANCH OCCURS {||$C$L5||}      ; [] |663| 
+     723                    ;* --------------------------------------------------------------------------*
+     724 00000130           ||$C$L10||:    
+     725                            .dwpsn  file "../Drivers/uartstdio.c",line 756,column 5,is_stmt,isa 1
+     726 00000130 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |756|  ; [ORIG 16-BIT INS]
+     727 00000132 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |756|  ; [ORIG 16-BIT INS]
+     728 00000134 2200              MOVS      A3, #0                ; [DPU_3_PIPE] |756|  ; [ORIG 16-BIT INS]
+     729 00000136 540A              STRB      A3, [A2, +A1]         ; [DPU_3_PIPE] |756|  ; [ORIG 16-BIT INS]
+     730                            .dwpsn  file "../Drivers/uartstdio.c",line 761,column 5,is_stmt,isa 1
+     731 00000138 A007              ADR       A1, $C$SL3            ; [DPU_3_PIPE] |761|  ; [ORIG 16-BIT INS]
+     732 0000013a 2102              MOVS      A2, #2                ; [DPU_3_PIPE] |761|  ; [ORIG 16-BIT INS]
+     733                    $C$DW$53        .dwtag  DW_TAG_TI_branch
+     734                            .dwattr $C$DW$53, DW_AT_low_pc(0x00)
+     735                            .dwattr $C$DW$53, DW_AT_name("UARTwrite")
+     736                            .dwattr $C$DW$53, DW_AT_TI_call
+     737                    
+     738 0000013c FF83F7FF          BL        UARTwrite             ; [DPU_3_PIPE] |761|  ; [KEEP 32-BIT INS]
+     739                            ; CALL OCCURS {UARTwrite }       ; [] |761| 
+     740                            .dwpsn  file "../Drivers/uartstdio.c",line 766,column 5,is_stmt,isa 1
+     741 00000140 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |766|  ; [ORIG 16-BIT INS]
+     742                            .dwpsn  file "../Drivers/uartstdio.c",line 768,column 1,is_stmt,isa 1
+     743 00000142 B005              ADD       SP, SP, #20           ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     744                            .dwcfi  cfa_offset, 4
+     745                    $C$DW$54        .dwtag  DW_TAG_TI_branch
+     746                            .dwattr $C$DW$54, DW_AT_low_pc(0x00)
+     747                            .dwattr $C$DW$54, DW_AT_TI_return
+     748                    
+     749 00000144 BD00              POP       {PC}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     750                            .dwcfi  cfa_offset, 0
+     751                            ; BRANCH OCCURS                  ; [] 
+     752                            .dwattr $C$DW$42, DW_AT_TI_end_file("../Drivers/uartstdio.c")
+     753                            .dwattr $C$DW$42, DW_AT_TI_end_line(0x300)
+     754                            .dwattr $C$DW$42, DW_AT_TI_end_column(0x01)
+     755                            .dwendentry
+     756                            .dwendtag $C$DW$42
+     757                    
+     758 00000146                   .sect   ".text"
+     759                            .clink
+     760                            .thumbfunc UARTgetc
+     761 00000146                   .thumb
+     762                            .global UARTgetc
+     763                    
+     764                    $C$DW$55        .dwtag  DW_TAG_subprogram
+     765                            .dwattr $C$DW$55, DW_AT_name("UARTgetc")
+     766                            .dwattr $C$DW$55, DW_AT_low_pc(UARTgetc)
+     767                            .dwattr $C$DW$55, DW_AT_high_pc(0x00)
+     768                            .dwattr $C$DW$55, DW_AT_TI_symbol_name("UARTgetc")
+     769                            .dwattr $C$DW$55, DW_AT_external
+     770                            .dwattr $C$DW$55, DW_AT_type(*$C$DW$T$6)
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   15
+
+     771                            .dwattr $C$DW$55, DW_AT_TI_begin_file("../Drivers/uartstdio.c")
+     772                            .dwattr $C$DW$55, DW_AT_TI_begin_line(0x312)
+     773                            .dwattr $C$DW$55, DW_AT_TI_begin_column(0x01)
+     774                            .dwattr $C$DW$55, DW_AT_decl_file("../Drivers/uartstdio.c")
+     775                            .dwattr $C$DW$55, DW_AT_decl_line(0x312)
+     776                            .dwattr $C$DW$55, DW_AT_decl_column(0x01)
+     777                            .dwattr $C$DW$55, DW_AT_TI_max_frame_size(0x08)
+     778                            .dwpsn  file "../Drivers/uartstdio.c",line 787,column 1,is_stmt,address UARTgetc,isa 1
+     779                    
+     780                            .dwfde $C$DW$CIE, UARTgetc
+     781                    
+     782                    ;*****************************************************************************
+     783                    ;* FUNCTION NAME: UARTgetc                                                   *
+     784                    ;*                                                                           *
+     785                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     786                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     787                    ;*                           FPEXC,FPSCR                                     *
+     788                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     789                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     790                    ;*                           FPEXC,FPSCR                                     *
+     791                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
+     792                    ;*****************************************************************************
+     793 00000146           UARTgetc:
+     794                    ;* --------------------------------------------------------------------------*
+     795                            .dwcfi  cfa_offset, 0
+     796 00000146 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     797                            .dwcfi  cfa_offset, 8
+     798                            .dwcfi  save_reg_to_mem, 14, -4
+     799                            .dwcfi  save_reg_to_mem, 3, -8
+     800                            .dwpsn  file "../Drivers/uartstdio.c",line 817,column 5,is_stmt,isa 1
+     801 00000148 4805              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |817|  ; [ORIG 16-BIT INS]
+     802 0000014a 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |817|  ; [ORIG 16-BIT INS]
+     803                    $C$DW$56        .dwtag  DW_TAG_TI_branch
+     804                            .dwattr $C$DW$56, DW_AT_low_pc(0x00)
+     805                            .dwattr $C$DW$56, DW_AT_name("UARTCharGet")
+     806                            .dwattr $C$DW$56, DW_AT_TI_call
+     807                    
+     808 0000014c FFFEF7FF!         BL        UARTCharGet           ; [DPU_3_PIPE] |817|  ; [KEEP 32-BIT INS]
+     809                            ; CALL OCCURS {UARTCharGet }     ; [] |817| 
+     810 00000150 B2C0              UXTB      A1, A1                ; [DPU_3_PIPE] |817|  ; [ORIG 16-BIT INS]
+     811                            .dwpsn  file "../Drivers/uartstdio.c",line 819,column 1,is_stmt,isa 1
+     812                    $C$DW$57        .dwtag  DW_TAG_TI_branch
+     813                            .dwattr $C$DW$57, DW_AT_low_pc(0x00)
+     814                            .dwattr $C$DW$57, DW_AT_TI_return
+     815                    
+     816 00000152 BD08              POP       {A4, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     817                            .dwcfi  cfa_offset, 0
+     818                            ; BRANCH OCCURS                  ; [] 
+     819                            .dwattr $C$DW$55, DW_AT_TI_end_file("../Drivers/uartstdio.c")
+     820                            .dwattr $C$DW$55, DW_AT_TI_end_line(0x333)
+     821                            .dwattr $C$DW$55, DW_AT_TI_end_column(0x01)
+     822                            .dwendentry
+     823                            .dwendtag $C$DW$55
+     824                    
+     825                    ;******************************************************************************
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   16
+
+     826                    ;* STRINGS                                                                    *
+     827                    ;******************************************************************************
+     828 00000154                   .sect   ".text"
+     829                            .align  4
+     830 00000154 08        ||$C$SL2||:     .string 8," ",8,0
+         00000155 20       
+         00000156 08       
+         00000157 00       
+     831                            .align  4
+     832 00000158 0D        ||$C$SL3||:     .string 13,10,0
+         00000159 0A       
+         0000015a 00       
+     833                    ;******************************************************************************
+     834                    ;* CONSTANT TABLE                                                             *
+     835                    ;******************************************************************************
+     836 0000015b                   .sect   ".text"
+     837                            .align  4
+     838 0000015c 00000000! ||$C$CON1||:    .bits   g_ui32UARTPeriph,32
+     839                            .align  4
+     840 00000160 00000000! ||$C$CON2||:    .bits   g_ui32Base,32
+     841                            .align  4
+     842 00000164 00000000! ||$C$CON3||:    .bits   g_ui32UARTBase,32
+     843                            .align  4
+     844 00000168 00000000! ||$C$CON4||:    .bits   bLastWasCR$1,32
+     845 0000016c                   .sect   ".text"
+     846                            .clink
+     847                            .thumbfunc UARTvprintf
+     848 0000016c                   .thumb
+     849                            .global UARTvprintf
+     850                    
+     851                    $C$DW$58        .dwtag  DW_TAG_subprogram
+     852                            .dwattr $C$DW$58, DW_AT_name("UARTvprintf")
+     853                            .dwattr $C$DW$58, DW_AT_low_pc(UARTvprintf)
+     854                            .dwattr $C$DW$58, DW_AT_high_pc(0x00)
+     855                            .dwattr $C$DW$58, DW_AT_TI_symbol_name("UARTvprintf")
+     856                            .dwattr $C$DW$58, DW_AT_external
+     857                            .dwattr $C$DW$58, DW_AT_TI_begin_file("../Drivers/uartstdio.c")
+     858                            .dwattr $C$DW$58, DW_AT_TI_begin_line(0x35c)
+     859                            .dwattr $C$DW$58, DW_AT_TI_begin_column(0x01)
+     860                            .dwattr $C$DW$58, DW_AT_decl_file("../Drivers/uartstdio.c")
+     861                            .dwattr $C$DW$58, DW_AT_decl_line(0x35c)
+     862                            .dwattr $C$DW$58, DW_AT_decl_column(0x01)
+     863                            .dwattr $C$DW$58, DW_AT_TI_max_frame_size(0x40)
+     864                            .dwpsn  file "../Drivers/uartstdio.c",line 861,column 1,is_stmt,address UARTvprintf,isa 1
+     865                    
+     866                            .dwfde $C$DW$CIE, UARTvprintf
+     867                    $C$DW$59        .dwtag  DW_TAG_formal_parameter
+     868                            .dwattr $C$DW$59, DW_AT_name("pcString")
+     869                            .dwattr $C$DW$59, DW_AT_TI_symbol_name("pcString")
+     870                            .dwattr $C$DW$59, DW_AT_type(*$C$DW$T$30)
+     871                            .dwattr $C$DW$59, DW_AT_location[DW_OP_reg0]
+     872                    
+     873                    $C$DW$60        .dwtag  DW_TAG_formal_parameter
+     874                            .dwattr $C$DW$60, DW_AT_name("vaArgP")
+     875                            .dwattr $C$DW$60, DW_AT_TI_symbol_name("vaArgP")
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   17
+
+     876                            .dwattr $C$DW$60, DW_AT_type(*$C$DW$T$31)
+     877                            .dwattr $C$DW$60, DW_AT_location[DW_OP_reg1]
+     878                    
+     879                    
+     880                    ;*****************************************************************************
+     881                    ;* FUNCTION NAME: UARTvprintf                                                *
+     882                    ;*                                                                           *
+     883                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     884                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     885                    ;*                           FPEXC,FPSCR                                     *
+     886                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     887                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     888                    ;*                           FPEXC,FPSCR                                     *
+     889                    ;*   Local Frame Size  : 0 Args + 56 Auto + 4 Save = 60 byte                 *
+     890                    ;*****************************************************************************
+     891 0000016c           UARTvprintf:
+     892                    ;* --------------------------------------------------------------------------*
+     893                            .dwcfi  cfa_offset, 0
+     894 0000016c B500              PUSH      {LR}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     895                            .dwcfi  cfa_offset, 4
+     896                            .dwcfi  save_reg_to_mem, 14, -4
+     897 0000016e 0D3CF1AD          SUB       SP, SP, #60           ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
+     898                            .dwcfi  cfa_offset, 64
+     899                    $C$DW$61        .dwtag  DW_TAG_variable
+     900                            .dwattr $C$DW$61, DW_AT_name("pcString")
+     901                            .dwattr $C$DW$61, DW_AT_TI_symbol_name("pcString")
+     902                            .dwattr $C$DW$61, DW_AT_type(*$C$DW$T$30)
+     903                            .dwattr $C$DW$61, DW_AT_location[DW_OP_breg13 0]
+     904                    
+     905                    $C$DW$62        .dwtag  DW_TAG_variable
+     906                            .dwattr $C$DW$62, DW_AT_name("vaArgP")
+     907                            .dwattr $C$DW$62, DW_AT_TI_symbol_name("vaArgP")
+     908                            .dwattr $C$DW$62, DW_AT_type(*$C$DW$T$31)
+     909                            .dwattr $C$DW$62, DW_AT_location[DW_OP_breg13 4]
+     910                    
+     911                    $C$DW$63        .dwtag  DW_TAG_variable
+     912                            .dwattr $C$DW$63, DW_AT_name("ui32Idx")
+     913                            .dwattr $C$DW$63, DW_AT_TI_symbol_name("ui32Idx")
+     914                            .dwattr $C$DW$63, DW_AT_type(*$C$DW$T$20)
+     915                            .dwattr $C$DW$63, DW_AT_location[DW_OP_breg13 8]
+     916                    
+     917                    $C$DW$64        .dwtag  DW_TAG_variable
+     918                            .dwattr $C$DW$64, DW_AT_name("ui32Value")
+     919                            .dwattr $C$DW$64, DW_AT_TI_symbol_name("ui32Value")
+     920                            .dwattr $C$DW$64, DW_AT_type(*$C$DW$T$20)
+     921                            .dwattr $C$DW$64, DW_AT_location[DW_OP_breg13 12]
+     922                    
+     923                    $C$DW$65        .dwtag  DW_TAG_variable
+     924                            .dwattr $C$DW$65, DW_AT_name("ui32Pos")
+     925                            .dwattr $C$DW$65, DW_AT_TI_symbol_name("ui32Pos")
+     926                            .dwattr $C$DW$65, DW_AT_type(*$C$DW$T$20)
+     927                            .dwattr $C$DW$65, DW_AT_location[DW_OP_breg13 16]
+     928                    
+     929                    $C$DW$66        .dwtag  DW_TAG_variable
+     930                            .dwattr $C$DW$66, DW_AT_name("ui32Count")
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   18
+
+     931                            .dwattr $C$DW$66, DW_AT_TI_symbol_name("ui32Count")
+     932                            .dwattr $C$DW$66, DW_AT_type(*$C$DW$T$20)
+     933                            .dwattr $C$DW$66, DW_AT_location[DW_OP_breg13 20]
+     934                    
+     935                    $C$DW$67        .dwtag  DW_TAG_variable
+     936                            .dwattr $C$DW$67, DW_AT_name("ui32Base")
+     937                            .dwattr $C$DW$67, DW_AT_TI_symbol_name("ui32Base")
+     938                            .dwattr $C$DW$67, DW_AT_type(*$C$DW$T$20)
+     939                            .dwattr $C$DW$67, DW_AT_location[DW_OP_breg13 24]
+     940                    
+     941                    $C$DW$68        .dwtag  DW_TAG_variable
+     942                            .dwattr $C$DW$68, DW_AT_name("ui32Neg")
+     943                            .dwattr $C$DW$68, DW_AT_TI_symbol_name("ui32Neg")
+     944                            .dwattr $C$DW$68, DW_AT_type(*$C$DW$T$20)
+     945                            .dwattr $C$DW$68, DW_AT_location[DW_OP_breg13 28]
+     946                    
+     947                    $C$DW$69        .dwtag  DW_TAG_variable
+     948                            .dwattr $C$DW$69, DW_AT_name("pcStr")
+     949                            .dwattr $C$DW$69, DW_AT_TI_symbol_name("pcStr")
+     950                            .dwattr $C$DW$69, DW_AT_type(*$C$DW$T$46)
+     951                            .dwattr $C$DW$69, DW_AT_location[DW_OP_breg13 32]
+     952                    
+     953                    $C$DW$70        .dwtag  DW_TAG_variable
+     954                            .dwattr $C$DW$70, DW_AT_name("pcBuf")
+     955                            .dwattr $C$DW$70, DW_AT_TI_symbol_name("pcBuf")
+     956                            .dwattr $C$DW$70, DW_AT_type(*$C$DW$T$83)
+     957                            .dwattr $C$DW$70, DW_AT_location[DW_OP_breg13 36]
+     958                    
+     959                    $C$DW$71        .dwtag  DW_TAG_variable
+     960                            .dwattr $C$DW$71, DW_AT_name("cFill")
+     961                            .dwattr $C$DW$71, DW_AT_TI_symbol_name("cFill")
+     962                            .dwattr $C$DW$71, DW_AT_type(*$C$DW$T$6)
+     963                            .dwattr $C$DW$71, DW_AT_location[DW_OP_breg13 52]
+     964                    
+     965                    $C$DW$72        .dwtag  DW_TAG_label
+     966                            .dwattr $C$DW$72, DW_AT_name("again")
+     967                            .dwattr $C$DW$72, DW_AT_low_pc(||$C$L15||)
+     968                            .dwattr $C$DW$72, DW_AT_TI_symbol_name("again")
+     969                    
+     970                    $C$DW$73        .dwtag  DW_TAG_label
+     971                            .dwattr $C$DW$73, DW_AT_name("convert")
+     972                            .dwattr $C$DW$73, DW_AT_low_pc(||$C$L28||)
+     973                            .dwattr $C$DW$73, DW_AT_TI_symbol_name("convert")
+     974                    
+     975 00000172 9101              STR       A2, [SP, #4]          ; [DPU_3_PIPE] |861|  ; [ORIG 16-BIT INS]
+     976 00000174 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |861|  ; [ORIG 16-BIT INS]
+     977                            .dwpsn  file "../Drivers/uartstdio.c",line 873,column 5,is_stmt,isa 1
+     978 00000176 E16F              B         ||$C$L44||            ; [DPU_3_PIPE] |873|  ; [ORIG 16-BIT INS]
+     979                            ; BRANCH OCCURS {||$C$L44||}     ; [] |873| 
+     980                    ;* --------------------------------------------------------------------------*
+     981 00000178           ||$C$L11||:    
+     982                            .dwpsn  file "../Drivers/uartstdio.c",line 878,column 13,is_stmt,isa 1
+     983 00000178 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |878|  ; [ORIG 16-BIT INS]
+     984 0000017a 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |878|  ; [ORIG 16-BIT INS]
+     985 0000017c E002              B         ||$C$L13||            ; [DPU_3_PIPE] |878|  ; [ORIG 16-BIT INS]
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   19
+
+     986                            ; BRANCH OCCURS {||$C$L13||}     ; [] |878| 
+     987                    ;* --------------------------------------------------------------------------*
+     988 0000017e           ||$C$L12||:    
+     989                            .dwpsn  file "../Drivers/uartstdio.c",line 880,column 13,is_stmt,isa 1
+     990 0000017e 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |880|  ; [ORIG 16-BIT INS]
+     991 00000180 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |880|  ; [ORIG 16-BIT INS]
+     992 00000182 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |880|  ; [ORIG 16-BIT INS]
+     993                    ;* --------------------------------------------------------------------------*
+     994                    ;*   BEGIN LOOP ||$C$L13||
+     995                    ;* --------------------------------------------------------------------------*
+     996 00000184           ||$C$L13||:    
+     997                            .dwpsn  file "../Drivers/uartstdio.c",line 879,column 13,is_stmt,isa 1
+     998 00000184 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+     999 00000186 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1000 00000188 5C08              LDRB      A1, [A2, +A1]         ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1001 0000018a 2825              CMP       A1, #37               ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1002 0000018c D004              BEQ       ||$C$L14||            ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1003                            ; BRANCHCC OCCURS {||$C$L14||}   ; [] |879| 
+    1004                    ;* --------------------------------------------------------------------------*
+    1005 0000018e 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1006 00000190 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1007 00000192 5C08              LDRB      A1, [A2, +A1]         ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1008 00000194 2800              CMP       A1, #0                ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1009 00000196 D1F2              BNE       ||$C$L12||            ; [DPU_3_PIPE] |879|  ; [ORIG 16-BIT INS]
+    1010                            ; BRANCHCC OCCURS {||$C$L12||}   ; [] |879| 
+    1011                    ;* --------------------------------------------------------------------------*
+    1012 00000198           ||$C$L14||:    
+    1013                            .dwpsn  file "../Drivers/uartstdio.c",line 887,column 9,is_stmt,isa 1
+    1014 00000198 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |887|  ; [ORIG 16-BIT INS]
+    1015 0000019a 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |887|  ; [ORIG 16-BIT INS]
+    1016                    $C$DW$74        .dwtag  DW_TAG_TI_branch
+    1017                            .dwattr $C$DW$74, DW_AT_low_pc(0x00)
+    1018                            .dwattr $C$DW$74, DW_AT_name("UARTwrite")
+    1019                            .dwattr $C$DW$74, DW_AT_TI_call
+    1020                    
+    1021 0000019c FF53F7FF          BL        UARTwrite             ; [DPU_3_PIPE] |887|  ; [KEEP 32-BIT INS]
+    1022                            ; CALL OCCURS {UARTwrite }       ; [] |887| 
+    1023                            .dwpsn  file "../Drivers/uartstdio.c",line 892,column 9,is_stmt,isa 1
+    1024 000001a0 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |892|  ; [ORIG 16-BIT INS]
+    1025 000001a2 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |892|  ; [ORIG 16-BIT INS]
+    1026 000001a4 1840              ADDS      A1, A1, A2            ; [DPU_3_PIPE] |892|  ; [ORIG 16-BIT INS]
+    1027 000001a6 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |892|  ; [ORIG 16-BIT INS]
+    1028                            .dwpsn  file "../Drivers/uartstdio.c",line 897,column 9,is_stmt,isa 1
+    1029 000001a8 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |897|  ; [ORIG 16-BIT INS]
+    1030 000001aa 7800              LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |897|  ; [ORIG 16-BIT INS]
+    1031 000001ac 2825              CMP       A1, #37               ; [DPU_3_PIPE] |897|  ; [ORIG 16-BIT INS]
+    1032 000001ae 8153F040          BNE       ||$C$L44||            ; [DPU_3_PIPE] |897|  ; [KEEP 32-BIT INS]
+    1033                            ; BRANCHCC OCCURS {||$C$L44||}   ; [] |897| 
+    1034                    ;* --------------------------------------------------------------------------*
+    1035                            .dwpsn  file "../Drivers/uartstdio.c",line 902,column 13,is_stmt,isa 1
+    1036 000001b2 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |902|  ; [ORIG 16-BIT INS]
+    1037 000001b4 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |902|  ; [ORIG 16-BIT INS]
+    1038 000001b6 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |902|  ; [ORIG 16-BIT INS]
+    1039                            .dwpsn  file "../Drivers/uartstdio.c",line 908,column 13,is_stmt,isa 1
+    1040 000001b8 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |908|  ; [ORIG 16-BIT INS]
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   20
+
+    1041 000001ba 9005              STR       A1, [SP, #20]         ; [DPU_3_PIPE] |908|  ; [ORIG 16-BIT INS]
+    1042                            .dwpsn  file "../Drivers/uartstdio.c",line 909,column 13,is_stmt,isa 1
+    1043 000001bc 2020              MOVS      A1, #32               ; [DPU_3_PIPE] |909|  ; [ORIG 16-BIT INS]
+    1044 000001be 0034F88D          STRB      A1, [SP, #52]         ; [DPU_3_PIPE] |909|  ; [KEEP 32-BIT INS]
+    1045                    ;* --------------------------------------------------------------------------*
+    1046 000001c2           ||$C$L15||:    
+    1047                            .dwpsn  file "../Drivers/uartstdio.c",line 921,column 13,is_stmt,isa 1
+    1048 000001c2 E10C              B         ||$C$L41||            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1049                            ; BRANCH OCCURS {||$C$L41||}     ; [] |921| 
+    1050                    ;* --------------------------------------------------------------------------*
+    1051 000001c4           ||$C$L16||:    
+    1052                            .dwpsn  file "../Drivers/uartstdio.c",line 941,column 21,is_stmt,isa 1
+    1053 000001c4 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |941|  ; [ORIG 16-BIT INS]
+    1054 000001c6 0C01F810          LDRB      A1, [A1, #-1]         ; [DPU_3_PIPE] |941|  ; [KEEP 32-BIT INS]
+    1055 000001ca 2830              CMP       A1, #48               ; [DPU_3_PIPE] |941|  ; [ORIG 16-BIT INS]
+    1056 000001cc D104              BNE       ||$C$L17||            ; [DPU_3_PIPE] |941|  ; [ORIG 16-BIT INS]
+    1057                            ; BRANCHCC OCCURS {||$C$L17||}   ; [] |941| 
+    1058                    ;* --------------------------------------------------------------------------*
+    1059 000001ce 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |941|  ; [ORIG 16-BIT INS]
+    1060 000001d0 B910              CBNZ      A1, ||$C$L17||        ; []  ; [ORIG 16-BIT INS]
+    1061                            ; BRANCHCC OCCURS {||$C$L17||}   ; [] |941| 
+    1062                    ;* --------------------------------------------------------------------------*
+    1063                            .dwpsn  file "../Drivers/uartstdio.c",line 943,column 25,is_stmt,isa 1
+    1064 000001d2 2030              MOVS      A1, #48               ; [DPU_3_PIPE] |943|  ; [ORIG 16-BIT INS]
+    1065 000001d4 0034F88D          STRB      A1, [SP, #52]         ; [DPU_3_PIPE] |943|  ; [KEEP 32-BIT INS]
+    1066                    ;* --------------------------------------------------------------------------*
+    1067 000001d8           ||$C$L17||:    
+    1068                            .dwpsn  file "../Drivers/uartstdio.c",line 949,column 21,is_stmt,isa 1
+    1069 000001d8 9905              LDR       A2, [SP, #20]         ; [DPU_3_PIPE] |949|  ; [ORIG 16-BIT INS]
+    1070 000001da 0048              LSLS      A1, A2, #1            ; [DPU_3_PIPE] |949|  ; [ORIG 16-BIT INS]
+    1071 000001dc 00C1EB00          ADD       A1, A1, A2, LSL #3    ; [DPU_3_PIPE] |949|  ; [KEEP 32-BIT INS]
+    1072 000001e0 9005              STR       A1, [SP, #20]         ; [DPU_3_PIPE] |949|  ; [ORIG 16-BIT INS]
+    1073                            .dwpsn  file "../Drivers/uartstdio.c",line 950,column 21,is_stmt,isa 1
+    1074 000001e2 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |950|  ; [ORIG 16-BIT INS]
+    1075 000001e4 9905              LDR       A2, [SP, #20]         ; [DPU_3_PIPE] |950|  ; [ORIG 16-BIT INS]
+    1076 000001e6 0C01F810          LDRB      A1, [A1, #-1]         ; [DPU_3_PIPE] |950|  ; [KEEP 32-BIT INS]
+    1077 000001ea 3830              SUBS      A1, A1, #48           ; [DPU_3_PIPE] |950|  ; [ORIG 16-BIT INS]
+    1078 000001ec 1809              ADDS      A2, A2, A1            ; [DPU_3_PIPE] |950|  ; [ORIG 16-BIT INS]
+    1079 000001ee 9105              STR       A2, [SP, #20]         ; [DPU_3_PIPE] |950|  ; [ORIG 16-BIT INS]
+    1080                            .dwpsn  file "../Drivers/uartstdio.c",line 955,column 21,is_stmt,isa 1
+    1081 000001f0 E0F5              B         ||$C$L41||            ; [DPU_3_PIPE] |955|  ; [ORIG 16-BIT INS]
+    1082                            ; BRANCH OCCURS {||$C$L41||}     ; [] |955| 
+    1083                    ;* --------------------------------------------------------------------------*
+    1084 000001f2           ||$C$L18||:    
+    1085                            .dwpsn  file "../Drivers/uartstdio.c",line 966,column 21,is_stmt,isa 1
+    1086 000001f2 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |966|  ; [ORIG 16-BIT INS]
+    1087 000001f4 1CC0              ADDS      A1, A1, #3            ; [DPU_3_PIPE] |966|  ; [ORIG 16-BIT INS]
+    1088 000001f6 0003F020          BIC       A1, A1, #3            ; [DPU_3_PIPE] |966|  ; [KEEP 32-BIT INS]
+    1089 000001fa 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |966|  ; [ORIG 16-BIT INS]
+    1090 000001fc 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |966|  ; [ORIG 16-BIT INS]
+    1091 000001fe 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |966|  ; [ORIG 16-BIT INS]
+    1092 00000200 0C04F850          LDR       A1, [A1, #-4]         ; [DPU_3_PIPE] |966|  ; [KEEP 32-BIT INS]
+    1093 00000204 9003              STR       A1, [SP, #12]         ; [DPU_3_PIPE] |966|  ; [ORIG 16-BIT INS]
+    1094                            .dwpsn  file "../Drivers/uartstdio.c",line 971,column 21,is_stmt,isa 1
+    1095 00000206 2101              MOVS      A2, #1                ; [DPU_3_PIPE] |971|  ; [ORIG 16-BIT INS]
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   21
+
+    1096 00000208 A803              ADD       A1, SP, #12           ; [DPU_3_PIPE] |971|  ; [ORIG 16-BIT INS]
+    1097                    $C$DW$75        .dwtag  DW_TAG_TI_branch
+    1098                            .dwattr $C$DW$75, DW_AT_low_pc(0x00)
+    1099                            .dwattr $C$DW$75, DW_AT_name("UARTwrite")
+    1100                            .dwattr $C$DW$75, DW_AT_TI_call
+    1101                    
+    1102 0000020a FF1CF7FF          BL        UARTwrite             ; [DPU_3_PIPE] |971|  ; [KEEP 32-BIT INS]
+    1103                            ; CALL OCCURS {UARTwrite }       ; [] |971| 
+    1104                            .dwpsn  file "../Drivers/uartstdio.c",line 976,column 21,is_stmt,isa 1
+    1105 0000020e E123              B         ||$C$L44||            ; [DPU_3_PIPE] |976|  ; [ORIG 16-BIT INS]
+    1106                            ; BRANCH OCCURS {||$C$L44||}     ; [] |976| 
+    1107                    ;* --------------------------------------------------------------------------*
+    1108 00000210           ||$C$L19||:    
+    1109                            .dwpsn  file "../Drivers/uartstdio.c",line 988,column 21,is_stmt,isa 1
+    1110 00000210 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |988|  ; [ORIG 16-BIT INS]
+    1111 00000212 1CC0              ADDS      A1, A1, #3            ; [DPU_3_PIPE] |988|  ; [ORIG 16-BIT INS]
+    1112 00000214 0003F020          BIC       A1, A1, #3            ; [DPU_3_PIPE] |988|  ; [KEEP 32-BIT INS]
+    1113 00000218 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |988|  ; [ORIG 16-BIT INS]
+    1114 0000021a 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |988|  ; [ORIG 16-BIT INS]
+    1115 0000021c 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |988|  ; [ORIG 16-BIT INS]
+    1116 0000021e 0C04F850          LDR       A1, [A1, #-4]         ; [DPU_3_PIPE] |988|  ; [KEEP 32-BIT INS]
+    1117 00000222 9003              STR       A1, [SP, #12]         ; [DPU_3_PIPE] |988|  ; [ORIG 16-BIT INS]
+    1118                            .dwpsn  file "../Drivers/uartstdio.c",line 993,column 21,is_stmt,isa 1
+    1119 00000224 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |993|  ; [ORIG 16-BIT INS]
+    1120 00000226 9004              STR       A1, [SP, #16]         ; [DPU_3_PIPE] |993|  ; [ORIG 16-BIT INS]
+    1121                            .dwpsn  file "../Drivers/uartstdio.c",line 999,column 21,is_stmt,isa 1
+    1122 00000228 9803              LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |999|  ; [ORIG 16-BIT INS]
+    1123 0000022a 2800              CMP       A1, #0                ; [DPU_3_PIPE] |999|  ; [ORIG 16-BIT INS]
+    1124 0000022c D505              BPL       ||$C$L20||            ; [DPU_3_PIPE] |999|  ; [ORIG 16-BIT INS]
+    1125                            ; BRANCHCC OCCURS {||$C$L20||}   ; [] |999| 
+    1126                    ;* --------------------------------------------------------------------------*
+    1127                            .dwpsn  file "../Drivers/uartstdio.c",line 1004,column 25,is_stmt,isa 1
+    1128 0000022e 9803              LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |1004|  ; [ORIG 16-BIT INS]
+    1129 00000230 4240              RSBS      A1, A1, #0            ; [DPU_3_PIPE] |1004|  ; [ORIG 16-BIT INS]
+    1130 00000232 9003              STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1004|  ; [ORIG 16-BIT INS]
+    1131                            .dwpsn  file "../Drivers/uartstdio.c",line 1009,column 25,is_stmt,isa 1
+    1132 00000234 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |1009|  ; [ORIG 16-BIT INS]
+    1133 00000236 9007              STR       A1, [SP, #28]         ; [DPU_3_PIPE] |1009|  ; [ORIG 16-BIT INS]
+    1134                            .dwpsn  file "../Drivers/uartstdio.c",line 1010,column 21,is_stmt,isa 1
+    1135 00000238 E001              B         ||$C$L21||            ; [DPU_3_PIPE] |1010|  ; [ORIG 16-BIT INS]
+    1136                            ; BRANCH OCCURS {||$C$L21||}     ; [] |1010| 
+    1137                    ;* --------------------------------------------------------------------------*
+    1138 0000023a           ||$C$L20||:    
+    1139                            .dwpsn  file "../Drivers/uartstdio.c",line 1017,column 25,is_stmt,isa 1
+    1140 0000023a 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1017|  ; [ORIG 16-BIT INS]
+    1141 0000023c 9007              STR       A1, [SP, #28]         ; [DPU_3_PIPE] |1017|  ; [ORIG 16-BIT INS]
+    1142                    ;* --------------------------------------------------------------------------*
+    1143 0000023e           ||$C$L21||:    
+    1144                            .dwpsn  file "../Drivers/uartstdio.c",line 1023,column 21,is_stmt,isa 1
+    1145 0000023e 200A              MOVS      A1, #10               ; [DPU_3_PIPE] |1023|  ; [ORIG 16-BIT INS]
+    1146 00000240 9006              STR       A1, [SP, #24]         ; [DPU_3_PIPE] |1023|  ; [ORIG 16-BIT INS]
+    1147                            .dwpsn  file "../Drivers/uartstdio.c",line 1028,column 21,is_stmt,isa 1
+    1148 00000242 E053              B         ||$C$L28||            ; [DPU_3_PIPE] |1028|  ; [ORIG 16-BIT INS]
+    1149                            ; BRANCH OCCURS {||$C$L28||}     ; [] |1028| 
+    1150                    ;* --------------------------------------------------------------------------*
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   22
+
+    1151 00000244           ||$C$L22||:    
+    1152                            .dwpsn  file "../Drivers/uartstdio.c",line 1039,column 21,is_stmt,isa 1
+    1153 00000244 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1039|  ; [ORIG 16-BIT INS]
+    1154 00000246 1CC0              ADDS      A1, A1, #3            ; [DPU_3_PIPE] |1039|  ; [ORIG 16-BIT INS]
+    1155 00000248 0003F020          BIC       A1, A1, #3            ; [DPU_3_PIPE] |1039|  ; [KEEP 32-BIT INS]
+    1156 0000024c 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |1039|  ; [ORIG 16-BIT INS]
+    1157 0000024e 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |1039|  ; [ORIG 16-BIT INS]
+    1158 00000250 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1039|  ; [ORIG 16-BIT INS]
+    1159 00000252 0C04F850          LDR       A1, [A1, #-4]         ; [DPU_3_PIPE] |1039|  ; [KEEP 32-BIT INS]
+    1160 00000256 9008              STR       A1, [SP, #32]         ; [DPU_3_PIPE] |1039|  ; [ORIG 16-BIT INS]
+    1161                            .dwpsn  file "../Drivers/uartstdio.c",line 1044,column 25,is_stmt,isa 1
+    1162 00000258 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1163 0000025a 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1164 0000025c E002              B         ||$C$L24||            ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1165                            ; BRANCH OCCURS {||$C$L24||}     ; [] |1044| 
+    1166                    ;* --------------------------------------------------------------------------*
+    1167 0000025e           ||$C$L23||:    
+    1168                            .dwpsn  file "../Drivers/uartstdio.c",line 1044,column 62,is_stmt,isa 1
+    1169 0000025e 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1170 00000260 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1171 00000262 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1172                    ;* --------------------------------------------------------------------------*
+    1173                    ;*   BEGIN LOOP ||$C$L24||
+    1174                    ;* --------------------------------------------------------------------------*
+    1175 00000264           ||$C$L24||:    
+    1176                            .dwpsn  file "../Drivers/uartstdio.c",line 1044,column 38,is_stmt,isa 1
+    1177 00000264 9808              LDR       A1, [SP, #32]         ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1178 00000266 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1179 00000268 5C08              LDRB      A1, [A2, +A1]         ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1180 0000026a 2800              CMP       A1, #0                ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1181 0000026c D1F7              BNE       ||$C$L23||            ; [DPU_3_PIPE] |1044|  ; [ORIG 16-BIT INS]
+    1182                            ; BRANCHCC OCCURS {||$C$L23||}   ; [] |1044| 
+    1183                    ;* --------------------------------------------------------------------------*
+    1184                            .dwpsn  file "../Drivers/uartstdio.c",line 1051,column 21,is_stmt,isa 1
+    1185 0000026e 9808              LDR       A1, [SP, #32]         ; [DPU_3_PIPE] |1051|  ; [ORIG 16-BIT INS]
+    1186 00000270 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |1051|  ; [ORIG 16-BIT INS]
+    1187                    $C$DW$76        .dwtag  DW_TAG_TI_branch
+    1188                            .dwattr $C$DW$76, DW_AT_low_pc(0x00)
+    1189                            .dwattr $C$DW$76, DW_AT_name("UARTwrite")
+    1190                            .dwattr $C$DW$76, DW_AT_TI_call
+    1191                    
+    1192 00000272 FEE8F7FF          BL        UARTwrite             ; [DPU_3_PIPE] |1051|  ; [KEEP 32-BIT INS]
+    1193                            ; CALL OCCURS {UARTwrite }       ; [] |1051| 
+    1194                            .dwpsn  file "../Drivers/uartstdio.c",line 1056,column 21,is_stmt,isa 1
+    1195 00000276 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1056|  ; [ORIG 16-BIT INS]
+    1196 00000278 9905              LDR       A2, [SP, #20]         ; [DPU_3_PIPE] |1056|  ; [ORIG 16-BIT INS]
+    1197 0000027a 4288              CMP       A1, A2                ; [DPU_3_PIPE] |1056|  ; [ORIG 16-BIT INS]
+    1198 0000027c 80ECF080          BCS       ||$C$L44||            ; [DPU_3_PIPE] |1056|  ; [KEEP 32-BIT INS]
+    1199                            ; BRANCHCC OCCURS {||$C$L44||}   ; [] |1056| 
+    1200                    ;* --------------------------------------------------------------------------*
+    1201                            .dwpsn  file "../Drivers/uartstdio.c",line 1058,column 25,is_stmt,isa 1
+    1202 00000280 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |1058|  ; [ORIG 16-BIT INS]
+    1203 00000282 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1058|  ; [ORIG 16-BIT INS]
+    1204 00000284 1A40              SUBS      A1, A1, A2            ; [DPU_3_PIPE] |1058|  ; [ORIG 16-BIT INS]
+    1205 00000286 9005              STR       A1, [SP, #20]         ; [DPU_3_PIPE] |1058|  ; [ORIG 16-BIT INS]
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   23
+
+    1206                            .dwpsn  file "../Drivers/uartstdio.c",line 1059,column 25,is_stmt,isa 1
+    1207 00000288 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1059|  ; [ORIG 16-BIT INS]
+    1208 0000028a 2800              CMP       A1, #0                ; [DPU_3_PIPE] |1059|  ; [ORIG 16-BIT INS]
+    1209 0000028c 0101F1A0          SUB       A2, A1, #1            ; [DPU_3_PIPE] |1059|  ; [KEEP 32-BIT INS]
+    1210 00000290 9105              STR       A2, [SP, #20]         ; [DPU_3_PIPE] |1059|  ; [ORIG 16-BIT INS]
+    1211 00000292 80E1F000          BEQ       ||$C$L44||            ; [DPU_3_PIPE] |1059|  ; [KEEP 32-BIT INS]
+    1212                            ; BRANCHCC OCCURS {||$C$L44||}   ; [] |1059| 
+    1213                    ;* --------------------------------------------------------------------------*
+    1214                    ;*   BEGIN LOOP ||$C$L25||
+    1215                    ;*
+    1216                    ;*   Loop source line                : 1059
+    1217                    ;*   Loop closing brace source line  : 1062
+    1218                    ;*   Known Minimum Trip Count        : 1
+    1219                    ;*   Known Maximum Trip Count        : 4294967295
+    1220                    ;*   Known Max Trip Count Factor     : 1
+    1221                    ;* --------------------------------------------------------------------------*
+    1222 00000296           ||$C$L25||:    
+    1223                            .dwpsn  file "../Drivers/uartstdio.c",line 1061,column 29,is_stmt,isa 1
+    1224 00000296 A07D              ADR       A1, $C$SL4            ; [DPU_3_PIPE] |1061|  ; [ORIG 16-BIT INS]
+    1225 00000298 2101              MOVS      A2, #1                ; [DPU_3_PIPE] |1061|  ; [ORIG 16-BIT INS]
+    1226                    $C$DW$77        .dwtag  DW_TAG_TI_branch
+    1227                            .dwattr $C$DW$77, DW_AT_low_pc(0x00)
+    1228                            .dwattr $C$DW$77, DW_AT_name("UARTwrite")
+    1229                            .dwattr $C$DW$77, DW_AT_TI_call
+    1230                    
+    1231 0000029a FED4F7FF          BL        UARTwrite             ; [DPU_3_PIPE] |1061|  ; [KEEP 32-BIT INS]
+    1232                            ; CALL OCCURS {UARTwrite }       ; [] |1061| 
+    1233                            .dwpsn  file "../Drivers/uartstdio.c",line 1059,column 25,is_stmt,isa 1
+    1234 0000029e 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1059|  ; [ORIG 16-BIT INS]
+    1235 000002a0 1E41              SUBS      A2, A1, #1            ; [DPU_3_PIPE] |1059|  ; [ORIG 16-BIT INS]
+    1236 000002a2 2800              CMP       A1, #0                ; [DPU_3_PIPE] |1059|  ; [ORIG 16-BIT INS]
+    1237 000002a4 9105              STR       A2, [SP, #20]         ; [DPU_3_PIPE] |1059|  ; [ORIG 16-BIT INS]
+    1238 000002a6 D1F6              BNE       ||$C$L25||            ; [DPU_3_PIPE] |1059|  ; [ORIG 16-BIT INS]
+    1239                            ; BRANCHCC OCCURS {||$C$L25||}   ; [] |1059| 
+    1240                    ;* --------------------------------------------------------------------------*
+    1241                            .dwpsn  file "../Drivers/uartstdio.c",line 1068,column 21,is_stmt,isa 1
+    1242 000002a8 E0D6              B         ||$C$L44||            ; [DPU_3_PIPE] |1068|  ; [ORIG 16-BIT INS]
+    1243                            ; BRANCH OCCURS {||$C$L44||}     ; [] |1068| 
+    1244                    ;* --------------------------------------------------------------------------*
+    1245 000002aa           ||$C$L26||:    
+    1246                            .dwpsn  file "../Drivers/uartstdio.c",line 1079,column 21,is_stmt,isa 1
+    1247 000002aa 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1079|  ; [ORIG 16-BIT INS]
+    1248 000002ac 1CC0              ADDS      A1, A1, #3            ; [DPU_3_PIPE] |1079|  ; [ORIG 16-BIT INS]
+    1249 000002ae 0003F020          BIC       A1, A1, #3            ; [DPU_3_PIPE] |1079|  ; [KEEP 32-BIT INS]
+    1250 000002b2 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |1079|  ; [ORIG 16-BIT INS]
+    1251 000002b4 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |1079|  ; [ORIG 16-BIT INS]
+    1252 000002b6 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1079|  ; [ORIG 16-BIT INS]
+    1253 000002b8 0C04F850          LDR       A1, [A1, #-4]         ; [DPU_3_PIPE] |1079|  ; [KEEP 32-BIT INS]
+    1254 000002bc 9003              STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1079|  ; [ORIG 16-BIT INS]
+    1255                            .dwpsn  file "../Drivers/uartstdio.c",line 1084,column 21,is_stmt,isa 1
+    1256 000002be 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1084|  ; [ORIG 16-BIT INS]
+    1257 000002c0 9004              STR       A1, [SP, #16]         ; [DPU_3_PIPE] |1084|  ; [ORIG 16-BIT INS]
+    1258                            .dwpsn  file "../Drivers/uartstdio.c",line 1089,column 21,is_stmt,isa 1
+    1259 000002c2 200A              MOVS      A1, #10               ; [DPU_3_PIPE] |1089|  ; [ORIG 16-BIT INS]
+    1260 000002c4 9006              STR       A1, [SP, #24]         ; [DPU_3_PIPE] |1089|  ; [ORIG 16-BIT INS]
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   24
+
+    1261                            .dwpsn  file "../Drivers/uartstdio.c",line 1095,column 21,is_stmt,isa 1
+    1262 000002c6 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1095|  ; [ORIG 16-BIT INS]
+    1263 000002c8 9007              STR       A1, [SP, #28]         ; [DPU_3_PIPE] |1095|  ; [ORIG 16-BIT INS]
+    1264                            .dwpsn  file "../Drivers/uartstdio.c",line 1100,column 21,is_stmt,isa 1
+    1265 000002ca E00F              B         ||$C$L28||            ; [DPU_3_PIPE] |1100|  ; [ORIG 16-BIT INS]
+    1266                            ; BRANCH OCCURS {||$C$L28||}     ; [] |1100| 
+    1267                    ;* --------------------------------------------------------------------------*
+    1268 000002cc           ||$C$L27||:    
+    1269                            .dwpsn  file "../Drivers/uartstdio.c",line 1116,column 21,is_stmt,isa 1
+    1270 000002cc 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1116|  ; [ORIG 16-BIT INS]
+    1271 000002ce 1CC0              ADDS      A1, A1, #3            ; [DPU_3_PIPE] |1116|  ; [ORIG 16-BIT INS]
+    1272 000002d0 0003F020          BIC       A1, A1, #3            ; [DPU_3_PIPE] |1116|  ; [KEEP 32-BIT INS]
+    1273 000002d4 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |1116|  ; [ORIG 16-BIT INS]
+    1274 000002d6 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |1116|  ; [ORIG 16-BIT INS]
+    1275 000002d8 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1116|  ; [ORIG 16-BIT INS]
+    1276 000002da 0C04F850          LDR       A1, [A1, #-4]         ; [DPU_3_PIPE] |1116|  ; [KEEP 32-BIT INS]
+    1277 000002de 9003              STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1116|  ; [ORIG 16-BIT INS]
+    1278                            .dwpsn  file "../Drivers/uartstdio.c",line 1121,column 21,is_stmt,isa 1
+    1279 000002e0 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1121|  ; [ORIG 16-BIT INS]
+    1280 000002e2 9004              STR       A1, [SP, #16]         ; [DPU_3_PIPE] |1121|  ; [ORIG 16-BIT INS]
+    1281                            .dwpsn  file "../Drivers/uartstdio.c",line 1126,column 21,is_stmt,isa 1
+    1282 000002e4 2010              MOVS      A1, #16               ; [DPU_3_PIPE] |1126|  ; [ORIG 16-BIT INS]
+    1283 000002e6 9006              STR       A1, [SP, #24]         ; [DPU_3_PIPE] |1126|  ; [ORIG 16-BIT INS]
+    1284                            .dwpsn  file "../Drivers/uartstdio.c",line 1132,column 21,is_stmt,isa 1
+    1285 000002e8 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1132|  ; [ORIG 16-BIT INS]
+    1286 000002ea 9007              STR       A1, [SP, #28]         ; [DPU_3_PIPE] |1132|  ; [ORIG 16-BIT INS]
+    1287                    ;* --------------------------------------------------------------------------*
+    1288 000002ec           ||$C$L28||:    
+    1289                            .dwpsn  file "../Drivers/uartstdio.c",line 1139,column 25,is_stmt,isa 1
+    1290 000002ec 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |1139|  ; [ORIG 16-BIT INS]
+    1291 000002ee 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1139|  ; [ORIG 16-BIT INS]
+    1292 000002f0 E006              B         ||$C$L30||            ; [DPU_3_PIPE] |1139|  ; [ORIG 16-BIT INS]
+    1293                            ; BRANCH OCCURS {||$C$L30||}     ; [] |1139| 
+    1294                    ;* --------------------------------------------------------------------------*
+    1295 000002f2           ||$C$L29||:    
+    1296                            .dwpsn  file "../Drivers/uartstdio.c",line 1142,column 25,is_stmt,isa 1
+    1297 000002f2 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1142|  ; [ORIG 16-BIT INS]
+    1298 000002f4 9A02              LDR       A3, [SP, #8]          ; [DPU_3_PIPE] |1142|  ; [ORIG 16-BIT INS]
+    1299 000002f6 9906              LDR       A2, [SP, #24]         ; [DPU_3_PIPE] |1142|  ; [ORIG 16-BIT INS]
+    1300 000002f8 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |1142|  ; [ORIG 16-BIT INS]
+    1301 000002fa 9005              STR       A1, [SP, #20]         ; [DPU_3_PIPE] |1142|  ; [ORIG 16-BIT INS]
+    1302 000002fc 4351              MULS      A2, A2, A3            ; [DPU_3_PIPE] |1142|  ; [ORIG 16-BIT INS]
+    1303 000002fe 9102              STR       A2, [SP, #8]          ; [DPU_3_PIPE] |1142|  ; [ORIG 16-BIT INS]
+    1304                    ;* --------------------------------------------------------------------------*
+    1305                    ;*   BEGIN LOOP ||$C$L30||
+    1306                    ;* --------------------------------------------------------------------------*
+    1307 00000300           ||$C$L30||:    
+    1308                            .dwpsn  file "../Drivers/uartstdio.c",line 1140,column 26,is_stmt,isa 1
+    1309 00000300 9A02              LDR       A3, [SP, #8]          ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1310 00000302 9806              LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1311 00000304 9903              LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1312 00000306 4350              MULS      A1, A1, A3            ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1313 00000308 4281              CMP       A2, A1                ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1314 0000030a D308              BCC       ||$C$L31||            ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1315                            ; BRANCHCC OCCURS {||$C$L31||}   ; [] |1140| 
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   25
+
+    1316                    ;* --------------------------------------------------------------------------*
+    1317 0000030c 9A02              LDR       A3, [SP, #8]          ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1318 0000030e 9806              LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1319 00000310 9B06              LDR       A4, [SP, #24]         ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1320 00000312 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1321 00000314 4350              MULS      A1, A1, A3            ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1322 00000316 F0F3FBB0          UDIV      A1, A1, A4            ; [DPU_3_PIPE] |1140|  ; [KEEP 32-BIT INS]
+    1323 0000031a 4281              CMP       A2, A1                ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1324 0000031c D0E9              BEQ       ||$C$L29||            ; [DPU_3_PIPE] |1140|  ; [ORIG 16-BIT INS]
+    1325                            ; BRANCHCC OCCURS {||$C$L29||}   ; [] |1140| 
+    1326                    ;* --------------------------------------------------------------------------*
+    1327 0000031e           ||$C$L31||:    
+    1328                            .dwpsn  file "../Drivers/uartstdio.c",line 1150,column 21,is_stmt,isa 1
+    1329 0000031e 9807              LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |1150|  ; [ORIG 16-BIT INS]
+    1330 00000320 B110              CBZ       A1, ||$C$L32||        ; []  ; [ORIG 16-BIT INS]
+    1331                            ; BRANCHCC OCCURS {||$C$L32||}   ; [] |1150| 
+    1332                    ;* --------------------------------------------------------------------------*
+    1333                            .dwpsn  file "../Drivers/uartstdio.c",line 1152,column 25,is_stmt,isa 1
+    1334 00000322 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1152|  ; [ORIG 16-BIT INS]
+    1335 00000324 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |1152|  ; [ORIG 16-BIT INS]
+    1336 00000326 9005              STR       A1, [SP, #20]         ; [DPU_3_PIPE] |1152|  ; [ORIG 16-BIT INS]
+    1337                    ;* --------------------------------------------------------------------------*
+    1338 00000328           ||$C$L32||:    
+    1339                            .dwpsn  file "../Drivers/uartstdio.c",line 1159,column 21,is_stmt,isa 1
+    1340 00000328 9807              LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |1159|  ; [ORIG 16-BIT INS]
+    1341 0000032a B160              CBZ       A1, ||$C$L33||        ; []  ; [ORIG 16-BIT INS]
+    1342                            ; BRANCHCC OCCURS {||$C$L33||}   ; [] |1159| 
+    1343                    ;* --------------------------------------------------------------------------*
+    1344 0000032c 0034F89D          LDRB      A1, [SP, #52]         ; [DPU_3_PIPE] |1159|  ; [KEEP 32-BIT INS]
+    1345 00000330 2830              CMP       A1, #48               ; [DPU_3_PIPE] |1159|  ; [ORIG 16-BIT INS]
+    1346 00000332 D108              BNE       ||$C$L33||            ; [DPU_3_PIPE] |1159|  ; [ORIG 16-BIT INS]
+    1347                            ; BRANCHCC OCCURS {||$C$L33||}   ; [] |1159| 
+    1348                    ;* --------------------------------------------------------------------------*
+    1349                            .dwpsn  file "../Drivers/uartstdio.c",line 1164,column 25,is_stmt,isa 1
+    1350 00000334 9804              LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |1164|  ; [ORIG 16-BIT INS]
+    1351 00000336 212D              MOVS      A2, #45               ; [DPU_3_PIPE] |1164|  ; [ORIG 16-BIT INS]
+    1352 00000338 1C42              ADDS      A3, A1, #1            ; [DPU_3_PIPE] |1164|  ; [ORIG 16-BIT INS]
+    1353 0000033a 9204              STR       A3, [SP, #16]         ; [DPU_3_PIPE] |1164|  ; [ORIG 16-BIT INS]
+    1354 0000033c 4468              ADD       A1, A1, SP            ; [DPU_3_PIPE] |1164|  ; [ORIG 16-BIT INS]
+    1355 0000033e 1024F880          STRB      A2, [A1, #36]         ; [DPU_3_PIPE] |1164|  ; [KEEP 32-BIT INS]
+    1356                            .dwpsn  file "../Drivers/uartstdio.c",line 1170,column 25,is_stmt,isa 1
+    1357 00000342 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1170|  ; [ORIG 16-BIT INS]
+    1358 00000344 9007              STR       A1, [SP, #28]         ; [DPU_3_PIPE] |1170|  ; [ORIG 16-BIT INS]
+    1359                    ;* --------------------------------------------------------------------------*
+    1360 00000346           ||$C$L33||:    
+    1361                            .dwpsn  file "../Drivers/uartstdio.c",line 1177,column 21,is_stmt,isa 1
+    1362 00000346 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1177|  ; [ORIG 16-BIT INS]
+    1363 00000348 2801              CMP       A1, #1                ; [DPU_3_PIPE] |1177|  ; [ORIG 16-BIT INS]
+    1364 0000034a D915              BLS       ||$C$L35||            ; [DPU_3_PIPE] |1177|  ; [ORIG 16-BIT INS]
+    1365                            ; BRANCHCC OCCURS {||$C$L35||}   ; [] |1177| 
+    1366                    ;* --------------------------------------------------------------------------*
+    1367 0000034c 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1177|  ; [ORIG 16-BIT INS]
+    1368 0000034e 2810              CMP       A1, #16               ; [DPU_3_PIPE] |1177|  ; [ORIG 16-BIT INS]
+    1369 00000350 D212              BCS       ||$C$L35||            ; [DPU_3_PIPE] |1177|  ; [ORIG 16-BIT INS]
+    1370                            ; BRANCHCC OCCURS {||$C$L35||}   ; [] |1177| 
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   26
+
+    1371                    ;* --------------------------------------------------------------------------*
+    1372                            .dwpsn  file "../Drivers/uartstdio.c",line 1179,column 29,is_stmt,isa 1
+    1373 00000352 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1374 00000354 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1375 00000356 9005              STR       A1, [SP, #20]         ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1376                            .dwpsn  file "../Drivers/uartstdio.c",line 1179,column 25,is_stmt,isa 1
+    1377 00000358 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1378 0000035a B168              CBZ       A1, ||$C$L35||        ; []  ; [ORIG 16-BIT INS]
+    1379                            ; BRANCHCC OCCURS {||$C$L35||}   ; [] |1179| 
+    1380                    ;* --------------------------------------------------------------------------*
+    1381                    ;*   BEGIN LOOP ||$C$L34||
+    1382                    ;*
+    1383                    ;*   Loop source line                : 1179
+    1384                    ;*   Loop closing brace source line  : 1182
+    1385                    ;*   Known Minimum Trip Count        : 1
+    1386                    ;*   Known Maximum Trip Count        : 4294967295
+    1387                    ;*   Known Max Trip Count Factor     : 1
+    1388                    ;* --------------------------------------------------------------------------*
+    1389 0000035c           ||$C$L34||:    
+    1390                            .dwpsn  file "../Drivers/uartstdio.c",line 1181,column 29,is_stmt,isa 1
+    1391 0000035c 9804              LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |1181|  ; [ORIG 16-BIT INS]
+    1392 0000035e 2034F89D          LDRB      A3, [SP, #52]         ; [DPU_3_PIPE] |1181|  ; [KEEP 32-BIT INS]
+    1393 00000362 1C41              ADDS      A2, A1, #1            ; [DPU_3_PIPE] |1181|  ; [ORIG 16-BIT INS]
+    1394 00000364 9104              STR       A2, [SP, #16]         ; [DPU_3_PIPE] |1181|  ; [ORIG 16-BIT INS]
+    1395 00000366 4468              ADD       A1, A1, SP            ; [DPU_3_PIPE] |1181|  ; [ORIG 16-BIT INS]
+    1396 00000368 2024F880          STRB      A3, [A1, #36]         ; [DPU_3_PIPE] |1181|  ; [KEEP 32-BIT INS]
+    1397                            .dwpsn  file "../Drivers/uartstdio.c",line 1179,column 53,is_stmt,isa 1
+    1398 0000036c 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1399 0000036e 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1400 00000370 9005              STR       A1, [SP, #20]         ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1401                            .dwpsn  file "../Drivers/uartstdio.c",line 1179,column 25,is_stmt,isa 1
+    1402 00000372 9805              LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1403 00000374 2800              CMP       A1, #0                ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1404 00000376 D1F1              BNE       ||$C$L34||            ; [DPU_3_PIPE] |1179|  ; [ORIG 16-BIT INS]
+    1405                            ; BRANCHCC OCCURS {||$C$L34||}   ; [] |1179| 
+    1406                    ;* --------------------------------------------------------------------------*
+    1407 00000378           ||$C$L35||:    
+    1408                            .dwpsn  file "../Drivers/uartstdio.c",line 1189,column 21,is_stmt,isa 1
+    1409 00000378 9807              LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |1189|  ; [ORIG 16-BIT INS]
+    1410 0000037a B130              CBZ       A1, ||$C$L36||        ; []  ; [ORIG 16-BIT INS]
+    1411                            ; BRANCHCC OCCURS {||$C$L36||}   ; [] |1189| 
+    1412                    ;* --------------------------------------------------------------------------*
+    1413                            .dwpsn  file "../Drivers/uartstdio.c",line 1194,column 25,is_stmt,isa 1
+    1414 0000037c 9804              LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |1194|  ; [ORIG 16-BIT INS]
+    1415 0000037e 212D              MOVS      A2, #45               ; [DPU_3_PIPE] |1194|  ; [ORIG 16-BIT INS]
+    1416 00000380 1C42              ADDS      A3, A1, #1            ; [DPU_3_PIPE] |1194|  ; [ORIG 16-BIT INS]
+    1417 00000382 9204              STR       A3, [SP, #16]         ; [DPU_3_PIPE] |1194|  ; [ORIG 16-BIT INS]
+    1418 00000384 4468              ADD       A1, A1, SP            ; [DPU_3_PIPE] |1194|  ; [ORIG 16-BIT INS]
+    1419 00000386 1024F880          STRB      A2, [A1, #36]         ; [DPU_3_PIPE] |1194|  ; [KEEP 32-BIT INS]
+    1420                    ;* --------------------------------------------------------------------------*
+    1421 0000038a           ||$C$L36||:    
+    1422                            .dwpsn  file "../Drivers/uartstdio.c",line 1200,column 21,is_stmt,isa 1
+    1423 0000038a 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1200|  ; [ORIG 16-BIT INS]
+    1424 0000038c B1B8              CBZ       A1, ||$C$L38||        ; []  ; [ORIG 16-BIT INS]
+    1425                            ; BRANCHCC OCCURS {||$C$L38||}   ; [] |1200| 
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   27
+
+    1426                    ;* --------------------------------------------------------------------------*
+    1427                    ;*   BEGIN LOOP ||$C$L37||
+    1428                    ;*
+    1429                    ;*   Loop source line                : 1200
+    1430                    ;*   Loop closing brace source line  : 1204
+    1431                    ;*   Known Minimum Trip Count        : 1
+    1432                    ;*   Known Maximum Trip Count        : 4294967295
+    1433                    ;*   Known Max Trip Count Factor     : 1
+    1434                    ;* --------------------------------------------------------------------------*
+    1435 0000038e           ||$C$L37||:    
+    1436                            .dwpsn  file "../Drivers/uartstdio.c",line 1202,column 25,is_stmt,isa 1
+    1437 0000038e 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1438 00000390 9A03              LDR       A3, [SP, #12]         ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1439 00000392 9906              LDR       A2, [SP, #24]         ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1440 00000394 F0F0FBB2          UDIV      A1, A3, A1            ; [DPU_3_PIPE] |1202|  ; [KEEP 32-BIT INS]
+    1441                    $C$DW$78        .dwtag  DW_TAG_TI_branch
+    1442                            .dwattr $C$DW$78, DW_AT_low_pc(0x00)
+    1443                            .dwattr $C$DW$78, DW_AT_name("U$MOD")
+    1444                            .dwattr $C$DW$78, DW_AT_TI_call
+    1445                    
+    1446 00000398 FFFEF7FF!         BL        __aeabi_uidivmod      ; [DPU_3_PIPE] |1202|  ; [KEEP 32-BIT INS]
+    1447                            ; CALL OCCURS {__aeabi_uidivmod }  ; [] |1202| 
+    1448 0000039c 4A3E              LDR       A3, $C$CON5           ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1449 0000039e 9804              LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1450 000003a0 6813              LDR       A4, [A3, #0]          ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1451 000003a2 1C42              ADDS      A3, A1, #1            ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1452 000003a4 5CC9              LDRB      A2, [A2, +A4]         ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1453 000003a6 9204              STR       A3, [SP, #16]         ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1454 000003a8 4468              ADD       A1, A1, SP            ; [DPU_3_PIPE] |1202|  ; [ORIG 16-BIT INS]
+    1455 000003aa 1024F880          STRB      A2, [A1, #36]         ; [DPU_3_PIPE] |1202|  ; [KEEP 32-BIT INS]
+    1456                            .dwpsn  file "../Drivers/uartstdio.c",line 1200,column 36,is_stmt,isa 1
+    1457 000003ae 9806              LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |1200|  ; [ORIG 16-BIT INS]
+    1458 000003b0 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |1200|  ; [ORIG 16-BIT INS]
+    1459 000003b2 F0F0FBB1          UDIV      A1, A2, A1            ; [DPU_3_PIPE] |1200|  ; [KEEP 32-BIT INS]
+    1460 000003b6 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1200|  ; [ORIG 16-BIT INS]
+    1461                            .dwpsn  file "../Drivers/uartstdio.c",line 1200,column 21,is_stmt,isa 1
+    1462 000003b8 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1200|  ; [ORIG 16-BIT INS]
+    1463 000003ba 2800              CMP       A1, #0                ; [DPU_3_PIPE] |1200|  ; [ORIG 16-BIT INS]
+    1464 000003bc D1E7              BNE       ||$C$L37||            ; [DPU_3_PIPE] |1200|  ; [ORIG 16-BIT INS]
+    1465                            ; BRANCHCC OCCURS {||$C$L37||}   ; [] |1200| 
+    1466                    ;* --------------------------------------------------------------------------*
+    1467 000003be           ||$C$L38||:    
+    1468                            .dwpsn  file "../Drivers/uartstdio.c",line 1209,column 21,is_stmt,isa 1
+    1469 000003be 9904              LDR       A2, [SP, #16]         ; [DPU_3_PIPE] |1209|  ; [ORIG 16-BIT INS]
+    1470 000003c0 A809              ADD       A1, SP, #36           ; [DPU_3_PIPE] |1209|  ; [ORIG 16-BIT INS]
+    1471                    $C$DW$79        .dwtag  DW_TAG_TI_branch
+    1472                            .dwattr $C$DW$79, DW_AT_low_pc(0x00)
+    1473                            .dwattr $C$DW$79, DW_AT_name("UARTwrite")
+    1474                            .dwattr $C$DW$79, DW_AT_TI_call
+    1475                    
+    1476 000003c2 FE40F7FF          BL        UARTwrite             ; [DPU_3_PIPE] |1209|  ; [KEEP 32-BIT INS]
+    1477                            ; CALL OCCURS {UARTwrite }       ; [] |1209| 
+    1478                            .dwpsn  file "../Drivers/uartstdio.c",line 1214,column 21,is_stmt,isa 1
+    1479 000003c6 E047              B         ||$C$L44||            ; [DPU_3_PIPE] |1214|  ; [ORIG 16-BIT INS]
+    1480                            ; BRANCH OCCURS {||$C$L44||}     ; [] |1214| 
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   28
+
+    1481                    ;* --------------------------------------------------------------------------*
+    1482 000003c8           ||$C$L39||:    
+    1483                            .dwpsn  file "../Drivers/uartstdio.c",line 1225,column 21,is_stmt,isa 1
+    1484 000003c8 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1225|  ; [ORIG 16-BIT INS]
+    1485 000003ca 2101              MOVS      A2, #1                ; [DPU_3_PIPE] |1225|  ; [ORIG 16-BIT INS]
+    1486 000003cc 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |1225|  ; [ORIG 16-BIT INS]
+    1487                    $C$DW$80        .dwtag  DW_TAG_TI_branch
+    1488                            .dwattr $C$DW$80, DW_AT_low_pc(0x00)
+    1489                            .dwattr $C$DW$80, DW_AT_name("UARTwrite")
+    1490                            .dwattr $C$DW$80, DW_AT_TI_call
+    1491                    
+    1492 000003ce FE3AF7FF          BL        UARTwrite             ; [DPU_3_PIPE] |1225|  ; [KEEP 32-BIT INS]
+    1493                            ; CALL OCCURS {UARTwrite }       ; [] |1225| 
+    1494                            .dwpsn  file "../Drivers/uartstdio.c",line 1230,column 21,is_stmt,isa 1
+    1495 000003d2 E041              B         ||$C$L44||            ; [DPU_3_PIPE] |1230|  ; [ORIG 16-BIT INS]
+    1496                            ; BRANCH OCCURS {||$C$L44||}     ; [] |1230| 
+    1497                    ;* --------------------------------------------------------------------------*
+    1498 000003d4           ||$C$L40||:    
+    1499                            .dwpsn  file "../Drivers/uartstdio.c",line 1241,column 21,is_stmt,isa 1
+    1500 000003d4 A02E              ADR       A1, $C$SL5            ; [DPU_3_PIPE] |1241|  ; [ORIG 16-BIT INS]
+    1501 000003d6 2105              MOVS      A2, #5                ; [DPU_3_PIPE] |1241|  ; [ORIG 16-BIT INS]
+    1502                    $C$DW$81        .dwtag  DW_TAG_TI_branch
+    1503                            .dwattr $C$DW$81, DW_AT_low_pc(0x00)
+    1504                            .dwattr $C$DW$81, DW_AT_name("UARTwrite")
+    1505                            .dwattr $C$DW$81, DW_AT_TI_call
+    1506                    
+    1507 000003d8 FE35F7FF          BL        UARTwrite             ; [DPU_3_PIPE] |1241|  ; [KEEP 32-BIT INS]
+    1508                            ; CALL OCCURS {UARTwrite }       ; [] |1241| 
+    1509                            .dwpsn  file "../Drivers/uartstdio.c",line 1246,column 21,is_stmt,isa 1
+    1510 000003dc E03C              B         ||$C$L44||            ; [DPU_3_PIPE] |1246|  ; [ORIG 16-BIT INS]
+    1511                            ; BRANCH OCCURS {||$C$L44||}     ; [] |1246| 
+    1512                    ;* --------------------------------------------------------------------------*
+    1513                    ;* --------------------------------------------------------------------------*
+    1514                    ;*   BEGIN LOOP ||$C$L41||
+    1515                    ;* --------------------------------------------------------------------------*
+    1516 000003de           ||$C$L41||:    
+    1517                            .dwpsn  file "../Drivers/uartstdio.c",line 921,column 13,is_stmt,isa 1
+    1518 000003de 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1519 000003e0 0B01F811          LDRB      A1, [A2], #1          ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1520 000003e4 2869              CMP       A1, #105              ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1521 000003e6 9100              STR       A2, [SP, #0]          ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1522 000003e8 DC11              BGT       ||$C$L42||            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1523                            ; BRANCHCC OCCURS {||$C$L42||}   ; [] |921| 
+    1524                    ;* --------------------------------------------------------------------------*
+    1525 000003ea 2869              CMP       A1, #105              ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1526 000003ec AF10F43F          BEQ       ||$C$L19||            ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1527                            ; BRANCHCC OCCURS {||$C$L19||}   ; [] |921| 
+    1528                    ;* --------------------------------------------------------------------------*
+    1529 000003f0 3825              SUBS      A1, A1, #37           ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1530 000003f2 D0E9              BEQ       ||$C$L39||            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1531                            ; BRANCHCC OCCURS {||$C$L39||}   ; [] |921| 
+    1532                    ;* --------------------------------------------------------------------------*
+    1533 000003f4 380B              SUBS      A1, A1, #11           ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1534 000003f6 2809              CMP       A1, #9                ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1535 000003f8 D916              BLS       ||$C$L43||            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   29
+
+    1536                            ; BRANCHCC OCCURS {||$C$L43||}   ; [] |921| 
+    1537                    ;* --------------------------------------------------------------------------*
+    1538 000003fa 3828              SUBS      A1, A1, #40           ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1539 000003fc AF66F43F          BEQ       ||$C$L27||            ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1540                            ; BRANCHCC OCCURS {||$C$L27||}   ; [] |921| 
+    1541                    ;* --------------------------------------------------------------------------*
+    1542 00000400 380B              SUBS      A1, A1, #11           ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1543 00000402 AEF6F43F          BEQ       ||$C$L18||            ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1544                            ; BRANCHCC OCCURS {||$C$L18||}   ; [] |921| 
+    1545                    ;* --------------------------------------------------------------------------*
+    1546 00000406 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1547 00000408 AF02F43F          BEQ       ||$C$L19||            ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1548                            ; BRANCHCC OCCURS {||$C$L19||}   ; [] |921| 
+    1549                    ;* --------------------------------------------------------------------------*
+    1550 0000040c E7E2              B         ||$C$L40||            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1551                            ; BRANCH OCCURS {||$C$L40||}     ; [] |921| 
+    1552                    ;* --------------------------------------------------------------------------*
+    1553 0000040e           ||$C$L42||:    
+    1554 0000040e 3870              SUBS      A1, A1, #112          ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1555 00000410 AF5CF43F          BEQ       ||$C$L27||            ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1556                            ; BRANCHCC OCCURS {||$C$L27||}   ; [] |921| 
+    1557                    ;* --------------------------------------------------------------------------*
+    1558 00000414 1EC0              SUBS      A1, A1, #3            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1559 00000416 AF15F43F          BEQ       ||$C$L22||            ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1560                            ; BRANCHCC OCCURS {||$C$L22||}   ; [] |921| 
+    1561                    ;* --------------------------------------------------------------------------*
+    1562 0000041a 1E80              SUBS      A1, A1, #2            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1563 0000041c AF45F43F          BEQ       ||$C$L26||            ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1564                            ; BRANCHCC OCCURS {||$C$L26||}   ; [] |921| 
+    1565                    ;* --------------------------------------------------------------------------*
+    1566 00000420 1EC0              SUBS      A1, A1, #3            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1567 00000422 AF53F43F          BEQ       ||$C$L27||            ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1568                            ; BRANCHCC OCCURS {||$C$L27||}   ; [] |921| 
+    1569                    ;* --------------------------------------------------------------------------*
+    1570 00000426 E7D5              B         ||$C$L40||            ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1571                            ; BRANCH OCCURS {||$C$L40||}     ; [] |921| 
+    1572                    ;* --------------------------------------------------------------------------*
+    1573 00000428           ||$C$L43||:    
+    1574 00000428 A101              ADR       A2, ||$C$SW1||        ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1575 0000042a 0020F851          LDR       A1, [A2, +A1, LSL #2] ; [DPU_3_PIPE] |921|  ; [KEEP 32-BIT INS]
+    1576 0000042e 4687              MOV       PC, A1                ; [DPU_3_PIPE] |921|  ; [ORIG 16-BIT INS]
+    1577                            ; BRANCH OCCURS                  ; [] |921| 
+    1578 00000430 00000000! ||$C$SW1||:     .word   ||$C$L16||      ; 48
+    1579 00000434 00000000!         .word   ||$C$L16||      ; 49
+    1580 00000438 00000000!         .word   ||$C$L16||      ; 50
+    1581 0000043c 00000000!         .word   ||$C$L16||      ; 51
+    1582 00000440 00000000!         .word   ||$C$L16||      ; 52
+    1583 00000444 00000000!         .word   ||$C$L16||      ; 53
+    1584 00000448 00000000!         .word   ||$C$L16||      ; 54
+    1585 0000044c 00000000!         .word   ||$C$L16||      ; 55
+    1586 00000450 00000000!         .word   ||$C$L16||      ; 56
+    1587 00000454 00000000!         .word   ||$C$L16||      ; 57
+    1588                    ;* --------------------------------------------------------------------------*
+    1589                    ;*   BEGIN LOOP ||$C$L44||
+    1590                    ;* --------------------------------------------------------------------------*
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   30
+
+    1591 00000458           ||$C$L44||:    
+    1592                            .dwpsn  file "../Drivers/uartstdio.c",line 873,column 5,is_stmt,isa 1
+    1593 00000458 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |873|  ; [ORIG 16-BIT INS]
+    1594 0000045a 7800              LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |873|  ; [ORIG 16-BIT INS]
+    1595 0000045c 2800              CMP       A1, #0                ; [DPU_3_PIPE] |873|  ; [ORIG 16-BIT INS]
+    1596 0000045e AE8BF47F          BNE       ||$C$L11||            ; [DPU_3_PIPE] |873|  ; [KEEP 32-BIT INS]
+    1597                            ; BRANCHCC OCCURS {||$C$L11||}   ; [] |873| 
+    1598                    ;* --------------------------------------------------------------------------*
+    1599                            .dwpsn  file "../Drivers/uartstdio.c",line 1251,column 1,is_stmt,isa 1
+    1600 00000462 B00F              ADD       SP, SP, #60           ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1601                            .dwcfi  cfa_offset, 4
+    1602                    $C$DW$82        .dwtag  DW_TAG_TI_branch
+    1603                            .dwattr $C$DW$82, DW_AT_low_pc(0x00)
+    1604                            .dwattr $C$DW$82, DW_AT_TI_return
+    1605                    
+    1606 00000464 BD00              POP       {PC}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1607                            .dwcfi  cfa_offset, 0
+    1608                            ; BRANCH OCCURS                  ; [] 
+    1609                            .dwattr $C$DW$58, DW_AT_TI_end_file("../Drivers/uartstdio.c")
+    1610                            .dwattr $C$DW$58, DW_AT_TI_end_line(0x4e3)
+    1611                            .dwattr $C$DW$58, DW_AT_TI_end_column(0x01)
+    1612                            .dwendentry
+    1613                            .dwendtag $C$DW$58
+    1614                    
+    1615 00000466                   .sect   ".text"
+    1616                            .clink
+    1617                            .thumbfunc UARTprintf
+    1618 00000466                   .thumb
+    1619                            .global UARTprintf
+    1620                    
+    1621                    $C$DW$83        .dwtag  DW_TAG_subprogram
+    1622                            .dwattr $C$DW$83, DW_AT_name("UARTprintf")
+    1623                            .dwattr $C$DW$83, DW_AT_low_pc(UARTprintf)
+    1624                            .dwattr $C$DW$83, DW_AT_high_pc(0x00)
+    1625                            .dwattr $C$DW$83, DW_AT_TI_symbol_name("UARTprintf")
+    1626                            .dwattr $C$DW$83, DW_AT_external
+    1627                            .dwattr $C$DW$83, DW_AT_TI_begin_file("../Drivers/uartstdio.c")
+    1628                            .dwattr $C$DW$83, DW_AT_TI_begin_line(0x50c)
+    1629                            .dwattr $C$DW$83, DW_AT_TI_begin_column(0x01)
+    1630                            .dwattr $C$DW$83, DW_AT_decl_file("../Drivers/uartstdio.c")
+    1631                            .dwattr $C$DW$83, DW_AT_decl_line(0x50c)
+    1632                            .dwattr $C$DW$83, DW_AT_decl_column(0x01)
+    1633                            .dwattr $C$DW$83, DW_AT_TI_max_frame_size(0x20)
+    1634                            .dwpsn  file "../Drivers/uartstdio.c",line 1293,column 1,is_stmt,address UARTprintf,isa 1
+    1635                    
+    1636                            .dwfde $C$DW$CIE, UARTprintf
+    1637                    $C$DW$84        .dwtag  DW_TAG_formal_parameter
+    1638                            .dwattr $C$DW$84, DW_AT_name("pcString")
+    1639                            .dwattr $C$DW$84, DW_AT_TI_symbol_name("pcString")
+    1640                            .dwattr $C$DW$84, DW_AT_type(*$C$DW$T$30)
+    1641                            .dwattr $C$DW$84, DW_AT_location[DW_OP_breg13 16]
+    1642                    $C$DW$85        .dwtag  DW_TAG_unspecified_parameters
+    1643                    
+    1644                    
+    1645                    
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   31
+
+    1646                    ;*****************************************************************************
+    1647                    ;* FUNCTION NAME: UARTprintf                                                 *
+    1648                    ;*                                                                           *
+    1649                    ;*   Regs Modified     : A1,A2,A3,A4,V4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,    *
+    1650                    ;*                           D2_hi,D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,   *
+    1651                    ;*                           D7_hi,FPEXC,FPSCR                               *
+    1652                    ;*   Regs Used         : A1,A2,A3,A4,V4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,    *
+    1653                    ;*                           D2_hi,D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,   *
+    1654                    ;*                           D7_hi,FPEXC,FPSCR                               *
+    1655                    ;*   Local Frame Size  : 0 Args + 4 Auto + 8 Save = 12 byte                  *
+    1656                    ;*****************************************************************************
+    1657 00000466           UARTprintf:
+    1658                    ;* --------------------------------------------------------------------------*
+    1659                            .dwcfi  cfa_offset, 0
+    1660 00000466 B40F              PUSH      {A1, A2, A3, A4}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1661                            .dwcfi  cfa_offset, 16
+    1662                            .dwcfi  save_reg_to_mem, 3, -4
+    1663                            .dwcfi  save_reg_to_mem, 2, -8
+    1664                            .dwcfi  save_reg_to_mem, 1, -12
+    1665                            .dwcfi  save_reg_to_mem, 0, -16
+    1666 00000468 B580              PUSH      {V4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1667                            .dwcfi  cfa_offset, 24
+    1668                            .dwcfi  save_reg_to_mem, 14, -20
+    1669                            .dwcfi  save_reg_to_mem, 7, -24
+    1670 0000046a AF02              ADD       V4, SP, #8            ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1671 0000046c 0D08F1AD          SUB       SP, SP, #8            ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
+    1672                            .dwcfi  cfa_offset, 32
+    1673                    $C$DW$86        .dwtag  DW_TAG_variable
+    1674                            .dwattr $C$DW$86, DW_AT_name("vaArgP")
+    1675                            .dwattr $C$DW$86, DW_AT_TI_symbol_name("vaArgP")
+    1676                            .dwattr $C$DW$86, DW_AT_type(*$C$DW$T$31)
+    1677                            .dwattr $C$DW$86, DW_AT_location[DW_OP_breg13 0]
+    1678                    
+    1679                            .dwpsn  file "../Drivers/uartstdio.c",line 1299,column 5,is_stmt,isa 1
+    1680 00000470 0003F027          BIC       A1, V4, #3            ; [DPU_3_PIPE] |1299|  ; [KEEP 32-BIT INS]
+    1681 00000474 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |1299|  ; [ORIG 16-BIT INS]
+    1682 00000476 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1299|  ; [ORIG 16-BIT INS]
+    1683                            .dwpsn  file "../Drivers/uartstdio.c",line 1301,column 5,is_stmt,isa 1
+    1684 00000478 6838              LDR       A1, [V4, #0]          ; [DPU_3_PIPE] |1301|  ; [ORIG 16-BIT INS]
+    1685 0000047a 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1301|  ; [ORIG 16-BIT INS]
+    1686                    $C$DW$87        .dwtag  DW_TAG_TI_branch
+    1687                            .dwattr $C$DW$87, DW_AT_low_pc(0x00)
+    1688                            .dwattr $C$DW$87, DW_AT_name("UARTvprintf")
+    1689                            .dwattr $C$DW$87, DW_AT_TI_call
+    1690                    
+    1691 0000047c FE76F7FF          BL        UARTvprintf           ; [DPU_3_PIPE] |1301|  ; [KEEP 32-BIT INS]
+    1692                            ; CALL OCCURS {UARTvprintf }     ; [] |1301| 
+    1693                            .dwpsn  file "../Drivers/uartstdio.c",line 1306,column 5,is_stmt,isa 1
+    1694                            .dwpsn  file "../Drivers/uartstdio.c",line 1307,column 1,is_stmt,isa 1
+    1695 00000480 B002              ADD       SP, SP, #8            ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1696                            .dwcfi  cfa_offset, 24
+    1697 00000482 4080E8BD          POP       {V4, LR}              ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
+    1698                            .dwcfi  cfa_offset, 16
+    1699                            .dwcfi  restore_reg, 14
+    1700                            .dwcfi  restore_reg, 7
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   32
+
+    1701 00000486 B004              ADD       SP, SP, #16           ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1702                            .dwcfi  cfa_offset, 0
+    1703                    $C$DW$88        .dwtag  DW_TAG_TI_branch
+    1704                            .dwattr $C$DW$88, DW_AT_low_pc(0x00)
+    1705                            .dwattr $C$DW$88, DW_AT_TI_return
+    1706                    
+    1707 00000488 4770              BX        LR                    ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1708                            ; BRANCH OCCURS                  ; [] 
+    1709                            .dwattr $C$DW$83, DW_AT_TI_end_file("../Drivers/uartstdio.c")
+    1710                            .dwattr $C$DW$83, DW_AT_TI_end_line(0x51b)
+    1711                            .dwattr $C$DW$83, DW_AT_TI_end_column(0x01)
+    1712                            .dwendentry
+    1713                            .dwendtag $C$DW$83
+    1714                    
+    1715                    ;******************************************************************************
+    1716                    ;* STRINGS                                                                    *
+    1717                    ;******************************************************************************
+    1718 0000048a                   .sect   ".text"
+    1719                            .align  4
+    1720 0000048c 20        ||$C$SL4||:     .string " ",0
+         0000048d 00       
+    1721                            .align  4
+    1722 00000490 45        ||$C$SL5||:     .string "ERROR",0
+         00000491 52       
+         00000492 52       
+         00000493 4F       
+         00000494 52       
+         00000495 00       
+    1723                    ;******************************************************************************
+    1724                    ;* CONSTANT TABLE                                                             *
+    1725                    ;******************************************************************************
+    1726 00000496                   .sect   ".text"
+    1727                            .align  4
+    1728 00000496 000046C0! ||$C$CON5||:    .bits   g_pcHex,32
+         0000049a 00000000 
+    1729                    ;******************************************************************************
+    1730                    ;* STRINGS                                                                    *
+    1731                    ;******************************************************************************
+    1732 00000000                   .sect   ".const:.string"
+    1733                            .align  4
+    1734 00000000 30        ||$C$SL1||:     .string "0123456789abcdef",0
+         00000001 31       
+         00000002 32       
+         00000003 33       
+         00000004 34       
+         00000005 35       
+         00000006 36       
+         00000007 37       
+         00000008 38       
+         00000009 39       
+         0000000a 61       
+         0000000b 62       
+         0000000c 63       
+         0000000d 64       
+         0000000e 65       
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   33
+
+         0000000f 66       
+         00000010 00       
+    1735                    ;*****************************************************************************
+    1736                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
+    1737                    ;*****************************************************************************
+    1738                            .global SysCtlPeripheralPresent
+    1739                            .global SysCtlPeripheralEnable
+    1740                            .global UARTConfigSetExpClk
+    1741                            .global UARTEnable
+    1742                            .global UARTCharGet
+    1743                            .global UARTCharPut
+    1744                            .global __aeabi_uidivmod
+    1745                    
+    1746                    ;******************************************************************************
+    1747                    ;* BUILD ATTRIBUTES                                                           *
+    1748                    ;******************************************************************************
+    1749                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
+    1750                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
+    1751                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
+    1752                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
+    1753                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
+    1754                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(0)
+    1755                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
+    1756                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
+    1757                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
+    1758                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
+    1759                    
+    1760                    ;******************************************************************************
+    1761                    ;* TYPE INFORMATION                                                           *
+    1762                    ;******************************************************************************
+    1763                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+    1764                            .dwattr $C$DW$T$2, DW_AT_name("void")
+    1765                    
+    1766                    $C$DW$T$3       .dwtag  DW_TAG_pointer_type
+    1767                            .dwattr $C$DW$T$3, DW_AT_type(*$C$DW$T$2)
+    1768                            .dwattr $C$DW$T$3, DW_AT_address_class(0x20)
+    1769                    
+    1770                    $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1771                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    1772                            .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1773                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1774                    
+    1775                    $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1776                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1777                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1778                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1779                    
+    1780                    $C$DW$T$35      .dwtag  DW_TAG_typedef
+    1781                            .dwattr $C$DW$T$35, DW_AT_name("int8_t")
+    1782                            .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$5)
+    1783                            .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
+    1784                            .dwattr $C$DW$T$35, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1785                            .dwattr $C$DW$T$35, DW_AT_decl_line(0x2a)
+    1786                            .dwattr $C$DW$T$35, DW_AT_decl_column(0x1d)
+    1787                    
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   34
+
+    1788                    $C$DW$T$36      .dwtag  DW_TAG_typedef
+    1789                            .dwattr $C$DW$T$36, DW_AT_name("int_least8_t")
+    1790                            .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$35)
+    1791                            .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
+    1792                            .dwattr $C$DW$T$36, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1793                            .dwattr $C$DW$T$36, DW_AT_decl_line(0x37)
+    1794                            .dwattr $C$DW$T$36, DW_AT_decl_column(0x17)
+    1795                    
+    1796                    $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1797                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1798                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1799                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1800                    
+    1801                    $C$DW$T$38      .dwtag  DW_TAG_typedef
+    1802                            .dwattr $C$DW$T$38, DW_AT_name("uint8_t")
+    1803                            .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$6)
+    1804                            .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
+    1805                            .dwattr $C$DW$T$38, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1806                            .dwattr $C$DW$T$38, DW_AT_decl_line(0x2b)
+    1807                            .dwattr $C$DW$T$38, DW_AT_decl_column(0x1c)
+    1808                    
+    1809                    $C$DW$T$39      .dwtag  DW_TAG_typedef
+    1810                            .dwattr $C$DW$T$39, DW_AT_name("uint_least8_t")
+    1811                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$38)
+    1812                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+    1813                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1814                            .dwattr $C$DW$T$39, DW_AT_decl_line(0x38)
+    1815                            .dwattr $C$DW$T$39, DW_AT_decl_column(0x16)
+    1816                    
+    1817                    $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1818                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1819                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    1820                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+    1821                    
+    1822                    $C$DW$T$8       .dwtag  DW_TAG_base_type
+    1823                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    1824                            .dwattr $C$DW$T$8, DW_AT_name("short")
+    1825                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+    1826                    
+    1827                    $C$DW$T$40      .dwtag  DW_TAG_typedef
+    1828                            .dwattr $C$DW$T$40, DW_AT_name("int16_t")
+    1829                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$8)
+    1830                            .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+    1831                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1832                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x2c)
+    1833                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x1d)
+    1834                    
+    1835                    $C$DW$T$41      .dwtag  DW_TAG_typedef
+    1836                            .dwattr $C$DW$T$41, DW_AT_name("int_least16_t")
+    1837                            .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$40)
+    1838                            .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+    1839                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1840                            .dwattr $C$DW$T$41, DW_AT_decl_line(0x3a)
+    1841                            .dwattr $C$DW$T$41, DW_AT_decl_column(0x17)
+    1842                    
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   35
+
+    1843                    $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1844                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1845                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1846                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+    1847                    
+    1848                    $C$DW$T$42      .dwtag  DW_TAG_typedef
+    1849                            .dwattr $C$DW$T$42, DW_AT_name("uint16_t")
+    1850                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$9)
+    1851                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+    1852                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1853                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x2d)
+    1854                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x1c)
+    1855                    
+    1856                    $C$DW$T$43      .dwtag  DW_TAG_typedef
+    1857                            .dwattr $C$DW$T$43, DW_AT_name("uint_least16_t")
+    1858                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$42)
+    1859                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+    1860                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1861                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x3b)
+    1862                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x16)
+    1863                    
+    1864                    $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1865                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1866                            .dwattr $C$DW$T$10, DW_AT_name("int")
+    1867                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
+    1868                    
+    1869                    $C$DW$T$48      .dwtag  DW_TAG_typedef
+    1870                            .dwattr $C$DW$T$48, DW_AT_name("int32_t")
+    1871                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$10)
+    1872                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+    1873                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1874                            .dwattr $C$DW$T$48, DW_AT_decl_line(0x2e)
+    1875                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x1d)
+    1876                    
+    1877                    $C$DW$T$51      .dwtag  DW_TAG_typedef
+    1878                            .dwattr $C$DW$T$51, DW_AT_name("int_fast16_t")
+    1879                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$48)
+    1880                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+    1881                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1882                            .dwattr $C$DW$T$51, DW_AT_decl_line(0x47)
+    1883                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x17)
+    1884                    
+    1885                    $C$DW$T$52      .dwtag  DW_TAG_typedef
+    1886                            .dwattr $C$DW$T$52, DW_AT_name("int_fast32_t")
+    1887                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$48)
+    1888                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+    1889                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1890                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x4a)
+    1891                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x17)
+    1892                    
+    1893                    $C$DW$T$53      .dwtag  DW_TAG_typedef
+    1894                            .dwattr $C$DW$T$53, DW_AT_name("int_fast8_t")
+    1895                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$48)
+    1896                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+    1897                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   36
+
+    1898                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x45)
+    1899                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x17)
+    1900                    
+    1901                    $C$DW$T$54      .dwtag  DW_TAG_typedef
+    1902                            .dwattr $C$DW$T$54, DW_AT_name("int_least32_t")
+    1903                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$48)
+    1904                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+    1905                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1906                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x3c)
+    1907                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x17)
+    1908                    
+    1909                    $C$DW$T$55      .dwtag  DW_TAG_typedef
+    1910                            .dwattr $C$DW$T$55, DW_AT_name("intptr_t")
+    1911                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$10)
+    1912                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+    1913                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1914                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x52)
+    1915                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x1a)
+    1916                    
+    1917                    $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1918                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1919                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1920                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
+    1921                    
+    1922                    $C$DW$T$20      .dwtag  DW_TAG_typedef
+    1923                            .dwattr $C$DW$T$20, DW_AT_name("uint32_t")
+    1924                            .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$11)
+    1925                            .dwattr $C$DW$T$20, DW_AT_language(DW_LANG_C)
+    1926                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1927                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x2f)
+    1928                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x1c)
+    1929                    
+    1930                    $C$DW$T$57      .dwtag  DW_TAG_const_type
+    1931                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$20)
+    1932                    
+    1933                    
+    1934                    $C$DW$T$58      .dwtag  DW_TAG_array_type
+    1935                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$57)
+    1936                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+    1937                            .dwattr $C$DW$T$58, DW_AT_byte_size(0x0c)
+    1938                    $C$DW$89        .dwtag  DW_TAG_subrange_type
+    1939                            .dwattr $C$DW$89, DW_AT_upper_bound(0x02)
+    1940                    
+    1941                            .dwendtag $C$DW$T$58
+    1942                    
+    1943                    $C$DW$T$60      .dwtag  DW_TAG_typedef
+    1944                            .dwattr $C$DW$T$60, DW_AT_name("uint_fast16_t")
+    1945                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$20)
+    1946                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    1947                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1948                            .dwattr $C$DW$T$60, DW_AT_decl_line(0x48)
+    1949                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x16)
+    1950                    
+    1951                    $C$DW$T$61      .dwtag  DW_TAG_typedef
+    1952                            .dwattr $C$DW$T$61, DW_AT_name("uint_fast32_t")
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   37
+
+    1953                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$20)
+    1954                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    1955                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1956                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x4b)
+    1957                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x16)
+    1958                    
+    1959                    $C$DW$T$62      .dwtag  DW_TAG_typedef
+    1960                            .dwattr $C$DW$T$62, DW_AT_name("uint_fast8_t")
+    1961                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$20)
+    1962                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    1963                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1964                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x46)
+    1965                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x16)
+    1966                    
+    1967                    $C$DW$T$63      .dwtag  DW_TAG_typedef
+    1968                            .dwattr $C$DW$T$63, DW_AT_name("uint_least32_t")
+    1969                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$20)
+    1970                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+    1971                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1972                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x3d)
+    1973                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x16)
+    1974                    
+    1975                    $C$DW$T$64      .dwtag  DW_TAG_typedef
+    1976                            .dwattr $C$DW$T$64, DW_AT_name("uintptr_t")
+    1977                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$11)
+    1978                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+    1979                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    1980                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x53)
+    1981                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x1a)
+    1982                    
+    1983                    $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1984                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1985                            .dwattr $C$DW$T$12, DW_AT_name("long")
+    1986                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+    1987                    
+    1988                    $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1989                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1990                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1991                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+    1992                    
+    1993                    $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1994                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1995                            .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1996                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    1997                    
+    1998                    $C$DW$T$65      .dwtag  DW_TAG_typedef
+    1999                            .dwattr $C$DW$T$65, DW_AT_name("int64_t")
+    2000                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$14)
+    2001                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+    2002                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2003                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x32)
+    2004                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x21)
+    2005                    
+    2006                    $C$DW$T$66      .dwtag  DW_TAG_typedef
+    2007                            .dwattr $C$DW$T$66, DW_AT_name("int_fast64_t")
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   38
+
+    2008                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$65)
+    2009                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    2010                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2011                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x4e)
+    2012                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x17)
+    2013                    
+    2014                    $C$DW$T$67      .dwtag  DW_TAG_typedef
+    2015                            .dwattr $C$DW$T$67, DW_AT_name("int_least64_t")
+    2016                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$65)
+    2017                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+    2018                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2019                            .dwattr $C$DW$T$67, DW_AT_decl_line(0x40)
+    2020                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x17)
+    2021                    
+    2022                    $C$DW$T$68      .dwtag  DW_TAG_typedef
+    2023                            .dwattr $C$DW$T$68, DW_AT_name("intmax_t")
+    2024                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$14)
+    2025                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+    2026                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2027                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x56)
+    2028                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x20)
+    2029                    
+    2030                    $C$DW$T$15      .dwtag  DW_TAG_base_type
+    2031                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    2032                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    2033                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    2034                    
+    2035                    $C$DW$T$69      .dwtag  DW_TAG_typedef
+    2036                            .dwattr $C$DW$T$69, DW_AT_name("uint64_t")
+    2037                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$15)
+    2038                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+    2039                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2040                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x33)
+    2041                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x20)
+    2042                    
+    2043                    $C$DW$T$70      .dwtag  DW_TAG_typedef
+    2044                            .dwattr $C$DW$T$70, DW_AT_name("uint_fast64_t")
+    2045                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$69)
+    2046                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
+    2047                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2048                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x4f)
+    2049                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x16)
+    2050                    
+    2051                    $C$DW$T$71      .dwtag  DW_TAG_typedef
+    2052                            .dwattr $C$DW$T$71, DW_AT_name("uint_least64_t")
+    2053                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$69)
+    2054                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
+    2055                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2056                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x41)
+    2057                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x16)
+    2058                    
+    2059                    $C$DW$T$72      .dwtag  DW_TAG_typedef
+    2060                            .dwattr $C$DW$T$72, DW_AT_name("uintmax_t")
+    2061                            .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$15)
+    2062                            .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   39
+
+    2063                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2064                            .dwattr $C$DW$T$72, DW_AT_decl_line(0x57)
+    2065                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x20)
+    2066                    
+    2067                    $C$DW$T$16      .dwtag  DW_TAG_base_type
+    2068                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    2069                            .dwattr $C$DW$T$16, DW_AT_name("float")
+    2070                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+    2071                    
+    2072                    $C$DW$T$17      .dwtag  DW_TAG_base_type
+    2073                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    2074                            .dwattr $C$DW$T$17, DW_AT_name("double")
+    2075                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    2076                    
+    2077                    $C$DW$T$18      .dwtag  DW_TAG_base_type
+    2078                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    2079                            .dwattr $C$DW$T$18, DW_AT_name("long double")
+    2080                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    2081                    
+    2082                    $C$DW$T$29      .dwtag  DW_TAG_const_type
+    2083                            .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$6)
+    2084                    
+    2085                    $C$DW$T$30      .dwtag  DW_TAG_pointer_type
+    2086                            .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$29)
+    2087                            .dwattr $C$DW$T$30, DW_AT_address_class(0x20)
+    2088                    
+    2089                    $C$DW$T$76      .dwtag  DW_TAG_const_type
+    2090                            .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$30)
+    2091                    
+    2092                    $C$DW$T$46      .dwtag  DW_TAG_pointer_type
+    2093                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$6)
+    2094                            .dwattr $C$DW$T$46, DW_AT_address_class(0x20)
+    2095                    
+    2096                    
+    2097                    $C$DW$T$83      .dwtag  DW_TAG_array_type
+    2098                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$6)
+    2099                            .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
+    2100                            .dwattr $C$DW$T$83, DW_AT_byte_size(0x10)
+    2101                    $C$DW$90        .dwtag  DW_TAG_subrange_type
+    2102                            .dwattr $C$DW$90, DW_AT_upper_bound(0x0f)
+    2103                    
+    2104                            .dwendtag $C$DW$T$83
+    2105                    
+    2106                    $C$DW$T$73      .dwtag  DW_TAG_base_type
+    2107                            .dwattr $C$DW$T$73, DW_AT_encoding(DW_ATE_unsigned_char)
+    2108                            .dwattr $C$DW$T$73, DW_AT_name("unsigned char")
+    2109                            .dwattr $C$DW$T$73, DW_AT_byte_size(0x01)
+    2110                    
+    2111                    
+    2112                    $C$DW$T$19      .dwtag  DW_TAG_structure_type
+    2113                            .dwattr $C$DW$T$19, DW_AT_name("__va_list")
+    2114                            .dwattr $C$DW$T$19, DW_AT_byte_size(0x04)
+    2115                    $C$DW$91        .dwtag  DW_TAG_member
+    2116                            .dwattr $C$DW$91, DW_AT_type(*$C$DW$T$3)
+    2117                            .dwattr $C$DW$91, DW_AT_name("__ap")
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   40
+
+    2118                            .dwattr $C$DW$91, DW_AT_TI_symbol_name("__ap")
+    2119                            .dwattr $C$DW$91, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    2120                            .dwattr $C$DW$91, DW_AT_accessibility(DW_ACCESS_public)
+    2121                            .dwattr $C$DW$91, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.
+    2122                            .dwattr $C$DW$91, DW_AT_decl_line(0x38)
+    2123                            .dwattr $C$DW$91, DW_AT_decl_column(0x0c)
+    2124                    
+    2125                            .dwattr $C$DW$T$19, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2126                            .dwattr $C$DW$T$19, DW_AT_decl_line(0x37)
+    2127                            .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
+    2128                            .dwendtag $C$DW$T$19
+    2129                    
+    2130                    $C$DW$T$31      .dwtag  DW_TAG_typedef
+    2131                            .dwattr $C$DW$T$31, DW_AT_name("va_list")
+    2132                            .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$19)
+    2133                            .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+    2134                            .dwattr $C$DW$T$31, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
+    2135                            .dwattr $C$DW$T$31, DW_AT_decl_line(0x39)
+    2136                            .dwattr $C$DW$T$31, DW_AT_decl_column(0x03)
+    2137                    
+    2138                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    2139                    
+    2140                    ;***************************************************************
+    2141                    ;* DWARF CIE ENTRIES                                           *
+    2142                    ;***************************************************************
+    2143                    
+    2144                    $C$DW$CIE       .dwcie 14
+    2145                            .dwcfi  cfa_register, 13
+    2146                            .dwcfi  cfa_offset, 0
+    2147                            .dwcfi  undefined, 0
+    2148                            .dwcfi  undefined, 1
+    2149                            .dwcfi  undefined, 2
+    2150                            .dwcfi  undefined, 3
+    2151                            .dwcfi  same_value, 4
+    2152                            .dwcfi  same_value, 5
+    2153                            .dwcfi  same_value, 6
+    2154                            .dwcfi  same_value, 7
+    2155                            .dwcfi  same_value, 8
+    2156                            .dwcfi  same_value, 9
+    2157                            .dwcfi  same_value, 10
+    2158                            .dwcfi  same_value, 11
+    2159                            .dwcfi  undefined, 12
+    2160                            .dwcfi  undefined, 13
+    2161                            .dwcfi  undefined, 14
+    2162                            .dwcfi  undefined, 14
+    2163                            .dwcfi  undefined, 7
+    2164                            .dwcfi  undefined, 64
+    2165                            .dwcfi  undefined, 65
+    2166                            .dwcfi  undefined, 66
+    2167                            .dwcfi  undefined, 67
+    2168                            .dwcfi  undefined, 68
+    2169                            .dwcfi  undefined, 69
+    2170                            .dwcfi  undefined, 70
+    2171                            .dwcfi  undefined, 71
+    2172                            .dwcfi  undefined, 72
+TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:40 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+uartstdio.asm                                                        PAGE   41
+
+    2173                            .dwcfi  undefined, 73
+    2174                            .dwcfi  undefined, 74
+    2175                            .dwcfi  undefined, 75
+    2176                            .dwcfi  undefined, 76
+    2177                            .dwcfi  undefined, 77
+    2178                            .dwcfi  undefined, 78
+    2179                            .dwcfi  undefined, 79
+    2180                            .dwcfi  same_value, 80
+    2181                            .dwcfi  same_value, 81
+    2182                            .dwcfi  same_value, 82
+    2183                            .dwcfi  same_value, 83
+    2184                            .dwcfi  same_value, 84
+    2185                            .dwcfi  same_value, 85
+    2186                            .dwcfi  same_value, 86
+    2187                            .dwcfi  same_value, 87
+    2188                            .dwcfi  same_value, 88
+    2189                            .dwcfi  same_value, 89
+    2190                            .dwcfi  same_value, 90
+    2191                            .dwcfi  same_value, 91
+    2192                            .dwcfi  same_value, 92
+    2193                            .dwcfi  same_value, 93
+    2194                            .dwcfi  same_value, 94
+    2195                            .dwcfi  same_value, 95
+    2196                            .dwendentry
+    2197                            .dwendtag $C$DW$CU
+    2198                    
+
+--------------------------
+Thumb2 Statistics
+--------------------------
+Number of Thumb2 ins converted to Thumb = 0 (0%)
+Number of Thumb ins in input = 440 (85%)
+Number of Thumb2 ins encoded as Thumb2 = 77 (100%)
+Number of Thumb2 ins converted to 2 OPND Thumb = 13
+
+
+No Assembly Errors, No Assembly Warnings

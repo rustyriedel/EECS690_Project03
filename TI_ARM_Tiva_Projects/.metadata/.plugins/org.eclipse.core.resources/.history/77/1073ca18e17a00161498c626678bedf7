@@ -1,0 +1,102 @@
+/**
+ *
+ * @author Alexander Kimani
+ * @email a906k620@ku.edu
+ * @date 09/12/2016
+ *
+ * This program utilizes a timer interrupt to give the time of the day
+ */
+
+#include	"inc/hw_ints.h"
+#include	"inc/hw_memmap.h"
+#include	"inc/hw_types.h"
+#include	"inc/hw_uart.h"
+
+#include	<stddef.h>
+#include	<stdbool.h>
+#include	<stdint.h>
+#include	<stdarg.h>
+
+#include	"driverlib/sysctl.h"
+#include	"driverlib/pin_map.h"
+#include	"driverlib/gpio.h"
+
+#include	"FreeRTOS.h"
+#include	"task.h"
+#include "driverlib/timer.h"
+
+#include "semphr.h"
+
+uint32_t TimerStatus_1 = 0;
+uint32_t TimeCount = 0;
+
+//vSemaphoreCreateBinary( Timer_0_A_Semaphore);
+//vSemaphoreCreateBinary( xSemaphoreHandle xSemaphore )
+//xSemaphoreHandle Timer_0_A_Semaphore;
+//vSemaphoreCreateBinary( Timer_0_A_Semaphore);
+extern void Task_TimeOfDay(void *pvParameters) {
+	uint8_t hours = 0;
+	uint8_t minutes = 0;
+	uint8_t seconds = 0;
+
+	vSemaphoreCreateBinary( Timer_0_A_Semaphore);
+	//Enable Timer_0
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
+	TimerDisable(TIMER0_BASE, TIMER_BOTH);
+	//Configure Timer_0_A --16 bit
+	TimerConfigure(TIMER0_BASE, TIMER_CFG_SPLIT_PAIR | TIMER_CFG_A_PERIODIC_UP);
+	TimerPrescaleSet(TIMER0_BASE, TIMER_A, 20);
+	//Set reload value
+	TimerLoadSet(TIMER0_BASE, TIMER_A, 60000);
+	//TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT); //Experiment 1
+	TimerEnable(TIMER0_BASE, TIMER_A);
+
+	TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT); // Experiment 2
+	IntEnable(INT_TIMER0A);
+
+	//xSemaphoreTake(Timer_0_A_Semaphore, portMAX_DELAY);
+	//
+	while (1) {
+		//xSemaphoreTake(Timer_0_A_Semaphore, portMAX_DELAY);
+		/*	while (((TimerStatus_1 = TimerIntStatus(TIMER0_BASE, 0)) //Experiment 1
+		 & TIMER_TIMA_TIMEOUT) == 0) {
+		 }
+		 TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+		 TimeCount++;
+		 */
+		if (TimeCount == 99) {
+			TimeCount = 0;
+			seconds++;
+			UARTprintf("%02d:%02d:%02d:%02d\n", hours, minutes, seconds,
+					TimeCount);
+			if (seconds == 59) {
+				minutes++;
+				seconds = 0;
+				if (minutes == 59) {
+					hours++;
+					minutes = 0;
+					if (hours == 23) {
+						hours = 0;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+void Timer_0_A_ISR_Handler(void) {
+	TimeCount++;
+	static portBASE_TYPE xHigherPriorityTaskWoken;
+	xHigherPriorityTaskWoken = pdFALSE;
+
+	//Give Timer semaphore
+	xSemaphoreGiveFromISR(Timer_0_A_Semaphore, &xHigherPriorityTaskWoken);
+	/*if (xHigherPriorityTaskWoken) {
+	 vPortYieldFromISR();
+	 }*/
+	portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+	TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+}
+

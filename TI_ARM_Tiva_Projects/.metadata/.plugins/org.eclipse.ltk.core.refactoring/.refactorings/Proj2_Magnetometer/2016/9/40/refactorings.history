@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Proj2_Magnetometer/Tasks/Task_TimerInterrupt.c&apos; to &apos;Magnetometer.c&apos;" description="Rename resource &apos;Task_TimerInterrupt.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Tasks/Task_TimerInterrupt.c" name="Magnetometer.c" stamp="1474997369652" updateReferences="true"/>
+</session>

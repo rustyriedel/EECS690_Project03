@@ -1,0 +1,105 @@
+
+**** Build of configuration Debug for project FreeRTOS82_TM4C1294_Base ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../FreeRTOS_TM4C1294_Base_Startup.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="FreeRTOS_TM4C1294_Base_Startup.d"  "../FreeRTOS_TM4C1294_Base_Startup.c"
+'Finished building: ../FreeRTOS_TM4C1294_Base_Startup.c'
+' '
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+"../Main_Base.c", line 38: warning #552-D: variable "Status" was set but never used
+'Finished building: ../Main_Base.c'
+' '
+'Building file: ../heap_2.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="heap_2.d"  "../heap_2.c"
+'Finished building: ../heap_2.c'
+' '
+'Building file: ../Drivers/Processor_Initialization_TM4C1294.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Drivers/Processor_Initialization_TM4C1294.d" --obj_directory="Drivers"  "../Drivers/Processor_Initialization_TM4C1294.c"
+'Finished building: ../Drivers/Processor_Initialization_TM4C1294.c'
+' '
+'Building file: ../Drivers/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Drivers/uartstdio.d" --obj_directory="Drivers"  "../Drivers/uartstdio.c"
+'Finished building: ../Drivers/uartstdio.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/croutine.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/croutine.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/croutine.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/croutine.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/event_groups.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/event_groups.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/event_groups.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/event_groups.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/list.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/list.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/list.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/list.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/queue.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/queue.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/queue.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/queue.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/tasks.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/tasks.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/tasks.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/tasks.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/timers.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/timers.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/timers.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/timers.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/port.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/portable/CCS/ARM_CM4F/port.d" --obj_directory="Source/portable/CCS/ARM_CM4F"  "C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/port.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/port.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/portable/CCS/ARM_CM4F/portasm.d" --obj_directory="Source/portable/CCS/ARM_CM4F"  "C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm'
+' '
+'Building file: ../Tasks/Task_Blinky.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_Blinky.d" --obj_directory="Tasks"  "../Tasks/Task_Blinky.c"
+'Finished building: ../Tasks/Task_Blinky.c'
+' '
+'Building file: ../Tasks/Task_I2C7_Handler.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_I2C7_Handler.d" --obj_directory="Tasks"  "../Tasks/Task_I2C7_Handler.c"
+
+>> Compilation failure
+Tasks/subdir_rules.mk:14: recipe for target 'Tasks/Task_I2C7_Handler.obj' failed
+"../Tasks/Task_I2C7_Handler.c", line 36: fatal error #1965: cannot open source file "Drivers/UARTStdio_Initialization.h"
+1 catastrophic error detected in the compilation of "../Tasks/Task_I2C7_Handler.c".
+Compilation terminated.
+gmake: *** [Tasks/Task_I2C7_Handler.obj] Error 1
+'Building file: ../Tasks/Task_ReportData.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_ReportData.d" --obj_directory="Tasks"  "../Tasks/Task_ReportData.c"
+'Finished building: ../Tasks/Task_ReportData.c'
+' '
+'Building file: ../Tasks/Task_ReportTime.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_ReportTime.d" --obj_directory="Tasks"  "../Tasks/Task_ReportTime.c"
+'Finished building: ../Tasks/Task_ReportTime.c'
+' '
+'Building file: ../Tasks/Task_TimerInterrupt.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base" --include_path="C:/TI_ARM_Tiva_Projects/FreeRTOS82_TM4C1294_Base/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_TimerInterrupt.d" --obj_directory="Tasks"  "../Tasks/Task_TimerInterrupt.c"
+"../Tasks/Task_TimerInterrupt.c", line 80: warning #225-D: function "IntEnable" declared implicitly
+"../Tasks/Task_TimerInterrupt.c", line 104: warning #225-D: function "UARTprintf" declared implicitly
+'Finished building: ../Tasks/Task_TimerInterrupt.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

@@ -1,0 +1,1 @@
+"./compdcm_mpu9150.obj" "./startup_ccs.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "./utils/uartstdio.obj" "../compdcm_mpu9150_ccs.cmd" -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 

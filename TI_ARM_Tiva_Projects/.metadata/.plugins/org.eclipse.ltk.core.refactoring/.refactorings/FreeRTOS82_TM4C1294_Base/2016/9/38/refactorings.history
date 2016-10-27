@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FreeRTOS82_TM4C1294_Base/Tasks/Tak_TimerInterrupt.c&apos; to &apos;Task_TimerInterrupt.c&apos;" description="Rename resource &apos;Tak_TimerInterrupt.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Tasks/Tak_TimerInterrupt.c" name="Task_TimerInterrupt.c" stamp="1473720334913" updateReferences="true"/>
+</session>

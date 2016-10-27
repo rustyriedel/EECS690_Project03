@@ -1,0 +1,128 @@
+
+**** Build of configuration Debug for project FreeRTOS823_3_TM4C1294_SensorHub ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Main_SensorHub_Test.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_SensorHub_Test.d"  "../Main_SensorHub_Test.c"
+"../Main_SensorHub_Test.c", line 36: warning #552-D: variable "Status" was set but never used
+'Finished building: ../Main_SensorHub_Test.c'
+' '
+'Building file: ../TM4C_FreeRTOS_Sensor_Startup.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="TM4C_FreeRTOS_Sensor_Startup.d"  "../TM4C_FreeRTOS_Sensor_Startup.c"
+'Finished building: ../TM4C_FreeRTOS_Sensor_Startup.c'
+' '
+'Building file: ../heap_2.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="heap_2.d"  "../heap_2.c"
+'Finished building: ../heap_2.c'
+' '
+'Building file: ../Drivers/Processor_Initialization_TM4C1294.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Drivers/Processor_Initialization_TM4C1294.d" --obj_directory="Drivers"  "../Drivers/Processor_Initialization_TM4C1294.c"
+'Finished building: ../Drivers/Processor_Initialization_TM4C1294.c'
+' '
+'Building file: ../Drivers/isl29023.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Drivers/isl29023.d" --obj_directory="Drivers"  "../Drivers/isl29023.c"
+'Finished building: ../Drivers/isl29023.c'
+' '
+'Building file: ../Drivers/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Drivers/uartstdio.d" --obj_directory="Drivers"  "../Drivers/uartstdio.c"
+'Finished building: ../Drivers/uartstdio.c'
+' '
+'Building file: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/croutine.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/croutine.d" --obj_directory="Source"  "C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/croutine.c"
+'Finished building: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/croutine.c'
+' '
+'Building file: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/event_groups.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/event_groups.d" --obj_directory="Source"  "C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/event_groups.c"
+'Finished building: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/event_groups.c'
+' '
+'Building file: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/list.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/list.d" --obj_directory="Source"  "C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/list.c"
+'Finished building: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/list.c'
+' '
+'Building file: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/queue.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/queue.d" --obj_directory="Source"  "C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/queue.c"
+'Finished building: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/queue.c'
+' '
+'Building file: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/tasks.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/tasks.d" --obj_directory="Source"  "C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/tasks.c"
+'Finished building: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/tasks.c'
+' '
+'Building file: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/timers.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/timers.d" --obj_directory="Source"  "C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/timers.c"
+'Finished building: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/timers.c'
+' '
+'Building file: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F/port.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/portable/CCS/ARM_CM4F/port.d" --obj_directory="Source/portable/CCS/ARM_CM4F"  "C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F/port.c"
+'Finished building: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F/port.c'
+' '
+'Building file: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F/portasm.asm'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/portable/CCS/ARM_CM4F/portasm.d" --obj_directory="Source/portable/CCS/ARM_CM4F"  "C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F/portasm.asm"
+'Finished building: C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F/portasm.asm'
+' '
+'Building file: ../Tasks/Task_BMP180_Pressure_Handler.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_BMP180_Pressure_Handler.d" --obj_directory="Tasks"  "../Tasks/Task_BMP180_Pressure_Handler.c"
+'Finished building: ../Tasks/Task_BMP180_Pressure_Handler.c'
+' '
+'Building file: ../Tasks/Task_Blinky.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_Blinky.d" --obj_directory="Tasks"  "../Tasks/Task_Blinky.c"
+'Finished building: ../Tasks/Task_Blinky.c'
+' '
+'Building file: ../Tasks/Task_I2C7_Handler.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_I2C7_Handler.d" --obj_directory="Tasks"  "../Tasks/Task_I2C7_Handler.c"
+'Finished building: ../Tasks/Task_I2C7_Handler.c'
+' '
+'Building file: ../Tasks/Task_ISL_29023_LightSensor.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_ISL_29023_LightSensor.d" --obj_directory="Tasks"  "../Tasks/Task_ISL_29023_LightSensor.c"
+'Finished building: ../Tasks/Task_ISL_29023_LightSensor.c'
+' '
+'Building file: ../Tasks/Task_QuadEncoder.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_QuadEncoder.d" --obj_directory="Tasks"  "../Tasks/Task_QuadEncoder.c"
+'Finished building: ../Tasks/Task_QuadEncoder.c'
+' '
+'Building file: ../Tasks/Task_ReportData.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_ReportData.d" --obj_directory="Tasks"  "../Tasks/Task_ReportData.c"
+'Finished building: ../Tasks/Task_ReportData.c'
+' '
+'Building file: ../Tasks/Task_ReportTime.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub" --include_path="C:/Projects/TI_ARM_Tiva_Projects/FreeRTOS823_3_TM4C1294_SensorHub/Drivers" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/portable/CCS/ARM_CM4F" --include_path="C:/Projects/TI_ARM_Tiva_Projects_Fa16/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_ReportTime.d" --obj_directory="Tasks"  "../Tasks/Task_ReportTime.c"
+'Finished building: ../Tasks/Task_ReportTime.c'
+' '
+'Building target: FreeRTOS823_3_TM4C1294_SensorHub.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --printf_support=full -k --asm_listing -z -m"FreeRTOS823_3_TM4C1294_SensorHub.map" --heap_size=0x0800 --stack_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --diag_wrap=off --warn_sections --xml_link_info="FreeRTOS823_3_TM4C1294_SensorHub_linkInfo.xml" --rom_model -o "FreeRTOS823_3_TM4C1294_SensorHub.out" "./Main_SensorHub_Test.obj" "./TM4C_FreeRTOS_Sensor_Startup.obj" "./heap_2.obj" "./Drivers/Processor_Initialization_TM4C1294.obj" "./Drivers/isl29023.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM4F/port.obj" "./Source/portable/CCS/ARM_CM4F/portasm.obj" "./Tasks/Task_BMP180_Pressure_Handler.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_I2C7_Handler.obj" "./Tasks/Task_ISL_29023_LightSensor.obj" "./Tasks/Task_QuadEncoder.obj" "./Tasks/Task_ReportData.obj" "./Tasks/Task_ReportTime.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 
+'Finished building target: FreeRTOS823_3_TM4C1294_SensorHub.out'
+' '
+'Invoking: ARM Hex Utility'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armhex"  -o "FreeRTOS823_3_TM4C1294_SensorHub.hex"  "FreeRTOS823_3_TM4C1294_SensorHub.out" 
+Translating to Extended Tektronix format...
+   "FreeRTOS823_3_TM4C1294_SensorHub.out" .intvecs ==> .intvecs
+   "FreeRTOS823_3_TM4C1294_SensorHub.out" .text ==> .text
+   "FreeRTOS823_3_TM4C1294_SensorHub.out" .const ==> .const
+   "FreeRTOS823_3_TM4C1294_SensorHub.out" .cinit ==> .cinit
+warning: section FreeRTOS823_3_TM4C1294_SensorHub.out(.text) was padded by 2 to
+   a size of 30484 to satisfy the specified memory width of 4
+'Finished building: FreeRTOS823_3_TM4C1294_SensorHub.hex'
+' '
+
+**** Build Finished ****

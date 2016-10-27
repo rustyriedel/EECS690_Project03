@@ -1,0 +1,140 @@
+/**
+ *
+ * @author Alexander Kimani
+ * @email a906k620@ku.edu
+ * @date 09/12/2016
+ *
+ * This program utilizes a timer interrupt to give the time of the day
+ */
+
+#include	"inc/hw_ints.h"
+#include	"inc/hw_memmap.h"
+#include	"inc/hw_types.h"
+#include	"inc/hw_uart.h"
+
+#include	<stddef.h>
+#include	<stdbool.h>
+#include	<stdint.h>
+#include	<stdarg.h>
+
+#include	"driverlib/sysctl.h"
+#include	"driverlib/pin_map.h"
+#include	"driverlib/gpio.h"
+
+#include	"FreeRTOS.h"
+#include	"task.h"
+#include "driverlib/timer.h"
+
+#include "semphr.h"
+
+/**
+ * Global variable that increments every Centi-Second,
+ * used in all three experiments
+ */
+uint32_t TimeCount = 0;
+
+/**
+ * This variable only needed in experiment 1
+ */
+uint32_t TimerStatus_1 = 0;
+
+/**
+ * Global declaration of the semaphore
+ */
+xSemaphoreHandle Timer_0_A_Semaphore;
+
+/**
+ * Global declaration of the task
+ */
+extern void Task_TimeOfDay(void *pvParameters) {
+	uint8_t hours = 0;
+	uint8_t minutes = 0;
+	uint8_t seconds = 0;
+
+	/**
+	 * Create the binary semaphore
+	 */
+	vSemaphoreCreateBinary(Timer_0_A_Semaphore);
+
+	//Enable Timer_0
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
+	//Configure Timer_0_A --16 bit
+	TimerConfigure(TIMER0_BASE, TIMER_CFG_SPLIT_PAIR | TIMER_CFG_A_PERIODIC_UP);
+
+	/**
+	 * period of 1 clock = 1/120MHZ = 8.3 nanoseconds
+	 * Bit bit timer can count up to 2^(16) - 1 = 65535
+	 * Thus with prescaler 0 and load value 65535 the timer would expire in 0.543941
+	 * at 65535 load value a prescaler of at least (theoretical) 18.384 but prescaler must be an integer
+	 */
+	//Set the prescaler
+	TimerPrescaleSet(TIMER0_BASE, TIMER_A, 20);
+	//Set reload value
+	TimerLoadSet(TIMER0_BASE, TIMER_A, 60000);
+	//Enable Timer_0_A for all 3 experiments
+	TimerEnable(TIMER0_BASE, TIMER_A);
+	//Enable the timer interrupt for experiment 2 and 3
+	TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+	IntEnable(INT_TIMER0A);
+
+	vSemaphoreCreateBinary(Timer_0_A_Semaphore);
+	while (1) {
+		/**
+		 * Used only in experiment 1 to wait for the timer flag, clear it and increment the timecount
+		 *
+		 */
+		/*	while (((TimerStatus_1 = TimerIntStatus(TIMER0_BASE, 0))
+		 & TIMER_TIMA_TIMEOUT) == 0) {
+		 }
+		 TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+		 TimeCount++;
+		 */
+
+		/**
+		 * Attempt to read the semaphore, if empty, then task is blocked until,
+		 * a timer interrupt event occurs. If there is a semaphore, the task is
+		 * unblocked and performs the clock work below
+		 */
+		xSemaphoreTake(Timer_0_A_Semaphore, portMAX_DELAY);
+		if (TimeCount == 99) { //Timecount increments at 1 centisecond on each interrupt
+			TimeCount = 0;
+			seconds++;
+			UARTprintf("%02d:%02d:%02d:%02d\n", hours, minutes, seconds,
+					TimeCount);
+			if (seconds == 59) {
+				minutes++;
+				seconds = 0;
+				if (minutes == 59) {
+					hours++;
+					minutes = 0;
+					if (hours == 23) {
+						hours = 0;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+/**
+ * The ISR increments the timecount after every interrupt and clears the interrupt
+ */
+void Timer_0_A_ISR_Handler(void) {
+	TimeCount++;
+
+	static portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+
+	/**
+	 * Place a semaphore, which will unblock a task
+	 */
+	xSemaphoreGiveFromISR(Timer_0_A_Semaphore, &xHigherPriorityTaskWoken);
+	portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+
+	/**
+	 * clear the timer interrupt
+	 */
+	TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+}
+
