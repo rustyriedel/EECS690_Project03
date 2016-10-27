@@ -1,11 +1,11 @@
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-       3                    ;* Date/Time created: Tue Oct 18 10:42:41 2016                                *
+       3                    ;* Date/Time created: Thu Oct 27 13:55:28 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ queue.asm                                                            PAGE    1
       53                            .dwattr $C$DW$7, DW_AT_decl_line(0xa7)
       54                            .dwattr $C$DW$7, DW_AT_decl_column(0x0d)
       55                            .dwendtag $C$DW$7
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    2
@@ -118,7 +118,7 @@ queue.asm                                                            PAGE    2
      108                    
      109                            .dwendtag $C$DW$13
      110                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    3
@@ -178,7 +178,7 @@ queue.asm                                                            PAGE    3
      163                    $C$DW$22        .dwtag  DW_TAG_formal_parameter
      164                            .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$113)
      165                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    4
@@ -238,7 +238,7 @@ queue.asm                                                            PAGE    4
      218                            .dwattr $C$DW$29, DW_AT_external
      219                            .dwattr $C$DW$29, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
      220                            .dwattr $C$DW$29, DW_AT_decl_line(0x7a4)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    5
@@ -298,7 +298,7 @@ queue.asm                                                            PAGE    5
      273                            .dwattr $C$DW$37, DW_AT_TI_symbol_name("pvTaskIncrementMutexHeldCount")
      274                            .dwattr $C$DW$37, DW_AT_type(*$C$DW$T$3)
      275                            .dwattr $C$DW$37, DW_AT_declaration
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    6
@@ -358,7 +358,7 @@ queue.asm                                                            PAGE    6
      328                            .dwattr $C$DW$41, DW_AT_location[DW_OP_reg1]
      329                    
      330                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    7
@@ -418,7 +418,7 @@ queue.asm                                                            PAGE    7
      383 0000000e 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |268|  ; [ORIG 16-BIT INS]
      384 00000010 9A02              LDR       A3, [SP, #8]          ; [DPU_3_PIPE] |268|  ; [ORIG 16-BIT INS]
      385 00000012 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |268|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    8
@@ -478,7 +478,7 @@ queue.asm                                                            PAGE    8
      438                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 284,column 5,is_stmt,isa 1
      439 00000066 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |284|  ; [ORIG 16-BIT INS]
      440 00000068 3010              ADDS      A1, A1, #16           ; [DPU_3_PIPE] |284|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE    9
@@ -538,7 +538,7 @@ queue.asm                                                            PAGE    9
      493                            .dwattr $C$DW$50, DW_AT_low_pc(0x00)
      494                            .dwattr $C$DW$50, DW_AT_TI_return
      495                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   10
@@ -598,7 +598,7 @@ queue.asm                                                            PAGE   10
      548                    ;* FUNCTION NAME: xQueueGenericCreate                                        *
      549                    ;*                                                                           *
      550                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   11
@@ -658,7 +658,7 @@ queue.asm                                                            PAGE   11
      603 00000096 9101              STR       A2, [SP, #4]          ; [DPU_3_PIPE] |314|  ; [ORIG 16-BIT INS]
      604 00000098 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |314|  ; [ORIG 16-BIT INS]
      605                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 317,column 23,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   12
@@ -718,7 +718,7 @@ queue.asm                                                            PAGE   12
      658                    ;* --------------------------------------------------------------------------*
      659 000000cc           ||$C$L6||:    
      660                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 354,column 4,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   13
@@ -778,7 +778,7 @@ queue.asm                                                            PAGE   13
      713 000000fc                   .sect   ".text"
      714                            .clink
      715                            .thumbfunc xQueueCreateMutex
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   14
@@ -838,7 +838,7 @@ queue.asm                                                            PAGE   14
      768                    
      769                    $C$DW$67        .dwtag  DW_TAG_variable
      770                            .dwattr $C$DW$67, DW_AT_name("pxNewQueue")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   15
@@ -898,7 +898,7 @@ queue.asm                                                            PAGE   15
      823 0000013e 6441              STR       A2, [A1, #68]         ; [DPU_3_PIPE] |418|  ; [ORIG 16-BIT INS]
      824                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 419,column 4,is_stmt,isa 1
      825 00000140 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |419|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   16
@@ -958,7 +958,7 @@ queue.asm                                                            PAGE   16
      878                            .dwattr $C$DW$64, DW_AT_TI_end_line(0x1c0)
      879                            .dwattr $C$DW$64, DW_AT_TI_end_column(0x02)
      880                            .dwendentry
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   17
@@ -1018,7 +1018,7 @@ queue.asm                                                            PAGE   17
      933                    $C$DW$75        .dwtag  DW_TAG_variable
      934                            .dwattr $C$DW$75, DW_AT_name("xMutex")
      935                            .dwattr $C$DW$75, DW_AT_TI_symbol_name("xMutex")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   18
@@ -1078,7 +1078,7 @@ queue.asm                                                            PAGE   18
      988                            .dwattr $C$DW$79, DW_AT_TI_call
      989                    
      990 0000019c F83CF000          BL        xQueueGenericSend     ; [DPU_3_PIPE] |514|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   19
@@ -1138,7 +1138,7 @@ queue.asm                                                            PAGE   19
     1043                            .dwattr $C$DW$81, DW_AT_TI_max_frame_size(0x18)
     1044                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 541,column 2,is_stmt,address xQueue
     1045                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   20
@@ -1198,7 +1198,7 @@ queue.asm                                                            PAGE   20
     1098                            .dwattr $C$DW$87, DW_AT_name("pxMutex")
     1099                            .dwattr $C$DW$87, DW_AT_TI_symbol_name("pxMutex")
     1100                            .dwattr $C$DW$87, DW_AT_type(*$C$DW$T$84)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   21
@@ -1258,7 +1258,7 @@ queue.asm                                                            PAGE   21
     1153                    ;* --------------------------------------------------------------------------*
     1154                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 566,column 5,is_stmt,isa 1
     1155 000001ea 9903              LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |566|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   22
@@ -1318,7 +1318,7 @@ queue.asm                                                            PAGE   22
     1208                    
     1209                    $C$DW$93        .dwtag  DW_TAG_formal_parameter
     1210                            .dwattr $C$DW$93, DW_AT_name("uxInitialCount")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   23
@@ -1378,7 +1378,7 @@ queue.asm                                                            PAGE   23
     1263                            .dwattr $C$DW$97, DW_AT_TI_call
     1264                    
     1265 00000204 FF42F7FF          BL        xQueueGenericCreate   ; [DPU_3_PIPE] |589|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   24
@@ -1438,7 +1438,7 @@ queue.asm                                                            PAGE   24
     1318                            .dwfde $C$DW$CIE, xQueueGenericSend
     1319                    $C$DW$100       .dwtag  DW_TAG_formal_parameter
     1320                            .dwattr $C$DW$100, DW_AT_name("xQueue")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   25
@@ -1498,7 +1498,7 @@ queue.asm                                                            PAGE   25
     1373                            .dwattr $C$DW$105, DW_AT_location[DW_OP_breg13 4]
     1374                    
     1375                    $C$DW$106       .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   26
@@ -1558,7 +1558,7 @@ queue.asm                                                            PAGE   26
     1428                    ;*   Known Max Trip Count Factor     : 1
     1429                    ;* --------------------------------------------------------------------------*
     1430 0000022e           ||$C$L16||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   27
@@ -1618,7 +1618,7 @@ queue.asm                                                            PAGE   27
     1483                            .dwattr $C$DW$114, DW_AT_low_pc(0x00)
     1484                            .dwattr $C$DW$114, DW_AT_name("xTaskRemoveFromEventList")
     1485                            .dwattr $C$DW$114, DW_AT_TI_call
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   28
@@ -1678,7 +1678,7 @@ queue.asm                                                            PAGE   28
     1538 00000282 E049              B         ||$C$L28||            ; [DPU_3_PIPE] |738|  ; [ORIG 16-BIT INS]
     1539                            ; BRANCH OCCURS {||$C$L28||}     ; [] |738| 
     1540                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   29
@@ -1738,7 +1738,7 @@ queue.asm                                                            PAGE   29
     1593 000002a8 9808              LDR       A1, [SP, #32]         ; [DPU_3_PIPE] |760|  ; [ORIG 16-BIT INS]
     1594 000002aa 2100              MOVS      A2, #0                ; [DPU_3_PIPE] |760|  ; [ORIG 16-BIT INS]
     1595 000002ac 6441              STR       A2, [A1, #68]         ; [DPU_3_PIPE] |760|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   30
@@ -1798,7 +1798,7 @@ queue.asm                                                            PAGE   30
     1648                            .dwattr $C$DW$124, DW_AT_TI_call
     1649                    
     1650 000002da FFFEF7FF!         BL        vTaskPlaceOnEventList ; [DPU_3_PIPE] |768|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   31
@@ -1858,7 +1858,7 @@ queue.asm                                                            PAGE   31
     1703                            ; BRANCH OCCURS {||$C$L16||}     ; [] |793| 
     1704                    ;* --------------------------------------------------------------------------*
     1705 0000030a           ||$C$L27||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   32
@@ -1918,7 +1918,7 @@ queue.asm                                                            PAGE   32
     1758                            .dwattr $C$DW$132, DW_AT_type(*$C$DW$T$39)
     1759                            .dwattr $C$DW$132, DW_AT_TI_begin_file("C:/TI_ARM_Tiva_Projects/Source/queue.c")
     1760                            .dwattr $C$DW$132, DW_AT_TI_begin_line(0x41e)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   33
@@ -1978,7 +1978,7 @@ queue.asm                                                            PAGE   33
     1813                    $C$DW$137       .dwtag  DW_TAG_variable
     1814                            .dwattr $C$DW$137, DW_AT_name("xQueue")
     1815                            .dwattr $C$DW$137, DW_AT_TI_symbol_name("xQueue")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   34
@@ -2038,7 +2038,7 @@ queue.asm                                                            PAGE   34
     1868 0000033a 8F4FF3BF          dsb ; [KEEP 32-BIT INS]
     1869 0000033e 8F6FF3BF          isb ; [KEEP 32-BIT INS]
     1870                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1087,column 3,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   35
@@ -2098,7 +2098,7 @@ queue.asm                                                            PAGE   35
     1923                    
     1924 00000378 FFFEF7FF!         BL        xTaskRemoveFromEventList ; [DPU_3_PIPE] |1157|  ; [KEEP 32-BIT INS]
     1925                            ; CALL OCCURS {xTaskRemoveFromEventList }  ; [] |1157| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   36
@@ -2158,7 +2158,7 @@ queue.asm                                                            PAGE   36
     1978                            ; BRANCH OCCURS                  ; [] 
     1979                            .dwattr $C$DW$132, DW_AT_TI_end_file("C:/TI_ARM_Tiva_Projects/Source/queue.c")
     1980                            .dwattr $C$DW$132, DW_AT_TI_end_line(0x4b0)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   37
@@ -2218,7 +2218,7 @@ queue.asm                                                            PAGE   37
     2033                    ;* --------------------------------------------------------------------------*
     2034                            .dwcfi  cfa_offset, 0
     2035 000003a8 B500              PUSH      {LR}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   38
@@ -2278,7 +2278,7 @@ queue.asm                                                            PAGE   38
     2088 000003d2 4288              CMP       A1, A2                ; [DPU_3_PIPE] |1247|  ; [ORIG 16-BIT INS]
     2089 000003d4 D920              BLS       ||$C$L38||            ; [DPU_3_PIPE] |1247|  ; [ORIG 16-BIT INS]
     2090                            ; BRANCHCC OCCURS {||$C$L38||}   ; [] |1247| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   39
@@ -2338,7 +2338,7 @@ queue.asm                                                            PAGE   39
     2143                    ;* --------------------------------------------------------------------------*
     2144 0000040a           ||$C$L36||:    
     2145                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1347,column 5,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   40
@@ -2398,7 +2398,7 @@ queue.asm                                                            PAGE   40
     2198                            .dwattr $C$DW$157, DW_AT_type(*$C$DW$T$39)
     2199                            .dwattr $C$DW$157, DW_AT_TI_begin_file("C:/TI_ARM_Tiva_Projects/Source/queue.c")
     2200                            .dwattr $C$DW$157, DW_AT_TI_begin_line(0x554)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   41
@@ -2458,7 +2458,7 @@ queue.asm                                                            PAGE   41
     2253                    $C$DW$162       .dwtag  DW_TAG_variable
     2254                            .dwattr $C$DW$162, DW_AT_name("xQueue")
     2255                            .dwattr $C$DW$162, DW_AT_TI_symbol_name("xQueue")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   42
@@ -2518,7 +2518,7 @@ queue.asm                                                            PAGE   42
     2308                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1369,column 25,is_stmt,isa 1
     2309 0000043a 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1369|  ; [ORIG 16-BIT INS]
     2310 0000043c 9009              STR       A1, [SP, #36]         ; [DPU_3_PIPE] |1369|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   43
@@ -2578,7 +2578,7 @@ queue.asm                                                            PAGE   43
     2363 00000468 B918              CBNZ      A1, ||$C$L41||        ; []  ; [ORIG 16-BIT INS]
     2364                            ; BRANCHCC OCCURS {||$C$L41||}   ; [] |1406| 
     2365                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   44
@@ -2638,7 +2638,7 @@ queue.asm                                                            PAGE   44
     2418 00000492 9809              LDR       A1, [SP, #36]         ; [DPU_3_PIPE] |1445|  ; [ORIG 16-BIT INS]
     2419 00000494 6A41              LDR       A2, [A1, #36]         ; [DPU_3_PIPE] |1445|  ; [ORIG 16-BIT INS]
     2420 00000496 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1445|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   45
@@ -2698,7 +2698,7 @@ queue.asm                                                            PAGE   45
     2473                    
     2474 000004b6 FFFEF7FF!         BL        vPortExitCritical     ; [DPU_3_PIPE] |1472|  ; [KEEP 32-BIT INS]
     2475                            ; CALL OCCURS {vPortExitCritical }  ; [] |1472| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   46
@@ -2758,7 +2758,7 @@ queue.asm                                                            PAGE   46
     2528 000004da 6C40              LDR       A1, [A1, #68]         ; [DPU_3_PIPE] |1496|  ; [ORIG 16-BIT INS]
     2529 000004dc 3FFFF1B0          CMP       A1, #-1               ; [DPU_3_PIPE] |1496|  ; [KEEP 32-BIT INS]
     2530 000004e0 D102              BNE       ||$C$L49||            ; [DPU_3_PIPE] |1496|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   47
@@ -2818,7 +2818,7 @@ queue.asm                                                            PAGE   47
     2583 00000510 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |1507|  ; [ORIG 16-BIT INS]
     2584 00000512 B938              CBNZ      A1, ||$C$L51||        ; []  ; [ORIG 16-BIT INS]
     2585                            ; BRANCHCC OCCURS {||$C$L51||}   ; [] |1507| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   48
@@ -2878,7 +2878,7 @@ queue.asm                                                            PAGE   48
     2638                            .dwattr $C$DW$189, DW_AT_low_pc(0x00)
     2639                            .dwattr $C$DW$189, DW_AT_name("xTaskResumeAll")
     2640                            .dwattr $C$DW$189, DW_AT_TI_call
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   49
@@ -2938,7 +2938,7 @@ queue.asm                                                            PAGE   49
     2693                            .dwattr $C$DW$193, DW_AT_low_pc(0x00)
     2694                            .dwattr $C$DW$193, DW_AT_name("xTaskResumeAll")
     2695                            .dwattr $C$DW$193, DW_AT_TI_call
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   50
@@ -2998,7 +2998,7 @@ queue.asm                                                            PAGE   50
     2748                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1552,column 1,is_stmt,address xQueu
     2749                    
     2750                            .dwfde $C$DW$CIE, xQueueReceiveFromISR
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   51
@@ -3058,7 +3058,7 @@ queue.asm                                                            PAGE   51
     2803                            .dwattr $C$DW$201, DW_AT_TI_symbol_name("pxHigherPriorityTaskWoken")
     2804                            .dwattr $C$DW$201, DW_AT_type(*$C$DW$T$167)
     2805                            .dwattr $C$DW$201, DW_AT_location[DW_OP_breg13 8]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   52
@@ -3118,7 +3118,7 @@ queue.asm                                                            PAGE   52
     2858 000005a6 6B88              LDR       A1, [A2, #56]         ; [DPU_3_PIPE] |1584|  ; [ORIG 16-BIT INS]
     2859 000005a8 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |1584|  ; [ORIG 16-BIT INS]
     2860 000005aa 6388              STR       A1, [A2, #56]         ; [DPU_3_PIPE] |1584|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   53
@@ -3178,7 +3178,7 @@ queue.asm                                                            PAGE   53
     2913 000005de 6448              STR       A1, [A2, #68]         ; [DPU_3_PIPE] |1621|  ; [ORIG 16-BIT INS]
     2914                    ;* --------------------------------------------------------------------------*
     2915 000005e0           ||$C$L57||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   54
@@ -3238,7 +3238,7 @@ queue.asm                                                            PAGE   54
     2968                            .dwattr $C$DW$208, DW_AT_decl_column(0x0c)
     2969                            .dwattr $C$DW$208, DW_AT_TI_max_frame_size(0x20)
     2970                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1639,column 1,is_stmt,address xQueu
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   55
@@ -3298,7 +3298,7 @@ queue.asm                                                            PAGE   55
     3023                    $C$DW$214       .dwtag  DW_TAG_variable
     3024                            .dwattr $C$DW$214, DW_AT_name("uxSavedInterruptStatus")
     3025                            .dwattr $C$DW$214, DW_AT_TI_symbol_name("uxSavedInterruptStatus")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   56
@@ -3358,7 +3358,7 @@ queue.asm                                                            PAGE   56
     3078                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1678,column 4,is_stmt,isa 1
     3079 00000632 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |1678|  ; [ORIG 16-BIT INS]
     3080 00000634 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1678|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   57
@@ -3418,7 +3418,7 @@ queue.asm                                                            PAGE   57
     3133                    
     3134                            .dwfde $C$DW$CIE, uxQueueMessagesWaiting
     3135                    $C$DW$220       .dwtag  DW_TAG_formal_parameter
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   58
@@ -3478,7 +3478,7 @@ queue.asm                                                            PAGE   58
     3188                    $C$DW$224       .dwtag  DW_TAG_TI_branch
     3189                            .dwattr $C$DW$224, DW_AT_low_pc(0x00)
     3190                            .dwattr $C$DW$224, DW_AT_name("vPortExitCritical")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   59
@@ -3538,7 +3538,7 @@ queue.asm                                                            PAGE   59
     3243                    ;*                                                                           *
     3244                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
     3245                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   60
@@ -3598,7 +3598,7 @@ queue.asm                                                            PAGE   60
     3298                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1720,column 2,is_stmt,isa 1
     3299                    $C$DW$232       .dwtag  DW_TAG_TI_branch
     3300                            .dwattr $C$DW$232, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   61
@@ -3658,7 +3658,7 @@ queue.asm                                                            PAGE   61
     3353                    ;* FUNCTION NAME: uxQueueMessagesWaitingFromISR                              *
     3354                    ;*                                                                           *
     3355                    ;*   Regs Modified     : A1,SP                                               *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   62
@@ -3718,7 +3718,7 @@ queue.asm                                                            PAGE   62
     3408                            .dwattr $C$DW$239, DW_AT_TI_symbol_name("vQueueDelete")
     3409                            .dwattr $C$DW$239, DW_AT_external
     3410                            .dwattr $C$DW$239, DW_AT_TI_begin_file("C:/TI_ARM_Tiva_Projects/Source/queue.c")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   63
@@ -3778,7 +3778,7 @@ queue.asm                                                            PAGE   63
     3463                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1747,column 3,is_stmt,isa 1
     3464 00000698 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1747|  ; [ORIG 16-BIT INS]
     3465                    $C$DW$243       .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   64
@@ -3838,7 +3838,7 @@ queue.asm                                                            PAGE   64
     3518                    $C$DW$247       .dwtag  DW_TAG_formal_parameter
     3519                            .dwattr $C$DW$247, DW_AT_name("xQueue")
     3520                            .dwattr $C$DW$247, DW_AT_TI_symbol_name("xQueue")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   65
@@ -3898,7 +3898,7 @@ queue.asm                                                            PAGE   65
     3573                            .dwattr $C$DW$250, DW_AT_external
     3574                            .dwattr $C$DW$250, DW_AT_TI_begin_file("C:/TI_ARM_Tiva_Projects/Source/queue.c")
     3575                            .dwattr $C$DW$250, DW_AT_TI_begin_line(0x6e6)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   66
@@ -3958,7 +3958,7 @@ queue.asm                                                            PAGE   66
     3628 000006c2 B002              ADD       SP, SP, #8            ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
     3629                            .dwcfi  cfa_offset, 0
     3630                    $C$DW$255       .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   67
@@ -4018,7 +4018,7 @@ queue.asm                                                            PAGE   67
     3683                            .dwcfi  cfa_offset, 8
     3684                    $C$DW$258       .dwtag  DW_TAG_variable
     3685                            .dwattr $C$DW$258, DW_AT_name("xQueue")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   68
@@ -4078,7 +4078,7 @@ queue.asm                                                            PAGE   68
     3738                            .dwattr $C$DW$262, DW_AT_TI_symbol_name("pvItemToQueue")
     3739                            .dwattr $C$DW$262, DW_AT_type(*$C$DW$T$98)
     3740                            .dwattr $C$DW$262, DW_AT_location[DW_OP_reg1]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   69
@@ -4138,7 +4138,7 @@ queue.asm                                                            PAGE   69
     3793 000006de 9101              STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1785|  ; [ORIG 16-BIT INS]
     3794 000006e0 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1785|  ; [ORIG 16-BIT INS]
     3795                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1786,column 20,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   70
@@ -4198,7 +4198,7 @@ queue.asm                                                            PAGE   70
     3848 00000714 FFFEF7FF!         BL        memcpy                ; [DPU_3_PIPE] |1807|  ; [KEEP 32-BIT INS]
     3849                            ; CALL OCCURS {memcpy }          ; [] |1807| 
     3850                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1808,column 3,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   71
@@ -4258,7 +4258,7 @@ queue.asm                                                            PAGE   71
     3903 0000075e D906              BLS       ||$C$L64||            ; [DPU_3_PIPE] |1822|  ; [ORIG 16-BIT INS]
     3904                            ; BRANCHCC OCCURS {||$C$L64||}   ; [] |1822| 
     3905                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   72
@@ -4318,7 +4318,7 @@ queue.asm                                                            PAGE   72
     3958                            .dwattr $C$DW$260, DW_AT_TI_end_line(0x73f)
     3959                            .dwattr $C$DW$260, DW_AT_TI_end_column(0x01)
     3960                            .dwendentry
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   73
@@ -4378,7 +4378,7 @@ queue.asm                                                            PAGE   73
     4013                            .dwcfi  save_reg_to_mem, 3, -8
     4014                            .dwcfi  save_reg_to_mem, 2, -12
     4015                            .dwcfi  save_reg_to_mem, 1, -16
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   74
@@ -4438,7 +4438,7 @@ queue.asm                                                            PAGE   74
     4068                            .dwattr $C$DW$277, DW_AT_name("memcpy")
     4069                            .dwattr $C$DW$277, DW_AT_TI_call
     4070                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   75
@@ -4498,7 +4498,7 @@ queue.asm                                                            PAGE   75
     4123                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
     4124                    ;*                           FPEXC,FPSCR                                     *
     4125                    ;*   Local Frame Size  : 0 Args + 4 Auto + 4 Save = 8 byte                   *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   76
@@ -4558,7 +4558,7 @@ queue.asm                                                            PAGE   76
     4178                            ; BRANCHCC OCCURS {||$C$L70||}   ; [] |1936| 
     4179                    ;* --------------------------------------------------------------------------*
     4180                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 1940,column 7,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   77
@@ -4618,7 +4618,7 @@ queue.asm                                                            PAGE   77
     4233                            ; BRANCH OCCURS {||$C$L76||}     ; [] |1964| 
     4234                    ;* --------------------------------------------------------------------------*
     4235 00000816           ||$C$L73||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   78
@@ -4678,7 +4678,7 @@ queue.asm                                                            PAGE   78
     4288 0000083c 6C40              LDR       A1, [A1, #68]         ; [DPU_3_PIPE] |1964|  ; [ORIG 16-BIT INS]
     4289 0000083e 2800              CMP       A1, #0                ; [DPU_3_PIPE] |1964|  ; [ORIG 16-BIT INS]
     4290 00000840 DCE9              BGT       ||$C$L73||            ; [DPU_3_PIPE] |1964|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   79
@@ -4738,7 +4738,7 @@ queue.asm                                                            PAGE   79
     4343                            .dwattr $C$DW$292, DW_AT_TI_symbol_name("pxQueue")
     4344                            .dwattr $C$DW$292, DW_AT_type(*$C$DW$T$82)
     4345                            .dwattr $C$DW$292, DW_AT_location[DW_OP_reg0]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   80
@@ -4798,7 +4798,7 @@ queue.asm                                                            PAGE   80
     4398                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 2000,column 3,is_stmt,isa 1
     4399 00000862 E001              B         ||$C$L79||            ; [DPU_3_PIPE] |2000|  ; [ORIG 16-BIT INS]
     4400                            ; BRANCH OCCURS {||$C$L79||}     ; [] |2000| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   81
@@ -4858,7 +4858,7 @@ queue.asm                                                            PAGE   81
     4453                    
     4454                            .dwfde $C$DW$CIE, xQueueIsQueueEmptyFromISR
     4455                    $C$DW$299       .dwtag  DW_TAG_formal_parameter
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   82
@@ -4918,7 +4918,7 @@ queue.asm                                                            PAGE   82
     4508                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 2027,column 1,is_stmt,isa 1
     4509 00000888 B002              ADD       SP, SP, #8            ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
     4510                            .dwcfi  cfa_offset, 0
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   83
@@ -4978,7 +4978,7 @@ queue.asm                                                            PAGE   83
     4563                    ;* --------------------------------------------------------------------------*
     4564                            .dwcfi  cfa_offset, 0
     4565 0000088c B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   84
@@ -5038,7 +5038,7 @@ queue.asm                                                            PAGE   84
     4618                            .dwattr $C$DW$308, DW_AT_TI_call
     4619                    
     4620 000008aa FFFEF7FF!         BL        vPortExitCritical     ; [DPU_3_PIPE] |2045|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   85
@@ -5098,7 +5098,7 @@ queue.asm                                                            PAGE   85
     4673                    ;*   Local Frame Size  : 0 Args + 8 Auto + 0 Save = 8 byte                   *
     4674                    ;*****************************************************************************
     4675 000008b2           xQueueIsQueueFullFromISR:
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   86
@@ -5158,7 +5158,7 @@ queue.asm                                                            PAGE   86
     4728                            .dwattr $C$DW$310, DW_AT_TI_end_column(0x01)
     4729                            .dwendentry
     4730                            .dwendtag $C$DW$310
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   87
@@ -5218,7 +5218,7 @@ queue.asm                                                            PAGE   87
     4783                            .dwattr $C$DW$318, DW_AT_location[DW_OP_breg13 0]
     4784                    
     4785                    $C$DW$319       .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   88
@@ -5278,7 +5278,7 @@ queue.asm                                                            PAGE   88
     4838                    ;* --------------------------------------------------------------------------*
     4839 00000906           ||$C$L87||:    
     4840                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 2352,column 81,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   89
@@ -5338,7 +5338,7 @@ queue.asm                                                            PAGE   89
     4893                            .dwattr $C$DW$323, DW_AT_location[DW_OP_reg0]
     4894                    
     4895                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   90
@@ -5398,7 +5398,7 @@ queue.asm                                                            PAGE   90
     4948                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 2386,column 5,is_stmt,isa 1
     4949 00000934 9901              LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |2386|  ; [ORIG 16-BIT INS]
     4950 00000936 4A1B              LDR       A3, $C$CON2           ; [DPU_3_PIPE] |2386|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   91
@@ -5458,7 +5458,7 @@ queue.asm                                                            PAGE   91
     5003                            .dwattr $C$DW$327, DW_AT_decl_column(0x07)
     5004                            .dwattr $C$DW$327, DW_AT_TI_max_frame_size(0x18)
     5005                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 2403,column 2,is_stmt,address vQueu
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   92
@@ -5518,7 +5518,7 @@ queue.asm                                                            PAGE   92
     5058                    $C$DW$333       .dwtag  DW_TAG_variable
     5059                            .dwattr $C$DW$333, DW_AT_name("xWaitIndefinitely")
     5060                            .dwattr $C$DW$333, DW_AT_TI_symbol_name("xWaitIndefinitely")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   93
@@ -5578,7 +5578,7 @@ queue.asm                                                            PAGE   93
     5113                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/queue.c",line 2421,column 3,is_stmt,isa 1
     5114 00000988 9803              LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2421|  ; [ORIG 16-BIT INS]
     5115 0000098a 6B80              LDR       A1, [A1, #56]         ; [DPU_3_PIPE] |2421|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   94
@@ -5638,7 +5638,7 @@ queue.asm                                                            PAGE   94
     5168                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
     5169                    ;*****************************************************************************
     5170                            .global vPortEnterCritical
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   95
@@ -5698,7 +5698,7 @@ queue.asm                                                            PAGE   95
     5223                    $C$DW$342       .dwtag  DW_TAG_enumerator
     5224                            .dwattr $C$DW$342, DW_AT_name("eBlocked")
     5225                            .dwattr $C$DW$342, DW_AT_const_value(0x02)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   96
@@ -5758,7 +5758,7 @@ queue.asm                                                            PAGE   96
     5278                            .dwattr $C$DW$347, DW_AT_decl_line(0x7e)
     5279                            .dwattr $C$DW$347, DW_AT_decl_column(0x02)
     5280                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   97
@@ -5818,7 +5818,7 @@ queue.asm                                                            PAGE   97
     5333                            .dwattr $C$DW$T$69, DW_AT_decl_line(0xb4)
     5334                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x01)
     5335                            .dwendtag $C$DW$T$69
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   98
@@ -5878,7 +5878,7 @@ queue.asm                                                            PAGE   98
     5388                            .dwattr $C$DW$355, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     5389                            .dwattr $C$DW$355, DW_AT_accessibility(DW_ACCESS_public)
     5390                            .dwattr $C$DW$355, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE   99
@@ -5938,7 +5938,7 @@ queue.asm                                                            PAGE   99
     5443                            .dwendtag $C$DW$T$21
     5444                    
     5445                    $C$DW$T$73      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  100
@@ -5998,7 +5998,7 @@ queue.asm                                                            PAGE  100
     5498                            .dwattr $C$DW$362, DW_AT_TI_symbol_name("xSizeInBytes")
     5499                            .dwattr $C$DW$362, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     5500                            .dwattr $C$DW$362, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  101
@@ -6058,7 +6058,7 @@ queue.asm                                                            PAGE  101
     5553                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x04)
     5554                    
     5555                    $C$DW$T$76      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  102
@@ -6118,7 +6118,7 @@ queue.asm                                                            PAGE  102
     5608                            .dwattr $C$DW$369, DW_AT_type(*$C$DW$T$26)
     5609                            .dwattr $C$DW$369, DW_AT_name("u")
     5610                            .dwattr $C$DW$369, DW_AT_TI_symbol_name("u")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  103
@@ -6178,7 +6178,7 @@ queue.asm                                                            PAGE  103
     5663                            .dwattr $C$DW$374, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/queue.c")
     5664                            .dwattr $C$DW$374, DW_AT_decl_line(0x93)
     5665                            .dwattr $C$DW$374, DW_AT_decl_column(0x0e)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  104
@@ -6238,7 +6238,7 @@ queue.asm                                                            PAGE  104
     5718                            .dwattr $C$DW$T$79, DW_AT_decl_column(0x03)
     5719                    
     5720                    $C$DW$T$80      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  105
@@ -6298,7 +6298,7 @@ queue.asm                                                            PAGE  105
     5773                            .dwattr $C$DW$T$93, DW_AT_decl_line(0x66)
     5774                            .dwattr $C$DW$T$93, DW_AT_decl_column(0x10)
     5775                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  106
@@ -6358,7 +6358,7 @@ queue.asm                                                            PAGE  106
     5828                    
     5829                    $C$DW$T$108     .dwtag  DW_TAG_typedef
     5830                            .dwattr $C$DW$T$108, DW_AT_name("__TI_atexit_fn")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  107
@@ -6418,7 +6418,7 @@ queue.asm                                                            PAGE  107
     5883                    
     5884                    $C$DW$T$137     .dwtag  DW_TAG_typedef
     5885                            .dwattr $C$DW$T$137, DW_AT_name("portCHAR")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  108
@@ -6478,7 +6478,7 @@ queue.asm                                                            PAGE  108
     5938                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
     5939                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
     5940                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  109
@@ -6538,7 +6538,7 @@ queue.asm                                                            PAGE  109
     5993                            .dwattr $C$DW$T$146, DW_AT_decl_column(0x13)
     5994                    
     5995                    $C$DW$T$38      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  110
@@ -6598,7 +6598,7 @@ queue.asm                                                            PAGE  110
     6048                            .dwattr $C$DW$T$182, DW_AT_language(DW_LANG_C)
     6049                            .dwattr $C$DW$T$182, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
     6050                            .dwattr $C$DW$T$182, DW_AT_decl_line(0x47)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  111
@@ -6658,7 +6658,7 @@ queue.asm                                                            PAGE  111
     6103                            .dwattr $C$DW$T$189, DW_AT_type(*$C$DW$T$10)
     6104                            .dwattr $C$DW$T$189, DW_AT_language(DW_LANG_C)
     6105                            .dwattr $C$DW$T$189, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  112
@@ -6718,7 +6718,7 @@ queue.asm                                                            PAGE  112
     6158                            .dwattr $C$DW$T$155, DW_AT_type(*$C$DW$T$154)
     6159                    
     6160                    $C$DW$T$25      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  113
@@ -6778,7 +6778,7 @@ queue.asm                                                            PAGE  113
     6213                    
     6214                    $C$DW$T$201     .dwtag  DW_TAG_typedef
     6215                            .dwattr $C$DW$T$201, DW_AT_name("uintptr_t")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  114
@@ -6838,7 +6838,7 @@ queue.asm                                                            PAGE  114
     6268                    
     6269                    $C$DW$T$206     .dwtag  DW_TAG_typedef
     6270                            .dwattr $C$DW$T$206, DW_AT_name("intmax_t")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  115
@@ -6898,7 +6898,7 @@ queue.asm                                                            PAGE  115
     6323                            .dwattr $C$DW$T$211, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/por
     6324                            .dwattr $C$DW$T$211, DW_AT_decl_line(0x61)
     6325                            .dwattr $C$DW$T$211, DW_AT_decl_column(0x10)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  116
@@ -6958,7 +6958,7 @@ queue.asm                                                            PAGE  116
     6378                    $C$DW$384       .dwtag  DW_TAG_member
     6379                            .dwattr $C$DW$384, DW_AT_type(*$C$DW$T$25)
     6380                            .dwattr $C$DW$384, DW_AT_name("uxNumberOfItems")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  117
@@ -7018,7 +7018,7 @@ queue.asm                                                            PAGE  117
     6433                            .dwattr $C$DW$T$109, DW_AT_address_class(0x20)
     6434                    
     6435                    $C$DW$T$110     .dwtag  DW_TAG_const_type
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  118
@@ -7078,7 +7078,7 @@ queue.asm                                                            PAGE  118
     6488                            .dwattr $C$DW$391, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
     6489                            .dwattr $C$DW$391, DW_AT_decl_line(0xbc)
     6490                            .dwattr $C$DW$391, DW_AT_decl_column(0x1d)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  119
@@ -7138,7 +7138,7 @@ queue.asm                                                            PAGE  119
     6543                            .dwattr $C$DW$394, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     6544                            .dwattr $C$DW$394, DW_AT_decl_line(0x93)
     6545                            .dwattr $C$DW$394, DW_AT_decl_column(0x0b)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  120
@@ -7198,7 +7198,7 @@ queue.asm                                                            PAGE  120
     6598                            .dwattr $C$DW$398, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     6599                            .dwattr $C$DW$398, DW_AT_accessibility(DW_ACCESS_public)
     6600                            .dwattr $C$DW$398, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  121
@@ -7258,7 +7258,7 @@ queue.asm                                                            PAGE  121
     6653                            .dwattr $C$DW$402, DW_AT_name("pvParameters")
     6654                            .dwattr $C$DW$402, DW_AT_TI_symbol_name("pvParameters")
     6655                            .dwattr $C$DW$402, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  122
@@ -7318,7 +7318,7 @@ queue.asm                                                            PAGE  122
     6708                    $C$DW$406       .dwtag  DW_TAG_member
     6709                            .dwattr $C$DW$406, DW_AT_type(*$C$DW$T$62)
     6710                            .dwattr $C$DW$406, DW_AT_name("xHandle")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  123
@@ -7378,7 +7378,7 @@ queue.asm                                                            PAGE  123
     6763                            .dwattr $C$DW$411, DW_AT_accessibility(DW_ACCESS_public)
     6764                            .dwattr $C$DW$411, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     6765                            .dwattr $C$DW$411, DW_AT_decl_line(0xad)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  124
@@ -7438,7 +7438,7 @@ queue.asm                                                            PAGE  124
     6818                            .dwattr $C$DW$415, DW_AT_TI_symbol_name("xTimeOnEntering")
     6819                            .dwattr $C$DW$415, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     6820                            .dwattr $C$DW$415, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  125
@@ -7498,7 +7498,7 @@ queue.asm                                                            PAGE  125
     6873                            .dwcfi  undefined, 66
     6874                            .dwcfi  undefined, 67
     6875                            .dwcfi  undefined, 68
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:42 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:29 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 queue.asm                                                            PAGE  126

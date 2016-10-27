@@ -1383,3 +1383,321 @@ warning: section Proj2_Magnetometer.out(.text) was padded by 2 to a size of
 ' '
 
 **** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k clean 
+DEL /F  "Proj2_Magnetometer.out"  "Proj2_Magnetometer.hex" 
+DEL /F "FreeRTOS_TM4C1294_Base_Startup.d" "Main_Base.d" "heap_2.d" "Drivers\Processor_Initialization_TM4C1294.d" "Drivers\uartstdio.d" "Source\croutine.d" "Source\event_groups.d" "Source\list.d" "Source\queue.d" "Source\tasks.d" "Source\timers.d" "Source\portable\CCS\ARM_CM4F\port.d" "Tasks\Magnetometer.d" "Tasks\Task_Blinky.d" "Tasks\Task_I2C7_Handler.d" "Tasks\Task_ReportData.d" "Tasks\Task_ReportTime.d" 
+DEL /F "FreeRTOS_TM4C1294_Base_Startup.obj" "Main_Base.obj" "heap_2.obj" "Drivers\Processor_Initialization_TM4C1294.obj" "Drivers\uartstdio.obj" "Source\croutine.obj" "Source\event_groups.obj" "Source\list.obj" "Source\queue.obj" "Source\tasks.obj" "Source\timers.obj" "Source\portable\CCS\ARM_CM4F\port.obj" "Source\portable\CCS\ARM_CM4F\portasm.obj" "Tasks\Magnetometer.obj" "Tasks\Task_Blinky.obj" "Tasks\Task_I2C7_Handler.obj" "Tasks\Task_ReportData.obj" "Tasks\Task_ReportTime.obj" 
+DEL /F "Source\portable\CCS\ARM_CM4F\portasm.d" 
+Could Not Find C:\TI_ARM_Tiva_Projects\Proj2_Magnetometer\Debug\Source\portable\CCS\ARM_CM4F\portasm.d
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../FreeRTOS_TM4C1294_Base_Startup.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="FreeRTOS_TM4C1294_Base_Startup.d"  "../FreeRTOS_TM4C1294_Base_Startup.c"
+'Finished building: ../FreeRTOS_TM4C1294_Base_Startup.c'
+' '
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'Main_Base.obj' failed
+"../Main_Base.c", line 26: fatal error #1965: cannot open source file "Task_gyro.h"
+1 catastrophic error detected in the compilation of "../Main_Base.c".
+Compilation terminated.
+gmake: *** [Main_Base.obj] Error 1
+'Building file: ../heap_2.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="heap_2.d"  "../heap_2.c"
+'Finished building: ../heap_2.c'
+' '
+'Building file: ../Drivers/Processor_Initialization_TM4C1294.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Drivers/Processor_Initialization_TM4C1294.d" --obj_directory="Drivers"  "../Drivers/Processor_Initialization_TM4C1294.c"
+'Finished building: ../Drivers/Processor_Initialization_TM4C1294.c'
+' '
+'Building file: ../Drivers/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Drivers/uartstdio.d" --obj_directory="Drivers"  "../Drivers/uartstdio.c"
+'Finished building: ../Drivers/uartstdio.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/croutine.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/croutine.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/croutine.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/croutine.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/event_groups.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/event_groups.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/event_groups.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/event_groups.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/list.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/list.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/list.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/list.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/queue.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/queue.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/queue.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/queue.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/tasks.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/tasks.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/tasks.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/tasks.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/timers.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/timers.d" --obj_directory="Source"  "C:/TI_ARM_Tiva_Projects/Source/timers.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/timers.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/port.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/portable/CCS/ARM_CM4F/port.d" --obj_directory="Source/portable/CCS/ARM_CM4F"  "C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/port.c"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/port.c'
+' '
+'Building file: C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Source/portable/CCS/ARM_CM4F/portasm.d" --obj_directory="Source/portable/CCS/ARM_CM4F"  "C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm"
+'Finished building: C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm'
+' '
+'Building file: ../Tasks/Magnetometer.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Magnetometer.d" --obj_directory="Tasks"  "../Tasks/Magnetometer.c"
+"../Tasks/Magnetometer.c", line 55: warning #225-D: function "IntRegister" declared implicitly
+'Finished building: ../Tasks/Magnetometer.c'
+' '
+'Building file: ../Tasks/Task_Blinky.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_Blinky.d" --obj_directory="Tasks"  "../Tasks/Task_Blinky.c"
+'Finished building: ../Tasks/Task_Blinky.c'
+' '
+'Building file: ../Tasks/Task_I2C7_Handler.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_I2C7_Handler.d" --obj_directory="Tasks"  "../Tasks/Task_I2C7_Handler.c"
+'Finished building: ../Tasks/Task_I2C7_Handler.c'
+' '
+'Building file: ../Tasks/Task_ReportData.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_ReportData.d" --obj_directory="Tasks"  "../Tasks/Task_ReportData.c"
+'Finished building: ../Tasks/Task_ReportData.c'
+' '
+'Building file: ../Tasks/Task_ReportTime.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_ReportTime.d" --obj_directory="Tasks"  "../Tasks/Task_ReportTime.c"
+'Finished building: ../Tasks/Task_ReportTime.c'
+' '
+'Building file: ../Tasks/Task_gyro.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_gyro.d" --obj_directory="Tasks"  "../Tasks/Task_gyro.c"
+
+>> Compilation failure
+Tasks/subdir_rules.mk:42: recipe for target 'Tasks/Task_gyro.obj' failed
+"../Tasks/Task_gyro.c", line 135: error #20: identifier "sMPU9150" is undefined
+1 error detected in the compilation of "../Tasks/Task_gyro.c".
+gmake: *** [Tasks/Task_gyro.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'Main_Base.obj' failed
+"../Main_Base.c", line 26: fatal error #1965: cannot open source file "Task_gyro.h"
+1 catastrophic error detected in the compilation of "../Main_Base.c".
+Compilation terminated.
+gmake: *** [Main_Base.obj] Error 1
+'Building file: ../Tasks/Task_gyro.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_gyro.d" --obj_directory="Tasks"  "../Tasks/Task_gyro.c"
+'Finished building: ../Tasks/Task_gyro.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'Main_Base.obj' failed
+"../Main_Base.c", line 26: fatal error #1965: cannot open source file "Task_gyro.h"
+1 catastrophic error detected in the compilation of "../Main_Base.c".
+Compilation terminated.
+gmake: *** [Main_Base.obj] Error 1
+'Building file: ../Tasks/Task_gyro.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_gyro.d" --obj_directory="Tasks"  "../Tasks/Task_gyro.c"
+
+>> Compilation failure
+Tasks/subdir_rules.mk:42: recipe for target 'Tasks/Task_gyro.obj' failed
+"../Tasks/Task_gyro.c", line 135: error #20: identifier "sMPU9150" is undefined
+1 error detected in the compilation of "../Tasks/Task_gyro.c".
+gmake: *** [Tasks/Task_gyro.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'Main_Base.obj' failed
+"../Main_Base.c", line 26: fatal error #1965: cannot open source file "Task_gyro.h"
+1 catastrophic error detected in the compilation of "../Main_Base.c".
+Compilation terminated.
+gmake: *** [Main_Base.obj] Error 1
+'Building file: ../Tasks/Task_gyro.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_gyro.d" --obj_directory="Tasks"  "../Tasks/Task_gyro.c"
+'Finished building: ../Tasks/Task_gyro.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+"../Main_Base.c", line 42: warning #552-D: variable "Status" was set but never used
+'Finished building: ../Main_Base.c'
+' '
+'Building target: Proj2_Magnetometer.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing -z -m"Proj2_Magnetometer.map" --stack_size=0x0800 --heap_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Proj2_Magnetometer_linkInfo.xml" --rom_model -o "Proj2_Magnetometer.out" "./FreeRTOS_TM4C1294_Base_Startup.obj" "./Main_Base.obj" "./heap_2.obj" "./Drivers/Processor_Initialization_TM4C1294.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM4F/port.obj" "./Source/portable/CCS/ARM_CM4F/portasm.obj" "./Tasks/Magnetometer.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_I2C7_Handler.obj" "./Tasks/Task_ReportData.obj" "./Tasks/Task_ReportTime.obj" "./Tasks/Task_gyro.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 
+
+>> Compilation failure
+makefile:168: recipe for target 'Proj2_Magnetometer.out' failed
+error #10056: symbol "MPU9150Callback" redefined: first defined in "./Tasks/Magnetometer.obj"; redefined in "./Tasks/Task_gyro.obj"
+error #10010: errors encountered during linking; "Proj2_Magnetometer.out" not built
+gmake: *** [Proj2_Magnetometer.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+"../Main_Base.c", line 42: warning #552-D: variable "Status" was set but never used
+'Finished building: ../Main_Base.c'
+' '
+'Building file: ../Tasks/Magnetometer.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Magnetometer.d" --obj_directory="Tasks"  "../Tasks/Magnetometer.c"
+"../Tasks/Magnetometer.c", line 55: warning #225-D: function "IntRegister" declared implicitly
+'Finished building: ../Tasks/Magnetometer.c'
+' '
+'Building target: Proj2_Magnetometer.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing -z -m"Proj2_Magnetometer.map" --stack_size=0x0800 --heap_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Proj2_Magnetometer_linkInfo.xml" --rom_model -o "Proj2_Magnetometer.out" "./FreeRTOS_TM4C1294_Base_Startup.obj" "./Main_Base.obj" "./heap_2.obj" "./Drivers/Processor_Initialization_TM4C1294.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM4F/port.obj" "./Source/portable/CCS/ARM_CM4F/portasm.obj" "./Tasks/Magnetometer.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_I2C7_Handler.obj" "./Tasks/Task_ReportData.obj" "./Tasks/Task_ReportTime.obj" "./Tasks/Task_gyro.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 
+
+>> Compilation failure
+makefile:168: recipe for target 'Proj2_Magnetometer.out' failed
+error #10056: symbol "MPU9150Callback" redefined: first defined in "./Tasks/Magnetometer.obj"; redefined in "./Tasks/Task_gyro.obj"
+error #10010: errors encountered during linking; "Proj2_Magnetometer.out" not built
+gmake: *** [Proj2_Magnetometer.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Tasks/Magnetometer.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Magnetometer.d" --obj_directory="Tasks"  "../Tasks/Magnetometer.c"
+"../Tasks/Magnetometer.c", line 55: warning #225-D: function "IntRegister" declared implicitly
+'Finished building: ../Tasks/Magnetometer.c'
+' '
+'Building target: Proj2_Magnetometer.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing -z -m"Proj2_Magnetometer.map" --stack_size=0x0800 --heap_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Proj2_Magnetometer_linkInfo.xml" --rom_model -o "Proj2_Magnetometer.out" "./FreeRTOS_TM4C1294_Base_Startup.obj" "./Main_Base.obj" "./heap_2.obj" "./Drivers/Processor_Initialization_TM4C1294.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM4F/port.obj" "./Source/portable/CCS/ARM_CM4F/portasm.obj" "./Tasks/Magnetometer.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_I2C7_Handler.obj" "./Tasks/Task_ReportData.obj" "./Tasks/Task_ReportTime.obj" "./Tasks/Task_gyro.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 
+
+>> Compilation failure
+makefile:168: recipe for target 'Proj2_Magnetometer.out' failed
+error #10056: symbol "MPU9150Callback" redefined: first defined in "./Tasks/Magnetometer.obj"; redefined in "./Tasks/Task_gyro.obj"
+error #10010: errors encountered during linking; "Proj2_Magnetometer.out" not built
+gmake: *** [Proj2_Magnetometer.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Tasks/Magnetometer.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Magnetometer.d" --obj_directory="Tasks"  "../Tasks/Magnetometer.c"
+
+>> Compilation failure
+Tasks/subdir_rules.mk:7: recipe for target 'Tasks/Magnetometer.obj' failed
+"../Tasks/Magnetometer.c", line 55: warning #225-D: function "IntRegister" declared implicitly
+"../Tasks/Magnetometer.c", line 62: error #20: identifier "MPU9150Callback1" is undefined
+1 error detected in the compilation of "../Tasks/Magnetometer.c".
+gmake: *** [Tasks/Magnetometer.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+"../Main_Base.c", line 42: warning #552-D: variable "Status" was set but never used
+'Finished building: ../Main_Base.c'
+' '
+'Building file: ../Tasks/Magnetometer.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Magnetometer.d" --obj_directory="Tasks"  "../Tasks/Magnetometer.c"
+"../Tasks/Magnetometer.c", line 55: warning #225-D: function "IntRegister" declared implicitly
+'Finished building: ../Tasks/Magnetometer.c'
+' '
+'Building target: Proj2_Magnetometer.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing -z -m"Proj2_Magnetometer.map" --stack_size=0x0800 --heap_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Proj2_Magnetometer_linkInfo.xml" --rom_model -o "Proj2_Magnetometer.out" "./FreeRTOS_TM4C1294_Base_Startup.obj" "./Main_Base.obj" "./heap_2.obj" "./Drivers/Processor_Initialization_TM4C1294.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM4F/port.obj" "./Source/portable/CCS/ARM_CM4F/portasm.obj" "./Tasks/Magnetometer.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_I2C7_Handler.obj" "./Tasks/Task_ReportData.obj" "./Tasks/Task_ReportTime.obj" "./Tasks/Task_gyro.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 
+'Finished building target: Proj2_Magnetometer.out'
+' '
+'Invoking: ARM Hex Utility'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armhex"  -o "Proj2_Magnetometer.hex"  "Proj2_Magnetometer.out" 
+Translating to Extended Tektronix format...
+   "Proj2_Magnetometer.out" .intvecs ==> .intvecs
+   "Proj2_Magnetometer.out" .text ==> .text
+   "Proj2_Magnetometer.out" .const ==> .const
+   "Proj2_Magnetometer.out" .cinit ==> .cinit
+warning: section Proj2_Magnetometer.out(.text) was padded by 2 to a size of
+   19492 to satisfy the specified memory width of 4
+'Finished building: Proj2_Magnetometer.hex'
+' '
+
+**** Build Finished ****

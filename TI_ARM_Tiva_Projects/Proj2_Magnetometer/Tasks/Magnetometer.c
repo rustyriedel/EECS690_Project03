@@ -59,7 +59,7 @@ extern void MagnetometerInit(){
 
 		//Initialize the mpu9150
 		uint_fast8_t stat9150;
-		stat9150 = MPU9150Init(&sMPU9150, I2C7_Instance_Ref, 0x68, MPU9150Callback, 0);
+		stat9150 = MPU9150Init(&sMPU9150, I2C7_Instance_Ref, 0x68, MPU9150Callback1, 0);
 		while(!g_bMPU9150Done){}
 
 		//set the MPU9150 initialization flag to true
@@ -69,7 +69,7 @@ extern void MagnetometerInit(){
 	}
 }
 
-extern void MPU9150Callback(void *pvCallbackData, uint_fast8_t ui8Status) {
+void MPU9150Callback1(void *pvCallbackData, uint_fast8_t ui8Status) {
 
 	// See if an error occurred.s
 	if (ui8Status != I2CM_STATUS_SUCCESS) {
@@ -91,7 +91,7 @@ extern void Task_Magnetometer(void *pvParameters) {
 	while (1) {
 		//Read the data from the magnetometer
 		g_bMPU9150Done = false;
-		MPU9150DataRead(&sMPU9150, MPU9150Callback, 0);
+		MPU9150DataRead(&sMPU9150, MPU9150Callback1, 0);
 		while(!g_bMPU9150Done){}
 		MPU9150DataMagnetoGetFloat(&sMPU9150, &fMagneto[0], &fMagneto[1], &fMagneto[2]);
 

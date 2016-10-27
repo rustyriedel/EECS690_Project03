@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-;* Date/Time created: Tue Oct 18 13:16:16 2016                                *
+;* Date/Time created: Thu Oct 27 14:03:10 2016                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --quiet --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -336,7 +336,7 @@ $C$DW$56	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$56, DW_AT_decl_line(0x2e)
 	.dwattr $C$DW$56, DW_AT_decl_column(0x11)
 
-;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0151212 
+;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0530012 
 	.sect	".text:I2CMWrite"
 	.clink
 	.thumbfunc I2CMWrite
@@ -1277,26 +1277,26 @@ $C$DW$138	.dwtag  DW_TAG_TI_branch
 
 	.sect	".text"
 	.clink
-	.thumbfunc MPU9150Callback
+	.thumbfunc MPU9150Callback1
 	.thumb
-	.global	MPU9150Callback
+	.global	MPU9150Callback1
 
 $C$DW$139	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$139, DW_AT_name("MPU9150Callback")
-	.dwattr $C$DW$139, DW_AT_low_pc(MPU9150Callback)
+	.dwattr $C$DW$139, DW_AT_name("MPU9150Callback1")
+	.dwattr $C$DW$139, DW_AT_low_pc(MPU9150Callback1)
 	.dwattr $C$DW$139, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$139, DW_AT_TI_symbol_name("MPU9150Callback")
+	.dwattr $C$DW$139, DW_AT_TI_symbol_name("MPU9150Callback1")
 	.dwattr $C$DW$139, DW_AT_external
 	.dwattr $C$DW$139, DW_AT_TI_begin_file("../Tasks/Magnetometer.c")
 	.dwattr $C$DW$139, DW_AT_TI_begin_line(0x48)
-	.dwattr $C$DW$139, DW_AT_TI_begin_column(0x0d)
+	.dwattr $C$DW$139, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$139, DW_AT_decl_file("../Tasks/Magnetometer.c")
 	.dwattr $C$DW$139, DW_AT_decl_line(0x48)
-	.dwattr $C$DW$139, DW_AT_decl_column(0x0d)
+	.dwattr $C$DW$139, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$139, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "../Tasks/Magnetometer.c",line 72,column 75,is_stmt,address MPU9150Callback,isa 1
+	.dwpsn	file "../Tasks/Magnetometer.c",line 72,column 69,is_stmt,address MPU9150Callback1,isa 1
 
-	.dwfde $C$DW$CIE, MPU9150Callback
+	.dwfde $C$DW$CIE, MPU9150Callback1
 $C$DW$140	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$140, DW_AT_name("pvCallbackData")
 	.dwattr $C$DW$140, DW_AT_TI_symbol_name("pvCallbackData")
@@ -1311,7 +1311,7 @@ $C$DW$141	.dwtag  DW_TAG_formal_parameter
 
 
 ;*****************************************************************************
-;* FUNCTION NAME: MPU9150Callback                                            *
+;* FUNCTION NAME: MPU9150Callback1                                           *
 ;*                                                                           *
 ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
 ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
@@ -1321,7 +1321,7 @@ $C$DW$141	.dwtag  DW_TAG_formal_parameter
 ;*                           FPEXC,FPSCR                                     *
 ;*   Local Frame Size  : 0 Args + 8 Auto + 4 Save = 12 byte                  *
 ;*****************************************************************************
-MPU9150Callback:
+MPU9150Callback1:
 ;* --------------------------------------------------------------------------*
 	.dwcfi	cfa_offset, 0
         PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE] 
@@ -1599,7 +1599,7 @@ $C$DW$153	.dwtag  DW_TAG_TI_branch
 	.align	4
 ||$C$CON4||:	.bits	sMPU9150,32
 	.align	4
-||$C$CON5||:	.bits	MPU9150Callback,32
+||$C$CON5||:	.bits	MPU9150Callback1,32
 	.align	4
 ||$C$CON6||:	.bits	g_bMPU9150Done,32
 	.align	4

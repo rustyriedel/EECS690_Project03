@@ -23,6 +23,7 @@
 #include	"task.h"
 
 #include 	"Tasks/Magnetometer.h"
+#include	"Tasks/Task_gyro.h"
 #include	<stdio.h>
 
 extern void Task_Blink_LED_D1(void *pvParameters);
@@ -62,6 +63,8 @@ int main(void) {
 	// Create a task to show time of day
 	//
 	xTaskCreate(Task_Magnetometer, "Magnetometer", 512, NULL, 1, NULL);
+
+	xTaskCreate(Task_gyro, "Gyro", 512, NULL, 1, NULL);
 
 	//I2C7_Initialization();
 	UARTprintf("FreeRTOS Starting!\n");

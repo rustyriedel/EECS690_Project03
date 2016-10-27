@@ -1,11 +1,11 @@
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-       3                    ;* Date/Time created: Tue Oct 18 10:42:46 2016                                *
+       3                    ;* Date/Time created: Thu Oct 27 13:55:33 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ Task_Blinky.asm                                                      PAGE    1
       53                            .dwattr $C$DW$8, DW_AT_TI_symbol_name("GPIOPinRead")
       54                            .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$52)
       55                            .dwattr $C$DW$8, DW_AT_declaration
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    2
@@ -118,7 +118,7 @@ Task_Blinky.asm                                                      PAGE    2
      108                            .dwattr $C$DW$18, DW_AT_TI_symbol_name("vTaskDelay")
      109                            .dwattr $C$DW$18, DW_AT_declaration
      110                            .dwattr $C$DW$18, DW_AT_external
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    3
@@ -178,7 +178,7 @@ Task_Blinky.asm                                                      PAGE    3
      163 00000000 B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
      164                            .dwcfi  cfa_offset, 16
      165                            .dwcfi  save_reg_to_mem, 14, -4
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    4
@@ -238,7 +238,7 @@ Task_Blinky.asm                                                      PAGE    4
      218                    ;*   Loop closing brace source line  : 53
      219                    ;*   Known Minimum Trip Count        : 1
      220                    ;*   Known Maximum Trip Count        : 4294967295
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    5
@@ -298,7 +298,7 @@ Task_Blinky.asm                                                      PAGE    5
      273                            .align  4
      274 00000046 080C46C0  ||$C$CON1||:    .bits   -268433396,32
          0000004a 0000F000 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    6
@@ -358,7 +358,7 @@ Task_Blinky.asm                                                      PAGE    6
      326                            .dwattr $C$DW$32, DW_AT_decl_column(0x02)
      327                    
      328                    $C$DW$33        .dwtag  DW_TAG_enumerator
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    7
@@ -418,7 +418,7 @@ Task_Blinky.asm                                                      PAGE    7
      381                            .dwattr $C$DW$38, DW_AT_const_value(0x03)
      382                            .dwattr $C$DW$38, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
      383                            .dwattr $C$DW$38, DW_AT_decl_line(0x7f)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    8
@@ -478,7 +478,7 @@ Task_Blinky.asm                                                      PAGE    8
      436                            .dwattr $C$DW$T$58, DW_AT_name("eSleepModeStatus")
      437                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$57)
      438                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE    9
@@ -538,7 +538,7 @@ Task_Blinky.asm                                                      PAGE    9
      491                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
      492                            .dwattr $C$DW$T$48, DW_AT_decl_line(0x67)
      493                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x10)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   10
@@ -598,7 +598,7 @@ Task_Blinky.asm                                                      PAGE   10
      546                    $C$DW$T$19      .dwtag  DW_TAG_typedef
      547                            .dwattr $C$DW$T$19, DW_AT_name("uint8_t")
      548                            .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   11
@@ -658,7 +658,7 @@ Task_Blinky.asm                                                      PAGE   11
      601                            .dwattr $C$DW$T$77, DW_AT_name("portSHORT")
      602                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$75)
      603                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   12
@@ -718,7 +718,7 @@ Task_Blinky.asm                                                      PAGE   12
      656                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x12)
      657                    
      658                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   13
@@ -778,7 +778,7 @@ Task_Blinky.asm                                                      PAGE   13
      711                    $C$DW$T$89      .dwtag  DW_TAG_typedef
      712                            .dwattr $C$DW$T$89, DW_AT_name("portBASE_TYPE")
      713                            .dwattr $C$DW$T$89, DW_AT_type(*$C$DW$T$52)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   14
@@ -838,7 +838,7 @@ Task_Blinky.asm                                                      PAGE   14
      766                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$24)
      767                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
      768                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/port
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   15
@@ -898,7 +898,7 @@ Task_Blinky.asm                                                      PAGE   15
      821                            .dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$24)
      822                            .dwattr $C$DW$T$96, DW_AT_language(DW_LANG_C)
      823                            .dwattr $C$DW$T$96, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   16
@@ -958,7 +958,7 @@ Task_Blinky.asm                                                      PAGE   16
      876                            .dwattr $C$DW$T$101, DW_AT_type(*$C$DW$T$99)
      877                            .dwattr $C$DW$T$101, DW_AT_language(DW_LANG_C)
      878                            .dwattr $C$DW$T$101, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   17
@@ -1018,7 +1018,7 @@ Task_Blinky.asm                                                      PAGE   17
      931                            .dwattr $C$DW$T$107, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
      932                            .dwattr $C$DW$T$107, DW_AT_decl_line(0x57)
      933                            .dwattr $C$DW$T$107, DW_AT_decl_column(0x20)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   18
@@ -1078,7 +1078,7 @@ Task_Blinky.asm                                                      PAGE   18
      986                    
      987                    $C$DW$T$109     .dwtag  DW_TAG_typedef
      988                            .dwattr $C$DW$T$109, DW_AT_name("va_list")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   19
@@ -1138,7 +1138,7 @@ Task_Blinky.asm                                                      PAGE   19
     1041                    
     1042                    
     1043                    $C$DW$T$32      .dwtag  DW_TAG_structure_type
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   20
@@ -1198,7 +1198,7 @@ Task_Blinky.asm                                                      PAGE   20
     1096                            .dwattr $C$DW$T$32, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
     1097                            .dwattr $C$DW$T$32, DW_AT_decl_line(0xb5)
     1098                            .dwattr $C$DW$T$32, DW_AT_decl_column(0x08)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   21
@@ -1258,7 +1258,7 @@ Task_Blinky.asm                                                      PAGE   21
     1151                            .dwattr $C$DW$T$33, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     1152                            .dwattr $C$DW$T$33, DW_AT_decl_line(0x8f)
     1153                            .dwattr $C$DW$T$33, DW_AT_decl_column(0x10)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   22
@@ -1318,7 +1318,7 @@ Task_Blinky.asm                                                      PAGE   22
     1206                            .dwattr $C$DW$62, DW_AT_decl_column(0x2a)
     1207                    
     1208                            .dwattr $C$DW$T$34, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   23
@@ -1378,7 +1378,7 @@ Task_Blinky.asm                                                      PAGE   23
     1261                            .dwattr $C$DW$66, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     1262                            .dwattr $C$DW$66, DW_AT_decl_line(0x9e)
     1263                            .dwattr $C$DW$66, DW_AT_decl_column(0x08)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   24
@@ -1438,7 +1438,7 @@ Task_Blinky.asm                                                      PAGE   24
     1316                            .dwattr $C$DW$70, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     1317                            .dwattr $C$DW$70, DW_AT_accessibility(DW_ACCESS_public)
     1318                            .dwattr $C$DW$70, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   25
@@ -1498,7 +1498,7 @@ Task_Blinky.asm                                                      PAGE   25
     1371                    
     1372                    $C$DW$76        .dwtag  DW_TAG_member
     1373                            .dwattr $C$DW$76, DW_AT_type(*$C$DW$T$24)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   26
@@ -1558,7 +1558,7 @@ Task_Blinky.asm                                                      PAGE   26
     1426                            .dwattr $C$DW$79, DW_AT_decl_line(0x89)
     1427                            .dwattr $C$DW$79, DW_AT_decl_column(0x0d)
     1428                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   27
@@ -1618,7 +1618,7 @@ Task_Blinky.asm                                                      PAGE   27
     1481                            .dwcfi  undefined, 77
     1482                            .dwcfi  undefined, 78
     1483                            .dwcfi  undefined, 79
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:46 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_Blinky.asm                                                      PAGE   28

@@ -1,4 +1,4 @@
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:45 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm     PAGE    1
@@ -58,7 +58,7 @@ C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm     PAGE    1
       53                    ;    including FreeRTOS+Trace - an indispensable productivity tool, a DOS
       54                    ;    compatible FAT file system, and our tiny thread aware UDP/IP stack.
       55                    ;
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:45 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm     PAGE    2
@@ -118,7 +118,7 @@ C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm     PAGE    2
      108 00000028 8009F3EF          mrs r0, psp ; [KEEP 32-BIT INS]
      109 0000002c 8F6FF3BF          isb ; [KEEP 32-BIT INS]
      110                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:45 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm     PAGE    3
@@ -178,7 +178,7 @@ C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm     PAGE    3
      163                            ;/* Pop the core registers. */
      164 00000090 4FF0E8B0          ldmia r0!, {r4-r11, r14} ; [KEEP 32-BIT INS]
      165 00000094 8809F380          msr psp, r0 ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:45 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:33 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/portasm.asm     PAGE    4
@@ -229,7 +229,7 @@ Thumb2 Statistics
 Number of Thumb2 ins converted to Thumb = 0 (0%)
 Number of Thumb ins in input = 28 (44%)
 Number of Thumb2 ins encoded as Thumb2 = 35 (100%)
-Number of Thumb2 ins converted to 2 OPND Thumb = 3
+Number of Thumb2 ins converted to 2 OPND Thumb = 0
 
 
 No Assembly Errors, No Assembly Warnings

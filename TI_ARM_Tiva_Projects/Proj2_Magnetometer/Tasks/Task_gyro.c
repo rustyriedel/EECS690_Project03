@@ -43,6 +43,50 @@ float* fGyroz;
 
 extern tI2CMInstance* I2C7_Instance_Ref;
 //extern uint32_t I2C7_Initialization();
+tMPU9150 sMPU9150;
+extern bool isMPU9150Initialized;
+
+extern void GyroInit()
+{
+	if (!isMPU9150Initialized){
+		//!	//
+		//!	//Initialize I2C
+		//!	//
+			I2C7_Initialization();
+
+		//!	//
+		//!	//Initialize UART
+		//!	//
+			UART_Initialization();
+
+		//!	//
+		//!	//Initialize MPU9150
+		//! //
+			tMPU9150 sMPU9150;
+			task_done = false;
+			MPU9150Init(&sMPU9150, I2C7_Instance_Ref, 0x68, MPU9150Callback, 0);
+
+		//!	//
+		//!	//Wait for Initilization to complete
+		//!	//
+			while(!task_done)
+			{
+			}
+			task_done = false;
+
+		//!	//
+		//!	//Configure the sensor
+		//!	//
+			MPU9150ReadModifyWrite(&sMPU9150, MPU9150_O_ACCEL_CONFIG, ~MPU9150_ACCEL_CONFIG_AFS_SEL_M, MPU9150_ACCEL_CONFIG_AFS_SEL_4G, MPU9150Callback, 0);
+
+		//!	//
+		//!	//Wait until configuration is donev
+		//!	//
+			while(!task_done)
+			{
+			}
+	}
+}
 
 void MPU9150Callback(void *pvCallbackData, uint_fast8_t ui8Status)
 {
@@ -77,42 +121,7 @@ void Task_gyro(void *pvParameters)
 
 	float fGyro[3];
 
-//!	//
-//!	//Initialize I2C
-//!	//
-	I2C7_Initialization();
 
-//!	//
-//!	//Initialize UART
-//!	//
-	UART_Initialization();
-
-//!	//
-//!	//Initialize MPU9150
-//! //
-	tMPU9150 sMPU9150;
-	task_done = false;
-	MPU9150Init(&sMPU9150, I2C7_Instance_Ref, 0x68, MPU9150Callback, 0);
-
-//!	//
-//!	//Wait for Initilization to complete
-//!	//
-	while(!task_done)
-	{
-	}
-	task_done = false;
-
-//!	//
-//!	//Configure the sensor
-//!	//
-	MPU9150ReadModifyWrite(&sMPU9150, MPU9150_O_ACCEL_CONFIG, ~MPU9150_ACCEL_CONFIG_AFS_SEL_M, MPU9150_ACCEL_CONFIG_AFS_SEL_4G, MPU9150Callback, 0);
-
-//!	//
-//!	//Wait until configuration is donev
-//!	//
-	while(!task_done)
-	{
-	}
 
 //!	//
 //!	//Task
@@ -159,7 +168,3 @@ void Task_gyro(void *pvParameters)
 	}
 }
 
-void get_values(tMPU9150 sMPU9150, float* gyro_x_rotation, float* gyro_y_rotation, float* gyro_z_rotation)
-{
-	MPU9150DataGyroGetFloat(&sMPU9150, gyro_x_rotation, gyro_y_rotation, gyro_z_rotation);
-}

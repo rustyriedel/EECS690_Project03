@@ -1,11 +1,11 @@
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-       3                    ;* Date/Time created: Tue Oct 18 10:42:42 2016                                *
+       3                    ;* Date/Time created: Thu Oct 27 13:55:29 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ tasks.asm                                                            PAGE    1
       53                    $C$DW$8 .dwtag  DW_TAG_formal_parameter
       54                            .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$24)
       55                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    2
@@ -118,7 +118,7 @@ tasks.asm                                                            PAGE    2
      108                            .dwattr $C$DW$15, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\portable.h")
      109                            .dwattr $C$DW$15, DW_AT_decl_line(0xab)
      110                            .dwattr $C$DW$15, DW_AT_decl_column(0x07)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    3
@@ -178,7 +178,7 @@ tasks.asm                                                            PAGE    3
      163                            .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$91)
      164                    
      165                            .dwendtag $C$DW$21
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    4
@@ -238,7 +238,7 @@ tasks.asm                                                            PAGE    4
      218                            .dwattr $C$DW$31, DW_AT_TI_symbol_name("uxListRemove")
      219                            .dwattr $C$DW$31, DW_AT_type(*$C$DW$T$32)
      220                            .dwattr $C$DW$31, DW_AT_declaration
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    5
@@ -298,7 +298,7 @@ tasks.asm                                                            PAGE    5
      273                            .dwattr $C$DW$36, DW_AT_name("xDelayedTaskList1")
      274                            .dwattr $C$DW$36, DW_AT_TI_symbol_name("xDelayedTaskList1")
      275                            .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$89)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    6
@@ -358,7 +358,7 @@ tasks.asm                                                            PAGE    6
      328                            .dwattr $C$DW$41, DW_AT_type(*$C$DW$T$89)
      329                            .dwattr $C$DW$41, DW_AT_location[DW_OP_addr xTasksWaitingTermination]
      330                            .dwattr $C$DW$41, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    7
@@ -418,7 +418,7 @@ tasks.asm                                                            PAGE    7
      383                            .dwattr $C$DW$45, DW_AT_TI_symbol_name("xTickCount")
      384                            .dwattr $C$DW$45, DW_AT_type(*$C$DW$T$192)
      385                            .dwattr $C$DW$45, DW_AT_location[DW_OP_addr xTickCount]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    8
@@ -478,7 +478,7 @@ tasks.asm                                                            PAGE    8
      438 0000001c           xYieldPending:
      439 0000001c 00000000          .bits   0,32                    ; xYieldPending @ 0
      440                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE    9
@@ -538,7 +538,7 @@ tasks.asm                                                            PAGE    9
      493                            .dwattr $C$DW$52, DW_AT_decl_column(0x2c)
      494                    
      495 0000002c                   .data
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   10
@@ -598,7 +598,7 @@ tasks.asm                                                            PAGE   10
      548                            .dwattr $C$DW$57, DW_AT_TI_symbol_name("usStackDepth")
      549                            .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$125)
      550                            .dwattr $C$DW$57, DW_AT_location[DW_OP_reg2]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   11
@@ -658,7 +658,7 @@ tasks.asm                                                            PAGE   11
      603                    $C$DW$63        .dwtag  DW_TAG_variable
      604                            .dwattr $C$DW$63, DW_AT_name("pxTaskCode")
      605                            .dwattr $C$DW$63, DW_AT_TI_symbol_name("pxTaskCode")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   12
@@ -718,7 +718,7 @@ tasks.asm                                                            PAGE   12
      658                            ; CALL OCCURS {prvAllocateTCBAndStack }  ; [] |562| 
      659 0000001a 9006              STR       A1, [SP, #24]         ; [DPU_3_PIPE] |562|  ; [ORIG 16-BIT INS]
      660                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 564,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   13
@@ -778,7 +778,7 @@ tasks.asm                                                            PAGE   13
      713                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 643,column 3,is_stmt,isa 1
      714                    ;* --------------------------------------------------------------------------*
      715 00000064           ||$C$L1||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   14
@@ -838,7 +838,7 @@ tasks.asm                                                            PAGE   14
      768 00000092 6801              LDR       A2, [A1, #0]          ; [DPU_3_PIPE] |679|  ; [ORIG 16-BIT INS]
      769 00000094 980A              LDR       A1, [SP, #40]         ; [DPU_3_PIPE] |679|  ; [ORIG 16-BIT INS]
      770 00000096 6AC9              LDR       A2, [A2, #44]         ; [DPU_3_PIPE] |679|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   15
@@ -898,7 +898,7 @@ tasks.asm                                                            PAGE   15
      823                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 709,column 3,is_stmt,isa 1
      824                    $C$DW$76        .dwtag  DW_TAG_TI_branch
      825                            .dwattr $C$DW$76, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   16
@@ -958,7 +958,7 @@ tasks.asm                                                            PAGE   16
      878                            .dwattr $C$DW$54, DW_AT_TI_end_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
      879                            .dwattr $C$DW$54, DW_AT_TI_end_line(0x2e3)
      880                            .dwattr $C$DW$54, DW_AT_TI_end_column(0x01)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   17
@@ -1018,7 +1018,7 @@ tasks.asm                                                            PAGE   17
      933                    $C$DW$80        .dwtag  DW_TAG_variable
      934                            .dwattr $C$DW$80, DW_AT_name("xTaskToDelete")
      935                            .dwattr $C$DW$80, DW_AT_TI_symbol_name("xTaskToDelete")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   18
@@ -1078,7 +1078,7 @@ tasks.asm                                                            PAGE   18
      988 00000134 5808              LDR       A1, [A2, +A1]         ; [DPU_3_PIPE] |760|  ; [ORIG 16-BIT INS]
      989 00000136 B938              CBNZ      A1, ||$C$L9||         ; []  ; [ORIG 16-BIT INS]
      990                            ; BRANCHCC OCCURS {||$C$L9||}    ; [] |760| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   19
@@ -1138,7 +1138,7 @@ tasks.asm                                                            PAGE   19
     1043                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 790,column 3,is_stmt,isa 1
     1044                    $C$DW$86        .dwtag  DW_TAG_TI_branch
     1045                            .dwattr $C$DW$86, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   20
@@ -1198,7 +1198,7 @@ tasks.asm                                                            PAGE   20
     1098 0000019e FFFEF7FF!         BL        vPortExitCritical     ; [DPU_3_PIPE] |816|  ; [KEEP 32-BIT INS]
     1099                            ; CALL OCCURS {vPortExitCritical }  ; [] |816| 
     1100                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 819,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   21
@@ -1258,7 +1258,7 @@ tasks.asm                                                            PAGE   21
     1153                    ;*                                                                           *
     1154                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
     1155                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   22
@@ -1318,7 +1318,7 @@ tasks.asm                                                            PAGE   22
     1208                            .dwattr $C$DW$99, DW_AT_name("vTaskSuspendAll")
     1209                            .dwattr $C$DW$99, DW_AT_TI_call
     1210                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   23
@@ -1378,7 +1378,7 @@ tasks.asm                                                            PAGE   23
     1263 000001e8           ||$C$L13||:    
     1264                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 865,column 5,is_stmt,isa 1
     1265 000001e8 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |865|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   24
@@ -1438,7 +1438,7 @@ tasks.asm                                                            PAGE   24
     1318                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 890,column 5,is_stmt,isa 1
     1319                    ;* --------------------------------------------------------------------------*
     1320 00000226           ||$C$L16||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   25
@@ -1498,7 +1498,7 @@ tasks.asm                                                            PAGE   25
     1373                            .dwendentry
     1374                            .dwendtag $C$DW$91
     1375                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   26
@@ -1558,7 +1558,7 @@ tasks.asm                                                            PAGE   26
     1428                            .dwattr $C$DW$108, DW_AT_type(*$C$DW$T$102)
     1429                            .dwattr $C$DW$108, DW_AT_location[DW_OP_breg13 0]
     1430                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   27
@@ -1618,7 +1618,7 @@ tasks.asm                                                            PAGE   27
     1483 00000276 4A28              LDR       A3, $C$CON5           ; [DPU_3_PIPE] |956|  ; [ORIG 16-BIT INS]
     1484 00000278 6AC3              LDR       A4, [A1, #44]         ; [DPU_3_PIPE] |956|  ; [ORIG 16-BIT INS]
     1485 0000027a 6811              LDR       A2, [A3, #0]          ; [DPU_3_PIPE] |956|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   28
@@ -1678,7 +1678,7 @@ tasks.asm                                                            PAGE   28
     1538                            .dwattr $C$DW$106, DW_AT_TI_end_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
     1539                            .dwattr $C$DW$106, DW_AT_TI_end_line(0x3d5)
     1540                            .dwattr $C$DW$106, DW_AT_TI_end_column(0x02)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   29
@@ -1738,7 +1738,7 @@ tasks.asm                                                            PAGE   29
     1593                            .dwcfi  save_reg_to_mem, 1, -16
     1594                    $C$DW$118       .dwtag  DW_TAG_variable
     1595                            .dwattr $C$DW$118, DW_AT_name("xTask")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   30
@@ -1798,7 +1798,7 @@ tasks.asm                                                            PAGE   30
     1648                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1072,column 3,is_stmt,isa 1
     1649 000002c8 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1072|  ; [ORIG 16-BIT INS]
     1650                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1073,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   31
@@ -1858,7 +1858,7 @@ tasks.asm                                                            PAGE   31
     1703                    ;* FUNCTION NAME: uxTaskPriorityGetFromISR                                   *
     1704                    ;*                                                                           *
     1705                    ;*   Regs Modified     : A1,A2,SP,SR                                         *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   32
@@ -1918,7 +1918,7 @@ tasks.asm                                                            PAGE   32
     1758 000002f8 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1107|  ; [ORIG 16-BIT INS]
     1759                    ;* --------------------------------------------------------------------------*
     1760 000002fa           ||$C$L25||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   33
@@ -1978,7 +1978,7 @@ tasks.asm                                                            PAGE   33
     1806                            .thumbfunc vTaskPrioritySet
     1807 0000032c                   .thumb
     1808                            .global vTaskPrioritySet
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   34
@@ -2038,7 +2038,7 @@ tasks.asm                                                            PAGE   34
     1861                            .dwattr $C$DW$134, DW_AT_TI_symbol_name("xTask")
     1862                            .dwattr $C$DW$134, DW_AT_type(*$C$DW$T$59)
     1863                            .dwattr $C$DW$134, DW_AT_location[DW_OP_breg13 0]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   35
@@ -2098,7 +2098,7 @@ tasks.asm                                                            PAGE   35
     1916                            .dwattr $C$DW$140, DW_AT_TI_call
     1917                    
     1918 00000344 FFFEF7FF!         BL        vPortEnterCritical    ; [DPU_3_PIPE] |1138|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   36
@@ -2158,7 +2158,7 @@ tasks.asm                                                            PAGE   36
     1971 00000382 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |1169|  ; [ORIG 16-BIT INS]
     1972 00000384 9005              STR       A1, [SP, #20]         ; [DPU_3_PIPE] |1169|  ; [ORIG 16-BIT INS]
     1973                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1170,column 7,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   37
@@ -2218,7 +2218,7 @@ tasks.asm                                                            PAGE   37
     2026 000003be 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |1228|  ; [ORIG 16-BIT INS]
     2027 000003c0 0005F1C0          RSB       A1, A1, #5            ; [DPU_3_PIPE] |1228|  ; [KEEP 32-BIT INS]
     2028 000003c4 6188              STR       A1, [A2, #24]         ; [DPU_3_PIPE] |1228|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   38
@@ -2278,7 +2278,7 @@ tasks.asm                                                            PAGE   38
     2081 00000402 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |1255|  ; [ORIG 16-BIT INS]
     2082 00000404 40A0              LSLS      A1, A1, V1            ; [DPU_3_PIPE] |1255|  ; [ORIG 16-BIT INS]
     2083 00000406 4318              ORRS      A1, A1, A4            ; [DPU_3_PIPE] |1255|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   39
@@ -2338,7 +2338,7 @@ tasks.asm                                                            PAGE   39
     2136                            .dwendtag $C$DW$131
     2137                    
     2138                    ;******************************************************************************
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   40
@@ -2398,7 +2398,7 @@ tasks.asm                                                            PAGE   40
     2191                            .dwcfi  save_reg_to_mem, 2, -12
     2192                            .dwcfi  save_reg_to_mem, 1, -16
     2193                    $C$DW$147       .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   41
@@ -2458,7 +2458,7 @@ tasks.asm                                                            PAGE   41
     2246 00000456 0090              LSLS      A1, A3, #2            ; [DPU_3_PIPE] |1300|  ; [ORIG 16-BIT INS]
     2247 00000458 1002EB00          ADD       A1, A1, A3, LSL #4    ; [DPU_3_PIPE] |1300|  ; [KEEP 32-BIT INS]
     2248 0000045c 5808              LDR       A1, [A2, +A1]         ; [DPU_3_PIPE] |1300|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   42
@@ -2518,7 +2518,7 @@ tasks.asm                                                            PAGE   42
     2301                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1321,column 3,is_stmt,isa 1
     2302 0000048c 482F              LDR       A1, $C$CON11          ; [DPU_3_PIPE] |1321|  ; [ORIG 16-BIT INS]
     2303 0000048e 9901              LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |1321|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   43
@@ -2578,7 +2578,7 @@ tasks.asm                                                            PAGE   43
     2356 000004c8           ||$C$L44||:    
     2357                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1350,column 4,is_stmt,isa 1
     2358 000004c8 487A              LDR       A1, $C$CON15          ; [DPU_3_PIPE] |1350|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   44
@@ -2638,7 +2638,7 @@ tasks.asm                                                            PAGE   44
     2411                    $C$DW$159       .dwtag  DW_TAG_subprogram
     2412                            .dwattr $C$DW$159, DW_AT_name("prvTaskIsTaskSuspended")
     2413                            .dwattr $C$DW$159, DW_AT_low_pc(prvTaskIsTaskSuspended)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   45
@@ -2698,7 +2698,7 @@ tasks.asm                                                            PAGE   45
     2466 000004e4 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1375|  ; [ORIG 16-BIT INS]
     2467 000004e6 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |1375|  ; [ORIG 16-BIT INS]
     2468                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1376,column 28,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   46
@@ -2758,7 +2758,7 @@ tasks.asm                                                            PAGE   46
     2521                    ;* --------------------------------------------------------------------------*
     2522 0000051e           ||$C$L49||:    
     2523                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1411,column 3,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   47
@@ -2818,7 +2818,7 @@ tasks.asm                                                            PAGE   47
     2576                    ;*                           D2_hi,D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,   *
     2577                    ;*                           D7_hi,FPEXC,FPSCR                               *
     2578                    ;*   Local Frame Size  : 0 Args + 8 Auto + 8 Save = 16 byte                  *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   48
@@ -2878,7 +2878,7 @@ tasks.asm                                                            PAGE   48
     2631                            .dwattr $C$DW$170, DW_AT_TI_call
     2632                    
     2633 00000542 FFCCF7FF          BL        prvTaskIsTaskSuspended ; [DPU_3_PIPE] |1432|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   49
@@ -2938,7 +2938,7 @@ tasks.asm                                                            PAGE   49
     2686 00000582 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |1442|  ; [ORIG 16-BIT INS]
     2687 00000584 6AC9              LDR       A2, [A2, #44]         ; [DPU_3_PIPE] |1442|  ; [ORIG 16-BIT INS]
     2688 00000586 6AC0              LDR       A1, [A1, #44]         ; [DPU_3_PIPE] |1442|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   50
@@ -2998,7 +2998,7 @@ tasks.asm                                                            PAGE   50
     2741                            .dwattr $C$DW$175, DW_AT_decl_line(0x5c1)
     2742                            .dwattr $C$DW$175, DW_AT_decl_column(0x0d)
     2743                            .dwattr $C$DW$175, DW_AT_TI_max_frame_size(0x18)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   51
@@ -3058,7 +3058,7 @@ tasks.asm                                                            PAGE   51
     2796                            .dwattr $C$DW$180, DW_AT_TI_symbol_name("uxSavedInterruptStatus")
     2797                            .dwattr $C$DW$180, DW_AT_type(*$C$DW$T$32)
     2798                            .dwattr $C$DW$180, DW_AT_location[DW_OP_breg13 12]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   52
@@ -3118,7 +3118,7 @@ tasks.asm                                                            PAGE   52
     2851 000005d6 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1519|  ; [ORIG 16-BIT INS]
     2852 000005d8 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |1519|  ; [ORIG 16-BIT INS]
     2853                    $C$DW$182       .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   53
@@ -3178,7 +3178,7 @@ tasks.asm                                                            PAGE   53
     2906                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1537,column 3,is_stmt,isa 1
     2907 00000616 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1537|  ; [ORIG 16-BIT INS]
     2908                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1538,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   54
@@ -3238,7 +3238,7 @@ tasks.asm                                                            PAGE   54
     2961                    ;*   Local Frame Size  : 16 Args + 4 Auto + 4 Save = 24 byte                 *
     2962                    ;*****************************************************************************
     2963 00000620           vTaskStartScheduler:
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   55
@@ -3298,7 +3298,7 @@ tasks.asm                                                            PAGE   55
     3016                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1574,column 2,is_stmt,isa 1
     3017 00000650 9804              LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |1574|  ; [ORIG 16-BIT INS]
     3018 00000652 2801              CMP       A1, #1                ; [DPU_3_PIPE] |1574|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   56
@@ -3358,7 +3358,7 @@ tasks.asm                                                            PAGE   56
     3071                    
     3072                    ;******************************************************************************
     3073                    ;* CONSTANT TABLE                                                             *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   57
@@ -3418,7 +3418,7 @@ tasks.asm                                                            PAGE   57
     3126 0000069a 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |1628|  ; [ORIG 16-BIT INS]
     3127 0000069c 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |1628|  ; [ORIG 16-BIT INS]
     3128                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1629,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   58
@@ -3478,7 +3478,7 @@ tasks.asm                                                            PAGE   58
     3181                    ;* --------------------------------------------------------------------------*
     3182                            .dwcfi  cfa_offset, 0
     3183                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1639,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   59
@@ -3538,7 +3538,7 @@ tasks.asm                                                            PAGE   59
     3233                            .dwfde $C$DW$CIE, xTaskResumeAll
     3234                    
     3235                    ;*****************************************************************************
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   60
@@ -3598,7 +3598,7 @@ tasks.asm                                                            PAGE   60
     3288                            ; BRANCHCC OCCURS {||$C$L64||}   ; [] |1689| 
     3289                    ;* --------------------------------------------------------------------------*
     3290                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1691,column 4,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   61
@@ -3658,7 +3658,7 @@ tasks.asm                                                            PAGE   61
     3343 0000070e 48A3              LDR       A1, $C$CON28          ; [DPU_3_PIPE] |1700|  ; [ORIG 16-BIT INS]
     3344 00000710 6ACB              LDR       A4, [A2, #44]         ; [DPU_3_PIPE] |1700|  ; [ORIG 16-BIT INS]
     3345 00000712 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1700|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   62
@@ -3718,7 +3718,7 @@ tasks.asm                                                            PAGE   62
     3398 0000074c 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |1720|  ; [ORIG 16-BIT INS]
     3399 0000074e B168              CBZ       A1, ||$C$L63||        ; []  ; [ORIG 16-BIT INS]
     3400                            ; BRANCHCC OCCURS {||$C$L63||}   ; [] |1720| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   63
@@ -3778,7 +3778,7 @@ tasks.asm                                                            PAGE   63
     3453                    ;* --------------------------------------------------------------------------*
     3454 00000774           ||$C$L64||:    
     3455                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1758,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   64
@@ -3838,7 +3838,7 @@ tasks.asm                                                            PAGE   64
     3508                    ;*   Local Frame Size  : 0 Args + 4 Auto + 0 Save = 4 byte                   *
     3509                    ;*****************************************************************************
     3510 0000077c           xTaskGetTickCount:
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   65
@@ -3898,7 +3898,7 @@ tasks.asm                                                            PAGE   65
     3563                    
     3564                            .dwfde $C$DW$CIE, xTaskGetTickCountFromISR
     3565                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   66
@@ -3958,7 +3958,7 @@ tasks.asm                                                            PAGE   66
     3618 000007a0                   .thumb
     3619                            .global uxTaskGetNumberOfTasks
     3620                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   67
@@ -4018,7 +4018,7 @@ tasks.asm                                                            PAGE   67
     3672 000007aa 00000000! ||$C$CON19||:   .bits   pxCurrentTCB,32
          000007ae 00000000 
     3673 000007b0                   .sect   ".text"
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   68
@@ -4078,7 +4078,7 @@ tasks.asm                                                            PAGE   68
     3726 000007b0           uxTaskGetSystemState:
     3727                    ;* --------------------------------------------------------------------------*
     3728                            .dwcfi  cfa_offset, 0
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   69
@@ -4138,7 +4138,7 @@ tasks.asm                                                            PAGE   69
     3781                            ; CALL OCCURS {vTaskSuspendAll }  ; [] |1839| 
     3782                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 1842,column 4,is_stmt,isa 1
     3783 000007c8 4899              LDR       A1, $C$CON29          ; [DPU_3_PIPE] |1842|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   70
@@ -4198,7 +4198,7 @@ tasks.asm                                                            PAGE   70
     3836                    $C$DW$227       .dwtag  DW_TAG_TI_branch
     3837                            .dwattr $C$DW$227, DW_AT_low_pc(0x00)
     3838                            .dwattr $C$DW$227, DW_AT_name("prvListTaskWithinSingleList")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   71
@@ -4258,7 +4258,7 @@ tasks.asm                                                            PAGE   71
     3891                            ; CALL OCCURS {prvListTaskWithinSingleList }  ; [] |1870| 
     3892 00000854 9903              LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |1870|  ; [ORIG 16-BIT INS]
     3893 00000856 1840              ADDS      A1, A1, A2            ; [DPU_3_PIPE] |1870|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   72
@@ -4318,7 +4318,7 @@ tasks.asm                                                            PAGE   72
     3942 00000875                   .sect   ".text"
     3943                            .align  4
     3944 00000876 0000C046! ||$C$CON20||:   .bits   uxSchedulerSuspended,32
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   73
@@ -4378,7 +4378,7 @@ tasks.asm                                                            PAGE   73
     3995                            .dwattr $C$DW$234, DW_AT_location[DW_OP_breg13 0]
     3996                    
     3997                    $C$DW$235       .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   74
@@ -4438,7 +4438,7 @@ tasks.asm                                                            PAGE   74
     4050                            .dwattr $C$DW$240, DW_AT_type(*$C$DW$T$90)
     4051                            .dwattr $C$DW$240, DW_AT_location[DW_OP_breg13 16]
     4052                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   75
@@ -4498,7 +4498,7 @@ tasks.asm                                                            PAGE   75
     4105 000008d8 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |1977|  ; [ORIG 16-BIT INS]
     4106                    ;* --------------------------------------------------------------------------*
     4107 000008da           ||$C$L69||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   76
@@ -4558,7 +4558,7 @@ tasks.asm                                                            PAGE   76
     4158 00000912 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |2012|  ; [ORIG 16-BIT INS]
     4159                    $C$DW$242       .dwtag  DW_TAG_TI_branch
     4160                            .dwattr $C$DW$242, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   77
@@ -4618,7 +4618,7 @@ tasks.asm                                                            PAGE   77
     4213                            .dwendtag $C$DW$237
     4214                    
     4215                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   78
@@ -4678,7 +4678,7 @@ tasks.asm                                                            PAGE   78
     4268                    
     4269                            .dwfde $C$DW$CIE, vTaskSwitchContext
     4270                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   79
@@ -4738,7 +4738,7 @@ tasks.asm                                                            PAGE   79
     4323                            .dwattr $C$DW$250, DW_AT_name("pxConstList")
     4324                            .dwattr $C$DW$250, DW_AT_TI_symbol_name("pxConstList")
     4325                            .dwattr $C$DW$250, DW_AT_type(*$C$DW$T$91)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   80
@@ -4798,7 +4798,7 @@ tasks.asm                                                            PAGE   80
     4376                    ;* --------------------------------------------------------------------------*
     4377 000009ca           ||$C$L78||:    
     4378 000009ca B002              ADD       SP, SP, #8            ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   81
@@ -4858,7 +4858,7 @@ tasks.asm                                                            PAGE   81
     4429                            .dwattr $C$DW$254, DW_AT_name("xTicksToWait")
     4430                            .dwattr $C$DW$254, DW_AT_TI_symbol_name("xTicksToWait")
     4431                            .dwattr $C$DW$254, DW_AT_type(*$C$DW$T$102)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   82
@@ -4918,7 +4918,7 @@ tasks.asm                                                            PAGE   82
     4484                    
     4485 000009e6 FFFEF7FF!         BL        vListInsert           ; [DPU_3_PIPE] |2275|  ; [KEEP 32-BIT INS]
     4486                            ; CALL OCCURS {vListInsert }     ; [] |2275| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   83
@@ -4978,7 +4978,7 @@ tasks.asm                                                            PAGE   83
     4539 00000a20 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |2305|  ; [ORIG 16-BIT INS]
     4540 00000a22 6809              LDR       A2, [A2, #0]          ; [DPU_3_PIPE] |2305|  ; [ORIG 16-BIT INS]
     4541 00000a24 1840              ADDS      A1, A1, A2            ; [DPU_3_PIPE] |2305|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   84
@@ -5038,7 +5038,7 @@ tasks.asm                                                            PAGE   84
     4594                    
     4595                            .dwfde $C$DW$CIE, vTaskPlaceOnUnorderedEventList
     4596                    $C$DW$264       .dwtag  DW_TAG_formal_parameter
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   85
@@ -5098,7 +5098,7 @@ tasks.asm                                                            PAGE   85
     4649                            .dwattr $C$DW$269, DW_AT_type(*$C$DW$T$102)
     4650                            .dwattr $C$DW$269, DW_AT_location[DW_OP_breg13 8]
     4651                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   86
@@ -5158,7 +5158,7 @@ tasks.asm                                                            PAGE   86
     4704                    ;* --------------------------------------------------------------------------*
     4705 00000a76           ||$C$L82||:    
     4706                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 2359,column 3,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   87
@@ -5218,7 +5218,7 @@ tasks.asm                                                            PAGE   87
     4759                            .dwendentry
     4760                            .dwendtag $C$DW$263
     4761                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   88
@@ -5278,7 +5278,7 @@ tasks.asm                                                            PAGE   88
     4814                    ;* FUNCTION NAME: vTaskPlaceOnEventListRestricted                            *
     4815                    ;*                                                                           *
     4816                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   89
@@ -5338,7 +5338,7 @@ tasks.asm                                                            PAGE   89
     4869 00000ac0 FFFEF7FF!         BL        vListInsertEnd        ; [DPU_3_PIPE] |2405|  ; [KEEP 32-BIT INS]
     4870                            ; CALL OCCURS {vListInsertEnd }  ; [] |2405| 
     4871                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 2411,column 3,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   90
@@ -5398,7 +5398,7 @@ tasks.asm                                                            PAGE   90
     4924 00000af6 000046C0! ||$C$CON33||:   .bits   xSuspendedTaskList,32
          00000afa 00000000 
     4925                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   91
@@ -5458,7 +5458,7 @@ tasks.asm                                                            PAGE   91
     4978                            .dwattr $C$DW$289, DW_AT_type(*$C$DW$T$64)
     4979                            .dwattr $C$DW$289, DW_AT_TI_begin_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
     4980                            .dwattr $C$DW$289, DW_AT_TI_begin_line(0x9a1)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   92
@@ -5518,7 +5518,7 @@ tasks.asm                                                            PAGE   92
     5033                            .dwattr $C$DW$293, DW_AT_type(*$C$DW$T$64)
     5034                            .dwattr $C$DW$293, DW_AT_location[DW_OP_breg13 8]
     5035                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   93
@@ -5578,7 +5578,7 @@ tasks.asm                                                            PAGE   93
     5088 00000b4e 48A9              LDR       A1, $C$CON40          ; [DPU_3_PIPE] |2490|  ; [ORIG 16-BIT INS]
     5089 00000b50 6ACB              LDR       A4, [A2, #44]         ; [DPU_3_PIPE] |2490|  ; [ORIG 16-BIT INS]
     5090 00000b52 9901              LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |2490|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   94
@@ -5638,7 +5638,7 @@ tasks.asm                                                            PAGE   94
     5143 00000b88 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |2512|  ; [ORIG 16-BIT INS]
     5144 00000b8a 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |2512|  ; [ORIG 16-BIT INS]
     5145                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   95
@@ -5698,7 +5698,7 @@ tasks.asm                                                            PAGE   95
     5197                            .dwattr $C$DW$300, DW_AT_location[DW_OP_reg0]
     5198                    
     5199                    $C$DW$301       .dwtag  DW_TAG_formal_parameter
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   96
@@ -5758,7 +5758,7 @@ tasks.asm                                                            PAGE   96
     5252 00000b9a 9101              STR       A2, [SP, #4]          ; [DPU_3_PIPE] |2534|  ; [ORIG 16-BIT INS]
     5253 00000b9c 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2534|  ; [ORIG 16-BIT INS]
     5254                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 2543,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   97
@@ -5818,7 +5818,7 @@ tasks.asm                                                            PAGE   97
     5307 00000be2 480F              LDR       A1, $C$CON37          ; [DPU_3_PIPE] |2557|  ; [ORIG 16-BIT INS]
     5308 00000be4 9902              LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |2557|  ; [ORIG 16-BIT INS]
     5309 00000be6 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |2557|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   98
@@ -5878,7 +5878,7 @@ tasks.asm                                                            PAGE   98
     5362                            .dwattr $C$DW$310, DW_AT_TI_begin_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
     5363                            .dwattr $C$DW$310, DW_AT_TI_begin_line(0xa12)
     5364                            .dwattr $C$DW$310, DW_AT_TI_begin_column(0x06)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE   99
@@ -5938,7 +5938,7 @@ tasks.asm                                                            PAGE   99
     5417                            .dwattr $C$DW$310, DW_AT_TI_end_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
     5418                            .dwattr $C$DW$310, DW_AT_TI_end_line(0xa17)
     5419                            .dwattr $C$DW$310, DW_AT_TI_end_column(0x01)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  100
@@ -5998,7 +5998,7 @@ tasks.asm                                                            PAGE  100
     5472                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
     5473                    ;*                           FPEXC,FPSCR                                     *
     5474                    ;*   Local Frame Size  : 0 Args + 16 Auto + 4 Save = 20 byte                 *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  101
@@ -6058,7 +6058,7 @@ tasks.asm                                                            PAGE  101
     5527 00000c38 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |2602|  ; [ORIG 16-BIT INS]
     5528 00000c3a 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |2602|  ; [ORIG 16-BIT INS]
     5529 00000c3c 3FFFF1B0          CMP       A1, #-1               ; [DPU_3_PIPE] |2602|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  102
@@ -6118,7 +6118,7 @@ tasks.asm                                                            PAGE  102
     5582 00000c7e 1AC0              SUBS      A1, A1, A4            ; [DPU_3_PIPE] |2620|  ; [ORIG 16-BIT INS]
     5583 00000c80 1809              ADDS      A2, A2, A1            ; [DPU_3_PIPE] |2620|  ; [ORIG 16-BIT INS]
     5584 00000c82 6011              STR       A2, [A3, #0]          ; [DPU_3_PIPE] |2620|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  103
@@ -6178,7 +6178,7 @@ tasks.asm                                                            PAGE  103
     5637                            .thumbfunc vTaskMissedYield
     5638 00000c9e                   .thumb
     5639                            .global vTaskMissedYield
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  104
@@ -6238,7 +6238,7 @@ tasks.asm                                                            PAGE  104
     5691 00000cac                   .sect   ".text"
     5692                            .clink
     5693                            .thumbfunc uxTaskGetTaskNumber
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  105
@@ -6298,7 +6298,7 @@ tasks.asm                                                            PAGE  105
     5746                            .dwattr $C$DW$332, DW_AT_name("pxTCB")
     5747                            .dwattr $C$DW$332, DW_AT_TI_symbol_name("pxTCB")
     5748                            .dwattr $C$DW$332, DW_AT_type(*$C$DW$T$120)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  106
@@ -6358,7 +6358,7 @@ tasks.asm                                                            PAGE  106
     5801                            .global vTaskSetTaskNumber
     5802                    
     5803                    $C$DW$334       .dwtag  DW_TAG_subprogram
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  107
@@ -6418,7 +6418,7 @@ tasks.asm                                                            PAGE  107
     5856                    $C$DW$339       .dwtag  DW_TAG_variable
     5857                            .dwattr $C$DW$339, DW_AT_name("pxTCB")
     5858                            .dwattr $C$DW$339, DW_AT_TI_symbol_name("pxTCB")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  108
@@ -6478,7 +6478,7 @@ tasks.asm                                                            PAGE  108
     5911                    
     5912                            .dwfde $C$DW$CIE, prvIdleTask
     5913                    $C$DW$342       .dwtag  DW_TAG_formal_parameter
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  109
@@ -6538,7 +6538,7 @@ tasks.asm                                                            PAGE  109
     5966 00000cf4 5080F04F          MOV       A1, #268435456        ; [DPU_3_PIPE] |2706|  ; [KEEP 32-BIT INS]
     5967 00000cf8 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |2706|  ; [ORIG 16-BIT INS]
     5968 00000cfa 8F4FF3BF          dsb ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  110
@@ -6598,7 +6598,7 @@ tasks.asm                                                            PAGE  110
     6021                            .dwattr $C$DW$349, DW_AT_type(*$C$DW$T$124)
     6022                            .dwattr $C$DW$349, DW_AT_location[DW_OP_reg3]
     6023                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  111
@@ -6658,7 +6658,7 @@ tasks.asm                                                            PAGE  111
     6076                            .dwattr $C$DW$355, DW_AT_TI_symbol_name("x")
     6077                            .dwattr $C$DW$355, DW_AT_type(*$C$DW$T$32)
     6078                            .dwattr $C$DW$355, DW_AT_location[DW_OP_breg13 16]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  112
@@ -6718,7 +6718,7 @@ tasks.asm                                                            PAGE  112
     6131                            ; BRANCHCC OCCURS {||$C$L103||}  ; [] |2838| 
     6132                    ;* --------------------------------------------------------------------------*
     6133 00000d42           ||$C$L105||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  113
@@ -6778,7 +6778,7 @@ tasks.asm                                                            PAGE  113
     6186                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 2886,column 2,is_stmt,isa 1
     6187 00000d7c 9802              LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |2886|  ; [ORIG 16-BIT INS]
     6188 00000d7e 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2886|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  114
@@ -6838,7 +6838,7 @@ tasks.asm                                                            PAGE  114
     6241                    
     6242                    ;*****************************************************************************
     6243                    ;* FUNCTION NAME: prvInitialiseTaskLists                                     *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  115
@@ -6898,7 +6898,7 @@ tasks.asm                                                            PAGE  115
     6296                            ; CALL OCCURS {vListInitialise }  ; [] |3004| 
     6297                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3002,column 91,is_stmt,isa 1
     6298 00000dba 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3002|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  116
@@ -6958,7 +6958,7 @@ tasks.asm                                                            PAGE  116
     6351 00000de0 FFFEF7FF!         BL        vListInitialise       ; [DPU_3_PIPE] |3019|  ; [KEEP 32-BIT INS]
     6352                            ; CALL OCCURS {vListInitialise }  ; [] |3019| 
     6353                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3025,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  117
@@ -7018,7 +7018,7 @@ tasks.asm                                                            PAGE  117
     6403                    
     6404                            .dwfde $C$DW$CIE, prvCheckTasksWaitingTermination
     6405                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  118
@@ -7078,7 +7078,7 @@ tasks.asm                                                            PAGE  118
     6458                            ; CALL OCCURS {vTaskSuspendAll }  ; [] |3040| 
     6459                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3042,column 5,is_stmt,isa 1
     6460 00000e0c 4894              LDR       A1, $C$CON47          ; [DPU_3_PIPE] |3042|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  119
@@ -7138,7 +7138,7 @@ tasks.asm                                                            PAGE  119
     6513                    
     6514 00000e30 FFFEF7FF!         BL        uxListRemove          ; [DPU_3_PIPE] |3053|  ; [KEEP 32-BIT INS]
     6515                            ; CALL OCCURS {uxListRemove }    ; [] |3053| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  120
@@ -7198,7 +7198,7 @@ tasks.asm                                                            PAGE  120
     6568                            .dwattr $C$DW$368, DW_AT_TI_end_line(0xbfc)
     6569                            .dwattr $C$DW$368, DW_AT_TI_end_column(0x01)
     6570                            .dwendentry
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  121
@@ -7258,7 +7258,7 @@ tasks.asm                                                            PAGE  121
     6623                    
     6624 00000e5a 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3072|  ; [ORIG 16-BIT INS]
     6625                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3074,column 2,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  122
@@ -7318,7 +7318,7 @@ tasks.asm                                                            PAGE  122
     6678 00000e96 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3091|  ; [ORIG 16-BIT INS]
     6679 00000e98 4995              LDR       A2, $C$CON56          ; [DPU_3_PIPE] |3091|  ; [ORIG 16-BIT INS]
     6680 00000e9a 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |3091|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  123
@@ -7378,7 +7378,7 @@ tasks.asm                                                            PAGE  123
     6733                    $C$DW$388       .dwtag  DW_TAG_formal_parameter
     6734                            .dwattr $C$DW$388, DW_AT_name("puxStackBuffer")
     6735                            .dwattr $C$DW$388, DW_AT_TI_symbol_name("puxStackBuffer")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  124
@@ -7438,7 +7438,7 @@ tasks.asm                                                            PAGE  124
     6788                    
     6789                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3134,column 3,is_stmt,isa 1
     6790 00000eb0 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |3134|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  125
@@ -7498,7 +7498,7 @@ tasks.asm                                                            PAGE  125
     6843                            .dwattr $C$DW$396, DW_AT_low_pc(0x00)
     6844                            .dwattr $C$DW$396, DW_AT_name("vPortFree")
     6845                            .dwattr $C$DW$396, DW_AT_TI_call
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  126
@@ -7558,7 +7558,7 @@ tasks.asm                                                            PAGE  126
     6898                    
     6899                    ;******************************************************************************
     6900                    ;* CONSTANT TABLE                                                             *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  127
@@ -7618,7 +7618,7 @@ tasks.asm                                                            PAGE  127
     6952                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
     6953                    ;*                           FPEXC,FPSCR                                     *
     6954                    ;*   Local Frame Size  : 0 Args + 28 Auto + 4 Save = 32 byte                 *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  128
@@ -7678,7 +7678,7 @@ tasks.asm                                                            PAGE  128
     7007 00000f1a 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |3183|  ; [ORIG 16-BIT INS]
     7008 00000f1c 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |3183|  ; [ORIG 16-BIT INS]
     7009 00000f1e 2800              CMP       A1, #0                ; [DPU_3_PIPE] |3183|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  129
@@ -7738,7 +7738,7 @@ tasks.asm                                                            PAGE  129
     7062                    
     7063                    $C$DW$411       .dwtag  DW_TAG_lexical_block
     7064                            .dwattr $C$DW$411, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  130
@@ -7798,7 +7798,7 @@ tasks.asm                                                            PAGE  130
     7117 00000f96 9A05              LDR       A3, [SP, #20]         ; [DPU_3_PIPE] |3197|  ; [ORIG 16-BIT INS]
     7118 00000f98 6C09              LDR       A2, [A2, #64]         ; [DPU_3_PIPE] |3197|  ; [ORIG 16-BIT INS]
     7119 00000f9a 1042EB00          ADD       A1, A1, A3, LSL #5    ; [DPU_3_PIPE] |3197|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  131
@@ -7858,7 +7858,7 @@ tasks.asm                                                            PAGE  131
     7172                            .dwattr $C$DW$413, DW_AT_name("prvTaskCheckFreeStackSpace")
     7173                            .dwattr $C$DW$413, DW_AT_TI_call
     7174                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  132
@@ -7918,7 +7918,7 @@ tasks.asm                                                            PAGE  132
     7227                            .dwattr $C$DW$415, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
     7228                            .dwattr $C$DW$415, DW_AT_decl_line(0xcbf)
     7229                            .dwattr $C$DW$415, DW_AT_decl_column(0x12)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  133
@@ -7978,7 +7978,7 @@ tasks.asm                                                            PAGE  133
     7282                    ;* --------------------------------------------------------------------------*
     7283                    ;*   BEGIN LOOP ||$C$L127||
     7284                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  134
@@ -8038,7 +8038,7 @@ tasks.asm                                                            PAGE  134
     7337                            .dwattr $C$DW$421, DW_AT_type(*$C$DW$T$120)
     7338                            .dwattr $C$DW$421, DW_AT_location[DW_OP_reg0]
     7339                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  135
@@ -8098,7 +8098,7 @@ tasks.asm                                                            PAGE  135
     7392                            .dwcfi  cfa_offset, 0
     7393                            ; BRANCH OCCURS                  ; [] 
     7394                            .dwattr $C$DW$420, DW_AT_TI_end_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  136
@@ -8158,7 +8158,7 @@ tasks.asm                                                            PAGE  136
     7447 00001070 0D08F1AD          SUB       SP, SP, #8            ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
     7448                            .dwcfi  cfa_offset, 8
     7449                    $C$DW$427       .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  137
@@ -8218,7 +8218,7 @@ tasks.asm                                                            PAGE  137
     7502                            .dwattr $C$DW$428, DW_AT_TI_return
     7503                    
     7504 000010a4 4770              BX        LR                    ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  138
@@ -8278,7 +8278,7 @@ tasks.asm                                                            PAGE  138
     7557 000010ae 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3380|  ; [ORIG 16-BIT INS]
     7558                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3382,column 3,is_stmt,isa 1
     7559 000010b0 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3382|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  139
@@ -8338,7 +8338,7 @@ tasks.asm                                                            PAGE  139
     7610                    ;*   Regs Modified     : A1,SP,SR                                            *
     7611                    ;*   Regs Used         : A1,SP,LR,SR                                         *
     7612                    ;*   Local Frame Size  : 0 Args + 4 Auto + 0 Save = 4 byte                   *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  140
@@ -8398,7 +8398,7 @@ tasks.asm                                                            PAGE  140
     7665                            .dwattr $C$DW$434, DW_AT_TI_return
     7666                    
     7667 000010e4 4770              BX        LR                    ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  141
@@ -8458,7 +8458,7 @@ tasks.asm                                                            PAGE  141
     7717                    ;*   Regs Modified     : A1,A2,A3,A4,V1,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,    *
     7718                    ;*                           D2_hi,D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,   *
     7719                    ;*                           D7_hi,FPEXC,FPSCR                               *
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  142
@@ -8518,7 +8518,7 @@ tasks.asm                                                            PAGE  142
     7772                    ;* --------------------------------------------------------------------------*
     7773                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3436,column 6,is_stmt,isa 1
     7774 00001118 48AA              LDR       A1, $C$CON60          ; [DPU_3_PIPE] |3436|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  143
@@ -8578,7 +8578,7 @@ tasks.asm                                                            PAGE  143
     7827 0000115e 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |3449|  ; [ORIG 16-BIT INS]
     7828 00001160 4AAC              LDR       A3, $C$CON62          ; [DPU_3_PIPE] |3449|  ; [ORIG 16-BIT INS]
     7829 00001162 6AC3              LDR       A4, [A1, #44]         ; [DPU_3_PIPE] |3449|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  144
@@ -8638,7 +8638,7 @@ tasks.asm                                                            PAGE  144
     7882                    ;* --------------------------------------------------------------------------*
     7883                    ;* --------------------------------------------------------------------------*
     7884                    ||$C$L138||:    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  145
@@ -8698,7 +8698,7 @@ tasks.asm                                                            PAGE  145
     7937                    ;*   Local Frame Size  : 0 Args + 12 Auto + 8 Save = 20 byte                 *
     7938                    ;*****************************************************************************
     7939 000011ae           xTaskPriorityDisinherit:
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  146
@@ -8758,7 +8758,7 @@ tasks.asm                                                            PAGE  146
     7992 000011d2 D038              BEQ       ||$C$L140||           ; [DPU_3_PIPE] |3502|  ; [ORIG 16-BIT INS]
     7993                            ; BRANCHCC OCCURS {||$C$L140||}  ; [] |3502| 
     7994                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  147
@@ -8818,7 +8818,7 @@ tasks.asm                                                            PAGE  147
     8047                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3530,column 6,is_stmt,isa 1
     8048 0000121a 4A7E              LDR       A3, $C$CON62          ; [DPU_3_PIPE] |3530|  ; [ORIG 16-BIT INS]
     8049 0000121c 9801              LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |3530|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  148
@@ -8878,7 +8878,7 @@ tasks.asm                                                            PAGE  148
     8102                    
     8103                    $C$DW$450       .dwtag  DW_TAG_subprogram
     8104                            .dwattr $C$DW$450, DW_AT_name("uxTaskResetEventItemValue")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  149
@@ -8938,7 +8938,7 @@ tasks.asm                                                            PAGE  149
     8157                    $C$DW$452       .dwtag  DW_TAG_TI_branch
     8158                            .dwattr $C$DW$452, DW_AT_low_pc(0x00)
     8159                            .dwattr $C$DW$452, DW_AT_TI_return
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  150
@@ -8998,7 +8998,7 @@ tasks.asm                                                            PAGE  150
     8212 00001278 304C              ADDS      A1, A1, #76           ; [DPU_3_PIPE] |3890|  ; [ORIG 16-BIT INS]
     8213 0000127a 6801              LDR       A2, [A1, #0]          ; [DPU_3_PIPE] |3890|  ; [ORIG 16-BIT INS]
     8214 0000127c 1C49              ADDS      A2, A2, #1            ; [DPU_3_PIPE] |3890|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  151
@@ -9058,7 +9058,7 @@ tasks.asm                                                            PAGE  151
     8267                            .dwattr $C$DW$457, DW_AT_location[DW_OP_reg1]
     8268                    
     8269                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  152
@@ -9118,7 +9118,7 @@ tasks.asm                                                            PAGE  152
     8322                            ; CALL OCCURS {vPortEnterCritical }  ; [] |3906| 
     8323                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 3909,column 4,is_stmt,isa 1
     8324 00001294 484B              LDR       A1, $C$CON60          ; [DPU_3_PIPE] |3909|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  153
@@ -9178,7 +9178,7 @@ tasks.asm                                                            PAGE  153
     8377 000012d6 488F              LDR       A1, $C$CON63          ; [DPU_3_PIPE] |3938|  ; [ORIG 16-BIT INS]
     8378 000012d8 1D09              ADDS      A2, A2, #4            ; [DPU_3_PIPE] |3938|  ; [ORIG 16-BIT INS]
     8379                    $C$DW$464       .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  154
@@ -9238,7 +9238,7 @@ tasks.asm                                                            PAGE  154
     8432                            .dwattr $C$DW$467, DW_AT_TI_call
     8433                    
     8434 00001306 FFFEF7FF!         BL        vPortEnterCritical    ; [DPU_3_PIPE] |3981|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  155
@@ -9298,7 +9298,7 @@ tasks.asm                                                            PAGE  155
     8487 00001340 B005              ADD       SP, SP, #20           ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
     8488                            .dwcfi  cfa_offset, 4
     8489                    $C$DW$469       .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  156
@@ -9358,7 +9358,7 @@ tasks.asm                                                            PAGE  156
     8542                    
     8543                    $C$DW$472       .dwtag  DW_TAG_formal_parameter
     8544                            .dwattr $C$DW$472, DW_AT_name("ulBitsToClearOnExit")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  157
@@ -9418,7 +9418,7 @@ tasks.asm                                                            PAGE  157
     8597                            .dwattr $C$DW$477, DW_AT_location[DW_OP_breg13 8]
     8598                    
     8599                    $C$DW$478       .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  158
@@ -9478,7 +9478,7 @@ tasks.asm                                                            PAGE  158
     8652 0000138c 2800              CMP       A1, #0                ; [DPU_3_PIPE] |4032|  ; [ORIG 16-BIT INS]
     8653 0000138e D02C              BEQ       ||$C$L151||           ; [DPU_3_PIPE] |4032|  ; [ORIG 16-BIT INS]
     8654                            ; BRANCHCC OCCURS {||$C$L151||}  ; [] |4032| 
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  159
@@ -9538,7 +9538,7 @@ tasks.asm                                                            PAGE  159
     8707 000013c4                   .sect   ".text"
     8708                            .align  4
     8709 000013c4 00000000! ||$C$CON60||:   .bits   pxCurrentTCB,32
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  160
@@ -9598,7 +9598,7 @@ tasks.asm                                                            PAGE  160
     8762                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 4107,column 5,is_stmt,isa 1
     8763 000013f6 488B              LDR       A1, $C$CON66          ; [DPU_3_PIPE] |4107|  ; [ORIG 16-BIT INS]
     8764 000013f8 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |4107|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  161
@@ -9658,7 +9658,7 @@ tasks.asm                                                            PAGE  161
     8816 00001434 FFFEF7FF!         BL        vPortExitCritical     ; [DPU_3_PIPE] |4129|  ; [KEEP 32-BIT INS]
     8817                            ; CALL OCCURS {vPortExitCritical }  ; [] |4129| 
     8818                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 4131,column 3,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  162
@@ -9718,7 +9718,7 @@ tasks.asm                                                            PAGE  162
     8871                    $C$DW$492       .dwtag  DW_TAG_formal_parameter
     8872                            .dwattr $C$DW$492, DW_AT_name("eAction")
     8873                            .dwattr $C$DW$492, DW_AT_TI_symbol_name("eAction")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  163
@@ -9778,7 +9778,7 @@ tasks.asm                                                            PAGE  163
     8926                            .dwattr $C$DW$497, DW_AT_location[DW_OP_breg13 12]
     8927                    
     8928                    $C$DW$498       .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  164
@@ -9838,7 +9838,7 @@ tasks.asm                                                            PAGE  164
     8981 00001470 9904              LDR       A2, [SP, #16]         ; [DPU_3_PIPE] |4157|  ; [ORIG 16-BIT INS]
     8982 00001472 2002              MOVS      A1, #2                ; [DPU_3_PIPE] |4157|  ; [ORIG 16-BIT INS]
     8983 00001474 0054F881          STRB      A1, [A2, #84]         ; [DPU_3_PIPE] |4157|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  165
@@ -9898,7 +9898,7 @@ tasks.asm                                                            PAGE  165
     9036 000014aa 9006              STR       A1, [SP, #24]         ; [DPU_3_PIPE] |4181|  ; [ORIG 16-BIT INS]
     9037                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 4183,column 6,is_stmt,isa 1
     9038 000014ac E00A              B         ||$C$L162||           ; [DPU_3_PIPE] |4183|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  166
@@ -9958,7 +9958,7 @@ tasks.asm                                                            PAGE  166
     9091 000014e6 488A              LDR       A1, $C$CON68          ; [DPU_3_PIPE] |4198|  ; [ORIG 16-BIT INS]
     9092 000014e8 6ACB              LDR       A4, [A2, #44]         ; [DPU_3_PIPE] |4198|  ; [ORIG 16-BIT INS]
     9093 000014ea 9904              LDR       A2, [SP, #16]         ; [DPU_3_PIPE] |4198|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  167
@@ -10018,7 +10018,7 @@ tasks.asm                                                            PAGE  167
     9146                    ;* CONSTANT TABLE                                                             *
     9147                    ;******************************************************************************
     9148 00001512                   .sect   ".text"
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  168
@@ -10078,7 +10078,7 @@ tasks.asm                                                            PAGE  168
     9198                            .dwattr $C$DW$510, DW_AT_TI_symbol_name("pulPreviousNotificationValue")
     9199                            .dwattr $C$DW$510, DW_AT_type(*$C$DW$T$173)
     9200                            .dwattr $C$DW$510, DW_AT_location[DW_OP_reg3]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  169
@@ -10138,7 +10138,7 @@ tasks.asm                                                            PAGE  169
     9253                    $C$DW$516       .dwtag  DW_TAG_variable
     9254                            .dwattr $C$DW$516, DW_AT_name("pxTCB")
     9255                            .dwattr $C$DW$516, DW_AT_TI_symbol_name("pxTCB")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  170
@@ -10198,7 +10198,7 @@ tasks.asm                                                            PAGE  170
     9308 00001558 9804              LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |4281|  ; [ORIG 16-BIT INS]
     9309 0000155a 0054F890          LDRB      A1, [A1, #84]         ; [DPU_3_PIPE] |4281|  ; [KEEP 32-BIT INS]
     9310 0000155e 0014F88D          STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |4281|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  171
@@ -10258,7 +10258,7 @@ tasks.asm                                                            PAGE  171
     9363                    ;* --------------------------------------------------------------------------*
     9364 0000159a           ||$C$L169||:    
     9365                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 4306,column 7,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  172
@@ -10318,7 +10318,7 @@ tasks.asm                                                            PAGE  172
     9418                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 4328,column 6,is_stmt,isa 1
     9419 000015cc 9804              LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |4328|  ; [ORIG 16-BIT INS]
     9420 000015ce 4A4F              LDR       A3, $C$CON67          ; [DPU_3_PIPE] |4328|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  173
@@ -10378,7 +10378,7 @@ tasks.asm                                                            PAGE  173
     9473                            ; BRANCHCC OCCURS {||$C$L174||}  ; [] |4341| 
     9474                    ;* --------------------------------------------------------------------------*
     9475                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 4343,column 7,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  174
@@ -10438,7 +10438,7 @@ tasks.asm                                                            PAGE  174
     9527                            .dwattr $C$DW$524, DW_AT_TI_max_frame_size(0x20)
     9528                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 4363,column 2,is_stmt,address vTask
     9529                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  175
@@ -10498,7 +10498,7 @@ tasks.asm                                                            PAGE  175
     9582                    $C$DW$530       .dwtag  DW_TAG_variable
     9583                            .dwattr $C$DW$530, DW_AT_name("eOriginalNotifyState")
     9584                            .dwattr $C$DW$530, DW_AT_TI_symbol_name("eOriginalNotifyState")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  176
@@ -10558,7 +10558,7 @@ tasks.asm                                                            PAGE  176
     9637                            .dwattr $C$DW$532, DW_AT_name("uxListRemove")
     9638                            .dwattr $C$DW$532, DW_AT_TI_call
     9639                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  177
@@ -10618,7 +10618,7 @@ tasks.asm                                                            PAGE  177
     9692                            ; BRANCHCC OCCURS {||$C$L177||}  ; [] |4420| 
     9693                    ;* --------------------------------------------------------------------------*
     9694                            .dwpsn  file "C:/TI_ARM_Tiva_Projects/Source/tasks.c",line 4424,column 6,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  178
@@ -10678,7 +10678,7 @@ tasks.asm                                                            PAGE  178
     9747                            .dwfde $C$DW$CIE, xTaskNotifyStateClear
     9748                    $C$DW$537       .dwtag  DW_TAG_formal_parameter
     9749                            .dwattr $C$DW$537, DW_AT_name("xTask")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  179
@@ -10738,7 +10738,7 @@ tasks.asm                                                            PAGE  179
     9802 000016da 4810              LDR       A1, $C$CON71          ; [DPU_3_PIPE] |4453|  ; [ORIG 16-BIT INS]
     9803 000016dc 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |4453|  ; [ORIG 16-BIT INS]
     9804 000016de E000              B         ||$C$L179||           ; [DPU_3_PIPE] |4453|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  180
@@ -10798,7 +10798,7 @@ tasks.asm                                                            PAGE  180
     9857                            .dwattr $C$DW$543, DW_AT_TI_return
     9858                    
     9859 0000170a BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  181
@@ -10858,7 +10858,7 @@ tasks.asm                                                            PAGE  181
     9912                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
     9913                    
     9914                    ;******************************************************************************
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  182
@@ -10918,7 +10918,7 @@ tasks.asm                                                            PAGE  182
     9967                    $C$DW$548       .dwtag  DW_TAG_enumerator
     9968                            .dwattr $C$DW$548, DW_AT_name("eReady")
     9969                            .dwattr $C$DW$548, DW_AT_const_value(0x01)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  183
@@ -10978,7 +10978,7 @@ tasks.asm                                                            PAGE  183
    10022                            .dwattr $C$DW$553, DW_AT_decl_line(0x7d)
    10023                            .dwattr $C$DW$553, DW_AT_decl_column(0x02)
    10024                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  184
@@ -11038,7 +11038,7 @@ tasks.asm                                                            PAGE  184
    10077                            .dwattr $C$DW$559, DW_AT_name("eNoTasksWaitingTimeout")
    10078                            .dwattr $C$DW$559, DW_AT_const_value(0x02)
    10079                            .dwattr $C$DW$559, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  185
@@ -11098,7 +11098,7 @@ tasks.asm                                                            PAGE  185
    10132                    
    10133                    $C$DW$T$20      .dwtag  DW_TAG_structure_type
    10134                            .dwattr $C$DW$T$20, DW_AT_byte_size(0x08)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  186
@@ -11158,7 +11158,7 @@ tasks.asm                                                            PAGE  186
    10187                            .dwattr $C$DW$565, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1
    10188                            .dwattr $C$DW$565, DW_AT_decl_line(0x61)
    10189                            .dwattr $C$DW$565, DW_AT_decl_column(0x22)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  187
@@ -11218,7 +11218,7 @@ tasks.asm                                                            PAGE  187
    10242                            .dwattr $C$DW$T$2, DW_AT_name("void")
    10243                    
    10244                    $C$DW$T$3       .dwtag  DW_TAG_pointer_type
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  188
@@ -11278,7 +11278,7 @@ tasks.asm                                                            PAGE  188
    10297                    
    10298                    $C$DW$T$86      .dwtag  DW_TAG_subroutine_type
    10299                            .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  189
@@ -11338,7 +11338,7 @@ tasks.asm                                                            PAGE  189
    10352                    $C$DW$T$139     .dwtag  DW_TAG_pointer_type
    10353                            .dwattr $C$DW$T$139, DW_AT_type(*$C$DW$T$138)
    10354                            .dwattr $C$DW$T$139, DW_AT_address_class(0x20)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  190
@@ -11398,7 +11398,7 @@ tasks.asm                                                            PAGE  190
    10407                    $C$DW$T$143     .dwtag  DW_TAG_typedef
    10408                            .dwattr $C$DW$T$143, DW_AT_name("portCHAR")
    10409                            .dwattr $C$DW$T$143, DW_AT_type(*$C$DW$T$22)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  191
@@ -11458,7 +11458,7 @@ tasks.asm                                                            PAGE  191
    10462                            .dwattr $C$DW$T$149, DW_AT_decl_column(0x12)
    10463                    
    10464                    $C$DW$T$9       .dwtag  DW_TAG_base_type
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  192
@@ -11518,7 +11518,7 @@ tasks.asm                                                            PAGE  192
    10517                    $C$DW$T$157     .dwtag  DW_TAG_typedef
    10518                            .dwattr $C$DW$T$157, DW_AT_name("__TI_compar_fn")
    10519                            .dwattr $C$DW$T$157, DW_AT_type(*$C$DW$T$156)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  193
@@ -11578,7 +11578,7 @@ tasks.asm                                                            PAGE  193
    10572                    $C$DW$T$180     .dwtag  DW_TAG_typedef
    10573                            .dwattr $C$DW$T$180, DW_AT_name("int_fast16_t")
    10574                            .dwattr $C$DW$T$180, DW_AT_type(*$C$DW$T$63)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  194
@@ -11638,7 +11638,7 @@ tasks.asm                                                            PAGE  194
    10627                    
    10628                    $C$DW$T$187     .dwtag  DW_TAG_typedef
    10629                            .dwattr $C$DW$T$187, DW_AT_name("ptrdiff_t")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  195
@@ -11698,7 +11698,7 @@ tasks.asm                                                            PAGE  195
    10682                            .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
    10683                            .dwattr $C$DW$T$44, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/port
    10684                            .dwattr $C$DW$T$44, DW_AT_decl_line(0x70)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  196
@@ -11758,7 +11758,7 @@ tasks.asm                                                            PAGE  196
    10737                            .dwattr $C$DW$T$209, DW_AT_decl_line(0x48)
    10738                            .dwattr $C$DW$T$209, DW_AT_decl_column(0x16)
    10739                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  197
@@ -11818,7 +11818,7 @@ tasks.asm                                                            PAGE  197
    10792                            .dwattr $C$DW$T$214, DW_AT_decl_line(0x32)
    10793                            .dwattr $C$DW$T$214, DW_AT_decl_column(0x21)
    10794                    
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  198
@@ -11878,7 +11878,7 @@ tasks.asm                                                            PAGE  198
    10847                    
    10848                    $C$DW$T$221     .dwtag  DW_TAG_typedef
    10849                            .dwattr $C$DW$T$221, DW_AT_name("uint_least64_t")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  199
@@ -11938,7 +11938,7 @@ tasks.asm                                                            PAGE  199
    10902                            .dwattr $C$DW$T$53, DW_AT_address_class(0x20)
    10903                    
    10904                    $C$DW$T$54      .dwtag  DW_TAG_const_type
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  200
@@ -11998,7 +11998,7 @@ tasks.asm                                                            PAGE  200
    10957                    
    10958                    $C$DW$579       .dwtag  DW_TAG_member
    10959                            .dwattr $C$DW$579, DW_AT_type(*$C$DW$T$31)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  201
@@ -12058,7 +12058,7 @@ tasks.asm                                                            PAGE  201
    11012                            .dwattr $C$DW$584, DW_AT_data_member_location[DW_OP_plus_uconst 0x44]
    11013                            .dwattr $C$DW$584, DW_AT_accessibility(DW_ACCESS_public)
    11014                            .dwattr $C$DW$584, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  202
@@ -12118,7 +12118,7 @@ tasks.asm                                                            PAGE  202
    11067                            .dwattr $C$DW$T$118, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/tasks.c")
    11068                            .dwattr $C$DW$T$118, DW_AT_decl_line(0xc3)
    11069                            .dwattr $C$DW$T$118, DW_AT_decl_column(0x03)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  203
@@ -12178,7 +12178,7 @@ tasks.asm                                                            PAGE  203
    11122                            .dwattr $C$DW$590, DW_AT_name("pxIndex")
    11123                            .dwattr $C$DW$590, DW_AT_TI_symbol_name("pxIndex")
    11124                            .dwattr $C$DW$590, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  204
@@ -12238,7 +12238,7 @@ tasks.asm                                                            PAGE  204
    11177                            .dwattr $C$DW$T$239, DW_AT_byte_size(0x64)
    11178                    $C$DW$592       .dwtag  DW_TAG_subrange_type
    11179                            .dwattr $C$DW$592, DW_AT_upper_bound(0x04)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  205
@@ -12298,7 +12298,7 @@ tasks.asm                                                            PAGE  205
    11232                            .dwattr $C$DW$597, DW_AT_accessibility(DW_ACCESS_public)
    11233                            .dwattr $C$DW$597, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
    11234                            .dwattr $C$DW$597, DW_AT_decl_line(0xbc)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  206
@@ -12358,7 +12358,7 @@ tasks.asm                                                            PAGE  206
    11287                            .dwattr $C$DW$600, DW_AT_name("ulParameters")
    11288                            .dwattr $C$DW$600, DW_AT_TI_symbol_name("ulParameters")
    11289                            .dwattr $C$DW$600, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  207
@@ -12418,7 +12418,7 @@ tasks.asm                                                            PAGE  207
    11342                    $C$DW$603       .dwtag  DW_TAG_member
    11343                            .dwattr $C$DW$603, DW_AT_type(*$C$DW$T$45)
    11344                            .dwattr $C$DW$603, DW_AT_name("pxNext")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  208
@@ -12478,7 +12478,7 @@ tasks.asm                                                            PAGE  208
    11397                            .dwattr $C$DW$606, DW_AT_decl_column(0x15)
    11398                    
    11399                    $C$DW$607       .dwtag  DW_TAG_member
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  209
@@ -12538,7 +12538,7 @@ tasks.asm                                                            PAGE  209
    11452                            .dwendtag $C$DW$T$58
    11453                    
    11454                    $C$DW$T$245     .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  210
@@ -12598,7 +12598,7 @@ tasks.asm                                                            PAGE  210
    11507                            .dwattr $C$DW$616, DW_AT_type(*$C$DW$T$32)
    11508                            .dwattr $C$DW$616, DW_AT_name("uxCurrentPriority")
    11509                            .dwattr $C$DW$616, DW_AT_TI_symbol_name("uxCurrentPriority")
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  211
@@ -12658,7 +12658,7 @@ tasks.asm                                                            PAGE  211
    11562                    
    11563                    $C$DW$T$201     .dwtag  DW_TAG_const_type
    11564                            .dwattr $C$DW$T$201, DW_AT_type(*$C$DW$T$200)
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  212
@@ -12718,7 +12718,7 @@ tasks.asm                                                            PAGE  212
    11617                            .dwcfi  cfa_register, 13
    11618                            .dwcfi  cfa_offset, 0
    11619                            .dwcfi  undefined, 0
-TI ARM Assembler PC v15.12.1 Tue Oct 18 10:42:44 2016
+TI ARM Assembler PC v15.12.1 Thu Oct 27 13:55:31 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tasks.asm                                                            PAGE  213

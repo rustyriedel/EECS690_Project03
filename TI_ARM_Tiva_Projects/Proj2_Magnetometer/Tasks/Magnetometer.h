@@ -12,7 +12,7 @@ extern bool isMPU9150Initialized;
 
 //function prototypes
 extern void MagnetometerInit();
-extern void MPU9150Callback(void *pvCallbackData, uint_fast8_t ui8Status);
+void MPU9150Callback1(void *pvCallbackData, uint_fast8_t ui8Status);
 extern void Task_Magnetometer(void *pvParameters);
 
 

@@ -20,9 +20,12 @@
 //
 #define MPU9150_I2C_ADDRESS 0x68
 
+//initialization flag
+extern bool isMPU9150Initialized;
+
+extern void GyroInit();
 extern void Task_gyro(void *pvParameters);
 void MPU9150Callback(void *pvCallbackData, uint_fast8_t ui8Status);
-extern void get_values(tMPU9150 sMPU9150, float* gyro_x_rotation, float* gyro_y_rotation, float* gyro_z_rotation);
 
 
 
