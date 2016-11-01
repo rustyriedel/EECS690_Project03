@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-;* Date/Time created: Thu Oct 27 14:03:10 2016                                *
+;* Date/Time created: Tue Nov 01 14:05:53 2016                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --quiet --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -205,12 +205,12 @@ $C$DW$39	.dwtag  DW_TAG_formal_parameter
 
 
 $C$DW$40	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$40, DW_AT_name("Task_Blink_LED_D1")
-	.dwattr $C$DW$40, DW_AT_TI_symbol_name("Task_Blink_LED_D1")
+	.dwattr $C$DW$40, DW_AT_name("Task_Accelerometer")
+	.dwattr $C$DW$40, DW_AT_TI_symbol_name("Task_Accelerometer")
 	.dwattr $C$DW$40, DW_AT_declaration
 	.dwattr $C$DW$40, DW_AT_external
-	.dwattr $C$DW$40, DW_AT_decl_file("../Main_Base.c")
-	.dwattr $C$DW$40, DW_AT_decl_line(0x1d)
+	.dwattr $C$DW$40, DW_AT_decl_file("..\Tasks/MPU9150Manager.h")
+	.dwattr $C$DW$40, DW_AT_decl_line(0x10)
 	.dwattr $C$DW$40, DW_AT_decl_column(0x0d)
 $C$DW$41	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$41, DW_AT_type(*$C$DW$T$3)
@@ -219,17 +219,31 @@ $C$DW$41	.dwtag  DW_TAG_formal_parameter
 
 
 $C$DW$42	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$42, DW_AT_name("Task_ReportData")
-	.dwattr $C$DW$42, DW_AT_TI_symbol_name("Task_ReportData")
+	.dwattr $C$DW$42, DW_AT_name("Task_Blink_LED_D1")
+	.dwattr $C$DW$42, DW_AT_TI_symbol_name("Task_Blink_LED_D1")
 	.dwattr $C$DW$42, DW_AT_declaration
 	.dwattr $C$DW$42, DW_AT_external
 	.dwattr $C$DW$42, DW_AT_decl_file("../Main_Base.c")
-	.dwattr $C$DW$42, DW_AT_decl_line(0x1f)
+	.dwattr $C$DW$42, DW_AT_decl_line(0x1e)
 	.dwattr $C$DW$42, DW_AT_decl_column(0x0d)
 $C$DW$43	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$43, DW_AT_type(*$C$DW$T$3)
 
 	.dwendtag $C$DW$42
+
+
+$C$DW$44	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$44, DW_AT_name("Task_ReportData")
+	.dwattr $C$DW$44, DW_AT_TI_symbol_name("Task_ReportData")
+	.dwattr $C$DW$44, DW_AT_declaration
+	.dwattr $C$DW$44, DW_AT_external
+	.dwattr $C$DW$44, DW_AT_decl_file("../Main_Base.c")
+	.dwattr $C$DW$44, DW_AT_decl_line(0x20)
+	.dwattr $C$DW$44, DW_AT_decl_column(0x0d)
+$C$DW$45	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$45, DW_AT_type(*$C$DW$T$3)
+
+	.dwendtag $C$DW$44
 
 	.global	isMPU9150Initialized
 	.data
@@ -238,75 +252,75 @@ $C$DW$43	.dwtag  DW_TAG_formal_parameter
 isMPU9150Initialized:
 	.bits	0,8			; isMPU9150Initialized @ 0
 
-$C$DW$44	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$44, DW_AT_name("isMPU9150Initialized")
-	.dwattr $C$DW$44, DW_AT_TI_symbol_name("isMPU9150Initialized")
-	.dwattr $C$DW$44, DW_AT_location[DW_OP_addr isMPU9150Initialized]
-	.dwattr $C$DW$44, DW_AT_type(*$C$DW$T$160)
-	.dwattr $C$DW$44, DW_AT_external
-	.dwattr $C$DW$44, DW_AT_decl_file("../Main_Base.c")
-	.dwattr $C$DW$44, DW_AT_decl_line(0x21)
-	.dwattr $C$DW$44, DW_AT_decl_column(0x0d)
+$C$DW$46	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$46, DW_AT_name("isMPU9150Initialized")
+	.dwattr $C$DW$46, DW_AT_TI_symbol_name("isMPU9150Initialized")
+	.dwattr $C$DW$46, DW_AT_location[DW_OP_addr isMPU9150Initialized]
+	.dwattr $C$DW$46, DW_AT_type(*$C$DW$T$160)
+	.dwattr $C$DW$46, DW_AT_external
+	.dwattr $C$DW$46, DW_AT_decl_file("../Main_Base.c")
+	.dwattr $C$DW$46, DW_AT_decl_line(0x22)
+	.dwattr $C$DW$46, DW_AT_decl_column(0x0d)
 
-;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0433212 
+;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0407212 
 	.sect	".text:I2CMWrite"
 	.clink
 	.thumbfunc I2CMWrite
 	.thumb
 	.global	I2CMWrite
 
-$C$DW$45	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$45, DW_AT_name("I2CMWrite")
-	.dwattr $C$DW$45, DW_AT_low_pc(I2CMWrite)
-	.dwattr $C$DW$45, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$45, DW_AT_TI_symbol_name("I2CMWrite")
-	.dwattr $C$DW$45, DW_AT_external
-	.dwattr $C$DW$45, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$45, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$45, DW_AT_TI_begin_line(0x1cb)
-	.dwattr $C$DW$45, DW_AT_TI_begin_column(0x01)
-	.dwattr $C$DW$45, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$45, DW_AT_decl_line(0x1cb)
-	.dwattr $C$DW$45, DW_AT_decl_column(0x01)
-	.dwattr $C$DW$45, DW_AT_TI_max_frame_size(0x30)
+$C$DW$47	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$47, DW_AT_name("I2CMWrite")
+	.dwattr $C$DW$47, DW_AT_low_pc(I2CMWrite)
+	.dwattr $C$DW$47, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$47, DW_AT_TI_symbol_name("I2CMWrite")
+	.dwattr $C$DW$47, DW_AT_external
+	.dwattr $C$DW$47, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$47, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$47, DW_AT_TI_begin_line(0x1cb)
+	.dwattr $C$DW$47, DW_AT_TI_begin_column(0x01)
+	.dwattr $C$DW$47, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$47, DW_AT_decl_line(0x1cb)
+	.dwattr $C$DW$47, DW_AT_decl_column(0x01)
+	.dwattr $C$DW$47, DW_AT_TI_max_frame_size(0x30)
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 462,column 1,is_stmt,address I2CMWrite,isa 1
 
 	.dwfde $C$DW$CIE, I2CMWrite
-$C$DW$46	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$46, DW_AT_name("psInst")
-	.dwattr $C$DW$46, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$46, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$46, DW_AT_location[DW_OP_reg0]
-
-$C$DW$47	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$47, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$47, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$47, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$47, DW_AT_location[DW_OP_reg1]
-
 $C$DW$48	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$48, DW_AT_name("pui8Data")
-	.dwattr $C$DW$48, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$48, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$48, DW_AT_location[DW_OP_reg2]
+	.dwattr $C$DW$48, DW_AT_name("psInst")
+	.dwattr $C$DW$48, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$48, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$48, DW_AT_location[DW_OP_reg0]
 
 $C$DW$49	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$49, DW_AT_name("ui16Count")
-	.dwattr $C$DW$49, DW_AT_TI_symbol_name("ui16Count")
-	.dwattr $C$DW$49, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$49, DW_AT_location[DW_OP_reg3]
+	.dwattr $C$DW$49, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$49, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$49, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$49, DW_AT_location[DW_OP_reg1]
 
 $C$DW$50	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$50, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$50, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$50, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$50, DW_AT_location[DW_OP_breg13 48]
+	.dwattr $C$DW$50, DW_AT_name("pui8Data")
+	.dwattr $C$DW$50, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$50, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$50, DW_AT_location[DW_OP_reg2]
 
 $C$DW$51	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$51, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$51, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$51, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$51, DW_AT_location[DW_OP_breg13 52]
+	.dwattr $C$DW$51, DW_AT_name("ui16Count")
+	.dwattr $C$DW$51, DW_AT_TI_symbol_name("ui16Count")
+	.dwattr $C$DW$51, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$51, DW_AT_location[DW_OP_reg3]
+
+$C$DW$52	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$52, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$52, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$52, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$52, DW_AT_location[DW_OP_breg13 48]
+
+$C$DW$53	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$53, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$53, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$53, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$53, DW_AT_location[DW_OP_breg13 52]
 
 
 ;*****************************************************************************
@@ -328,29 +342,29 @@ I2CMWrite:
 	.dwcfi	save_reg_to_mem, 14, -4
         SUB       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 48
-$C$DW$52	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$52, DW_AT_name("psInst")
-	.dwattr $C$DW$52, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$52, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$52, DW_AT_location[DW_OP_breg13 24]
-
-$C$DW$53	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$53, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$53, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$53, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$53, DW_AT_location[DW_OP_breg13 28]
-
 $C$DW$54	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$54, DW_AT_name("pui8Data")
-	.dwattr $C$DW$54, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$54, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$54, DW_AT_location[DW_OP_breg13 32]
+	.dwattr $C$DW$54, DW_AT_name("psInst")
+	.dwattr $C$DW$54, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$54, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$54, DW_AT_location[DW_OP_breg13 24]
 
 $C$DW$55	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$55, DW_AT_name("ui16Count")
-	.dwattr $C$DW$55, DW_AT_TI_symbol_name("ui16Count")
-	.dwattr $C$DW$55, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$55, DW_AT_location[DW_OP_breg13 36]
+	.dwattr $C$DW$55, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$55, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$55, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$55, DW_AT_location[DW_OP_breg13 28]
+
+$C$DW$56	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$56, DW_AT_name("pui8Data")
+	.dwattr $C$DW$56, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$56, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$56, DW_AT_location[DW_OP_breg13 32]
+
+$C$DW$57	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$57, DW_AT_name("ui16Count")
+	.dwattr $C$DW$57, DW_AT_TI_symbol_name("ui16Count")
+	.dwattr $C$DW$57, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$57, DW_AT_location[DW_OP_breg13 36]
 
         STR       A4, [SP, #36]         ; [DPU_3_PIPE] |462| 
         STR       A3, [SP, #32]         ; [DPU_3_PIPE] |462| 
@@ -373,28 +387,28 @@ $C$DW$55	.dwtag  DW_TAG_variable
         LDR       A3, [SP, #32]         ; [DPU_3_PIPE] |463| 
         LDR       A2, [SP, #28]         ; [DPU_3_PIPE] |463| 
         LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |463| 
-$C$DW$56	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$56, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$56, DW_AT_name("I2CMCommand")
-	.dwattr $C$DW$56, DW_AT_TI_call
+$C$DW$58	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$58, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$58, DW_AT_name("I2CMCommand")
+	.dwattr $C$DW$58, DW_AT_TI_call
 
         BL        I2CMCommand           ; [DPU_3_PIPE] |463| 
         ; CALL OCCURS {I2CMCommand }     ; [] |463| 
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 465,column 1,is_stmt,isa 1
         ADD       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
-$C$DW$57	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$57, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$57, DW_AT_TI_return
+$C$DW$59	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$59, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$59, DW_AT_TI_return
 
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$45, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$45, DW_AT_TI_end_line(0x1d1)
-	.dwattr $C$DW$45, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$47, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$47, DW_AT_TI_end_line(0x1d1)
+	.dwattr $C$DW$47, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$45
+	.dwendtag $C$DW$47
 
 	.sect	".text:I2CMRead"
 	.clink
@@ -402,70 +416,70 @@ $C$DW$57	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	I2CMRead
 
-$C$DW$58	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$58, DW_AT_name("I2CMRead")
-	.dwattr $C$DW$58, DW_AT_low_pc(I2CMRead)
-	.dwattr $C$DW$58, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$58, DW_AT_TI_symbol_name("I2CMRead")
-	.dwattr $C$DW$58, DW_AT_external
-	.dwattr $C$DW$58, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$58, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$58, DW_AT_TI_begin_line(0x1d9)
-	.dwattr $C$DW$58, DW_AT_TI_begin_column(0x01)
-	.dwattr $C$DW$58, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$58, DW_AT_decl_line(0x1d9)
-	.dwattr $C$DW$58, DW_AT_decl_column(0x01)
-	.dwattr $C$DW$58, DW_AT_TI_max_frame_size(0x30)
+$C$DW$60	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$60, DW_AT_name("I2CMRead")
+	.dwattr $C$DW$60, DW_AT_low_pc(I2CMRead)
+	.dwattr $C$DW$60, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$60, DW_AT_TI_symbol_name("I2CMRead")
+	.dwattr $C$DW$60, DW_AT_external
+	.dwattr $C$DW$60, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$60, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$60, DW_AT_TI_begin_line(0x1d9)
+	.dwattr $C$DW$60, DW_AT_TI_begin_column(0x01)
+	.dwattr $C$DW$60, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$60, DW_AT_decl_line(0x1d9)
+	.dwattr $C$DW$60, DW_AT_decl_column(0x01)
+	.dwattr $C$DW$60, DW_AT_TI_max_frame_size(0x30)
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 477,column 1,is_stmt,address I2CMRead,isa 1
 
 	.dwfde $C$DW$CIE, I2CMRead
-$C$DW$59	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$59, DW_AT_name("psInst")
-	.dwattr $C$DW$59, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$59, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$59, DW_AT_location[DW_OP_reg0]
-
-$C$DW$60	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$60, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$60, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$60, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$60, DW_AT_location[DW_OP_reg1]
-
 $C$DW$61	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$61, DW_AT_name("pui8WriteData")
-	.dwattr $C$DW$61, DW_AT_TI_symbol_name("pui8WriteData")
-	.dwattr $C$DW$61, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$61, DW_AT_location[DW_OP_reg2]
+	.dwattr $C$DW$61, DW_AT_name("psInst")
+	.dwattr $C$DW$61, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$61, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$61, DW_AT_location[DW_OP_reg0]
 
 $C$DW$62	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$62, DW_AT_name("ui16WriteCount")
-	.dwattr $C$DW$62, DW_AT_TI_symbol_name("ui16WriteCount")
-	.dwattr $C$DW$62, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$62, DW_AT_location[DW_OP_reg3]
+	.dwattr $C$DW$62, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$62, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$62, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$62, DW_AT_location[DW_OP_reg1]
 
 $C$DW$63	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$63, DW_AT_name("pui8ReadData")
-	.dwattr $C$DW$63, DW_AT_TI_symbol_name("pui8ReadData")
-	.dwattr $C$DW$63, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$63, DW_AT_location[DW_OP_breg13 48]
+	.dwattr $C$DW$63, DW_AT_name("pui8WriteData")
+	.dwattr $C$DW$63, DW_AT_TI_symbol_name("pui8WriteData")
+	.dwattr $C$DW$63, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$63, DW_AT_location[DW_OP_reg2]
 
 $C$DW$64	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$64, DW_AT_name("ui16ReadCount")
-	.dwattr $C$DW$64, DW_AT_TI_symbol_name("ui16ReadCount")
+	.dwattr $C$DW$64, DW_AT_name("ui16WriteCount")
+	.dwattr $C$DW$64, DW_AT_TI_symbol_name("ui16WriteCount")
 	.dwattr $C$DW$64, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$64, DW_AT_location[DW_OP_breg13 52]
+	.dwattr $C$DW$64, DW_AT_location[DW_OP_reg3]
 
 $C$DW$65	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$65, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$65, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$65, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$65, DW_AT_location[DW_OP_breg13 56]
+	.dwattr $C$DW$65, DW_AT_name("pui8ReadData")
+	.dwattr $C$DW$65, DW_AT_TI_symbol_name("pui8ReadData")
+	.dwattr $C$DW$65, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$65, DW_AT_location[DW_OP_breg13 48]
 
 $C$DW$66	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$66, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$66, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$66, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$66, DW_AT_location[DW_OP_breg13 60]
+	.dwattr $C$DW$66, DW_AT_name("ui16ReadCount")
+	.dwattr $C$DW$66, DW_AT_TI_symbol_name("ui16ReadCount")
+	.dwattr $C$DW$66, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$66, DW_AT_location[DW_OP_breg13 52]
+
+$C$DW$67	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$67, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$67, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$67, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$67, DW_AT_location[DW_OP_breg13 56]
+
+$C$DW$68	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$68, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$68, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$68, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$68, DW_AT_location[DW_OP_breg13 60]
 
 
 ;*****************************************************************************
@@ -487,29 +501,29 @@ I2CMRead:
 	.dwcfi	save_reg_to_mem, 14, -4
         SUB       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 48
-$C$DW$67	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$67, DW_AT_name("psInst")
-	.dwattr $C$DW$67, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$67, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$67, DW_AT_location[DW_OP_breg13 24]
-
-$C$DW$68	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$68, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$68, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$68, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$68, DW_AT_location[DW_OP_breg13 28]
-
 $C$DW$69	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$69, DW_AT_name("pui8WriteData")
-	.dwattr $C$DW$69, DW_AT_TI_symbol_name("pui8WriteData")
-	.dwattr $C$DW$69, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$69, DW_AT_location[DW_OP_breg13 32]
+	.dwattr $C$DW$69, DW_AT_name("psInst")
+	.dwattr $C$DW$69, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$69, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$69, DW_AT_location[DW_OP_breg13 24]
 
 $C$DW$70	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$70, DW_AT_name("ui16WriteCount")
-	.dwattr $C$DW$70, DW_AT_TI_symbol_name("ui16WriteCount")
-	.dwattr $C$DW$70, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$70, DW_AT_location[DW_OP_breg13 36]
+	.dwattr $C$DW$70, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$70, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$70, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$70, DW_AT_location[DW_OP_breg13 28]
+
+$C$DW$71	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$71, DW_AT_name("pui8WriteData")
+	.dwattr $C$DW$71, DW_AT_TI_symbol_name("pui8WriteData")
+	.dwattr $C$DW$71, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$71, DW_AT_location[DW_OP_breg13 32]
+
+$C$DW$72	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$72, DW_AT_name("ui16WriteCount")
+	.dwattr $C$DW$72, DW_AT_TI_symbol_name("ui16WriteCount")
+	.dwattr $C$DW$72, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$72, DW_AT_location[DW_OP_breg13 36]
 
         STR       A4, [SP, #36]         ; [DPU_3_PIPE] |477| 
         STR       A3, [SP, #32]         ; [DPU_3_PIPE] |477| 
@@ -532,28 +546,28 @@ $C$DW$70	.dwtag  DW_TAG_variable
         LDR       A3, [SP, #32]         ; [DPU_3_PIPE] |478| 
         LDR       A2, [SP, #28]         ; [DPU_3_PIPE] |478| 
         LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |478| 
-$C$DW$71	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$71, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$71, DW_AT_name("I2CMCommand")
-	.dwattr $C$DW$71, DW_AT_TI_call
+$C$DW$73	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$73, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$73, DW_AT_name("I2CMCommand")
+	.dwattr $C$DW$73, DW_AT_TI_call
 
         BL        I2CMCommand           ; [DPU_3_PIPE] |478| 
         ; CALL OCCURS {I2CMCommand }     ; [] |478| 
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 481,column 1,is_stmt,isa 1
         ADD       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
-$C$DW$72	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$72, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$72, DW_AT_TI_return
+$C$DW$74	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$74, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$74, DW_AT_TI_return
 
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$58, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$58, DW_AT_TI_end_line(0x1e1)
-	.dwattr $C$DW$58, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$60, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$60, DW_AT_TI_end_line(0x1e1)
+	.dwattr $C$DW$60, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$58
+	.dwendtag $C$DW$60
 
 	.sect	".text:I2CMWriteBatched"
 	.clink
@@ -561,64 +575,64 @@ $C$DW$72	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	I2CMWriteBatched
 
-$C$DW$73	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$73, DW_AT_name("I2CMWriteBatched")
-	.dwattr $C$DW$73, DW_AT_low_pc(I2CMWriteBatched)
-	.dwattr $C$DW$73, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$73, DW_AT_TI_symbol_name("I2CMWriteBatched")
-	.dwattr $C$DW$73, DW_AT_external
-	.dwattr $C$DW$73, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$73, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$73, DW_AT_TI_begin_line(0x1e9)
-	.dwattr $C$DW$73, DW_AT_TI_begin_column(0x01)
-	.dwattr $C$DW$73, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$73, DW_AT_decl_line(0x1e9)
-	.dwattr $C$DW$73, DW_AT_decl_column(0x01)
-	.dwattr $C$DW$73, DW_AT_TI_max_frame_size(0x30)
+$C$DW$75	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$75, DW_AT_name("I2CMWriteBatched")
+	.dwattr $C$DW$75, DW_AT_low_pc(I2CMWriteBatched)
+	.dwattr $C$DW$75, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$75, DW_AT_TI_symbol_name("I2CMWriteBatched")
+	.dwattr $C$DW$75, DW_AT_external
+	.dwattr $C$DW$75, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$75, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$75, DW_AT_TI_begin_line(0x1e9)
+	.dwattr $C$DW$75, DW_AT_TI_begin_column(0x01)
+	.dwattr $C$DW$75, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$75, DW_AT_decl_line(0x1e9)
+	.dwattr $C$DW$75, DW_AT_decl_column(0x01)
+	.dwattr $C$DW$75, DW_AT_TI_max_frame_size(0x30)
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 493,column 1,is_stmt,address I2CMWriteBatched,isa 1
 
 	.dwfde $C$DW$CIE, I2CMWriteBatched
-$C$DW$74	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$74, DW_AT_name("psInst")
-	.dwattr $C$DW$74, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$74, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$74, DW_AT_location[DW_OP_reg0]
-
-$C$DW$75	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$75, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$75, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$75, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$75, DW_AT_location[DW_OP_reg1]
-
 $C$DW$76	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$76, DW_AT_name("pui8Data")
-	.dwattr $C$DW$76, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$76, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$76, DW_AT_location[DW_OP_reg2]
+	.dwattr $C$DW$76, DW_AT_name("psInst")
+	.dwattr $C$DW$76, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$76, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$76, DW_AT_location[DW_OP_reg0]
 
 $C$DW$77	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$77, DW_AT_name("ui16Count")
-	.dwattr $C$DW$77, DW_AT_TI_symbol_name("ui16Count")
-	.dwattr $C$DW$77, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$77, DW_AT_location[DW_OP_reg3]
+	.dwattr $C$DW$77, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$77, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$77, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$77, DW_AT_location[DW_OP_reg1]
 
 $C$DW$78	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$78, DW_AT_name("ui16BatchSize")
-	.dwattr $C$DW$78, DW_AT_TI_symbol_name("ui16BatchSize")
-	.dwattr $C$DW$78, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$78, DW_AT_location[DW_OP_breg13 48]
+	.dwattr $C$DW$78, DW_AT_name("pui8Data")
+	.dwattr $C$DW$78, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$78, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$78, DW_AT_location[DW_OP_reg2]
 
 $C$DW$79	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$79, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$79, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$79, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$79, DW_AT_location[DW_OP_breg13 52]
+	.dwattr $C$DW$79, DW_AT_name("ui16Count")
+	.dwattr $C$DW$79, DW_AT_TI_symbol_name("ui16Count")
+	.dwattr $C$DW$79, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$79, DW_AT_location[DW_OP_reg3]
 
 $C$DW$80	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$80, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$80, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$80, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$80, DW_AT_location[DW_OP_breg13 56]
+	.dwattr $C$DW$80, DW_AT_name("ui16BatchSize")
+	.dwattr $C$DW$80, DW_AT_TI_symbol_name("ui16BatchSize")
+	.dwattr $C$DW$80, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$80, DW_AT_location[DW_OP_breg13 48]
+
+$C$DW$81	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$81, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$81, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$81, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$81, DW_AT_location[DW_OP_breg13 52]
+
+$C$DW$82	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$82, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$82, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$82, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$82, DW_AT_location[DW_OP_breg13 56]
 
 
 ;*****************************************************************************
@@ -640,29 +654,29 @@ I2CMWriteBatched:
 	.dwcfi	save_reg_to_mem, 14, -4
         SUB       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 48
-$C$DW$81	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$81, DW_AT_name("psInst")
-	.dwattr $C$DW$81, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$81, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$81, DW_AT_location[DW_OP_breg13 24]
-
-$C$DW$82	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$82, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$82, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$82, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$82, DW_AT_location[DW_OP_breg13 28]
-
 $C$DW$83	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$83, DW_AT_name("pui8Data")
-	.dwattr $C$DW$83, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$83, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$83, DW_AT_location[DW_OP_breg13 32]
+	.dwattr $C$DW$83, DW_AT_name("psInst")
+	.dwattr $C$DW$83, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$83, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$83, DW_AT_location[DW_OP_breg13 24]
 
 $C$DW$84	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$84, DW_AT_name("ui16Count")
-	.dwattr $C$DW$84, DW_AT_TI_symbol_name("ui16Count")
-	.dwattr $C$DW$84, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$84, DW_AT_location[DW_OP_breg13 36]
+	.dwattr $C$DW$84, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$84, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$84, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$84, DW_AT_location[DW_OP_breg13 28]
+
+$C$DW$85	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$85, DW_AT_name("pui8Data")
+	.dwattr $C$DW$85, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$85, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$85, DW_AT_location[DW_OP_breg13 32]
+
+$C$DW$86	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$86, DW_AT_name("ui16Count")
+	.dwattr $C$DW$86, DW_AT_TI_symbol_name("ui16Count")
+	.dwattr $C$DW$86, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$86, DW_AT_location[DW_OP_breg13 36]
 
         STR       A4, [SP, #36]         ; [DPU_3_PIPE] |493| 
         STR       A3, [SP, #32]         ; [DPU_3_PIPE] |493| 
@@ -685,28 +699,28 @@ $C$DW$84	.dwtag  DW_TAG_variable
         LDR       A3, [SP, #32]         ; [DPU_3_PIPE] |494| 
         LDR       A2, [SP, #28]         ; [DPU_3_PIPE] |494| 
         LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |494| 
-$C$DW$85	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$85, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$85, DW_AT_name("I2CMCommand")
-	.dwattr $C$DW$85, DW_AT_TI_call
+$C$DW$87	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$87, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$87, DW_AT_name("I2CMCommand")
+	.dwattr $C$DW$87, DW_AT_TI_call
 
         BL        I2CMCommand           ; [DPU_3_PIPE] |494| 
         ; CALL OCCURS {I2CMCommand }     ; [] |494| 
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 496,column 1,is_stmt,isa 1
         ADD       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
-$C$DW$86	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$86, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$86, DW_AT_TI_return
+$C$DW$88	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$88, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$88, DW_AT_TI_return
 
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$73, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$73, DW_AT_TI_end_line(0x1f0)
-	.dwattr $C$DW$73, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$75, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$75, DW_AT_TI_end_line(0x1f0)
+	.dwattr $C$DW$75, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$73
+	.dwendtag $C$DW$75
 
 	.sect	".text:I2CMReadBatched"
 	.clink
@@ -714,82 +728,82 @@ $C$DW$86	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	I2CMReadBatched
 
-$C$DW$87	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$87, DW_AT_name("I2CMReadBatched")
-	.dwattr $C$DW$87, DW_AT_low_pc(I2CMReadBatched)
-	.dwattr $C$DW$87, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$87, DW_AT_TI_symbol_name("I2CMReadBatched")
-	.dwattr $C$DW$87, DW_AT_external
-	.dwattr $C$DW$87, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$87, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$87, DW_AT_TI_begin_line(0x1f8)
-	.dwattr $C$DW$87, DW_AT_TI_begin_column(0x01)
-	.dwattr $C$DW$87, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$87, DW_AT_decl_line(0x1f8)
-	.dwattr $C$DW$87, DW_AT_decl_column(0x01)
-	.dwattr $C$DW$87, DW_AT_TI_max_frame_size(0x30)
+$C$DW$89	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$89, DW_AT_name("I2CMReadBatched")
+	.dwattr $C$DW$89, DW_AT_low_pc(I2CMReadBatched)
+	.dwattr $C$DW$89, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$89, DW_AT_TI_symbol_name("I2CMReadBatched")
+	.dwattr $C$DW$89, DW_AT_external
+	.dwattr $C$DW$89, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$89, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$89, DW_AT_TI_begin_line(0x1f8)
+	.dwattr $C$DW$89, DW_AT_TI_begin_column(0x01)
+	.dwattr $C$DW$89, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$89, DW_AT_decl_line(0x1f8)
+	.dwattr $C$DW$89, DW_AT_decl_column(0x01)
+	.dwattr $C$DW$89, DW_AT_TI_max_frame_size(0x30)
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 509,column 1,is_stmt,address I2CMReadBatched,isa 1
 
 	.dwfde $C$DW$CIE, I2CMReadBatched
-$C$DW$88	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$88, DW_AT_name("psInst")
-	.dwattr $C$DW$88, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$88, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$88, DW_AT_location[DW_OP_reg0]
-
-$C$DW$89	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$89, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$89, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$89, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$89, DW_AT_location[DW_OP_reg1]
-
 $C$DW$90	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$90, DW_AT_name("pui8WriteData")
-	.dwattr $C$DW$90, DW_AT_TI_symbol_name("pui8WriteData")
-	.dwattr $C$DW$90, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$90, DW_AT_location[DW_OP_reg2]
+	.dwattr $C$DW$90, DW_AT_name("psInst")
+	.dwattr $C$DW$90, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$90, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$90, DW_AT_location[DW_OP_reg0]
 
 $C$DW$91	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$91, DW_AT_name("ui16WriteCount")
-	.dwattr $C$DW$91, DW_AT_TI_symbol_name("ui16WriteCount")
-	.dwattr $C$DW$91, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$91, DW_AT_location[DW_OP_reg3]
+	.dwattr $C$DW$91, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$91, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$91, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$91, DW_AT_location[DW_OP_reg1]
 
 $C$DW$92	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$92, DW_AT_name("ui16WriteBatchSize")
-	.dwattr $C$DW$92, DW_AT_TI_symbol_name("ui16WriteBatchSize")
-	.dwattr $C$DW$92, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$92, DW_AT_location[DW_OP_breg13 48]
+	.dwattr $C$DW$92, DW_AT_name("pui8WriteData")
+	.dwattr $C$DW$92, DW_AT_TI_symbol_name("pui8WriteData")
+	.dwattr $C$DW$92, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$92, DW_AT_location[DW_OP_reg2]
 
 $C$DW$93	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$93, DW_AT_name("pui8ReadData")
-	.dwattr $C$DW$93, DW_AT_TI_symbol_name("pui8ReadData")
-	.dwattr $C$DW$93, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$93, DW_AT_location[DW_OP_breg13 52]
+	.dwattr $C$DW$93, DW_AT_name("ui16WriteCount")
+	.dwattr $C$DW$93, DW_AT_TI_symbol_name("ui16WriteCount")
+	.dwattr $C$DW$93, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$93, DW_AT_location[DW_OP_reg3]
 
 $C$DW$94	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$94, DW_AT_name("ui16ReadCount")
-	.dwattr $C$DW$94, DW_AT_TI_symbol_name("ui16ReadCount")
+	.dwattr $C$DW$94, DW_AT_name("ui16WriteBatchSize")
+	.dwattr $C$DW$94, DW_AT_TI_symbol_name("ui16WriteBatchSize")
 	.dwattr $C$DW$94, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$94, DW_AT_location[DW_OP_breg13 56]
+	.dwattr $C$DW$94, DW_AT_location[DW_OP_breg13 48]
 
 $C$DW$95	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$95, DW_AT_name("ui16ReadBatchSize")
-	.dwattr $C$DW$95, DW_AT_TI_symbol_name("ui16ReadBatchSize")
-	.dwattr $C$DW$95, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$95, DW_AT_location[DW_OP_breg13 60]
+	.dwattr $C$DW$95, DW_AT_name("pui8ReadData")
+	.dwattr $C$DW$95, DW_AT_TI_symbol_name("pui8ReadData")
+	.dwattr $C$DW$95, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$95, DW_AT_location[DW_OP_breg13 52]
 
 $C$DW$96	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$96, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$96, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$96, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$96, DW_AT_location[DW_OP_breg13 64]
+	.dwattr $C$DW$96, DW_AT_name("ui16ReadCount")
+	.dwattr $C$DW$96, DW_AT_TI_symbol_name("ui16ReadCount")
+	.dwattr $C$DW$96, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$96, DW_AT_location[DW_OP_breg13 56]
 
 $C$DW$97	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$97, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$97, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$97, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$97, DW_AT_location[DW_OP_breg13 68]
+	.dwattr $C$DW$97, DW_AT_name("ui16ReadBatchSize")
+	.dwattr $C$DW$97, DW_AT_TI_symbol_name("ui16ReadBatchSize")
+	.dwattr $C$DW$97, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$97, DW_AT_location[DW_OP_breg13 60]
+
+$C$DW$98	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$98, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$98, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$98, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$98, DW_AT_location[DW_OP_breg13 64]
+
+$C$DW$99	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$99, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$99, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$99, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$99, DW_AT_location[DW_OP_breg13 68]
 
 
 ;*****************************************************************************
@@ -811,29 +825,29 @@ I2CMReadBatched:
 	.dwcfi	save_reg_to_mem, 14, -4
         SUB       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 48
-$C$DW$98	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$98, DW_AT_name("psInst")
-	.dwattr $C$DW$98, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$98, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$98, DW_AT_location[DW_OP_breg13 24]
-
-$C$DW$99	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$99, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$99, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$99, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$99, DW_AT_location[DW_OP_breg13 28]
-
 $C$DW$100	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$100, DW_AT_name("pui8WriteData")
-	.dwattr $C$DW$100, DW_AT_TI_symbol_name("pui8WriteData")
-	.dwattr $C$DW$100, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$100, DW_AT_location[DW_OP_breg13 32]
+	.dwattr $C$DW$100, DW_AT_name("psInst")
+	.dwattr $C$DW$100, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$100, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$100, DW_AT_location[DW_OP_breg13 24]
 
 $C$DW$101	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$101, DW_AT_name("ui16WriteCount")
-	.dwattr $C$DW$101, DW_AT_TI_symbol_name("ui16WriteCount")
-	.dwattr $C$DW$101, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$101, DW_AT_location[DW_OP_breg13 36]
+	.dwattr $C$DW$101, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$101, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$101, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$101, DW_AT_location[DW_OP_breg13 28]
+
+$C$DW$102	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$102, DW_AT_name("pui8WriteData")
+	.dwattr $C$DW$102, DW_AT_TI_symbol_name("pui8WriteData")
+	.dwattr $C$DW$102, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$102, DW_AT_location[DW_OP_breg13 32]
+
+$C$DW$103	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$103, DW_AT_name("ui16WriteCount")
+	.dwattr $C$DW$103, DW_AT_TI_symbol_name("ui16WriteCount")
+	.dwattr $C$DW$103, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$103, DW_AT_location[DW_OP_breg13 36]
 
         STR       A4, [SP, #36]         ; [DPU_3_PIPE] |509| 
         STR       A3, [SP, #32]         ; [DPU_3_PIPE] |509| 
@@ -856,28 +870,28 @@ $C$DW$101	.dwtag  DW_TAG_variable
         LDR       A3, [SP, #32]         ; [DPU_3_PIPE] |510| 
         LDR       A2, [SP, #28]         ; [DPU_3_PIPE] |510| 
         LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |510| 
-$C$DW$102	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$102, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$102, DW_AT_name("I2CMCommand")
-	.dwattr $C$DW$102, DW_AT_TI_call
+$C$DW$104	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$104, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$104, DW_AT_name("I2CMCommand")
+	.dwattr $C$DW$104, DW_AT_TI_call
 
         BL        I2CMCommand           ; [DPU_3_PIPE] |510| 
         ; CALL OCCURS {I2CMCommand }     ; [] |510| 
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 513,column 1,is_stmt,isa 1
         ADD       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
-$C$DW$103	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$103, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$103, DW_AT_TI_return
+$C$DW$105	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$105, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$105, DW_AT_TI_return
 
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$87, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$87, DW_AT_TI_end_line(0x201)
-	.dwattr $C$DW$87, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$89, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$89, DW_AT_TI_end_line(0x201)
+	.dwattr $C$DW$89, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$87
+	.dwendtag $C$DW$89
 
 	.sect	".text:I2CMReadModifyWrite16BE"
 	.clink
@@ -885,70 +899,70 @@ $C$DW$103	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	I2CMReadModifyWrite16BE
 
-$C$DW$104	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$104, DW_AT_name("I2CMReadModifyWrite16BE")
-	.dwattr $C$DW$104, DW_AT_low_pc(I2CMReadModifyWrite16BE)
-	.dwattr $C$DW$104, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$104, DW_AT_TI_symbol_name("I2CMReadModifyWrite16BE")
-	.dwattr $C$DW$104, DW_AT_external
-	.dwattr $C$DW$104, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$104, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$104, DW_AT_TI_begin_line(0x209)
-	.dwattr $C$DW$104, DW_AT_TI_begin_column(0x01)
-	.dwattr $C$DW$104, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$104, DW_AT_decl_line(0x209)
-	.dwattr $C$DW$104, DW_AT_decl_column(0x01)
-	.dwattr $C$DW$104, DW_AT_TI_max_frame_size(0x28)
+$C$DW$106	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$106, DW_AT_name("I2CMReadModifyWrite16BE")
+	.dwattr $C$DW$106, DW_AT_low_pc(I2CMReadModifyWrite16BE)
+	.dwattr $C$DW$106, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$106, DW_AT_TI_symbol_name("I2CMReadModifyWrite16BE")
+	.dwattr $C$DW$106, DW_AT_external
+	.dwattr $C$DW$106, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$106, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$106, DW_AT_TI_begin_line(0x209)
+	.dwattr $C$DW$106, DW_AT_TI_begin_column(0x01)
+	.dwattr $C$DW$106, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$106, DW_AT_decl_line(0x209)
+	.dwattr $C$DW$106, DW_AT_decl_column(0x01)
+	.dwattr $C$DW$106, DW_AT_TI_max_frame_size(0x28)
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 526,column 1,is_stmt,address I2CMReadModifyWrite16BE,isa 1
 
 	.dwfde $C$DW$CIE, I2CMReadModifyWrite16BE
-$C$DW$105	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$105, DW_AT_name("psInst")
-	.dwattr $C$DW$105, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$105, DW_AT_type(*$C$DW$T$91)
-	.dwattr $C$DW$105, DW_AT_location[DW_OP_reg0]
-
-$C$DW$106	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$106, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$106, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$106, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$106, DW_AT_location[DW_OP_reg1]
-
 $C$DW$107	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$107, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$107, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$107, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$107, DW_AT_location[DW_OP_reg2]
+	.dwattr $C$DW$107, DW_AT_name("psInst")
+	.dwattr $C$DW$107, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$107, DW_AT_type(*$C$DW$T$91)
+	.dwattr $C$DW$107, DW_AT_location[DW_OP_reg0]
 
 $C$DW$108	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$108, DW_AT_name("ui8Reg")
-	.dwattr $C$DW$108, DW_AT_TI_symbol_name("ui8Reg")
-	.dwattr $C$DW$108, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$108, DW_AT_location[DW_OP_reg3]
+	.dwattr $C$DW$108, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$108, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$108, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$108, DW_AT_location[DW_OP_reg1]
 
 $C$DW$109	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$109, DW_AT_name("ui16Mask")
-	.dwattr $C$DW$109, DW_AT_TI_symbol_name("ui16Mask")
-	.dwattr $C$DW$109, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$109, DW_AT_location[DW_OP_breg13 40]
+	.dwattr $C$DW$109, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$109, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$109, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$109, DW_AT_location[DW_OP_reg2]
 
 $C$DW$110	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$110, DW_AT_name("ui16Value")
-	.dwattr $C$DW$110, DW_AT_TI_symbol_name("ui16Value")
-	.dwattr $C$DW$110, DW_AT_type(*$C$DW$T$135)
-	.dwattr $C$DW$110, DW_AT_location[DW_OP_breg13 44]
+	.dwattr $C$DW$110, DW_AT_name("ui8Reg")
+	.dwattr $C$DW$110, DW_AT_TI_symbol_name("ui8Reg")
+	.dwattr $C$DW$110, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$110, DW_AT_location[DW_OP_reg3]
 
 $C$DW$111	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$111, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$111, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$111, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$111, DW_AT_location[DW_OP_breg13 48]
+	.dwattr $C$DW$111, DW_AT_name("ui16Mask")
+	.dwattr $C$DW$111, DW_AT_TI_symbol_name("ui16Mask")
+	.dwattr $C$DW$111, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$111, DW_AT_location[DW_OP_breg13 40]
 
 $C$DW$112	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$112, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$112, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$112, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$112, DW_AT_location[DW_OP_breg13 52]
+	.dwattr $C$DW$112, DW_AT_name("ui16Value")
+	.dwattr $C$DW$112, DW_AT_TI_symbol_name("ui16Value")
+	.dwattr $C$DW$112, DW_AT_type(*$C$DW$T$135)
+	.dwattr $C$DW$112, DW_AT_location[DW_OP_breg13 44]
+
+$C$DW$113	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$113, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$113, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$113, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$113, DW_AT_location[DW_OP_breg13 48]
+
+$C$DW$114	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$114, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$114, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$114, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$114, DW_AT_location[DW_OP_breg13 52]
 
 
 ;*****************************************************************************
@@ -970,29 +984,29 @@ I2CMReadModifyWrite16BE:
 	.dwcfi	save_reg_to_mem, 14, -4
         SUB       SP, SP, #36           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 40
-$C$DW$113	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$113, DW_AT_name("psInst")
-	.dwattr $C$DW$113, DW_AT_TI_symbol_name("psInst")
-	.dwattr $C$DW$113, DW_AT_type(*$C$DW$T$91)
-	.dwattr $C$DW$113, DW_AT_location[DW_OP_breg13 16]
-
-$C$DW$114	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$114, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$114, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$114, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$114, DW_AT_location[DW_OP_breg13 20]
-
 $C$DW$115	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$115, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$115, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$115, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$115, DW_AT_location[DW_OP_breg13 24]
+	.dwattr $C$DW$115, DW_AT_name("psInst")
+	.dwattr $C$DW$115, DW_AT_TI_symbol_name("psInst")
+	.dwattr $C$DW$115, DW_AT_type(*$C$DW$T$91)
+	.dwattr $C$DW$115, DW_AT_location[DW_OP_breg13 16]
 
 $C$DW$116	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$116, DW_AT_name("ui8Reg")
-	.dwattr $C$DW$116, DW_AT_TI_symbol_name("ui8Reg")
-	.dwattr $C$DW$116, DW_AT_type(*$C$DW$T$25)
-	.dwattr $C$DW$116, DW_AT_location[DW_OP_breg13 28]
+	.dwattr $C$DW$116, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$116, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$116, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$116, DW_AT_location[DW_OP_breg13 20]
+
+$C$DW$117	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$117, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$117, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$117, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$117, DW_AT_location[DW_OP_breg13 24]
+
+$C$DW$118	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$118, DW_AT_name("ui8Reg")
+	.dwattr $C$DW$118, DW_AT_TI_symbol_name("ui8Reg")
+	.dwattr $C$DW$118, DW_AT_type(*$C$DW$T$25)
+	.dwattr $C$DW$118, DW_AT_location[DW_OP_breg13 28]
 
         STR       A4, [SP, #28]         ; [DPU_3_PIPE] |526| 
         STR       A3, [SP, #24]         ; [DPU_3_PIPE] |526| 
@@ -1021,28 +1035,28 @@ $C$DW$116	.dwtag  DW_TAG_variable
         LDR       A4, [SP, #28]         ; [DPU_3_PIPE] |527| 
         LDR       A2, [SP, #20]         ; [DPU_3_PIPE] |527| 
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |527| 
-$C$DW$117	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$117, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$117, DW_AT_name("I2CMReadModifyWrite16LE")
-	.dwattr $C$DW$117, DW_AT_TI_call
+$C$DW$119	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$119, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$119, DW_AT_name("I2CMReadModifyWrite16LE")
+	.dwattr $C$DW$119, DW_AT_TI_call
 
         BL        I2CMReadModifyWrite16LE ; [DPU_3_PIPE] |527| 
         ; CALL OCCURS {I2CMReadModifyWrite16LE }  ; [] |527| 
 	.dwpsn	file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 533,column 1,is_stmt,isa 1
         ADD       SP, SP, #36           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
-$C$DW$118	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$118, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$118, DW_AT_TI_return
+$C$DW$120	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$120, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$120, DW_AT_TI_return
 
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$104, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$104, DW_AT_TI_end_line(0x215)
-	.dwattr $C$DW$104, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$106, DW_AT_TI_end_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$106, DW_AT_TI_end_line(0x215)
+	.dwattr $C$DW$106, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$104
+	.dwendtag $C$DW$106
 
 	.sect	".text"
 	.clink
@@ -1050,21 +1064,21 @@ $C$DW$118	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	main
 
-$C$DW$119	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$119, DW_AT_name("main")
-	.dwattr $C$DW$119, DW_AT_low_pc(main)
-	.dwattr $C$DW$119, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$119, DW_AT_TI_symbol_name("main")
-	.dwattr $C$DW$119, DW_AT_external
-	.dwattr $C$DW$119, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$119, DW_AT_TI_begin_file("../Main_Base.c")
-	.dwattr $C$DW$119, DW_AT_TI_begin_line(0x28)
-	.dwattr $C$DW$119, DW_AT_TI_begin_column(0x05)
-	.dwattr $C$DW$119, DW_AT_decl_file("../Main_Base.c")
-	.dwattr $C$DW$119, DW_AT_decl_line(0x28)
-	.dwattr $C$DW$119, DW_AT_decl_column(0x05)
-	.dwattr $C$DW$119, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "../Main_Base.c",line 40,column 16,is_stmt,address main,isa 1
+$C$DW$121	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$121, DW_AT_name("main")
+	.dwattr $C$DW$121, DW_AT_low_pc(main)
+	.dwattr $C$DW$121, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$121, DW_AT_TI_symbol_name("main")
+	.dwattr $C$DW$121, DW_AT_external
+	.dwattr $C$DW$121, DW_AT_type(*$C$DW$T$10)
+	.dwattr $C$DW$121, DW_AT_TI_begin_file("../Main_Base.c")
+	.dwattr $C$DW$121, DW_AT_TI_begin_line(0x29)
+	.dwattr $C$DW$121, DW_AT_TI_begin_column(0x05)
+	.dwattr $C$DW$121, DW_AT_decl_file("../Main_Base.c")
+	.dwattr $C$DW$121, DW_AT_decl_line(0x29)
+	.dwattr $C$DW$121, DW_AT_decl_column(0x05)
+	.dwattr $C$DW$121, DW_AT_TI_max_frame_size(0x18)
+	.dwpsn	file "../Main_Base.c",line 41,column 16,is_stmt,address main,isa 1
 
 	.dwfde $C$DW$CIE, main
 
@@ -1087,146 +1101,166 @@ main:
 	.dwcfi	save_reg_to_mem, 14, -4
         SUB       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 24
-$C$DW$120	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$120, DW_AT_name("Status")
-	.dwattr $C$DW$120, DW_AT_TI_symbol_name("Status")
-	.dwattr $C$DW$120, DW_AT_type(*$C$DW$T$24)
-	.dwattr $C$DW$120, DW_AT_location[DW_OP_breg13 16]
+$C$DW$122	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$122, DW_AT_name("Status")
+	.dwattr $C$DW$122, DW_AT_TI_symbol_name("Status")
+	.dwattr $C$DW$122, DW_AT_type(*$C$DW$T$24)
+	.dwattr $C$DW$122, DW_AT_location[DW_OP_breg13 16]
 
-	.dwpsn	file "../Main_Base.c",line 44,column 2,is_stmt,isa 1
-$C$DW$121	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$121, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$121, DW_AT_name("Processor_Initialization")
-	.dwattr $C$DW$121, DW_AT_TI_call
-
-        BL        Processor_Initialization ; [DPU_3_PIPE] |44| 
-        ; CALL OCCURS {Processor_Initialization }  ; [] |44| 
-        STR       A1, [SP, #16]         ; [DPU_3_PIPE] |44| 
 	.dwpsn	file "../Main_Base.c",line 45,column 2,is_stmt,isa 1
-$C$DW$122	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$122, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$122, DW_AT_name("UART_Initialization")
-	.dwattr $C$DW$122, DW_AT_TI_call
-
-        BL        UART_Initialization   ; [DPU_3_PIPE] |45| 
-        ; CALL OCCURS {UART_Initialization }  ; [] |45| 
-        STR       A1, [SP, #16]         ; [DPU_3_PIPE] |45| 
-	.dwpsn	file "../Main_Base.c",line 50,column 2,is_stmt,isa 1
-        MOVS      A1, #1                ; [DPU_3_PIPE] |50| 
-        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |50| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |50| 
-        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |50| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |50| 
-        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |50| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |50| 
-        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |50| 
-        LDR       A1, $C$CON1           ; [DPU_3_PIPE] |50| 
-        ADR       A2, $C$SL1            ; [DPU_3_PIPE] |50| 
-        MOVS      A3, #128              ; [DPU_3_PIPE] |50| 
-        MOVS      A4, #0                ; [DPU_3_PIPE] |50| 
 $C$DW$123	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$123, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$123, DW_AT_name("xTaskGenericCreate")
+	.dwattr $C$DW$123, DW_AT_name("Processor_Initialization")
 	.dwattr $C$DW$123, DW_AT_TI_call
 
-        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |50| 
-        ; CALL OCCURS {xTaskGenericCreate }  ; [] |50| 
-	.dwpsn	file "../Main_Base.c",line 55,column 2,is_stmt,isa 1
-        MOVS      A1, #1                ; [DPU_3_PIPE] |55| 
-        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |55| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |55| 
-        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |55| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |55| 
-        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |55| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |55| 
-        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |55| 
-        LDR       A1, $C$CON2           ; [DPU_3_PIPE] |55| 
-        ADR       A2, $C$SL2            ; [DPU_3_PIPE] |55| 
-        MOV       A3, #512              ; [DPU_3_PIPE] |55| 
-        MOVS      A4, #0                ; [DPU_3_PIPE] |55| 
+        BL        Processor_Initialization ; [DPU_3_PIPE] |45| 
+        ; CALL OCCURS {Processor_Initialization }  ; [] |45| 
+        STR       A1, [SP, #16]         ; [DPU_3_PIPE] |45| 
+	.dwpsn	file "../Main_Base.c",line 46,column 2,is_stmt,isa 1
 $C$DW$124	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$124, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$124, DW_AT_name("xTaskGenericCreate")
+	.dwattr $C$DW$124, DW_AT_name("UART_Initialization")
 	.dwattr $C$DW$124, DW_AT_TI_call
 
-        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |55| 
-        ; CALL OCCURS {xTaskGenericCreate }  ; [] |55| 
-	.dwpsn	file "../Main_Base.c",line 65,column 2,is_stmt,isa 1
-        MOVS      A1, #1                ; [DPU_3_PIPE] |65| 
-        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |65| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |65| 
-        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |65| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |65| 
-        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |65| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |65| 
-        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |65| 
-        LDR       A1, $C$CON3           ; [DPU_3_PIPE] |65| 
-        ADR       A2, $C$SL3            ; [DPU_3_PIPE] |65| 
-        MOV       A3, #512              ; [DPU_3_PIPE] |65| 
-        MOVS      A4, #0                ; [DPU_3_PIPE] |65| 
+        BL        UART_Initialization   ; [DPU_3_PIPE] |46| 
+        ; CALL OCCURS {UART_Initialization }  ; [] |46| 
+        STR       A1, [SP, #16]         ; [DPU_3_PIPE] |46| 
+	.dwpsn	file "../Main_Base.c",line 51,column 2,is_stmt,isa 1
+        MOVS      A1, #1                ; [DPU_3_PIPE] |51| 
+        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |51| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |51| 
+        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |51| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |51| 
+        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |51| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |51| 
+        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |51| 
+        LDR       A1, $C$CON1           ; [DPU_3_PIPE] |51| 
+        ADR       A2, $C$SL1            ; [DPU_3_PIPE] |51| 
+        MOVS      A3, #128              ; [DPU_3_PIPE] |51| 
+        MOVS      A4, #0                ; [DPU_3_PIPE] |51| 
 $C$DW$125	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$125, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$125, DW_AT_name("xTaskGenericCreate")
 	.dwattr $C$DW$125, DW_AT_TI_call
 
-        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |65| 
-        ; CALL OCCURS {xTaskGenericCreate }  ; [] |65| 
-	.dwpsn	file "../Main_Base.c",line 67,column 2,is_stmt,isa 1
-        MOVS      A1, #1                ; [DPU_3_PIPE] |67| 
-        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |67| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |67| 
-        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |67| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |67| 
-        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |67| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |67| 
-        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |67| 
-        LDR       A1, $C$CON4           ; [DPU_3_PIPE] |67| 
-        ADR       A2, $C$SL4            ; [DPU_3_PIPE] |67| 
-        MOV       A3, #512              ; [DPU_3_PIPE] |67| 
-        MOVS      A4, #0                ; [DPU_3_PIPE] |67| 
+        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |51| 
+        ; CALL OCCURS {xTaskGenericCreate }  ; [] |51| 
+	.dwpsn	file "../Main_Base.c",line 56,column 2,is_stmt,isa 1
+        MOVS      A1, #1                ; [DPU_3_PIPE] |56| 
+        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |56| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |56| 
+        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |56| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |56| 
+        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |56| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |56| 
+        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |56| 
+        LDR       A1, $C$CON2           ; [DPU_3_PIPE] |56| 
+        ADR       A2, $C$SL2            ; [DPU_3_PIPE] |56| 
+        MOV       A3, #512              ; [DPU_3_PIPE] |56| 
+        MOVS      A4, #0                ; [DPU_3_PIPE] |56| 
 $C$DW$126	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$126, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$126, DW_AT_name("xTaskGenericCreate")
 	.dwattr $C$DW$126, DW_AT_TI_call
 
-        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |67| 
-        ; CALL OCCURS {xTaskGenericCreate }  ; [] |67| 
-	.dwpsn	file "../Main_Base.c",line 70,column 2,is_stmt,isa 1
-        ADR       A1, $C$SL5            ; [DPU_3_PIPE] |70| 
+        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |56| 
+        ; CALL OCCURS {xTaskGenericCreate }  ; [] |56| 
+	.dwpsn	file "../Main_Base.c",line 66,column 2,is_stmt,isa 1
+        MOVS      A1, #1                ; [DPU_3_PIPE] |66| 
+        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |66| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |66| 
+        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |66| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |66| 
+        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |66| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |66| 
+        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |66| 
+        LDR       A1, $C$CON3           ; [DPU_3_PIPE] |66| 
+        ADR       A2, $C$SL3            ; [DPU_3_PIPE] |66| 
+        MOV       A3, #512              ; [DPU_3_PIPE] |66| 
+        MOVS      A4, #0                ; [DPU_3_PIPE] |66| 
 $C$DW$127	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$127, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$127, DW_AT_name("UARTprintf")
+	.dwattr $C$DW$127, DW_AT_name("xTaskGenericCreate")
 	.dwattr $C$DW$127, DW_AT_TI_call
 
-        BL        UARTprintf            ; [DPU_3_PIPE] |70| 
-        ; CALL OCCURS {UARTprintf }      ; [] |70| 
-	.dwpsn	file "../Main_Base.c",line 75,column 2,is_stmt,isa 1
+        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |66| 
+        ; CALL OCCURS {xTaskGenericCreate }  ; [] |66| 
+	.dwpsn	file "../Main_Base.c",line 68,column 2,is_stmt,isa 1
+        MOVS      A1, #1                ; [DPU_3_PIPE] |68| 
+        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |68| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |68| 
+        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |68| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |68| 
+        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |68| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |68| 
+        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |68| 
+        LDR       A1, $C$CON4           ; [DPU_3_PIPE] |68| 
+        ADR       A2, $C$SL4            ; [DPU_3_PIPE] |68| 
+        MOV       A3, #512              ; [DPU_3_PIPE] |68| 
+        MOVS      A4, #0                ; [DPU_3_PIPE] |68| 
 $C$DW$128	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$128, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$128, DW_AT_name("vTaskStartScheduler")
+	.dwattr $C$DW$128, DW_AT_name("xTaskGenericCreate")
 	.dwattr $C$DW$128, DW_AT_TI_call
 
-        BL        vTaskStartScheduler   ; [DPU_3_PIPE] |75| 
-        ; CALL OCCURS {vTaskStartScheduler }  ; [] |75| 
-	.dwpsn	file "../Main_Base.c",line 77,column 9,is_stmt,isa 1
+        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |68| 
+        ; CALL OCCURS {xTaskGenericCreate }  ; [] |68| 
+	.dwpsn	file "../Main_Base.c",line 70,column 2,is_stmt,isa 1
+        MOVS      A1, #1                ; [DPU_3_PIPE] |70| 
+        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |70| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |70| 
+        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |70| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |70| 
+        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |70| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |70| 
+        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |70| 
+        LDR       A1, $C$CON5           ; [DPU_3_PIPE] |70| 
+        ADR       A2, $C$SL5            ; [DPU_3_PIPE] |70| 
+        MOV       A3, #512              ; [DPU_3_PIPE] |70| 
+        MOVS      A4, #0                ; [DPU_3_PIPE] |70| 
+$C$DW$129	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$129, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$129, DW_AT_name("xTaskGenericCreate")
+	.dwattr $C$DW$129, DW_AT_TI_call
+
+        BL        xTaskGenericCreate    ; [DPU_3_PIPE] |70| 
+        ; CALL OCCURS {xTaskGenericCreate }  ; [] |70| 
+	.dwpsn	file "../Main_Base.c",line 73,column 2,is_stmt,isa 1
+        ADR       A1, $C$SL6            ; [DPU_3_PIPE] |73| 
+$C$DW$130	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$130, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$130, DW_AT_name("UARTprintf")
+	.dwattr $C$DW$130, DW_AT_TI_call
+
+        BL        UARTprintf            ; [DPU_3_PIPE] |73| 
+        ; CALL OCCURS {UARTprintf }      ; [] |73| 
+	.dwpsn	file "../Main_Base.c",line 78,column 2,is_stmt,isa 1
+$C$DW$131	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$131, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$131, DW_AT_name("vTaskStartScheduler")
+	.dwattr $C$DW$131, DW_AT_TI_call
+
+        BL        vTaskStartScheduler   ; [DPU_3_PIPE] |78| 
+        ; CALL OCCURS {vTaskStartScheduler }  ; [] |78| 
+	.dwpsn	file "../Main_Base.c",line 80,column 9,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP ||$C$L1||
 ;*
-;*   Loop source line                : 77
-;*   Loop closing brace source line  : 79
+;*   Loop source line                : 80
+;*   Loop closing brace source line  : 82
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L1||:    
-        B         ||$C$L1||             ; [DPU_3_PIPE] |77| 
-        ; BRANCH OCCURS {||$C$L1||}      ; [] |77| 
+        B         ||$C$L1||             ; [DPU_3_PIPE] |80| 
+        ; BRANCH OCCURS {||$C$L1||}      ; [] |80| 
 ;* --------------------------------------------------------------------------*
-	.dwattr $C$DW$119, DW_AT_TI_end_file("../Main_Base.c")
-	.dwattr $C$DW$119, DW_AT_TI_end_line(0x51)
-	.dwattr $C$DW$119, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$121, DW_AT_TI_end_file("../Main_Base.c")
+	.dwattr $C$DW$121, DW_AT_TI_end_line(0x54)
+	.dwattr $C$DW$121, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$119
+	.dwendtag $C$DW$121
 
 ;******************************************************************************
 ;* STRINGS                                                                    *
@@ -1241,7 +1275,9 @@ $C$DW$128	.dwtag  DW_TAG_TI_branch
 	.align	4
 ||$C$SL4||:	.string	"Gyro",0
 	.align	4
-||$C$SL5||:	.string	"FreeRTOS Starting!",10,0
+||$C$SL5||:	.string	"Accelerometer",0
+	.align	4
+||$C$SL6||:	.string	"FreeRTOS Starting!",10,0
 ;******************************************************************************
 ;* CONSTANT TABLE                                                             *
 ;******************************************************************************
@@ -1254,6 +1290,8 @@ $C$DW$128	.dwtag  DW_TAG_TI_branch
 ||$C$CON3||:	.bits	Task_Magnetometer,32
 	.align	4
 ||$C$CON4||:	.bits	Task_gyro,32
+	.align	4
+||$C$CON5||:	.bits	Task_Accelerometer,32
 ;*****************************************************************************
 ;* UNDEFINED EXTERNAL REFERENCES                                             *
 ;*****************************************************************************
@@ -1266,6 +1304,7 @@ $C$DW$128	.dwtag  DW_TAG_TI_branch
 	.global	I2CMCommand
 	.global	I2CMReadModifyWrite16LE
 	.global	Task_gyro
+	.global	Task_Accelerometer
 	.global	Task_Blink_LED_D1
 	.global	Task_ReportData
 ;*****************************************************************************
@@ -1308,40 +1347,40 @@ $C$DW$128	.dwtag  DW_TAG_TI_branch
 
 $C$DW$T$80	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$80, DW_AT_byte_size(0x01)
-$C$DW$129	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$129, DW_AT_name("eRunning")
-	.dwattr $C$DW$129, DW_AT_const_value(0x00)
-	.dwattr $C$DW$129, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$129, DW_AT_decl_line(0x72)
-	.dwattr $C$DW$129, DW_AT_decl_column(0x02)
-
-$C$DW$130	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$130, DW_AT_name("eReady")
-	.dwattr $C$DW$130, DW_AT_const_value(0x01)
-	.dwattr $C$DW$130, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$130, DW_AT_decl_line(0x73)
-	.dwattr $C$DW$130, DW_AT_decl_column(0x02)
-
-$C$DW$131	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$131, DW_AT_name("eBlocked")
-	.dwattr $C$DW$131, DW_AT_const_value(0x02)
-	.dwattr $C$DW$131, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$131, DW_AT_decl_line(0x74)
-	.dwattr $C$DW$131, DW_AT_decl_column(0x02)
-
 $C$DW$132	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$132, DW_AT_name("eSuspended")
-	.dwattr $C$DW$132, DW_AT_const_value(0x03)
+	.dwattr $C$DW$132, DW_AT_name("eRunning")
+	.dwattr $C$DW$132, DW_AT_const_value(0x00)
 	.dwattr $C$DW$132, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$132, DW_AT_decl_line(0x75)
+	.dwattr $C$DW$132, DW_AT_decl_line(0x72)
 	.dwattr $C$DW$132, DW_AT_decl_column(0x02)
 
 $C$DW$133	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$133, DW_AT_name("eDeleted")
-	.dwattr $C$DW$133, DW_AT_const_value(0x04)
+	.dwattr $C$DW$133, DW_AT_name("eReady")
+	.dwattr $C$DW$133, DW_AT_const_value(0x01)
 	.dwattr $C$DW$133, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$133, DW_AT_decl_line(0x76)
+	.dwattr $C$DW$133, DW_AT_decl_line(0x73)
 	.dwattr $C$DW$133, DW_AT_decl_column(0x02)
+
+$C$DW$134	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$134, DW_AT_name("eBlocked")
+	.dwattr $C$DW$134, DW_AT_const_value(0x02)
+	.dwattr $C$DW$134, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$134, DW_AT_decl_line(0x74)
+	.dwattr $C$DW$134, DW_AT_decl_column(0x02)
+
+$C$DW$135	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$135, DW_AT_name("eSuspended")
+	.dwattr $C$DW$135, DW_AT_const_value(0x03)
+	.dwattr $C$DW$135, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$135, DW_AT_decl_line(0x75)
+	.dwattr $C$DW$135, DW_AT_decl_column(0x02)
+
+$C$DW$136	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$136, DW_AT_name("eDeleted")
+	.dwattr $C$DW$136, DW_AT_const_value(0x04)
+	.dwattr $C$DW$136, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$136, DW_AT_decl_line(0x76)
+	.dwattr $C$DW$136, DW_AT_decl_column(0x02)
 
 	.dwattr $C$DW$T$80, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
 	.dwattr $C$DW$T$80, DW_AT_decl_line(0x71)
@@ -1359,40 +1398,40 @@ $C$DW$T$81	.dwtag  DW_TAG_typedef
 
 $C$DW$T$86	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$86, DW_AT_byte_size(0x01)
-$C$DW$134	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$134, DW_AT_name("eNoAction")
-	.dwattr $C$DW$134, DW_AT_const_value(0x00)
-	.dwattr $C$DW$134, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$134, DW_AT_decl_line(0x7c)
-	.dwattr $C$DW$134, DW_AT_decl_column(0x02)
-
-$C$DW$135	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$135, DW_AT_name("eSetBits")
-	.dwattr $C$DW$135, DW_AT_const_value(0x01)
-	.dwattr $C$DW$135, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$135, DW_AT_decl_line(0x7d)
-	.dwattr $C$DW$135, DW_AT_decl_column(0x02)
-
-$C$DW$136	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$136, DW_AT_name("eIncrement")
-	.dwattr $C$DW$136, DW_AT_const_value(0x02)
-	.dwattr $C$DW$136, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$136, DW_AT_decl_line(0x7e)
-	.dwattr $C$DW$136, DW_AT_decl_column(0x02)
-
 $C$DW$137	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$137, DW_AT_name("eSetValueWithOverwrite")
-	.dwattr $C$DW$137, DW_AT_const_value(0x03)
+	.dwattr $C$DW$137, DW_AT_name("eNoAction")
+	.dwattr $C$DW$137, DW_AT_const_value(0x00)
 	.dwattr $C$DW$137, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$137, DW_AT_decl_line(0x7f)
+	.dwattr $C$DW$137, DW_AT_decl_line(0x7c)
 	.dwattr $C$DW$137, DW_AT_decl_column(0x02)
 
 $C$DW$138	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$138, DW_AT_name("eSetValueWithoutOverwrite")
-	.dwattr $C$DW$138, DW_AT_const_value(0x04)
+	.dwattr $C$DW$138, DW_AT_name("eSetBits")
+	.dwattr $C$DW$138, DW_AT_const_value(0x01)
 	.dwattr $C$DW$138, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$138, DW_AT_decl_line(0x80)
+	.dwattr $C$DW$138, DW_AT_decl_line(0x7d)
 	.dwattr $C$DW$138, DW_AT_decl_column(0x02)
+
+$C$DW$139	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$139, DW_AT_name("eIncrement")
+	.dwattr $C$DW$139, DW_AT_const_value(0x02)
+	.dwattr $C$DW$139, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$139, DW_AT_decl_line(0x7e)
+	.dwattr $C$DW$139, DW_AT_decl_column(0x02)
+
+$C$DW$140	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$140, DW_AT_name("eSetValueWithOverwrite")
+	.dwattr $C$DW$140, DW_AT_const_value(0x03)
+	.dwattr $C$DW$140, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$140, DW_AT_decl_line(0x7f)
+	.dwattr $C$DW$140, DW_AT_decl_column(0x02)
+
+$C$DW$141	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$141, DW_AT_name("eSetValueWithoutOverwrite")
+	.dwattr $C$DW$141, DW_AT_const_value(0x04)
+	.dwattr $C$DW$141, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$141, DW_AT_decl_line(0x80)
+	.dwattr $C$DW$141, DW_AT_decl_column(0x02)
 
 	.dwattr $C$DW$T$86, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
 	.dwattr $C$DW$T$86, DW_AT_decl_line(0x7b)
@@ -1410,26 +1449,26 @@ $C$DW$T$87	.dwtag  DW_TAG_typedef
 
 $C$DW$T$88	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$88, DW_AT_byte_size(0x01)
-$C$DW$139	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$139, DW_AT_name("eAbortSleep")
-	.dwattr $C$DW$139, DW_AT_const_value(0x00)
-	.dwattr $C$DW$139, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$139, DW_AT_decl_line(0xb5)
-	.dwattr $C$DW$139, DW_AT_decl_column(0x02)
+$C$DW$142	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$142, DW_AT_name("eAbortSleep")
+	.dwattr $C$DW$142, DW_AT_const_value(0x00)
+	.dwattr $C$DW$142, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$142, DW_AT_decl_line(0xb5)
+	.dwattr $C$DW$142, DW_AT_decl_column(0x02)
 
-$C$DW$140	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$140, DW_AT_name("eStandardSleep")
-	.dwattr $C$DW$140, DW_AT_const_value(0x01)
-	.dwattr $C$DW$140, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$140, DW_AT_decl_line(0xb6)
-	.dwattr $C$DW$140, DW_AT_decl_column(0x02)
+$C$DW$143	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$143, DW_AT_name("eStandardSleep")
+	.dwattr $C$DW$143, DW_AT_const_value(0x01)
+	.dwattr $C$DW$143, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$143, DW_AT_decl_line(0xb6)
+	.dwattr $C$DW$143, DW_AT_decl_column(0x02)
 
-$C$DW$141	.dwtag  DW_TAG_enumerator
-	.dwattr $C$DW$141, DW_AT_name("eNoTasksWaitingTimeout")
-	.dwattr $C$DW$141, DW_AT_const_value(0x02)
-	.dwattr $C$DW$141, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$141, DW_AT_decl_line(0xb7)
-	.dwattr $C$DW$141, DW_AT_decl_column(0x02)
+$C$DW$144	.dwtag  DW_TAG_enumerator
+	.dwattr $C$DW$144, DW_AT_name("eNoTasksWaitingTimeout")
+	.dwattr $C$DW$144, DW_AT_const_value(0x02)
+	.dwattr $C$DW$144, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$144, DW_AT_decl_line(0xb7)
+	.dwattr $C$DW$144, DW_AT_decl_column(0x02)
 
 	.dwattr $C$DW$T$88, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
 	.dwattr $C$DW$T$88, DW_AT_decl_line(0xb4)
@@ -1447,95 +1486,95 @@ $C$DW$T$89	.dwtag  DW_TAG_typedef
 
 $C$DW$T$29	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$29, DW_AT_byte_size(0x1c)
-$C$DW$142	.dwtag  DW_TAG_member
-	.dwattr $C$DW$142, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$142, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$142, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$142, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$142, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$142, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$142, DW_AT_decl_line(0x4c)
-	.dwattr $C$DW$142, DW_AT_decl_column(0x0d)
-
-$C$DW$143	.dwtag  DW_TAG_member
-	.dwattr $C$DW$143, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$143, DW_AT_name("pui8WriteData")
-	.dwattr $C$DW$143, DW_AT_TI_symbol_name("pui8WriteData")
-	.dwattr $C$DW$143, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$143, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$143, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$143, DW_AT_decl_line(0x51)
-	.dwattr $C$DW$143, DW_AT_decl_column(0x14)
-
-$C$DW$144	.dwtag  DW_TAG_member
-	.dwattr $C$DW$144, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$144, DW_AT_name("ui16WriteCount")
-	.dwattr $C$DW$144, DW_AT_TI_symbol_name("ui16WriteCount")
-	.dwattr $C$DW$144, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$144, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$144, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$144, DW_AT_decl_line(0x56)
-	.dwattr $C$DW$144, DW_AT_decl_column(0x0e)
-
 $C$DW$145	.dwtag  DW_TAG_member
-	.dwattr $C$DW$145, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$145, DW_AT_name("ui16WriteBatchSize")
-	.dwattr $C$DW$145, DW_AT_TI_symbol_name("ui16WriteBatchSize")
-	.dwattr $C$DW$145, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$145, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$145, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$145, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$145, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$145, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$145, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$145, DW_AT_decl_line(0x5b)
-	.dwattr $C$DW$145, DW_AT_decl_column(0x0e)
+	.dwattr $C$DW$145, DW_AT_decl_line(0x4c)
+	.dwattr $C$DW$145, DW_AT_decl_column(0x0d)
 
 $C$DW$146	.dwtag  DW_TAG_member
-	.dwattr $C$DW$146, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$146, DW_AT_name("pui8ReadData")
-	.dwattr $C$DW$146, DW_AT_TI_symbol_name("pui8ReadData")
-	.dwattr $C$DW$146, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$146, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$146, DW_AT_name("pui8WriteData")
+	.dwattr $C$DW$146, DW_AT_TI_symbol_name("pui8WriteData")
+	.dwattr $C$DW$146, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$146, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$146, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$146, DW_AT_decl_line(0x60)
-	.dwattr $C$DW$146, DW_AT_decl_column(0x0e)
+	.dwattr $C$DW$146, DW_AT_decl_line(0x51)
+	.dwattr $C$DW$146, DW_AT_decl_column(0x14)
 
 $C$DW$147	.dwtag  DW_TAG_member
 	.dwattr $C$DW$147, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$147, DW_AT_name("ui16ReadCount")
-	.dwattr $C$DW$147, DW_AT_TI_symbol_name("ui16ReadCount")
-	.dwattr $C$DW$147, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$147, DW_AT_name("ui16WriteCount")
+	.dwattr $C$DW$147, DW_AT_TI_symbol_name("ui16WriteCount")
+	.dwattr $C$DW$147, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$147, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$147, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$147, DW_AT_decl_line(0x65)
+	.dwattr $C$DW$147, DW_AT_decl_line(0x56)
 	.dwattr $C$DW$147, DW_AT_decl_column(0x0e)
 
 $C$DW$148	.dwtag  DW_TAG_member
 	.dwattr $C$DW$148, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$148, DW_AT_name("ui16ReadBatchSize")
-	.dwattr $C$DW$148, DW_AT_TI_symbol_name("ui16ReadBatchSize")
-	.dwattr $C$DW$148, DW_AT_data_member_location[DW_OP_plus_uconst 0x12]
+	.dwattr $C$DW$148, DW_AT_name("ui16WriteBatchSize")
+	.dwattr $C$DW$148, DW_AT_TI_symbol_name("ui16WriteBatchSize")
+	.dwattr $C$DW$148, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
 	.dwattr $C$DW$148, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$148, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$148, DW_AT_decl_line(0x6a)
+	.dwattr $C$DW$148, DW_AT_decl_line(0x5b)
 	.dwattr $C$DW$148, DW_AT_decl_column(0x0e)
 
 $C$DW$149	.dwtag  DW_TAG_member
-	.dwattr $C$DW$149, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$149, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$149, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$149, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$149, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$149, DW_AT_name("pui8ReadData")
+	.dwattr $C$DW$149, DW_AT_TI_symbol_name("pui8ReadData")
+	.dwattr $C$DW$149, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$149, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$149, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$149, DW_AT_decl_line(0x6f)
-	.dwattr $C$DW$149, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$149, DW_AT_decl_line(0x60)
+	.dwattr $C$DW$149, DW_AT_decl_column(0x0e)
 
 $C$DW$150	.dwtag  DW_TAG_member
-	.dwattr $C$DW$150, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$150, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$150, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$150, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$150, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$150, DW_AT_name("ui16ReadCount")
+	.dwattr $C$DW$150, DW_AT_TI_symbol_name("ui16ReadCount")
+	.dwattr $C$DW$150, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$150, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$150, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$150, DW_AT_decl_line(0x74)
-	.dwattr $C$DW$150, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$150, DW_AT_decl_line(0x65)
+	.dwattr $C$DW$150, DW_AT_decl_column(0x0e)
+
+$C$DW$151	.dwtag  DW_TAG_member
+	.dwattr $C$DW$151, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$151, DW_AT_name("ui16ReadBatchSize")
+	.dwattr $C$DW$151, DW_AT_TI_symbol_name("ui16ReadBatchSize")
+	.dwattr $C$DW$151, DW_AT_data_member_location[DW_OP_plus_uconst 0x12]
+	.dwattr $C$DW$151, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$151, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$151, DW_AT_decl_line(0x6a)
+	.dwattr $C$DW$151, DW_AT_decl_column(0x0e)
+
+$C$DW$152	.dwtag  DW_TAG_member
+	.dwattr $C$DW$152, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$152, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$152, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$152, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$152, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$152, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$152, DW_AT_decl_line(0x6f)
+	.dwattr $C$DW$152, DW_AT_decl_column(0x16)
+
+$C$DW$153	.dwtag  DW_TAG_member
+	.dwattr $C$DW$153, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$153, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$153, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$153, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$153, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$153, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$153, DW_AT_decl_line(0x74)
+	.dwattr $C$DW$153, DW_AT_decl_column(0x0b)
 
 	.dwattr $C$DW$T$29, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
 	.dwattr $C$DW$T$29, DW_AT_decl_line(0x48)
@@ -1555,103 +1594,103 @@ $C$DW$T$31	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$30)
 	.dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$31, DW_AT_byte_size(0x118)
-$C$DW$151	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$151, DW_AT_upper_bound(0x09)
+$C$DW$154	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$154, DW_AT_upper_bound(0x09)
 
 	.dwendtag $C$DW$T$31
 
 
 $C$DW$T$32	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$32, DW_AT_byte_size(0x124)
-$C$DW$152	.dwtag  DW_TAG_member
-	.dwattr $C$DW$152, DW_AT_type(*$C$DW$T$24)
-	.dwattr $C$DW$152, DW_AT_name("ui32Base")
-	.dwattr $C$DW$152, DW_AT_TI_symbol_name("ui32Base")
-	.dwattr $C$DW$152, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$152, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$152, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$152, DW_AT_decl_line(0x82)
-	.dwattr $C$DW$152, DW_AT_decl_column(0x0e)
-
-$C$DW$153	.dwtag  DW_TAG_member
-	.dwattr $C$DW$153, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$153, DW_AT_name("ui8Int")
-	.dwattr $C$DW$153, DW_AT_TI_symbol_name("ui8Int")
-	.dwattr $C$DW$153, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$153, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$153, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$153, DW_AT_decl_line(0x87)
-	.dwattr $C$DW$153, DW_AT_decl_column(0x0d)
-
-$C$DW$154	.dwtag  DW_TAG_member
-	.dwattr $C$DW$154, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$154, DW_AT_name("ui8TxDMA")
-	.dwattr $C$DW$154, DW_AT_TI_symbol_name("ui8TxDMA")
-	.dwattr $C$DW$154, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
-	.dwattr $C$DW$154, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$154, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$154, DW_AT_decl_line(0x8c)
-	.dwattr $C$DW$154, DW_AT_decl_column(0x0d)
-
 $C$DW$155	.dwtag  DW_TAG_member
-	.dwattr $C$DW$155, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$155, DW_AT_name("ui8RxDMA")
-	.dwattr $C$DW$155, DW_AT_TI_symbol_name("ui8RxDMA")
-	.dwattr $C$DW$155, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$155, DW_AT_type(*$C$DW$T$24)
+	.dwattr $C$DW$155, DW_AT_name("ui32Base")
+	.dwattr $C$DW$155, DW_AT_TI_symbol_name("ui32Base")
+	.dwattr $C$DW$155, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$155, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$155, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$155, DW_AT_decl_line(0x91)
-	.dwattr $C$DW$155, DW_AT_decl_column(0x0d)
+	.dwattr $C$DW$155, DW_AT_decl_line(0x82)
+	.dwattr $C$DW$155, DW_AT_decl_column(0x0e)
 
 $C$DW$156	.dwtag  DW_TAG_member
 	.dwattr $C$DW$156, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$156, DW_AT_name("ui8State")
-	.dwattr $C$DW$156, DW_AT_TI_symbol_name("ui8State")
-	.dwattr $C$DW$156, DW_AT_data_member_location[DW_OP_plus_uconst 0x7]
+	.dwattr $C$DW$156, DW_AT_name("ui8Int")
+	.dwattr $C$DW$156, DW_AT_TI_symbol_name("ui8Int")
+	.dwattr $C$DW$156, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$156, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$156, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$156, DW_AT_decl_line(0x96)
+	.dwattr $C$DW$156, DW_AT_decl_line(0x87)
 	.dwattr $C$DW$156, DW_AT_decl_column(0x0d)
 
 $C$DW$157	.dwtag  DW_TAG_member
 	.dwattr $C$DW$157, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$157, DW_AT_name("ui8ReadPtr")
-	.dwattr $C$DW$157, DW_AT_TI_symbol_name("ui8ReadPtr")
-	.dwattr $C$DW$157, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$157, DW_AT_name("ui8TxDMA")
+	.dwattr $C$DW$157, DW_AT_TI_symbol_name("ui8TxDMA")
+	.dwattr $C$DW$157, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
 	.dwattr $C$DW$157, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$157, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$157, DW_AT_decl_line(0x9c)
+	.dwattr $C$DW$157, DW_AT_decl_line(0x8c)
 	.dwattr $C$DW$157, DW_AT_decl_column(0x0d)
 
 $C$DW$158	.dwtag  DW_TAG_member
 	.dwattr $C$DW$158, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$158, DW_AT_name("ui8WritePtr")
-	.dwattr $C$DW$158, DW_AT_TI_symbol_name("ui8WritePtr")
-	.dwattr $C$DW$158, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
+	.dwattr $C$DW$158, DW_AT_name("ui8RxDMA")
+	.dwattr $C$DW$158, DW_AT_TI_symbol_name("ui8RxDMA")
+	.dwattr $C$DW$158, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$158, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$158, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$158, DW_AT_decl_line(0xa2)
+	.dwattr $C$DW$158, DW_AT_decl_line(0x91)
 	.dwattr $C$DW$158, DW_AT_decl_column(0x0d)
 
 $C$DW$159	.dwtag  DW_TAG_member
-	.dwattr $C$DW$159, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$159, DW_AT_name("ui16Index")
-	.dwattr $C$DW$159, DW_AT_TI_symbol_name("ui16Index")
-	.dwattr $C$DW$159, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$159, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$159, DW_AT_name("ui8State")
+	.dwattr $C$DW$159, DW_AT_TI_symbol_name("ui8State")
+	.dwattr $C$DW$159, DW_AT_data_member_location[DW_OP_plus_uconst 0x7]
 	.dwattr $C$DW$159, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$159, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$159, DW_AT_decl_line(0xa7)
-	.dwattr $C$DW$159, DW_AT_decl_column(0x0e)
+	.dwattr $C$DW$159, DW_AT_decl_line(0x96)
+	.dwattr $C$DW$159, DW_AT_decl_column(0x0d)
 
 $C$DW$160	.dwtag  DW_TAG_member
-	.dwattr $C$DW$160, DW_AT_type(*$C$DW$T$31)
-	.dwattr $C$DW$160, DW_AT_name("pCommands")
-	.dwattr $C$DW$160, DW_AT_TI_symbol_name("pCommands")
-	.dwattr $C$DW$160, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$160, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$160, DW_AT_name("ui8ReadPtr")
+	.dwattr $C$DW$160, DW_AT_TI_symbol_name("ui8ReadPtr")
+	.dwattr $C$DW$160, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$160, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$160, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$160, DW_AT_decl_line(0xac)
-	.dwattr $C$DW$160, DW_AT_decl_column(0x12)
+	.dwattr $C$DW$160, DW_AT_decl_line(0x9c)
+	.dwattr $C$DW$160, DW_AT_decl_column(0x0d)
+
+$C$DW$161	.dwtag  DW_TAG_member
+	.dwattr $C$DW$161, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$161, DW_AT_name("ui8WritePtr")
+	.dwattr $C$DW$161, DW_AT_TI_symbol_name("ui8WritePtr")
+	.dwattr $C$DW$161, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
+	.dwattr $C$DW$161, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$161, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$161, DW_AT_decl_line(0xa2)
+	.dwattr $C$DW$161, DW_AT_decl_column(0x0d)
+
+$C$DW$162	.dwtag  DW_TAG_member
+	.dwattr $C$DW$162, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$162, DW_AT_name("ui16Index")
+	.dwattr $C$DW$162, DW_AT_TI_symbol_name("ui16Index")
+	.dwattr $C$DW$162, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$162, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$162, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$162, DW_AT_decl_line(0xa7)
+	.dwattr $C$DW$162, DW_AT_decl_column(0x0e)
+
+$C$DW$163	.dwtag  DW_TAG_member
+	.dwattr $C$DW$163, DW_AT_type(*$C$DW$T$31)
+	.dwattr $C$DW$163, DW_AT_name("pCommands")
+	.dwattr $C$DW$163, DW_AT_TI_symbol_name("pCommands")
+	.dwattr $C$DW$163, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$163, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$163, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$163, DW_AT_decl_line(0xac)
+	.dwattr $C$DW$163, DW_AT_decl_column(0x12)
 
 	.dwattr $C$DW$T$32, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
 	.dwattr $C$DW$T$32, DW_AT_decl_line(0x7e)
@@ -1673,85 +1712,85 @@ $C$DW$T$34	.dwtag  DW_TAG_pointer_type
 
 $C$DW$T$36	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$36, DW_AT_byte_size(0x18)
-$C$DW$161	.dwtag  DW_TAG_member
-	.dwattr $C$DW$161, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$161, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$161, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$161, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$161, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$161, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$161, DW_AT_decl_line(0xf0)
-	.dwattr $C$DW$161, DW_AT_decl_column(0x14)
-
-$C$DW$162	.dwtag  DW_TAG_member
-	.dwattr $C$DW$162, DW_AT_type(*$C$DW$T$35)
-	.dwattr $C$DW$162, DW_AT_name("pui8Buffer")
-	.dwattr $C$DW$162, DW_AT_TI_symbol_name("pui8Buffer")
-	.dwattr $C$DW$162, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$162, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$162, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$162, DW_AT_decl_line(0xf5)
-	.dwattr $C$DW$162, DW_AT_decl_column(0x0d)
-
-$C$DW$163	.dwtag  DW_TAG_member
-	.dwattr $C$DW$163, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$163, DW_AT_name("ui8State")
-	.dwattr $C$DW$163, DW_AT_TI_symbol_name("ui8State")
-	.dwattr $C$DW$163, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$163, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$163, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$163, DW_AT_decl_line(0xfa)
-	.dwattr $C$DW$163, DW_AT_decl_column(0x0d)
-
 $C$DW$164	.dwtag  DW_TAG_member
-	.dwattr $C$DW$164, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$164, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$164, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$164, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
+	.dwattr $C$DW$164, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$164, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$164, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$164, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$164, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$164, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$164, DW_AT_decl_line(0xff)
-	.dwattr $C$DW$164, DW_AT_decl_column(0x0d)
+	.dwattr $C$DW$164, DW_AT_decl_line(0xf0)
+	.dwattr $C$DW$164, DW_AT_decl_column(0x14)
 
 $C$DW$165	.dwtag  DW_TAG_member
-	.dwattr $C$DW$165, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$165, DW_AT_name("ui16Mask")
-	.dwattr $C$DW$165, DW_AT_TI_symbol_name("ui16Mask")
-	.dwattr $C$DW$165, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$165, DW_AT_type(*$C$DW$T$35)
+	.dwattr $C$DW$165, DW_AT_name("pui8Buffer")
+	.dwattr $C$DW$165, DW_AT_TI_symbol_name("pui8Buffer")
+	.dwattr $C$DW$165, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$165, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$165, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$165, DW_AT_decl_line(0x104)
-	.dwattr $C$DW$165, DW_AT_decl_column(0x0e)
+	.dwattr $C$DW$165, DW_AT_decl_line(0xf5)
+	.dwattr $C$DW$165, DW_AT_decl_column(0x0d)
 
 $C$DW$166	.dwtag  DW_TAG_member
-	.dwattr $C$DW$166, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$166, DW_AT_name("ui16Value")
-	.dwattr $C$DW$166, DW_AT_TI_symbol_name("ui16Value")
-	.dwattr $C$DW$166, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$166, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$166, DW_AT_name("ui8State")
+	.dwattr $C$DW$166, DW_AT_TI_symbol_name("ui8State")
+	.dwattr $C$DW$166, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$166, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$166, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$166, DW_AT_decl_line(0x109)
-	.dwattr $C$DW$166, DW_AT_decl_column(0x0e)
+	.dwattr $C$DW$166, DW_AT_decl_line(0xfa)
+	.dwattr $C$DW$166, DW_AT_decl_column(0x0d)
 
 $C$DW$167	.dwtag  DW_TAG_member
-	.dwattr $C$DW$167, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$167, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$167, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$167, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$167, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$167, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$167, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$167, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
 	.dwattr $C$DW$167, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$167, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$167, DW_AT_decl_line(0x10f)
-	.dwattr $C$DW$167, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$167, DW_AT_decl_line(0xff)
+	.dwattr $C$DW$167, DW_AT_decl_column(0x0d)
 
 $C$DW$168	.dwtag  DW_TAG_member
-	.dwattr $C$DW$168, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$168, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$168, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$168, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$168, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$168, DW_AT_name("ui16Mask")
+	.dwattr $C$DW$168, DW_AT_TI_symbol_name("ui16Mask")
+	.dwattr $C$DW$168, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
 	.dwattr $C$DW$168, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$168, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$168, DW_AT_decl_line(0x114)
-	.dwattr $C$DW$168, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$168, DW_AT_decl_line(0x104)
+	.dwattr $C$DW$168, DW_AT_decl_column(0x0e)
+
+$C$DW$169	.dwtag  DW_TAG_member
+	.dwattr $C$DW$169, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$169, DW_AT_name("ui16Value")
+	.dwattr $C$DW$169, DW_AT_TI_symbol_name("ui16Value")
+	.dwattr $C$DW$169, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$169, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$169, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$169, DW_AT_decl_line(0x109)
+	.dwattr $C$DW$169, DW_AT_decl_column(0x0e)
+
+$C$DW$170	.dwtag  DW_TAG_member
+	.dwattr $C$DW$170, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$170, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$170, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$170, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$170, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$170, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$170, DW_AT_decl_line(0x10f)
+	.dwattr $C$DW$170, DW_AT_decl_column(0x16)
+
+$C$DW$171	.dwtag  DW_TAG_member
+	.dwattr $C$DW$171, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$171, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$171, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$171, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$171, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$171, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$171, DW_AT_decl_line(0x114)
+	.dwattr $C$DW$171, DW_AT_decl_column(0x0b)
 
 	.dwattr $C$DW$T$36, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
 	.dwattr $C$DW$T$36, DW_AT_decl_line(0xeb)
@@ -1773,85 +1812,85 @@ $C$DW$T$91	.dwtag  DW_TAG_pointer_type
 
 $C$DW$T$37	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$37, DW_AT_byte_size(0x14)
-$C$DW$169	.dwtag  DW_TAG_member
-	.dwattr $C$DW$169, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$169, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$169, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$169, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$169, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$169, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$169, DW_AT_decl_line(0xbc)
-	.dwattr $C$DW$169, DW_AT_decl_column(0x14)
-
-$C$DW$170	.dwtag  DW_TAG_member
-	.dwattr $C$DW$170, DW_AT_type(*$C$DW$T$35)
-	.dwattr $C$DW$170, DW_AT_name("pui8Buffer")
-	.dwattr $C$DW$170, DW_AT_TI_symbol_name("pui8Buffer")
-	.dwattr $C$DW$170, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$170, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$170, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$170, DW_AT_decl_line(0xc1)
-	.dwattr $C$DW$170, DW_AT_decl_column(0x0d)
-
-$C$DW$171	.dwtag  DW_TAG_member
-	.dwattr $C$DW$171, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$171, DW_AT_name("ui8State")
-	.dwattr $C$DW$171, DW_AT_TI_symbol_name("ui8State")
-	.dwattr $C$DW$171, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$171, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$171, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$171, DW_AT_decl_line(0xc6)
-	.dwattr $C$DW$171, DW_AT_decl_column(0x0d)
-
 $C$DW$172	.dwtag  DW_TAG_member
-	.dwattr $C$DW$172, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$172, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$172, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$172, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
+	.dwattr $C$DW$172, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$172, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$172, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$172, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$172, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$172, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$172, DW_AT_decl_line(0xcb)
-	.dwattr $C$DW$172, DW_AT_decl_column(0x0d)
+	.dwattr $C$DW$172, DW_AT_decl_line(0xbc)
+	.dwattr $C$DW$172, DW_AT_decl_column(0x14)
 
 $C$DW$173	.dwtag  DW_TAG_member
-	.dwattr $C$DW$173, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$173, DW_AT_name("ui8Mask")
-	.dwattr $C$DW$173, DW_AT_TI_symbol_name("ui8Mask")
-	.dwattr $C$DW$173, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+	.dwattr $C$DW$173, DW_AT_type(*$C$DW$T$35)
+	.dwattr $C$DW$173, DW_AT_name("pui8Buffer")
+	.dwattr $C$DW$173, DW_AT_TI_symbol_name("pui8Buffer")
+	.dwattr $C$DW$173, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$173, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$173, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$173, DW_AT_decl_line(0xd0)
+	.dwattr $C$DW$173, DW_AT_decl_line(0xc1)
 	.dwattr $C$DW$173, DW_AT_decl_column(0x0d)
 
 $C$DW$174	.dwtag  DW_TAG_member
 	.dwattr $C$DW$174, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$174, DW_AT_name("ui8Value")
-	.dwattr $C$DW$174, DW_AT_TI_symbol_name("ui8Value")
-	.dwattr $C$DW$174, DW_AT_data_member_location[DW_OP_plus_uconst 0xb]
+	.dwattr $C$DW$174, DW_AT_name("ui8State")
+	.dwattr $C$DW$174, DW_AT_TI_symbol_name("ui8State")
+	.dwattr $C$DW$174, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$174, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$174, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$174, DW_AT_decl_line(0xd5)
+	.dwattr $C$DW$174, DW_AT_decl_line(0xc6)
 	.dwattr $C$DW$174, DW_AT_decl_column(0x0d)
 
 $C$DW$175	.dwtag  DW_TAG_member
-	.dwattr $C$DW$175, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$175, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$175, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$175, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$175, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$175, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$175, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$175, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
 	.dwattr $C$DW$175, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$175, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$175, DW_AT_decl_line(0xdb)
-	.dwattr $C$DW$175, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$175, DW_AT_decl_line(0xcb)
+	.dwattr $C$DW$175, DW_AT_decl_column(0x0d)
 
 $C$DW$176	.dwtag  DW_TAG_member
-	.dwattr $C$DW$176, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$176, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$176, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$176, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$176, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$176, DW_AT_name("ui8Mask")
+	.dwattr $C$DW$176, DW_AT_TI_symbol_name("ui8Mask")
+	.dwattr $C$DW$176, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
 	.dwattr $C$DW$176, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$176, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$176, DW_AT_decl_line(0xe0)
-	.dwattr $C$DW$176, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$176, DW_AT_decl_line(0xd0)
+	.dwattr $C$DW$176, DW_AT_decl_column(0x0d)
+
+$C$DW$177	.dwtag  DW_TAG_member
+	.dwattr $C$DW$177, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$177, DW_AT_name("ui8Value")
+	.dwattr $C$DW$177, DW_AT_TI_symbol_name("ui8Value")
+	.dwattr $C$DW$177, DW_AT_data_member_location[DW_OP_plus_uconst 0xb]
+	.dwattr $C$DW$177, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$177, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$177, DW_AT_decl_line(0xd5)
+	.dwattr $C$DW$177, DW_AT_decl_column(0x0d)
+
+$C$DW$178	.dwtag  DW_TAG_member
+	.dwattr $C$DW$178, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$178, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$178, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$178, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$178, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$178, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$178, DW_AT_decl_line(0xdb)
+	.dwattr $C$DW$178, DW_AT_decl_column(0x16)
+
+$C$DW$179	.dwtag  DW_TAG_member
+	.dwattr $C$DW$179, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$179, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$179, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$179, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$179, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$179, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$179, DW_AT_decl_line(0xe0)
+	.dwattr $C$DW$179, DW_AT_decl_column(0x0b)
 
 	.dwattr $C$DW$T$37, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
 	.dwattr $C$DW$T$37, DW_AT_decl_line(0xb7)
@@ -1869,65 +1908,65 @@ $C$DW$T$50	.dwtag  DW_TAG_typedef
 
 $C$DW$T$39	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$39, DW_AT_byte_size(0x14)
-$C$DW$177	.dwtag  DW_TAG_member
-	.dwattr $C$DW$177, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$177, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$177, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$177, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$177, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$177, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$177, DW_AT_decl_line(0x123)
-	.dwattr $C$DW$177, DW_AT_decl_column(0x14)
-
-$C$DW$178	.dwtag  DW_TAG_member
-	.dwattr $C$DW$178, DW_AT_type(*$C$DW$T$38)
-	.dwattr $C$DW$178, DW_AT_name("pui8Buffer")
-	.dwattr $C$DW$178, DW_AT_TI_symbol_name("pui8Buffer")
-	.dwattr $C$DW$178, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$178, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$178, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$178, DW_AT_decl_line(0x128)
-	.dwattr $C$DW$178, DW_AT_decl_column(0x0d)
-
-$C$DW$179	.dwtag  DW_TAG_member
-	.dwattr $C$DW$179, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$179, DW_AT_name("ui16Count")
-	.dwattr $C$DW$179, DW_AT_TI_symbol_name("ui16Count")
-	.dwattr $C$DW$179, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$179, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$179, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$179, DW_AT_decl_line(0x12d)
-	.dwattr $C$DW$179, DW_AT_decl_column(0x0e)
-
 $C$DW$180	.dwtag  DW_TAG_member
-	.dwattr $C$DW$180, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$180, DW_AT_name("pui8Data")
-	.dwattr $C$DW$180, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$180, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$180, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$180, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$180, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$180, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$180, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$180, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$180, DW_AT_decl_line(0x132)
+	.dwattr $C$DW$180, DW_AT_decl_line(0x123)
 	.dwattr $C$DW$180, DW_AT_decl_column(0x14)
 
 $C$DW$181	.dwtag  DW_TAG_member
-	.dwattr $C$DW$181, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$181, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$181, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$181, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$181, DW_AT_type(*$C$DW$T$38)
+	.dwattr $C$DW$181, DW_AT_name("pui8Buffer")
+	.dwattr $C$DW$181, DW_AT_TI_symbol_name("pui8Buffer")
+	.dwattr $C$DW$181, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$181, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$181, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$181, DW_AT_decl_line(0x137)
-	.dwattr $C$DW$181, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$181, DW_AT_decl_line(0x128)
+	.dwattr $C$DW$181, DW_AT_decl_column(0x0d)
 
 $C$DW$182	.dwtag  DW_TAG_member
-	.dwattr $C$DW$182, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$182, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$182, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$182, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$182, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$182, DW_AT_name("ui16Count")
+	.dwattr $C$DW$182, DW_AT_TI_symbol_name("ui16Count")
+	.dwattr $C$DW$182, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$182, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$182, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$182, DW_AT_decl_line(0x13c)
-	.dwattr $C$DW$182, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$182, DW_AT_decl_line(0x12d)
+	.dwattr $C$DW$182, DW_AT_decl_column(0x0e)
+
+$C$DW$183	.dwtag  DW_TAG_member
+	.dwattr $C$DW$183, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$183, DW_AT_name("pui8Data")
+	.dwattr $C$DW$183, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$183, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$183, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$183, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$183, DW_AT_decl_line(0x132)
+	.dwattr $C$DW$183, DW_AT_decl_column(0x14)
+
+$C$DW$184	.dwtag  DW_TAG_member
+	.dwattr $C$DW$184, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$184, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$184, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$184, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$184, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$184, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$184, DW_AT_decl_line(0x137)
+	.dwattr $C$DW$184, DW_AT_decl_column(0x16)
+
+$C$DW$185	.dwtag  DW_TAG_member
+	.dwattr $C$DW$185, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$185, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$185, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$185, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$185, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$185, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$185, DW_AT_decl_line(0x13c)
+	.dwattr $C$DW$185, DW_AT_decl_column(0x0b)
 
 	.dwattr $C$DW$T$39, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
 	.dwattr $C$DW$T$39, DW_AT_decl_line(0x11e)
@@ -1945,55 +1984,55 @@ $C$DW$T$49	.dwtag  DW_TAG_typedef
 
 $C$DW$T$40	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$40, DW_AT_byte_size(0x14)
-$C$DW$183	.dwtag  DW_TAG_member
-	.dwattr $C$DW$183, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$183, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$183, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$183, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$183, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$183, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$183, DW_AT_decl_line(0x14c)
-	.dwattr $C$DW$183, DW_AT_decl_column(0x14)
-
-$C$DW$184	.dwtag  DW_TAG_member
-	.dwattr $C$DW$184, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$184, DW_AT_name("pui8Data")
-	.dwattr $C$DW$184, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$184, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$184, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$184, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$184, DW_AT_decl_line(0x151)
-	.dwattr $C$DW$184, DW_AT_decl_column(0x0e)
-
-$C$DW$185	.dwtag  DW_TAG_member
-	.dwattr $C$DW$185, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$185, DW_AT_name("ui16Count")
-	.dwattr $C$DW$185, DW_AT_TI_symbol_name("ui16Count")
-	.dwattr $C$DW$185, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$185, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$185, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$185, DW_AT_decl_line(0x156)
-	.dwattr $C$DW$185, DW_AT_decl_column(0x0e)
-
 $C$DW$186	.dwtag  DW_TAG_member
-	.dwattr $C$DW$186, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$186, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$186, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$186, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$186, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$186, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$186, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$186, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$186, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$186, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$186, DW_AT_decl_line(0x15b)
-	.dwattr $C$DW$186, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$186, DW_AT_decl_line(0x14c)
+	.dwattr $C$DW$186, DW_AT_decl_column(0x14)
 
 $C$DW$187	.dwtag  DW_TAG_member
-	.dwattr $C$DW$187, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$187, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$187, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$187, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$187, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$187, DW_AT_name("pui8Data")
+	.dwattr $C$DW$187, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$187, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$187, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$187, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$187, DW_AT_decl_line(0x160)
-	.dwattr $C$DW$187, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$187, DW_AT_decl_line(0x151)
+	.dwattr $C$DW$187, DW_AT_decl_column(0x0e)
+
+$C$DW$188	.dwtag  DW_TAG_member
+	.dwattr $C$DW$188, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$188, DW_AT_name("ui16Count")
+	.dwattr $C$DW$188, DW_AT_TI_symbol_name("ui16Count")
+	.dwattr $C$DW$188, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$188, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$188, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$188, DW_AT_decl_line(0x156)
+	.dwattr $C$DW$188, DW_AT_decl_column(0x0e)
+
+$C$DW$189	.dwtag  DW_TAG_member
+	.dwattr $C$DW$189, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$189, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$189, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$189, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$189, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$189, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$189, DW_AT_decl_line(0x15b)
+	.dwattr $C$DW$189, DW_AT_decl_column(0x16)
+
+$C$DW$190	.dwtag  DW_TAG_member
+	.dwattr $C$DW$190, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$190, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$190, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$190, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$190, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$190, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$190, DW_AT_decl_line(0x160)
+	.dwattr $C$DW$190, DW_AT_decl_column(0x0b)
 
 	.dwattr $C$DW$T$40, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
 	.dwattr $C$DW$T$40, DW_AT_decl_line(0x147)
@@ -2011,65 +2050,65 @@ $C$DW$T$92	.dwtag  DW_TAG_typedef
 
 $C$DW$T$41	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$41, DW_AT_byte_size(0x14)
-$C$DW$188	.dwtag  DW_TAG_member
-	.dwattr $C$DW$188, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$188, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$188, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$188, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$188, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$188, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$188, DW_AT_decl_line(0x170)
-	.dwattr $C$DW$188, DW_AT_decl_column(0x14)
-
-$C$DW$189	.dwtag  DW_TAG_member
-	.dwattr $C$DW$189, DW_AT_type(*$C$DW$T$38)
-	.dwattr $C$DW$189, DW_AT_name("pui8Buffer")
-	.dwattr $C$DW$189, DW_AT_TI_symbol_name("pui8Buffer")
-	.dwattr $C$DW$189, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$189, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$189, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$189, DW_AT_decl_line(0x175)
-	.dwattr $C$DW$189, DW_AT_decl_column(0x0d)
-
-$C$DW$190	.dwtag  DW_TAG_member
-	.dwattr $C$DW$190, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$190, DW_AT_name("ui16Count")
-	.dwattr $C$DW$190, DW_AT_TI_symbol_name("ui16Count")
-	.dwattr $C$DW$190, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
-	.dwattr $C$DW$190, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$190, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$190, DW_AT_decl_line(0x17a)
-	.dwattr $C$DW$190, DW_AT_decl_column(0x0e)
-
 $C$DW$191	.dwtag  DW_TAG_member
-	.dwattr $C$DW$191, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$191, DW_AT_name("pui8Data")
-	.dwattr $C$DW$191, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$191, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$191, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$191, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$191, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$191, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$191, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$191, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$191, DW_AT_decl_line(0x17f)
+	.dwattr $C$DW$191, DW_AT_decl_line(0x170)
 	.dwattr $C$DW$191, DW_AT_decl_column(0x14)
 
 $C$DW$192	.dwtag  DW_TAG_member
-	.dwattr $C$DW$192, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$192, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$192, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$192, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$192, DW_AT_type(*$C$DW$T$38)
+	.dwattr $C$DW$192, DW_AT_name("pui8Buffer")
+	.dwattr $C$DW$192, DW_AT_TI_symbol_name("pui8Buffer")
+	.dwattr $C$DW$192, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$192, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$192, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$192, DW_AT_decl_line(0x184)
-	.dwattr $C$DW$192, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$192, DW_AT_decl_line(0x175)
+	.dwattr $C$DW$192, DW_AT_decl_column(0x0d)
 
 $C$DW$193	.dwtag  DW_TAG_member
-	.dwattr $C$DW$193, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$193, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$193, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$193, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$193, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$193, DW_AT_name("ui16Count")
+	.dwattr $C$DW$193, DW_AT_TI_symbol_name("ui16Count")
+	.dwattr $C$DW$193, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$193, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$193, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-	.dwattr $C$DW$193, DW_AT_decl_line(0x189)
-	.dwattr $C$DW$193, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$193, DW_AT_decl_line(0x17a)
+	.dwattr $C$DW$193, DW_AT_decl_column(0x0e)
+
+$C$DW$194	.dwtag  DW_TAG_member
+	.dwattr $C$DW$194, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$194, DW_AT_name("pui8Data")
+	.dwattr $C$DW$194, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$194, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$194, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$194, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$194, DW_AT_decl_line(0x17f)
+	.dwattr $C$DW$194, DW_AT_decl_column(0x14)
+
+$C$DW$195	.dwtag  DW_TAG_member
+	.dwattr $C$DW$195, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$195, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$195, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$195, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$195, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$195, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$195, DW_AT_decl_line(0x184)
+	.dwattr $C$DW$195, DW_AT_decl_column(0x16)
+
+$C$DW$196	.dwtag  DW_TAG_member
+	.dwattr $C$DW$196, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$196, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$196, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$196, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$196, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$196, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+	.dwattr $C$DW$196, DW_AT_decl_line(0x189)
+	.dwattr $C$DW$196, DW_AT_decl_column(0x0b)
 
 	.dwattr $C$DW$T$41, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
 	.dwattr $C$DW$T$41, DW_AT_decl_line(0x16b)
@@ -2087,75 +2126,75 @@ $C$DW$T$93	.dwtag  DW_TAG_typedef
 
 $C$DW$T$43	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$43, DW_AT_byte_size(0x2c)
-$C$DW$194	.dwtag  DW_TAG_member
-	.dwattr $C$DW$194, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$194, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$194, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$194, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$194, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$194, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$194, DW_AT_decl_line(0x32)
-	.dwattr $C$DW$194, DW_AT_decl_column(0x14)
-
-$C$DW$195	.dwtag  DW_TAG_member
-	.dwattr $C$DW$195, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$195, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$195, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$195, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$195, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$195, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$195, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$195, DW_AT_decl_column(0x0d)
-
-$C$DW$196	.dwtag  DW_TAG_member
-	.dwattr $C$DW$196, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$196, DW_AT_name("ui8State")
-	.dwattr $C$DW$196, DW_AT_TI_symbol_name("ui8State")
-	.dwattr $C$DW$196, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
-	.dwattr $C$DW$196, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$196, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$196, DW_AT_decl_line(0x3c)
-	.dwattr $C$DW$196, DW_AT_decl_column(0x0d)
-
 $C$DW$197	.dwtag  DW_TAG_member
-	.dwattr $C$DW$197, DW_AT_type(*$C$DW$T$42)
-	.dwattr $C$DW$197, DW_AT_name("pui8Data")
-	.dwattr $C$DW$197, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$197, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$197, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$197, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$197, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$197, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$197, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$197, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$197, DW_AT_decl_line(0x41)
-	.dwattr $C$DW$197, DW_AT_decl_column(0x0d)
+	.dwattr $C$DW$197, DW_AT_decl_line(0x32)
+	.dwattr $C$DW$197, DW_AT_decl_column(0x14)
 
 $C$DW$198	.dwtag  DW_TAG_member
-	.dwattr $C$DW$198, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$198, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$198, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$198, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$198, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$198, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$198, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$198, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$198, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$198, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$198, DW_AT_decl_line(0x47)
-	.dwattr $C$DW$198, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$198, DW_AT_decl_line(0x37)
+	.dwattr $C$DW$198, DW_AT_decl_column(0x0d)
 
 $C$DW$199	.dwtag  DW_TAG_member
-	.dwattr $C$DW$199, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$199, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$199, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$199, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$199, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$199, DW_AT_name("ui8State")
+	.dwattr $C$DW$199, DW_AT_TI_symbol_name("ui8State")
+	.dwattr $C$DW$199, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
 	.dwattr $C$DW$199, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$199, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$199, DW_AT_decl_line(0x4c)
-	.dwattr $C$DW$199, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$199, DW_AT_decl_line(0x3c)
+	.dwattr $C$DW$199, DW_AT_decl_column(0x0d)
 
 $C$DW$200	.dwtag  DW_TAG_member
-	.dwattr $C$DW$200, DW_AT_type(*$C$DW$T$51)
-	.dwattr $C$DW$200, DW_AT_name("uCommand")
-	.dwattr $C$DW$200, DW_AT_TI_symbol_name("uCommand")
-	.dwattr $C$DW$200, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$200, DW_AT_type(*$C$DW$T$42)
+	.dwattr $C$DW$200, DW_AT_name("pui8Data")
+	.dwattr $C$DW$200, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$200, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$200, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$200, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$200, DW_AT_decl_line(0x64)
-	.dwattr $C$DW$200, DW_AT_decl_column(0x05)
+	.dwattr $C$DW$200, DW_AT_decl_line(0x41)
+	.dwattr $C$DW$200, DW_AT_decl_column(0x0d)
+
+$C$DW$201	.dwtag  DW_TAG_member
+	.dwattr $C$DW$201, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$201, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$201, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$201, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$201, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$201, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
+	.dwattr $C$DW$201, DW_AT_decl_line(0x47)
+	.dwattr $C$DW$201, DW_AT_decl_column(0x16)
+
+$C$DW$202	.dwtag  DW_TAG_member
+	.dwattr $C$DW$202, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$202, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$202, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$202, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$202, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$202, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
+	.dwattr $C$DW$202, DW_AT_decl_line(0x4c)
+	.dwattr $C$DW$202, DW_AT_decl_column(0x0b)
+
+$C$DW$203	.dwtag  DW_TAG_member
+	.dwattr $C$DW$203, DW_AT_type(*$C$DW$T$51)
+	.dwattr $C$DW$203, DW_AT_name("uCommand")
+	.dwattr $C$DW$203, DW_AT_TI_symbol_name("uCommand")
+	.dwattr $C$DW$203, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$203, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$203, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
+	.dwattr $C$DW$203, DW_AT_decl_line(0x64)
+	.dwattr $C$DW$203, DW_AT_decl_column(0x05)
 
 	.dwattr $C$DW$T$43, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
 	.dwattr $C$DW$T$43, DW_AT_decl_line(0x2d)
@@ -2173,125 +2212,125 @@ $C$DW$T$44	.dwtag  DW_TAG_typedef
 
 $C$DW$T$46	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$46, DW_AT_byte_size(0x6c)
-$C$DW$201	.dwtag  DW_TAG_member
-	.dwattr $C$DW$201, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$201, DW_AT_name("psI2CInst")
-	.dwattr $C$DW$201, DW_AT_TI_symbol_name("psI2CInst")
-	.dwattr $C$DW$201, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$201, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$201, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$201, DW_AT_decl_line(0x33)
-	.dwattr $C$DW$201, DW_AT_decl_column(0x14)
-
-$C$DW$202	.dwtag  DW_TAG_member
-	.dwattr $C$DW$202, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$202, DW_AT_name("sAK8975Inst")
-	.dwattr $C$DW$202, DW_AT_TI_symbol_name("sAK8975Inst")
-	.dwattr $C$DW$202, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$202, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$202, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$202, DW_AT_decl_line(0x38)
-	.dwattr $C$DW$202, DW_AT_decl_column(0x0d)
-
-$C$DW$203	.dwtag  DW_TAG_member
-	.dwattr $C$DW$203, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$203, DW_AT_name("ui8Addr")
-	.dwattr $C$DW$203, DW_AT_TI_symbol_name("ui8Addr")
-	.dwattr $C$DW$203, DW_AT_data_member_location[DW_OP_plus_uconst 0x30]
-	.dwattr $C$DW$203, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$203, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$203, DW_AT_decl_line(0x3d)
-	.dwattr $C$DW$203, DW_AT_decl_column(0x0d)
-
 $C$DW$204	.dwtag  DW_TAG_member
-	.dwattr $C$DW$204, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$204, DW_AT_name("ui8State")
-	.dwattr $C$DW$204, DW_AT_TI_symbol_name("ui8State")
-	.dwattr $C$DW$204, DW_AT_data_member_location[DW_OP_plus_uconst 0x31]
+	.dwattr $C$DW$204, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$204, DW_AT_name("psI2CInst")
+	.dwattr $C$DW$204, DW_AT_TI_symbol_name("psI2CInst")
+	.dwattr $C$DW$204, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$204, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$204, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$204, DW_AT_decl_line(0x42)
-	.dwattr $C$DW$204, DW_AT_decl_column(0x0d)
+	.dwattr $C$DW$204, DW_AT_decl_line(0x33)
+	.dwattr $C$DW$204, DW_AT_decl_column(0x14)
 
 $C$DW$205	.dwtag  DW_TAG_member
-	.dwattr $C$DW$205, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$205, DW_AT_name("ui8AccelAfsSel")
-	.dwattr $C$DW$205, DW_AT_TI_symbol_name("ui8AccelAfsSel")
-	.dwattr $C$DW$205, DW_AT_data_member_location[DW_OP_plus_uconst 0x32]
+	.dwattr $C$DW$205, DW_AT_type(*$C$DW$T$44)
+	.dwattr $C$DW$205, DW_AT_name("sAK8975Inst")
+	.dwattr $C$DW$205, DW_AT_TI_symbol_name("sAK8975Inst")
+	.dwattr $C$DW$205, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$205, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$205, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$205, DW_AT_decl_line(0x47)
+	.dwattr $C$DW$205, DW_AT_decl_line(0x38)
 	.dwattr $C$DW$205, DW_AT_decl_column(0x0d)
 
 $C$DW$206	.dwtag  DW_TAG_member
 	.dwattr $C$DW$206, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$206, DW_AT_name("ui8NewAccelAfsSel")
-	.dwattr $C$DW$206, DW_AT_TI_symbol_name("ui8NewAccelAfsSel")
-	.dwattr $C$DW$206, DW_AT_data_member_location[DW_OP_plus_uconst 0x33]
+	.dwattr $C$DW$206, DW_AT_name("ui8Addr")
+	.dwattr $C$DW$206, DW_AT_TI_symbol_name("ui8Addr")
+	.dwattr $C$DW$206, DW_AT_data_member_location[DW_OP_plus_uconst 0x30]
 	.dwattr $C$DW$206, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$206, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$206, DW_AT_decl_line(0x4d)
+	.dwattr $C$DW$206, DW_AT_decl_line(0x3d)
 	.dwattr $C$DW$206, DW_AT_decl_column(0x0d)
 
 $C$DW$207	.dwtag  DW_TAG_member
 	.dwattr $C$DW$207, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$207, DW_AT_name("ui8GyroFsSel")
-	.dwattr $C$DW$207, DW_AT_TI_symbol_name("ui8GyroFsSel")
-	.dwattr $C$DW$207, DW_AT_data_member_location[DW_OP_plus_uconst 0x34]
+	.dwattr $C$DW$207, DW_AT_name("ui8State")
+	.dwattr $C$DW$207, DW_AT_TI_symbol_name("ui8State")
+	.dwattr $C$DW$207, DW_AT_data_member_location[DW_OP_plus_uconst 0x31]
 	.dwattr $C$DW$207, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$207, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$207, DW_AT_decl_line(0x52)
+	.dwattr $C$DW$207, DW_AT_decl_line(0x42)
 	.dwattr $C$DW$207, DW_AT_decl_column(0x0d)
 
 $C$DW$208	.dwtag  DW_TAG_member
 	.dwattr $C$DW$208, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$208, DW_AT_name("ui8NewGyroFsSel")
-	.dwattr $C$DW$208, DW_AT_TI_symbol_name("ui8NewGyroFsSel")
-	.dwattr $C$DW$208, DW_AT_data_member_location[DW_OP_plus_uconst 0x35]
+	.dwattr $C$DW$208, DW_AT_name("ui8AccelAfsSel")
+	.dwattr $C$DW$208, DW_AT_TI_symbol_name("ui8AccelAfsSel")
+	.dwattr $C$DW$208, DW_AT_data_member_location[DW_OP_plus_uconst 0x32]
 	.dwattr $C$DW$208, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$208, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$208, DW_AT_decl_line(0x58)
+	.dwattr $C$DW$208, DW_AT_decl_line(0x47)
 	.dwattr $C$DW$208, DW_AT_decl_column(0x0d)
 
 $C$DW$209	.dwtag  DW_TAG_member
-	.dwattr $C$DW$209, DW_AT_type(*$C$DW$T$45)
-	.dwattr $C$DW$209, DW_AT_name("pui8Data")
-	.dwattr $C$DW$209, DW_AT_TI_symbol_name("pui8Data")
-	.dwattr $C$DW$209, DW_AT_data_member_location[DW_OP_plus_uconst 0x36]
+	.dwattr $C$DW$209, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$209, DW_AT_name("ui8NewAccelAfsSel")
+	.dwattr $C$DW$209, DW_AT_TI_symbol_name("ui8NewAccelAfsSel")
+	.dwattr $C$DW$209, DW_AT_data_member_location[DW_OP_plus_uconst 0x33]
 	.dwattr $C$DW$209, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$209, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$209, DW_AT_decl_line(0x5d)
+	.dwattr $C$DW$209, DW_AT_decl_line(0x4d)
 	.dwattr $C$DW$209, DW_AT_decl_column(0x0d)
 
 $C$DW$210	.dwtag  DW_TAG_member
-	.dwattr $C$DW$210, DW_AT_type(*$C$DW$T$28)
-	.dwattr $C$DW$210, DW_AT_name("pfnCallback")
-	.dwattr $C$DW$210, DW_AT_TI_symbol_name("pfnCallback")
-	.dwattr $C$DW$210, DW_AT_data_member_location[DW_OP_plus_uconst 0x50]
+	.dwattr $C$DW$210, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$210, DW_AT_name("ui8GyroFsSel")
+	.dwattr $C$DW$210, DW_AT_TI_symbol_name("ui8GyroFsSel")
+	.dwattr $C$DW$210, DW_AT_data_member_location[DW_OP_plus_uconst 0x34]
 	.dwattr $C$DW$210, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$210, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$210, DW_AT_decl_line(0x63)
-	.dwattr $C$DW$210, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$210, DW_AT_decl_line(0x52)
+	.dwattr $C$DW$210, DW_AT_decl_column(0x0d)
 
 $C$DW$211	.dwtag  DW_TAG_member
-	.dwattr $C$DW$211, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$211, DW_AT_name("pvCallbackData")
-	.dwattr $C$DW$211, DW_AT_TI_symbol_name("pvCallbackData")
-	.dwattr $C$DW$211, DW_AT_data_member_location[DW_OP_plus_uconst 0x54]
+	.dwattr $C$DW$211, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$211, DW_AT_name("ui8NewGyroFsSel")
+	.dwattr $C$DW$211, DW_AT_TI_symbol_name("ui8NewGyroFsSel")
+	.dwattr $C$DW$211, DW_AT_data_member_location[DW_OP_plus_uconst 0x35]
 	.dwattr $C$DW$211, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$211, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$211, DW_AT_decl_line(0x68)
-	.dwattr $C$DW$211, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$211, DW_AT_decl_line(0x58)
+	.dwattr $C$DW$211, DW_AT_decl_column(0x0d)
 
 $C$DW$212	.dwtag  DW_TAG_member
-	.dwattr $C$DW$212, DW_AT_type(*$C$DW$T$53)
-	.dwattr $C$DW$212, DW_AT_name("uCommand")
-	.dwattr $C$DW$212, DW_AT_TI_symbol_name("uCommand")
-	.dwattr $C$DW$212, DW_AT_data_member_location[DW_OP_plus_uconst 0x58]
+	.dwattr $C$DW$212, DW_AT_type(*$C$DW$T$45)
+	.dwattr $C$DW$212, DW_AT_name("pui8Data")
+	.dwattr $C$DW$212, DW_AT_TI_symbol_name("pui8Data")
+	.dwattr $C$DW$212, DW_AT_data_member_location[DW_OP_plus_uconst 0x36]
 	.dwattr $C$DW$212, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$212, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$212, DW_AT_decl_line(0x80)
-	.dwattr $C$DW$212, DW_AT_decl_column(0x05)
+	.dwattr $C$DW$212, DW_AT_decl_line(0x5d)
+	.dwattr $C$DW$212, DW_AT_decl_column(0x0d)
+
+$C$DW$213	.dwtag  DW_TAG_member
+	.dwattr $C$DW$213, DW_AT_type(*$C$DW$T$28)
+	.dwattr $C$DW$213, DW_AT_name("pfnCallback")
+	.dwattr $C$DW$213, DW_AT_TI_symbol_name("pfnCallback")
+	.dwattr $C$DW$213, DW_AT_data_member_location[DW_OP_plus_uconst 0x50]
+	.dwattr $C$DW$213, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$213, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
+	.dwattr $C$DW$213, DW_AT_decl_line(0x63)
+	.dwattr $C$DW$213, DW_AT_decl_column(0x16)
+
+$C$DW$214	.dwtag  DW_TAG_member
+	.dwattr $C$DW$214, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$214, DW_AT_name("pvCallbackData")
+	.dwattr $C$DW$214, DW_AT_TI_symbol_name("pvCallbackData")
+	.dwattr $C$DW$214, DW_AT_data_member_location[DW_OP_plus_uconst 0x54]
+	.dwattr $C$DW$214, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$214, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
+	.dwattr $C$DW$214, DW_AT_decl_line(0x68)
+	.dwattr $C$DW$214, DW_AT_decl_column(0x0b)
+
+$C$DW$215	.dwtag  DW_TAG_member
+	.dwattr $C$DW$215, DW_AT_type(*$C$DW$T$53)
+	.dwattr $C$DW$215, DW_AT_name("uCommand")
+	.dwattr $C$DW$215, DW_AT_TI_symbol_name("uCommand")
+	.dwattr $C$DW$215, DW_AT_data_member_location[DW_OP_plus_uconst 0x58]
+	.dwattr $C$DW$215, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$215, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
+	.dwattr $C$DW$215, DW_AT_decl_line(0x80)
+	.dwattr $C$DW$215, DW_AT_decl_column(0x05)
 
 	.dwattr $C$DW$T$46, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
 	.dwattr $C$DW$T$46, DW_AT_decl_line(0x2e)
@@ -2309,65 +2348,65 @@ $C$DW$T$94	.dwtag  DW_TAG_typedef
 
 $C$DW$T$48	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$48, DW_AT_byte_size(0x18)
-$C$DW$213	.dwtag  DW_TAG_member
-	.dwattr $C$DW$213, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$213, DW_AT_name("fd")
-	.dwattr $C$DW$213, DW_AT_TI_symbol_name("fd")
-	.dwattr $C$DW$213, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$213, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$213, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
-	.dwattr $C$DW$213, DW_AT_decl_line(0x5c)
-	.dwattr $C$DW$213, DW_AT_decl_column(0x0b)
-
-$C$DW$214	.dwtag  DW_TAG_member
-	.dwattr $C$DW$214, DW_AT_type(*$C$DW$T$47)
-	.dwattr $C$DW$214, DW_AT_name("buf")
-	.dwattr $C$DW$214, DW_AT_TI_symbol_name("buf")
-	.dwattr $C$DW$214, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$214, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$214, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
-	.dwattr $C$DW$214, DW_AT_decl_line(0x5d)
-	.dwattr $C$DW$214, DW_AT_decl_column(0x16)
-
-$C$DW$215	.dwtag  DW_TAG_member
-	.dwattr $C$DW$215, DW_AT_type(*$C$DW$T$47)
-	.dwattr $C$DW$215, DW_AT_name("pos")
-	.dwattr $C$DW$215, DW_AT_TI_symbol_name("pos")
-	.dwattr $C$DW$215, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$215, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$215, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
-	.dwattr $C$DW$215, DW_AT_decl_line(0x5e)
-	.dwattr $C$DW$215, DW_AT_decl_column(0x16)
-
 $C$DW$216	.dwtag  DW_TAG_member
-	.dwattr $C$DW$216, DW_AT_type(*$C$DW$T$47)
-	.dwattr $C$DW$216, DW_AT_name("bufend")
-	.dwattr $C$DW$216, DW_AT_TI_symbol_name("bufend")
-	.dwattr $C$DW$216, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$216, DW_AT_type(*$C$DW$T$10)
+	.dwattr $C$DW$216, DW_AT_name("fd")
+	.dwattr $C$DW$216, DW_AT_TI_symbol_name("fd")
+	.dwattr $C$DW$216, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$216, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$216, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
-	.dwattr $C$DW$216, DW_AT_decl_line(0x5f)
-	.dwattr $C$DW$216, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$216, DW_AT_decl_line(0x5c)
+	.dwattr $C$DW$216, DW_AT_decl_column(0x0b)
 
 $C$DW$217	.dwtag  DW_TAG_member
 	.dwattr $C$DW$217, DW_AT_type(*$C$DW$T$47)
-	.dwattr $C$DW$217, DW_AT_name("buff_stop")
-	.dwattr $C$DW$217, DW_AT_TI_symbol_name("buff_stop")
-	.dwattr $C$DW$217, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$217, DW_AT_name("buf")
+	.dwattr $C$DW$217, DW_AT_TI_symbol_name("buf")
+	.dwattr $C$DW$217, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$217, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$217, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
-	.dwattr $C$DW$217, DW_AT_decl_line(0x60)
+	.dwattr $C$DW$217, DW_AT_decl_line(0x5d)
 	.dwattr $C$DW$217, DW_AT_decl_column(0x16)
 
 $C$DW$218	.dwtag  DW_TAG_member
-	.dwattr $C$DW$218, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$218, DW_AT_name("flags")
-	.dwattr $C$DW$218, DW_AT_TI_symbol_name("flags")
-	.dwattr $C$DW$218, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$218, DW_AT_type(*$C$DW$T$47)
+	.dwattr $C$DW$218, DW_AT_name("pos")
+	.dwattr $C$DW$218, DW_AT_TI_symbol_name("pos")
+	.dwattr $C$DW$218, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$218, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$218, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
-	.dwattr $C$DW$218, DW_AT_decl_line(0x61)
+	.dwattr $C$DW$218, DW_AT_decl_line(0x5e)
 	.dwattr $C$DW$218, DW_AT_decl_column(0x16)
+
+$C$DW$219	.dwtag  DW_TAG_member
+	.dwattr $C$DW$219, DW_AT_type(*$C$DW$T$47)
+	.dwattr $C$DW$219, DW_AT_name("bufend")
+	.dwattr $C$DW$219, DW_AT_TI_symbol_name("bufend")
+	.dwattr $C$DW$219, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$219, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$219, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
+	.dwattr $C$DW$219, DW_AT_decl_line(0x5f)
+	.dwattr $C$DW$219, DW_AT_decl_column(0x16)
+
+$C$DW$220	.dwtag  DW_TAG_member
+	.dwattr $C$DW$220, DW_AT_type(*$C$DW$T$47)
+	.dwattr $C$DW$220, DW_AT_name("buff_stop")
+	.dwattr $C$DW$220, DW_AT_TI_symbol_name("buff_stop")
+	.dwattr $C$DW$220, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$220, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$220, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
+	.dwattr $C$DW$220, DW_AT_decl_line(0x60)
+	.dwattr $C$DW$220, DW_AT_decl_column(0x16)
+
+$C$DW$221	.dwtag  DW_TAG_member
+	.dwattr $C$DW$221, DW_AT_type(*$C$DW$T$11)
+	.dwattr $C$DW$221, DW_AT_name("flags")
+	.dwattr $C$DW$221, DW_AT_TI_symbol_name("flags")
+	.dwattr $C$DW$221, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$221, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$221, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
+	.dwattr $C$DW$221, DW_AT_decl_line(0x61)
+	.dwattr $C$DW$221, DW_AT_decl_column(0x16)
 
 	.dwattr $C$DW$T$48, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h")
 	.dwattr $C$DW$T$48, DW_AT_decl_line(0x5b)
@@ -2385,35 +2424,35 @@ $C$DW$T$95	.dwtag  DW_TAG_typedef
 
 $C$DW$T$51	.dwtag  DW_TAG_union_type
 	.dwattr $C$DW$T$51, DW_AT_byte_size(0x14)
-$C$DW$219	.dwtag  DW_TAG_member
-	.dwattr $C$DW$219, DW_AT_type(*$C$DW$T$38)
-	.dwattr $C$DW$219, DW_AT_name("pui8Buffer")
-	.dwattr $C$DW$219, DW_AT_TI_symbol_name("pui8Buffer")
-	.dwattr $C$DW$219, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$219, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$219, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$219, DW_AT_decl_line(0x58)
-	.dwattr $C$DW$219, DW_AT_decl_column(0x11)
+$C$DW$222	.dwtag  DW_TAG_member
+	.dwattr $C$DW$222, DW_AT_type(*$C$DW$T$38)
+	.dwattr $C$DW$222, DW_AT_name("pui8Buffer")
+	.dwattr $C$DW$222, DW_AT_TI_symbol_name("pui8Buffer")
+	.dwattr $C$DW$222, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$222, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$222, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
+	.dwattr $C$DW$222, DW_AT_decl_line(0x58)
+	.dwattr $C$DW$222, DW_AT_decl_column(0x11)
 
-$C$DW$220	.dwtag  DW_TAG_member
-	.dwattr $C$DW$220, DW_AT_type(*$C$DW$T$49)
-	.dwattr $C$DW$220, DW_AT_name("sWriteState")
-	.dwattr $C$DW$220, DW_AT_TI_symbol_name("sWriteState")
-	.dwattr $C$DW$220, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$220, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$220, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$220, DW_AT_decl_line(0x5d)
-	.dwattr $C$DW$220, DW_AT_decl_column(0x15)
+$C$DW$223	.dwtag  DW_TAG_member
+	.dwattr $C$DW$223, DW_AT_type(*$C$DW$T$49)
+	.dwattr $C$DW$223, DW_AT_name("sWriteState")
+	.dwattr $C$DW$223, DW_AT_TI_symbol_name("sWriteState")
+	.dwattr $C$DW$223, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$223, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$223, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
+	.dwattr $C$DW$223, DW_AT_decl_line(0x5d)
+	.dwattr $C$DW$223, DW_AT_decl_column(0x15)
 
-$C$DW$221	.dwtag  DW_TAG_member
-	.dwattr $C$DW$221, DW_AT_type(*$C$DW$T$50)
-	.dwattr $C$DW$221, DW_AT_name("sReadModifyWriteState")
-	.dwattr $C$DW$221, DW_AT_TI_symbol_name("sReadModifyWriteState")
-	.dwattr $C$DW$221, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$221, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$221, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
-	.dwattr $C$DW$221, DW_AT_decl_line(0x62)
-	.dwattr $C$DW$221, DW_AT_decl_column(0x1f)
+$C$DW$224	.dwtag  DW_TAG_member
+	.dwattr $C$DW$224, DW_AT_type(*$C$DW$T$50)
+	.dwattr $C$DW$224, DW_AT_name("sReadModifyWriteState")
+	.dwattr $C$DW$224, DW_AT_TI_symbol_name("sReadModifyWriteState")
+	.dwattr $C$DW$224, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$224, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$224, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
+	.dwattr $C$DW$224, DW_AT_decl_line(0x62)
+	.dwattr $C$DW$224, DW_AT_decl_column(0x1f)
 
 	.dwattr $C$DW$T$51, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
 	.dwattr $C$DW$T$51, DW_AT_decl_line(0x54)
@@ -2423,35 +2462,35 @@ $C$DW$221	.dwtag  DW_TAG_member
 
 $C$DW$T$53	.dwtag  DW_TAG_union_type
 	.dwattr $C$DW$T$53, DW_AT_byte_size(0x14)
-$C$DW$222	.dwtag  DW_TAG_member
-	.dwattr $C$DW$222, DW_AT_type(*$C$DW$T$52)
-	.dwattr $C$DW$222, DW_AT_name("pui8Buffer")
-	.dwattr $C$DW$222, DW_AT_TI_symbol_name("pui8Buffer")
-	.dwattr $C$DW$222, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$222, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$222, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$222, DW_AT_decl_line(0x74)
-	.dwattr $C$DW$222, DW_AT_decl_column(0x11)
+$C$DW$225	.dwtag  DW_TAG_member
+	.dwattr $C$DW$225, DW_AT_type(*$C$DW$T$52)
+	.dwattr $C$DW$225, DW_AT_name("pui8Buffer")
+	.dwattr $C$DW$225, DW_AT_TI_symbol_name("pui8Buffer")
+	.dwattr $C$DW$225, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$225, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$225, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
+	.dwattr $C$DW$225, DW_AT_decl_line(0x74)
+	.dwattr $C$DW$225, DW_AT_decl_column(0x11)
 
-$C$DW$223	.dwtag  DW_TAG_member
-	.dwattr $C$DW$223, DW_AT_type(*$C$DW$T$49)
-	.dwattr $C$DW$223, DW_AT_name("sWriteState")
-	.dwattr $C$DW$223, DW_AT_TI_symbol_name("sWriteState")
-	.dwattr $C$DW$223, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$223, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$223, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$223, DW_AT_decl_line(0x79)
-	.dwattr $C$DW$223, DW_AT_decl_column(0x15)
+$C$DW$226	.dwtag  DW_TAG_member
+	.dwattr $C$DW$226, DW_AT_type(*$C$DW$T$49)
+	.dwattr $C$DW$226, DW_AT_name("sWriteState")
+	.dwattr $C$DW$226, DW_AT_TI_symbol_name("sWriteState")
+	.dwattr $C$DW$226, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$226, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$226, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
+	.dwattr $C$DW$226, DW_AT_decl_line(0x79)
+	.dwattr $C$DW$226, DW_AT_decl_column(0x15)
 
-$C$DW$224	.dwtag  DW_TAG_member
-	.dwattr $C$DW$224, DW_AT_type(*$C$DW$T$50)
-	.dwattr $C$DW$224, DW_AT_name("sReadModifyWriteState")
-	.dwattr $C$DW$224, DW_AT_TI_symbol_name("sReadModifyWriteState")
-	.dwattr $C$DW$224, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$224, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$224, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-	.dwattr $C$DW$224, DW_AT_decl_line(0x7e)
-	.dwattr $C$DW$224, DW_AT_decl_column(0x1f)
+$C$DW$227	.dwtag  DW_TAG_member
+	.dwattr $C$DW$227, DW_AT_type(*$C$DW$T$50)
+	.dwattr $C$DW$227, DW_AT_name("sReadModifyWriteState")
+	.dwattr $C$DW$227, DW_AT_TI_symbol_name("sReadModifyWriteState")
+	.dwattr $C$DW$227, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$227, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$227, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
+	.dwattr $C$DW$227, DW_AT_decl_line(0x7e)
+	.dwattr $C$DW$227, DW_AT_decl_column(0x1f)
 
 	.dwattr $C$DW$T$53, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
 	.dwattr $C$DW$T$53, DW_AT_decl_line(0x70)
@@ -2462,25 +2501,25 @@ $C$DW$224	.dwtag  DW_TAG_member
 $C$DW$T$55	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$55, DW_AT_name("HeapRegion")
 	.dwattr $C$DW$T$55, DW_AT_byte_size(0x08)
-$C$DW$225	.dwtag  DW_TAG_member
-	.dwattr $C$DW$225, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$225, DW_AT_name("pucStartAddress")
-	.dwattr $C$DW$225, DW_AT_TI_symbol_name("pucStartAddress")
-	.dwattr $C$DW$225, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$225, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$225, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\portable.h")
-	.dwattr $C$DW$225, DW_AT_decl_line(0x96)
-	.dwattr $C$DW$225, DW_AT_decl_column(0x0b)
+$C$DW$228	.dwtag  DW_TAG_member
+	.dwattr $C$DW$228, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$228, DW_AT_name("pucStartAddress")
+	.dwattr $C$DW$228, DW_AT_TI_symbol_name("pucStartAddress")
+	.dwattr $C$DW$228, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$228, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$228, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\portable.h")
+	.dwattr $C$DW$228, DW_AT_decl_line(0x96)
+	.dwattr $C$DW$228, DW_AT_decl_column(0x0b)
 
-$C$DW$226	.dwtag  DW_TAG_member
-	.dwattr $C$DW$226, DW_AT_type(*$C$DW$T$54)
-	.dwattr $C$DW$226, DW_AT_name("xSizeInBytes")
-	.dwattr $C$DW$226, DW_AT_TI_symbol_name("xSizeInBytes")
-	.dwattr $C$DW$226, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$226, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$226, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\portable.h")
-	.dwattr $C$DW$226, DW_AT_decl_line(0x97)
-	.dwattr $C$DW$226, DW_AT_decl_column(0x09)
+$C$DW$229	.dwtag  DW_TAG_member
+	.dwattr $C$DW$229, DW_AT_type(*$C$DW$T$54)
+	.dwattr $C$DW$229, DW_AT_name("xSizeInBytes")
+	.dwattr $C$DW$229, DW_AT_TI_symbol_name("xSizeInBytes")
+	.dwattr $C$DW$229, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$229, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$229, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\portable.h")
+	.dwattr $C$DW$229, DW_AT_decl_line(0x97)
+	.dwattr $C$DW$229, DW_AT_decl_column(0x09)
 
 	.dwattr $C$DW$T$55, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\portable.h")
 	.dwattr $C$DW$T$55, DW_AT_decl_line(0x94)
@@ -2523,11 +2562,11 @@ $C$DW$T$99	.dwtag  DW_TAG_const_type
 
 $C$DW$T$26	.dwtag  DW_TAG_subroutine_type
 	.dwattr $C$DW$T$26, DW_AT_language(DW_LANG_C)
-$C$DW$227	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$227, DW_AT_type(*$C$DW$T$3)
+$C$DW$230	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$230, DW_AT_type(*$C$DW$T$3)
 
-$C$DW$228	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$228, DW_AT_type(*$C$DW$T$25)
+$C$DW$231	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$231, DW_AT_type(*$C$DW$T$25)
 
 	.dwendtag $C$DW$T$26
 
@@ -2546,8 +2585,8 @@ $C$DW$T$28	.dwtag  DW_TAG_pointer_type
 
 $C$DW$T$67	.dwtag  DW_TAG_subroutine_type
 	.dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
-$C$DW$229	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$229, DW_AT_type(*$C$DW$T$3)
+$C$DW$232	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$232, DW_AT_type(*$C$DW$T$3)
 
 	.dwendtag $C$DW$T$67
 
@@ -2615,8 +2654,8 @@ $C$DW$T$35	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$19)
 	.dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$35, DW_AT_byte_size(0x04)
-$C$DW$230	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$230, DW_AT_upper_bound(0x03)
+$C$DW$233	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$233, DW_AT_upper_bound(0x03)
 
 	.dwendtag $C$DW$T$35
 
@@ -2625,8 +2664,8 @@ $C$DW$T$38	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$19)
 	.dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$38, DW_AT_byte_size(0x02)
-$C$DW$231	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$231, DW_AT_upper_bound(0x01)
+$C$DW$234	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$234, DW_AT_upper_bound(0x01)
 
 	.dwendtag $C$DW$T$38
 
@@ -2635,8 +2674,8 @@ $C$DW$T$42	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$19)
 	.dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$42, DW_AT_byte_size(0x08)
-$C$DW$232	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$232, DW_AT_upper_bound(0x07)
+$C$DW$235	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$235, DW_AT_upper_bound(0x07)
 
 	.dwendtag $C$DW$T$42
 
@@ -2645,8 +2684,8 @@ $C$DW$T$45	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$19)
 	.dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$45, DW_AT_byte_size(0x18)
-$C$DW$233	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$233, DW_AT_upper_bound(0x17)
+$C$DW$236	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$236, DW_AT_upper_bound(0x17)
 
 	.dwendtag $C$DW$T$45
 
@@ -2655,8 +2694,8 @@ $C$DW$T$52	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$19)
 	.dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$52, DW_AT_byte_size(0x06)
-$C$DW$234	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$234, DW_AT_upper_bound(0x05)
+$C$DW$237	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$237, DW_AT_upper_bound(0x05)
 
 	.dwendtag $C$DW$T$52
 
@@ -2774,8 +2813,8 @@ $C$DW$T$84	.dwtag  DW_TAG_typedef
 $C$DW$T$121	.dwtag  DW_TAG_subroutine_type
 	.dwattr $C$DW$T$121, DW_AT_type(*$C$DW$T$84)
 	.dwattr $C$DW$T$121, DW_AT_language(DW_LANG_C)
-$C$DW$235	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$235, DW_AT_type(*$C$DW$T$3)
+$C$DW$238	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$238, DW_AT_type(*$C$DW$T$3)
 
 	.dwendtag $C$DW$T$121
 
@@ -3097,15 +3136,15 @@ $C$DW$T$160	.dwtag  DW_TAG_base_type
 $C$DW$T$56	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$56, DW_AT_name("__va_list")
 	.dwattr $C$DW$T$56, DW_AT_byte_size(0x04)
-$C$DW$236	.dwtag  DW_TAG_member
-	.dwattr $C$DW$236, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$236, DW_AT_name("__ap")
-	.dwattr $C$DW$236, DW_AT_TI_symbol_name("__ap")
-	.dwattr $C$DW$236, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$236, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$236, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdarg.h")
-	.dwattr $C$DW$236, DW_AT_decl_line(0x38)
-	.dwattr $C$DW$236, DW_AT_decl_column(0x0c)
+$C$DW$239	.dwtag  DW_TAG_member
+	.dwattr $C$DW$239, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$239, DW_AT_name("__ap")
+	.dwattr $C$DW$239, DW_AT_TI_symbol_name("__ap")
+	.dwattr $C$DW$239, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$239, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$239, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdarg.h")
+	.dwattr $C$DW$239, DW_AT_decl_line(0x38)
+	.dwattr $C$DW$239, DW_AT_decl_column(0x0c)
 
 	.dwattr $C$DW$T$56, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdarg.h")
 	.dwattr $C$DW$T$56, DW_AT_decl_line(0x37)
@@ -3124,35 +3163,35 @@ $C$DW$T$161	.dwtag  DW_TAG_typedef
 $C$DW$T$61	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$61, DW_AT_name("xLIST")
 	.dwattr $C$DW$T$61, DW_AT_byte_size(0x14)
-$C$DW$237	.dwtag  DW_TAG_member
-	.dwattr $C$DW$237, DW_AT_type(*$C$DW$T$57)
-	.dwattr $C$DW$237, DW_AT_name("uxNumberOfItems")
-	.dwattr $C$DW$237, DW_AT_TI_symbol_name("uxNumberOfItems")
-	.dwattr $C$DW$237, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$237, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$237, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$237, DW_AT_decl_line(0xd0)
-	.dwattr $C$DW$237, DW_AT_decl_column(0x22)
+$C$DW$240	.dwtag  DW_TAG_member
+	.dwattr $C$DW$240, DW_AT_type(*$C$DW$T$57)
+	.dwattr $C$DW$240, DW_AT_name("uxNumberOfItems")
+	.dwattr $C$DW$240, DW_AT_TI_symbol_name("uxNumberOfItems")
+	.dwattr $C$DW$240, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$240, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$240, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$240, DW_AT_decl_line(0xd0)
+	.dwattr $C$DW$240, DW_AT_decl_column(0x22)
 
-$C$DW$238	.dwtag  DW_TAG_member
-	.dwattr $C$DW$238, DW_AT_type(*$C$DW$T$59)
-	.dwattr $C$DW$238, DW_AT_name("pxIndex")
-	.dwattr $C$DW$238, DW_AT_TI_symbol_name("pxIndex")
-	.dwattr $C$DW$238, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$238, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$238, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$238, DW_AT_decl_line(0xd1)
-	.dwattr $C$DW$238, DW_AT_decl_column(0x23)
+$C$DW$241	.dwtag  DW_TAG_member
+	.dwattr $C$DW$241, DW_AT_type(*$C$DW$T$59)
+	.dwattr $C$DW$241, DW_AT_name("pxIndex")
+	.dwattr $C$DW$241, DW_AT_TI_symbol_name("pxIndex")
+	.dwattr $C$DW$241, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$241, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$241, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$241, DW_AT_decl_line(0xd1)
+	.dwattr $C$DW$241, DW_AT_decl_column(0x23)
 
-$C$DW$239	.dwtag  DW_TAG_member
-	.dwattr $C$DW$239, DW_AT_type(*$C$DW$T$60)
-	.dwattr $C$DW$239, DW_AT_name("xListEnd")
-	.dwattr $C$DW$239, DW_AT_TI_symbol_name("xListEnd")
-	.dwattr $C$DW$239, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$239, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$239, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$239, DW_AT_decl_line(0xd2)
-	.dwattr $C$DW$239, DW_AT_decl_column(0x11)
+$C$DW$242	.dwtag  DW_TAG_member
+	.dwattr $C$DW$242, DW_AT_type(*$C$DW$T$60)
+	.dwattr $C$DW$242, DW_AT_name("xListEnd")
+	.dwattr $C$DW$242, DW_AT_TI_symbol_name("xListEnd")
+	.dwattr $C$DW$242, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$242, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$242, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$242, DW_AT_decl_line(0xd2)
+	.dwattr $C$DW$242, DW_AT_decl_column(0x11)
 
 	.dwattr $C$DW$T$61, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
 	.dwattr $C$DW$T$61, DW_AT_decl_line(0xcd)
@@ -3171,55 +3210,55 @@ $C$DW$T$162	.dwtag  DW_TAG_typedef
 $C$DW$T$64	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$64, DW_AT_name("xLIST_ITEM")
 	.dwattr $C$DW$T$64, DW_AT_byte_size(0x14)
-$C$DW$240	.dwtag  DW_TAG_member
-	.dwattr $C$DW$240, DW_AT_type(*$C$DW$T$62)
-	.dwattr $C$DW$240, DW_AT_name("xItemValue")
-	.dwattr $C$DW$240, DW_AT_TI_symbol_name("xItemValue")
-	.dwattr $C$DW$240, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$240, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$240, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$240, DW_AT_decl_line(0xb8)
-	.dwattr $C$DW$240, DW_AT_decl_column(0x21)
-
-$C$DW$241	.dwtag  DW_TAG_member
-	.dwattr $C$DW$241, DW_AT_type(*$C$DW$T$63)
-	.dwattr $C$DW$241, DW_AT_name("pxNext")
-	.dwattr $C$DW$241, DW_AT_TI_symbol_name("pxNext")
-	.dwattr $C$DW$241, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$241, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$241, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$241, DW_AT_decl_line(0xb9)
-	.dwattr $C$DW$241, DW_AT_decl_column(0x2a)
-
-$C$DW$242	.dwtag  DW_TAG_member
-	.dwattr $C$DW$242, DW_AT_type(*$C$DW$T$63)
-	.dwattr $C$DW$242, DW_AT_name("pxPrevious")
-	.dwattr $C$DW$242, DW_AT_TI_symbol_name("pxPrevious")
-	.dwattr $C$DW$242, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$242, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$242, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$242, DW_AT_decl_line(0xba)
-	.dwattr $C$DW$242, DW_AT_decl_column(0x2a)
-
 $C$DW$243	.dwtag  DW_TAG_member
-	.dwattr $C$DW$243, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$243, DW_AT_name("pvOwner")
-	.dwattr $C$DW$243, DW_AT_TI_symbol_name("pvOwner")
-	.dwattr $C$DW$243, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$243, DW_AT_type(*$C$DW$T$62)
+	.dwattr $C$DW$243, DW_AT_name("xItemValue")
+	.dwattr $C$DW$243, DW_AT_TI_symbol_name("xItemValue")
+	.dwattr $C$DW$243, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$243, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$243, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$243, DW_AT_decl_line(0xbb)
-	.dwattr $C$DW$243, DW_AT_decl_column(0x09)
+	.dwattr $C$DW$243, DW_AT_decl_line(0xb8)
+	.dwattr $C$DW$243, DW_AT_decl_column(0x21)
 
 $C$DW$244	.dwtag  DW_TAG_member
-	.dwattr $C$DW$244, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$244, DW_AT_name("pvContainer")
-	.dwattr $C$DW$244, DW_AT_TI_symbol_name("pvContainer")
-	.dwattr $C$DW$244, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$244, DW_AT_type(*$C$DW$T$63)
+	.dwattr $C$DW$244, DW_AT_name("pxNext")
+	.dwattr $C$DW$244, DW_AT_TI_symbol_name("pxNext")
+	.dwattr $C$DW$244, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$244, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$244, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$244, DW_AT_decl_line(0xbc)
-	.dwattr $C$DW$244, DW_AT_decl_column(0x1d)
+	.dwattr $C$DW$244, DW_AT_decl_line(0xb9)
+	.dwattr $C$DW$244, DW_AT_decl_column(0x2a)
+
+$C$DW$245	.dwtag  DW_TAG_member
+	.dwattr $C$DW$245, DW_AT_type(*$C$DW$T$63)
+	.dwattr $C$DW$245, DW_AT_name("pxPrevious")
+	.dwattr $C$DW$245, DW_AT_TI_symbol_name("pxPrevious")
+	.dwattr $C$DW$245, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$245, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$245, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$245, DW_AT_decl_line(0xba)
+	.dwattr $C$DW$245, DW_AT_decl_column(0x2a)
+
+$C$DW$246	.dwtag  DW_TAG_member
+	.dwattr $C$DW$246, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$246, DW_AT_name("pvOwner")
+	.dwattr $C$DW$246, DW_AT_TI_symbol_name("pvOwner")
+	.dwattr $C$DW$246, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$246, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$246, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$246, DW_AT_decl_line(0xbb)
+	.dwattr $C$DW$246, DW_AT_decl_column(0x09)
+
+$C$DW$247	.dwtag  DW_TAG_member
+	.dwattr $C$DW$247, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$247, DW_AT_name("pvContainer")
+	.dwattr $C$DW$247, DW_AT_TI_symbol_name("pvContainer")
+	.dwattr $C$DW$247, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$247, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$247, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$247, DW_AT_decl_line(0xbc)
+	.dwattr $C$DW$247, DW_AT_decl_column(0x1d)
 
 	.dwattr $C$DW$T$64, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
 	.dwattr $C$DW$T$64, DW_AT_decl_line(0xb5)
@@ -3246,35 +3285,35 @@ $C$DW$T$63	.dwtag  DW_TAG_pointer_type
 $C$DW$T$65	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$65, DW_AT_name("xMEMORY_REGION")
 	.dwattr $C$DW$T$65, DW_AT_byte_size(0x0c)
-$C$DW$245	.dwtag  DW_TAG_member
-	.dwattr $C$DW$245, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$245, DW_AT_name("pvBaseAddress")
-	.dwattr $C$DW$245, DW_AT_TI_symbol_name("pvBaseAddress")
-	.dwattr $C$DW$245, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$245, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$245, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$245, DW_AT_decl_line(0x91)
-	.dwattr $C$DW$245, DW_AT_decl_column(0x08)
+$C$DW$248	.dwtag  DW_TAG_member
+	.dwattr $C$DW$248, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$248, DW_AT_name("pvBaseAddress")
+	.dwattr $C$DW$248, DW_AT_TI_symbol_name("pvBaseAddress")
+	.dwattr $C$DW$248, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$248, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$248, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$248, DW_AT_decl_line(0x91)
+	.dwattr $C$DW$248, DW_AT_decl_column(0x08)
 
-$C$DW$246	.dwtag  DW_TAG_member
-	.dwattr $C$DW$246, DW_AT_type(*$C$DW$T$24)
-	.dwattr $C$DW$246, DW_AT_name("ulLengthInBytes")
-	.dwattr $C$DW$246, DW_AT_TI_symbol_name("ulLengthInBytes")
-	.dwattr $C$DW$246, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$246, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$246, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$246, DW_AT_decl_line(0x92)
-	.dwattr $C$DW$246, DW_AT_decl_column(0x0b)
+$C$DW$249	.dwtag  DW_TAG_member
+	.dwattr $C$DW$249, DW_AT_type(*$C$DW$T$24)
+	.dwattr $C$DW$249, DW_AT_name("ulLengthInBytes")
+	.dwattr $C$DW$249, DW_AT_TI_symbol_name("ulLengthInBytes")
+	.dwattr $C$DW$249, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$249, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$249, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$249, DW_AT_decl_line(0x92)
+	.dwattr $C$DW$249, DW_AT_decl_column(0x0b)
 
-$C$DW$247	.dwtag  DW_TAG_member
-	.dwattr $C$DW$247, DW_AT_type(*$C$DW$T$24)
-	.dwattr $C$DW$247, DW_AT_name("ulParameters")
-	.dwattr $C$DW$247, DW_AT_TI_symbol_name("ulParameters")
-	.dwattr $C$DW$247, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$247, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$247, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$247, DW_AT_decl_line(0x93)
-	.dwattr $C$DW$247, DW_AT_decl_column(0x0b)
+$C$DW$250	.dwtag  DW_TAG_member
+	.dwattr $C$DW$250, DW_AT_type(*$C$DW$T$24)
+	.dwattr $C$DW$250, DW_AT_name("ulParameters")
+	.dwattr $C$DW$250, DW_AT_TI_symbol_name("ulParameters")
+	.dwattr $C$DW$250, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$250, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$250, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$250, DW_AT_decl_line(0x93)
+	.dwattr $C$DW$250, DW_AT_decl_column(0x0b)
 
 	.dwattr $C$DW$T$65, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
 	.dwattr $C$DW$T$65, DW_AT_decl_line(0x8f)
@@ -3304,8 +3343,8 @@ $C$DW$T$77	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$76)
 	.dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$77, DW_AT_byte_size(0x0c)
-$C$DW$248	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$248, DW_AT_upper_bound(0x00)
+$C$DW$251	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$251, DW_AT_upper_bound(0x00)
 
 	.dwendtag $C$DW$T$77
 
@@ -3313,35 +3352,35 @@ $C$DW$248	.dwtag  DW_TAG_subrange_type
 $C$DW$T$66	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$66, DW_AT_name("xMINI_LIST_ITEM")
 	.dwattr $C$DW$T$66, DW_AT_byte_size(0x0c)
-$C$DW$249	.dwtag  DW_TAG_member
-	.dwattr $C$DW$249, DW_AT_type(*$C$DW$T$62)
-	.dwattr $C$DW$249, DW_AT_name("xItemValue")
-	.dwattr $C$DW$249, DW_AT_TI_symbol_name("xItemValue")
-	.dwattr $C$DW$249, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$249, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$249, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$249, DW_AT_decl_line(0xc4)
-	.dwattr $C$DW$249, DW_AT_decl_column(0x21)
+$C$DW$252	.dwtag  DW_TAG_member
+	.dwattr $C$DW$252, DW_AT_type(*$C$DW$T$62)
+	.dwattr $C$DW$252, DW_AT_name("xItemValue")
+	.dwattr $C$DW$252, DW_AT_TI_symbol_name("xItemValue")
+	.dwattr $C$DW$252, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$252, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$252, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$252, DW_AT_decl_line(0xc4)
+	.dwattr $C$DW$252, DW_AT_decl_column(0x21)
 
-$C$DW$250	.dwtag  DW_TAG_member
-	.dwattr $C$DW$250, DW_AT_type(*$C$DW$T$63)
-	.dwattr $C$DW$250, DW_AT_name("pxNext")
-	.dwattr $C$DW$250, DW_AT_TI_symbol_name("pxNext")
-	.dwattr $C$DW$250, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$250, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$250, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$250, DW_AT_decl_line(0xc5)
-	.dwattr $C$DW$250, DW_AT_decl_column(0x2a)
+$C$DW$253	.dwtag  DW_TAG_member
+	.dwattr $C$DW$253, DW_AT_type(*$C$DW$T$63)
+	.dwattr $C$DW$253, DW_AT_name("pxNext")
+	.dwattr $C$DW$253, DW_AT_TI_symbol_name("pxNext")
+	.dwattr $C$DW$253, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$253, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$253, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$253, DW_AT_decl_line(0xc5)
+	.dwattr $C$DW$253, DW_AT_decl_column(0x2a)
 
-$C$DW$251	.dwtag  DW_TAG_member
-	.dwattr $C$DW$251, DW_AT_type(*$C$DW$T$63)
-	.dwattr $C$DW$251, DW_AT_name("pxPrevious")
-	.dwattr $C$DW$251, DW_AT_TI_symbol_name("pxPrevious")
-	.dwattr $C$DW$251, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$251, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$251, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-	.dwattr $C$DW$251, DW_AT_decl_line(0xc6)
-	.dwattr $C$DW$251, DW_AT_decl_column(0x2a)
+$C$DW$254	.dwtag  DW_TAG_member
+	.dwattr $C$DW$254, DW_AT_type(*$C$DW$T$63)
+	.dwattr $C$DW$254, DW_AT_name("pxPrevious")
+	.dwattr $C$DW$254, DW_AT_TI_symbol_name("pxPrevious")
+	.dwattr $C$DW$254, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$254, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$254, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
+	.dwattr $C$DW$254, DW_AT_decl_line(0xc6)
+	.dwattr $C$DW$254, DW_AT_decl_column(0x2a)
 
 	.dwattr $C$DW$T$66, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
 	.dwattr $C$DW$T$66, DW_AT_decl_line(0xc1)
@@ -3360,75 +3399,75 @@ $C$DW$T$60	.dwtag  DW_TAG_typedef
 $C$DW$T$78	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$78, DW_AT_name("xTASK_PARAMETERS")
 	.dwattr $C$DW$T$78, DW_AT_byte_size(0x24)
-$C$DW$252	.dwtag  DW_TAG_member
-	.dwattr $C$DW$252, DW_AT_type(*$C$DW$T$69)
-	.dwattr $C$DW$252, DW_AT_name("pvTaskCode")
-	.dwattr $C$DW$252, DW_AT_TI_symbol_name("pvTaskCode")
-	.dwattr $C$DW$252, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$252, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$252, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$252, DW_AT_decl_line(0x9b)
-	.dwattr $C$DW$252, DW_AT_decl_column(0x11)
-
-$C$DW$253	.dwtag  DW_TAG_member
-	.dwattr $C$DW$253, DW_AT_type(*$C$DW$T$73)
-	.dwattr $C$DW$253, DW_AT_name("pcName")
-	.dwattr $C$DW$253, DW_AT_TI_symbol_name("pcName")
-	.dwattr $C$DW$253, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$253, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$253, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$253, DW_AT_decl_line(0x9c)
-	.dwattr $C$DW$253, DW_AT_decl_column(0x15)
-
-$C$DW$254	.dwtag  DW_TAG_member
-	.dwattr $C$DW$254, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$254, DW_AT_name("usStackDepth")
-	.dwattr $C$DW$254, DW_AT_TI_symbol_name("usStackDepth")
-	.dwattr $C$DW$254, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$254, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$254, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$254, DW_AT_decl_line(0x9d)
-	.dwattr $C$DW$254, DW_AT_decl_column(0x0b)
-
 $C$DW$255	.dwtag  DW_TAG_member
-	.dwattr $C$DW$255, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$255, DW_AT_name("pvParameters")
-	.dwattr $C$DW$255, DW_AT_TI_symbol_name("pvParameters")
-	.dwattr $C$DW$255, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$255, DW_AT_type(*$C$DW$T$69)
+	.dwattr $C$DW$255, DW_AT_name("pvTaskCode")
+	.dwattr $C$DW$255, DW_AT_TI_symbol_name("pvTaskCode")
+	.dwattr $C$DW$255, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$255, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$255, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$255, DW_AT_decl_line(0x9e)
-	.dwattr $C$DW$255, DW_AT_decl_column(0x08)
+	.dwattr $C$DW$255, DW_AT_decl_line(0x9b)
+	.dwattr $C$DW$255, DW_AT_decl_column(0x11)
 
 $C$DW$256	.dwtag  DW_TAG_member
-	.dwattr $C$DW$256, DW_AT_type(*$C$DW$T$57)
-	.dwattr $C$DW$256, DW_AT_name("uxPriority")
-	.dwattr $C$DW$256, DW_AT_TI_symbol_name("uxPriority")
-	.dwattr $C$DW$256, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$256, DW_AT_type(*$C$DW$T$73)
+	.dwattr $C$DW$256, DW_AT_name("pcName")
+	.dwattr $C$DW$256, DW_AT_TI_symbol_name("pcName")
+	.dwattr $C$DW$256, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$256, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$256, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$256, DW_AT_decl_line(0x9f)
-	.dwattr $C$DW$256, DW_AT_decl_column(0x0e)
+	.dwattr $C$DW$256, DW_AT_decl_line(0x9c)
+	.dwattr $C$DW$256, DW_AT_decl_column(0x15)
 
 $C$DW$257	.dwtag  DW_TAG_member
-	.dwattr $C$DW$257, DW_AT_type(*$C$DW$T$75)
-	.dwattr $C$DW$257, DW_AT_name("puxStackBuffer")
-	.dwattr $C$DW$257, DW_AT_TI_symbol_name("puxStackBuffer")
-	.dwattr $C$DW$257, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$257, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$257, DW_AT_name("usStackDepth")
+	.dwattr $C$DW$257, DW_AT_TI_symbol_name("usStackDepth")
+	.dwattr $C$DW$257, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$257, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$257, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$257, DW_AT_decl_line(0xa0)
-	.dwattr $C$DW$257, DW_AT_decl_column(0x0f)
+	.dwattr $C$DW$257, DW_AT_decl_line(0x9d)
+	.dwattr $C$DW$257, DW_AT_decl_column(0x0b)
 
 $C$DW$258	.dwtag  DW_TAG_member
-	.dwattr $C$DW$258, DW_AT_type(*$C$DW$T$77)
-	.dwattr $C$DW$258, DW_AT_name("xRegions")
-	.dwattr $C$DW$258, DW_AT_TI_symbol_name("xRegions")
-	.dwattr $C$DW$258, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$258, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$258, DW_AT_name("pvParameters")
+	.dwattr $C$DW$258, DW_AT_TI_symbol_name("pvParameters")
+	.dwattr $C$DW$258, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$258, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$258, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$258, DW_AT_decl_line(0xa1)
-	.dwattr $C$DW$258, DW_AT_decl_column(0x11)
+	.dwattr $C$DW$258, DW_AT_decl_line(0x9e)
+	.dwattr $C$DW$258, DW_AT_decl_column(0x08)
+
+$C$DW$259	.dwtag  DW_TAG_member
+	.dwattr $C$DW$259, DW_AT_type(*$C$DW$T$57)
+	.dwattr $C$DW$259, DW_AT_name("uxPriority")
+	.dwattr $C$DW$259, DW_AT_TI_symbol_name("uxPriority")
+	.dwattr $C$DW$259, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$259, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$259, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$259, DW_AT_decl_line(0x9f)
+	.dwattr $C$DW$259, DW_AT_decl_column(0x0e)
+
+$C$DW$260	.dwtag  DW_TAG_member
+	.dwattr $C$DW$260, DW_AT_type(*$C$DW$T$75)
+	.dwattr $C$DW$260, DW_AT_name("puxStackBuffer")
+	.dwattr $C$DW$260, DW_AT_TI_symbol_name("puxStackBuffer")
+	.dwattr $C$DW$260, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$260, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$260, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$260, DW_AT_decl_line(0xa0)
+	.dwattr $C$DW$260, DW_AT_decl_column(0x0f)
+
+$C$DW$261	.dwtag  DW_TAG_member
+	.dwattr $C$DW$261, DW_AT_type(*$C$DW$T$77)
+	.dwattr $C$DW$261, DW_AT_name("xRegions")
+	.dwattr $C$DW$261, DW_AT_TI_symbol_name("xRegions")
+	.dwattr $C$DW$261, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$261, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$261, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$261, DW_AT_decl_line(0xa1)
+	.dwattr $C$DW$261, DW_AT_decl_column(0x11)
 
 	.dwattr $C$DW$T$78, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
 	.dwattr $C$DW$T$78, DW_AT_decl_line(0x99)
@@ -3447,85 +3486,85 @@ $C$DW$T$163	.dwtag  DW_TAG_typedef
 $C$DW$T$82	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$82, DW_AT_name("xTASK_STATUS")
 	.dwattr $C$DW$T$82, DW_AT_byte_size(0x20)
-$C$DW$259	.dwtag  DW_TAG_member
-	.dwattr $C$DW$259, DW_AT_type(*$C$DW$T$79)
-	.dwattr $C$DW$259, DW_AT_name("xHandle")
-	.dwattr $C$DW$259, DW_AT_TI_symbol_name("xHandle")
-	.dwattr $C$DW$259, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$259, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$259, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$259, DW_AT_decl_line(0xa8)
-	.dwattr $C$DW$259, DW_AT_decl_column(0x0f)
-
-$C$DW$260	.dwtag  DW_TAG_member
-	.dwattr $C$DW$260, DW_AT_type(*$C$DW$T$72)
-	.dwattr $C$DW$260, DW_AT_name("pcTaskName")
-	.dwattr $C$DW$260, DW_AT_TI_symbol_name("pcTaskName")
-	.dwattr $C$DW$260, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$260, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$260, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$260, DW_AT_decl_line(0xa9)
-	.dwattr $C$DW$260, DW_AT_decl_column(0x0e)
-
-$C$DW$261	.dwtag  DW_TAG_member
-	.dwattr $C$DW$261, DW_AT_type(*$C$DW$T$57)
-	.dwattr $C$DW$261, DW_AT_name("xTaskNumber")
-	.dwattr $C$DW$261, DW_AT_TI_symbol_name("xTaskNumber")
-	.dwattr $C$DW$261, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-	.dwattr $C$DW$261, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$261, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$261, DW_AT_decl_line(0xaa)
-	.dwattr $C$DW$261, DW_AT_decl_column(0x0e)
-
 $C$DW$262	.dwtag  DW_TAG_member
-	.dwattr $C$DW$262, DW_AT_type(*$C$DW$T$81)
-	.dwattr $C$DW$262, DW_AT_name("eCurrentState")
-	.dwattr $C$DW$262, DW_AT_TI_symbol_name("eCurrentState")
-	.dwattr $C$DW$262, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$262, DW_AT_type(*$C$DW$T$79)
+	.dwattr $C$DW$262, DW_AT_name("xHandle")
+	.dwattr $C$DW$262, DW_AT_TI_symbol_name("xHandle")
+	.dwattr $C$DW$262, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$262, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$262, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$262, DW_AT_decl_line(0xab)
-	.dwattr $C$DW$262, DW_AT_decl_column(0x0d)
+	.dwattr $C$DW$262, DW_AT_decl_line(0xa8)
+	.dwattr $C$DW$262, DW_AT_decl_column(0x0f)
 
 $C$DW$263	.dwtag  DW_TAG_member
-	.dwattr $C$DW$263, DW_AT_type(*$C$DW$T$57)
-	.dwattr $C$DW$263, DW_AT_name("uxCurrentPriority")
-	.dwattr $C$DW$263, DW_AT_TI_symbol_name("uxCurrentPriority")
-	.dwattr $C$DW$263, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$263, DW_AT_type(*$C$DW$T$72)
+	.dwattr $C$DW$263, DW_AT_name("pcTaskName")
+	.dwattr $C$DW$263, DW_AT_TI_symbol_name("pcTaskName")
+	.dwattr $C$DW$263, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$263, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$263, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$263, DW_AT_decl_line(0xac)
+	.dwattr $C$DW$263, DW_AT_decl_line(0xa9)
 	.dwattr $C$DW$263, DW_AT_decl_column(0x0e)
 
 $C$DW$264	.dwtag  DW_TAG_member
 	.dwattr $C$DW$264, DW_AT_type(*$C$DW$T$57)
-	.dwattr $C$DW$264, DW_AT_name("uxBasePriority")
-	.dwattr $C$DW$264, DW_AT_TI_symbol_name("uxBasePriority")
-	.dwattr $C$DW$264, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$264, DW_AT_name("xTaskNumber")
+	.dwattr $C$DW$264, DW_AT_TI_symbol_name("xTaskNumber")
+	.dwattr $C$DW$264, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$264, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$264, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$264, DW_AT_decl_line(0xad)
+	.dwattr $C$DW$264, DW_AT_decl_line(0xaa)
 	.dwattr $C$DW$264, DW_AT_decl_column(0x0e)
 
 $C$DW$265	.dwtag  DW_TAG_member
-	.dwattr $C$DW$265, DW_AT_type(*$C$DW$T$24)
-	.dwattr $C$DW$265, DW_AT_name("ulRunTimeCounter")
-	.dwattr $C$DW$265, DW_AT_TI_symbol_name("ulRunTimeCounter")
-	.dwattr $C$DW$265, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$265, DW_AT_type(*$C$DW$T$81)
+	.dwattr $C$DW$265, DW_AT_name("eCurrentState")
+	.dwattr $C$DW$265, DW_AT_TI_symbol_name("eCurrentState")
+	.dwattr $C$DW$265, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$265, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$265, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$265, DW_AT_decl_line(0xae)
-	.dwattr $C$DW$265, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$265, DW_AT_decl_line(0xab)
+	.dwattr $C$DW$265, DW_AT_decl_column(0x0d)
 
 $C$DW$266	.dwtag  DW_TAG_member
-	.dwattr $C$DW$266, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$266, DW_AT_name("usStackHighWaterMark")
-	.dwattr $C$DW$266, DW_AT_TI_symbol_name("usStackHighWaterMark")
-	.dwattr $C$DW$266, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
+	.dwattr $C$DW$266, DW_AT_type(*$C$DW$T$57)
+	.dwattr $C$DW$266, DW_AT_name("uxCurrentPriority")
+	.dwattr $C$DW$266, DW_AT_TI_symbol_name("uxCurrentPriority")
+	.dwattr $C$DW$266, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$266, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$266, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$266, DW_AT_decl_line(0xaf)
-	.dwattr $C$DW$266, DW_AT_decl_column(0x0b)
+	.dwattr $C$DW$266, DW_AT_decl_line(0xac)
+	.dwattr $C$DW$266, DW_AT_decl_column(0x0e)
+
+$C$DW$267	.dwtag  DW_TAG_member
+	.dwattr $C$DW$267, DW_AT_type(*$C$DW$T$57)
+	.dwattr $C$DW$267, DW_AT_name("uxBasePriority")
+	.dwattr $C$DW$267, DW_AT_TI_symbol_name("uxBasePriority")
+	.dwattr $C$DW$267, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$267, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$267, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$267, DW_AT_decl_line(0xad)
+	.dwattr $C$DW$267, DW_AT_decl_column(0x0e)
+
+$C$DW$268	.dwtag  DW_TAG_member
+	.dwattr $C$DW$268, DW_AT_type(*$C$DW$T$24)
+	.dwattr $C$DW$268, DW_AT_name("ulRunTimeCounter")
+	.dwattr $C$DW$268, DW_AT_TI_symbol_name("ulRunTimeCounter")
+	.dwattr $C$DW$268, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$268, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$268, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$268, DW_AT_decl_line(0xae)
+	.dwattr $C$DW$268, DW_AT_decl_column(0x0b)
+
+$C$DW$269	.dwtag  DW_TAG_member
+	.dwattr $C$DW$269, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$269, DW_AT_name("usStackHighWaterMark")
+	.dwattr $C$DW$269, DW_AT_TI_symbol_name("usStackHighWaterMark")
+	.dwattr $C$DW$269, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
+	.dwattr $C$DW$269, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$269, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$269, DW_AT_decl_line(0xaf)
+	.dwattr $C$DW$269, DW_AT_decl_column(0x0b)
 
 	.dwattr $C$DW$T$82, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
 	.dwattr $C$DW$T$82, DW_AT_decl_line(0xa6)
@@ -3544,25 +3583,25 @@ $C$DW$T$164	.dwtag  DW_TAG_typedef
 $C$DW$T$85	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$85, DW_AT_name("xTIME_OUT")
 	.dwattr $C$DW$T$85, DW_AT_byte_size(0x08)
-$C$DW$267	.dwtag  DW_TAG_member
-	.dwattr $C$DW$267, DW_AT_type(*$C$DW$T$84)
-	.dwattr $C$DW$267, DW_AT_name("xOverflowCount")
-	.dwattr $C$DW$267, DW_AT_TI_symbol_name("xOverflowCount")
-	.dwattr $C$DW$267, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$267, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$267, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$267, DW_AT_decl_line(0x88)
-	.dwattr $C$DW$267, DW_AT_decl_column(0x0d)
+$C$DW$270	.dwtag  DW_TAG_member
+	.dwattr $C$DW$270, DW_AT_type(*$C$DW$T$84)
+	.dwattr $C$DW$270, DW_AT_name("xOverflowCount")
+	.dwattr $C$DW$270, DW_AT_TI_symbol_name("xOverflowCount")
+	.dwattr $C$DW$270, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$270, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$270, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$270, DW_AT_decl_line(0x88)
+	.dwattr $C$DW$270, DW_AT_decl_column(0x0d)
 
-$C$DW$268	.dwtag  DW_TAG_member
-	.dwattr $C$DW$268, DW_AT_type(*$C$DW$T$62)
-	.dwattr $C$DW$268, DW_AT_name("xTimeOnEntering")
-	.dwattr $C$DW$268, DW_AT_TI_symbol_name("xTimeOnEntering")
-	.dwattr $C$DW$268, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-	.dwattr $C$DW$268, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$268, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-	.dwattr $C$DW$268, DW_AT_decl_line(0x89)
-	.dwattr $C$DW$268, DW_AT_decl_column(0x0d)
+$C$DW$271	.dwtag  DW_TAG_member
+	.dwattr $C$DW$271, DW_AT_type(*$C$DW$T$62)
+	.dwattr $C$DW$271, DW_AT_name("xTimeOnEntering")
+	.dwattr $C$DW$271, DW_AT_TI_symbol_name("xTimeOnEntering")
+	.dwattr $C$DW$271, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$271, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$271, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+	.dwattr $C$DW$271, DW_AT_decl_line(0x89)
+	.dwattr $C$DW$271, DW_AT_decl_column(0x0d)
 
 	.dwattr $C$DW$T$85, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
 	.dwattr $C$DW$T$85, DW_AT_decl_line(0x86)

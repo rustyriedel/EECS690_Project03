@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-;* Date/Time created: Thu Oct 27 13:57:51 2016                                *
+;* Date/Time created: Tue Nov 01 14:05:54 2016                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --quiet --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -351,7 +351,7 @@ $C$DW$60	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$60, DW_AT_decl_line(0x2e)
 	.dwattr $C$DW$60, DW_AT_decl_column(0x0a)
 
-;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0526012 
+;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0036012 
 	.sect	".text:I2CMWrite"
 	.clink
 	.thumbfunc I2CMWrite
@@ -1296,9 +1296,13 @@ $C$DW$141	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L2||             ; [DPU_3_PIPE] |85| 
         ; BRANCHCC OCCURS {||$C$L2||}    ; [] |85| 
 ;* --------------------------------------------------------------------------*
+	.dwpsn	file "../Tasks/Task_gyro.c",line 90,column 3,is_stmt,isa 1
+        LDR       A2, $C$CON1           ; [DPU_3_PIPE] |90| 
+        MOVS      A1, #1                ; [DPU_3_PIPE] |90| 
+        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |90| 
 	.dwendtag $C$DW$136
 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 89,column 1,is_stmt,isa 1
+	.dwpsn	file "../Tasks/Task_gyro.c",line 92,column 1,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
 ||$C$L3||:    
         ADD       SP, SP, #116          ; [DPU_3_PIPE] 
@@ -1311,7 +1315,7 @@ $C$DW$142	.dwtag  DW_TAG_TI_branch
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$135, DW_AT_TI_end_file("../Tasks/Task_gyro.c")
-	.dwattr $C$DW$135, DW_AT_TI_end_line(0x59)
+	.dwattr $C$DW$135, DW_AT_TI_end_line(0x5c)
 	.dwattr $C$DW$135, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$135
@@ -1329,13 +1333,13 @@ $C$DW$143	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$143, DW_AT_TI_symbol_name("MPU9150Callback")
 	.dwattr $C$DW$143, DW_AT_external
 	.dwattr $C$DW$143, DW_AT_TI_begin_file("../Tasks/Task_gyro.c")
-	.dwattr $C$DW$143, DW_AT_TI_begin_line(0x5b)
+	.dwattr $C$DW$143, DW_AT_TI_begin_line(0x5e)
 	.dwattr $C$DW$143, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$143, DW_AT_decl_file("../Tasks/Task_gyro.c")
-	.dwattr $C$DW$143, DW_AT_decl_line(0x5b)
+	.dwattr $C$DW$143, DW_AT_decl_line(0x5e)
 	.dwattr $C$DW$143, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$143, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "../Tasks/Task_gyro.c",line 92,column 1,is_stmt,address MPU9150Callback,isa 1
+	.dwpsn	file "../Tasks/Task_gyro.c",line 95,column 1,is_stmt,address MPU9150Callback,isa 1
 
 	.dwfde $C$DW$CIE, MPU9150Callback
 $C$DW$144	.dwtag  DW_TAG_formal_parameter
@@ -1375,14 +1379,14 @@ $C$DW$147	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$147, DW_AT_type(*$C$DW$T$25)
 	.dwattr $C$DW$147, DW_AT_location[DW_OP_breg13 4]
 
-        STR       A2, [SP, #4]          ; [DPU_3_PIPE] |92| 
-        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |92| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 96,column 2,is_stmt,isa 1
-	.dwpsn	file "../Tasks/Task_gyro.c",line 106,column 2,is_stmt,isa 1
-        LDR       A2, $C$CON2           ; [DPU_3_PIPE] |106| 
-        MOVS      A1, #1                ; [DPU_3_PIPE] |106| 
-        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |106| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 107,column 1,is_stmt,isa 1
+        STR       A2, [SP, #4]          ; [DPU_3_PIPE] |95| 
+        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |95| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 99,column 2,is_stmt,isa 1
+	.dwpsn	file "../Tasks/Task_gyro.c",line 109,column 2,is_stmt,isa 1
+        LDR       A2, $C$CON2           ; [DPU_3_PIPE] |109| 
+        MOVS      A1, #1                ; [DPU_3_PIPE] |109| 
+        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |109| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 110,column 1,is_stmt,isa 1
         ADD       SP, SP, #8            ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$148	.dwtag  DW_TAG_TI_branch
@@ -1392,7 +1396,7 @@ $C$DW$148	.dwtag  DW_TAG_TI_branch
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$143, DW_AT_TI_end_file("../Tasks/Task_gyro.c")
-	.dwattr $C$DW$143, DW_AT_TI_end_line(0x6b)
+	.dwattr $C$DW$143, DW_AT_TI_end_line(0x6e)
 	.dwattr $C$DW$143, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$143
@@ -1410,13 +1414,13 @@ $C$DW$149	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$149, DW_AT_TI_symbol_name("Task_gyro")
 	.dwattr $C$DW$149, DW_AT_external
 	.dwattr $C$DW$149, DW_AT_TI_begin_file("../Tasks/Task_gyro.c")
-	.dwattr $C$DW$149, DW_AT_TI_begin_line(0x6e)
+	.dwattr $C$DW$149, DW_AT_TI_begin_line(0x71)
 	.dwattr $C$DW$149, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$149, DW_AT_decl_file("../Tasks/Task_gyro.c")
-	.dwattr $C$DW$149, DW_AT_decl_line(0x6e)
+	.dwattr $C$DW$149, DW_AT_decl_line(0x71)
 	.dwattr $C$DW$149, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$149, DW_AT_TI_max_frame_size(0x30)
-	.dwpsn	file "../Tasks/Task_gyro.c",line 111,column 1,is_stmt,address Task_gyro,isa 1
+	.dwpsn	file "../Tasks/Task_gyro.c",line 114,column 1,is_stmt,address Task_gyro,isa 1
 
 	.dwfde $C$DW$CIE, Task_gyro
 $C$DW$150	.dwtag  DW_TAG_formal_parameter
@@ -1463,144 +1467,144 @@ $C$DW$153	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$153, DW_AT_type(*$C$DW$T$171)
 	.dwattr $C$DW$153, DW_AT_location[DW_OP_breg13 28]
 
-        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |111| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 120,column 2,is_stmt,isa 1
-        MOV       A1, #2000             ; [DPU_3_PIPE] |120| 
+        STR       A1, [SP, #0]          ; [DPU_3_PIPE] |114| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 123,column 2,is_stmt,isa 1
+        MOV       A1, #2000             ; [DPU_3_PIPE] |123| 
 $C$DW$154	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$154, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$154, DW_AT_name("vTaskDelay")
 	.dwattr $C$DW$154, DW_AT_TI_call
 
-        BL        vTaskDelay            ; [DPU_3_PIPE] |120| 
-        ; CALL OCCURS {vTaskDelay }      ; [] |120| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 129,column 8,is_stmt,isa 1
+        BL        vTaskDelay            ; [DPU_3_PIPE] |123| 
+        ; CALL OCCURS {vTaskDelay }      ; [] |123| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 132,column 8,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP ||$C$L4||
 ;*
-;*   Loop source line                : 129
-;*   Loop closing brace source line  : 168
+;*   Loop source line                : 132
+;*   Loop closing brace source line  : 171
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L4||:    
-	.dwpsn	file "../Tasks/Task_gyro.c",line 131,column 3,is_stmt,isa 1
-        LDR       A2, $C$CON2           ; [DPU_3_PIPE] |131| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |131| 
-        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |131| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 136,column 3,is_stmt,isa 1
-        LDR       A1, $C$CON5           ; [DPU_3_PIPE] |136| 
-        LDR       A2, $C$CON4           ; [DPU_3_PIPE] |136| 
-        MOVS      A3, #0                ; [DPU_3_PIPE] |136| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 134,column 3,is_stmt,isa 1
+        LDR       A2, $C$CON2           ; [DPU_3_PIPE] |134| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |134| 
+        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |134| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 139,column 3,is_stmt,isa 1
+        LDR       A1, $C$CON5           ; [DPU_3_PIPE] |139| 
+        LDR       A2, $C$CON4           ; [DPU_3_PIPE] |139| 
+        MOVS      A3, #0                ; [DPU_3_PIPE] |139| 
 $C$DW$155	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$155, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$155, DW_AT_name("MPU9150DataRead")
 	.dwattr $C$DW$155, DW_AT_TI_call
 
-        BL        MPU9150DataRead       ; [DPU_3_PIPE] |136| 
-        ; CALL OCCURS {MPU9150DataRead }  ; [] |136| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 137,column 3,is_stmt,isa 1
+        BL        MPU9150DataRead       ; [DPU_3_PIPE] |139| 
+        ; CALL OCCURS {MPU9150DataRead }  ; [] |139| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 140,column 3,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP ||$C$L5||
 ;*
-;*   Loop source line                : 137
-;*   Loop closing brace source line  : 139
+;*   Loop source line                : 140
+;*   Loop closing brace source line  : 142
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L5||:    
-	.dwpsn	file "../Tasks/Task_gyro.c",line 137,column 9,is_stmt,isa 1
-        LDR       A1, $C$CON2           ; [DPU_3_PIPE] |137| 
-        LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |137| 
-        CMP       A1, #0                ; [DPU_3_PIPE] |137| 
-        BEQ       ||$C$L5||             ; [DPU_3_PIPE] |137| 
-        ; BRANCHCC OCCURS {||$C$L5||}    ; [] |137| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 140,column 9,is_stmt,isa 1
+        LDR       A1, $C$CON2           ; [DPU_3_PIPE] |140| 
+        LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |140| 
+        CMP       A1, #0                ; [DPU_3_PIPE] |140| 
+        BEQ       ||$C$L5||             ; [DPU_3_PIPE] |140| 
+        ; BRANCHCC OCCURS {||$C$L5||}    ; [] |140| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../Tasks/Task_gyro.c",line 144,column 3,is_stmt,isa 1
-        LDR       A1, $C$CON5           ; [DPU_3_PIPE] |144| 
-        ADD       A2, SP, #28           ; [DPU_3_PIPE] |144| 
-        ADD       A3, SP, #32           ; [DPU_3_PIPE] |144| 
-        ADD       A4, SP, #36           ; [DPU_3_PIPE] |144| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 147,column 3,is_stmt,isa 1
+        LDR       A1, $C$CON5           ; [DPU_3_PIPE] |147| 
+        ADD       A2, SP, #28           ; [DPU_3_PIPE] |147| 
+        ADD       A3, SP, #32           ; [DPU_3_PIPE] |147| 
+        ADD       A4, SP, #36           ; [DPU_3_PIPE] |147| 
 $C$DW$156	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$156, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$156, DW_AT_name("MPU9150DataGyroGetFloat")
 	.dwattr $C$DW$156, DW_AT_TI_call
 
-        BL        MPU9150DataGyroGetFloat ; [DPU_3_PIPE] |144| 
-        ; CALL OCCURS {MPU9150DataGyroGetFloat }  ; [] |144| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 149,column 3,is_stmt,isa 1
-        ADD       A2, SP, #28           ; [DPU_3_PIPE] |149| 
-        VLDR.32   S0, [A2, #0]          ; [DPU_LIN_PIPE] |149| 
-        LDR       A1, $C$FL1            ; [DPU_3_PIPE] |149| 
-        VMOV      S1, A1                ; [DPU_LIN_PIPE] |149| 
-        VMUL.F32  S0, S1, S0            ; [DPU_LIN_PIPE] |149| 
-        VSTR.32   S0, [A2, #0]          ; [DPU_LIN_PIPE] |149| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 150,column 3,is_stmt,isa 1
-        VLDR.32   S0, [SP, #32]         ; [DPU_LIN_PIPE] |150| 
-        LDR       A1, $C$FL1            ; [DPU_3_PIPE] |150| 
-        VMOV      S1, A1                ; [DPU_LIN_PIPE] |150| 
-        VMUL.F32  S0, S1, S0            ; [DPU_LIN_PIPE] |150| 
-        VSTR.32   S0, [SP, #32]         ; [DPU_LIN_PIPE] |150| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 151,column 3,is_stmt,isa 1
-        VLDR.32   S0, [SP, #36]         ; [DPU_LIN_PIPE] |151| 
-        LDR       A1, $C$FL1            ; [DPU_3_PIPE] |151| 
-        VMOV      S1, A1                ; [DPU_LIN_PIPE] |151| 
-        VMUL.F32  S0, S1, S0            ; [DPU_LIN_PIPE] |151| 
-        VSTR.32   S0, [SP, #36]         ; [DPU_LIN_PIPE] |151| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 157,column 3,is_stmt,isa 1
-        LDR       A1, $C$CON6           ; [DPU_3_PIPE] |157| 
-        LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |157| 
-        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |157| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 158,column 3,is_stmt,isa 1
-        MOVS      A1, #1                ; [DPU_3_PIPE] |158| 
-        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |158| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 159,column 3,is_stmt,isa 1
-        VLDR.32   S0, [SP, #28]         ; [DPU_LIN_PIPE] |159| 
-        VCVT.U32.F32 S0, S0             ; [DPU_LIN_PIPE] |159| 
-        VMOV      A1, S0                ; [DPU_LIN_PIPE] |159| 
-        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |159| 
+        BL        MPU9150DataGyroGetFloat ; [DPU_3_PIPE] |147| 
+        ; CALL OCCURS {MPU9150DataGyroGetFloat }  ; [] |147| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 152,column 3,is_stmt,isa 1
+        ADD       A2, SP, #28           ; [DPU_3_PIPE] |152| 
+        VLDR.32   S0, [A2, #0]          ; [DPU_LIN_PIPE] |152| 
+        LDR       A1, $C$FL1            ; [DPU_3_PIPE] |152| 
+        VMOV      S1, A1                ; [DPU_LIN_PIPE] |152| 
+        VMUL.F32  S0, S1, S0            ; [DPU_LIN_PIPE] |152| 
+        VSTR.32   S0, [A2, #0]          ; [DPU_LIN_PIPE] |152| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 153,column 3,is_stmt,isa 1
+        VLDR.32   S0, [SP, #32]         ; [DPU_LIN_PIPE] |153| 
+        LDR       A1, $C$FL1            ; [DPU_3_PIPE] |153| 
+        VMOV      S1, A1                ; [DPU_LIN_PIPE] |153| 
+        VMUL.F32  S0, S1, S0            ; [DPU_LIN_PIPE] |153| 
+        VSTR.32   S0, [SP, #32]         ; [DPU_LIN_PIPE] |153| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 154,column 3,is_stmt,isa 1
+        VLDR.32   S0, [SP, #36]         ; [DPU_LIN_PIPE] |154| 
+        LDR       A1, $C$FL1            ; [DPU_3_PIPE] |154| 
+        VMOV      S1, A1                ; [DPU_LIN_PIPE] |154| 
+        VMUL.F32  S0, S1, S0            ; [DPU_LIN_PIPE] |154| 
+        VSTR.32   S0, [SP, #36]         ; [DPU_LIN_PIPE] |154| 
 	.dwpsn	file "../Tasks/Task_gyro.c",line 160,column 3,is_stmt,isa 1
-        VLDR.32   S0, [SP, #32]         ; [DPU_LIN_PIPE] |160| 
-        VCVT.U32.F32 S0, S0             ; [DPU_LIN_PIPE] |160| 
-        VMOV      A1, S0                ; [DPU_LIN_PIPE] |160| 
-        STR       A1, [SP, #16]         ; [DPU_3_PIPE] |160| 
+        LDR       A1, $C$CON6           ; [DPU_3_PIPE] |160| 
+        LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |160| 
+        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |160| 
 	.dwpsn	file "../Tasks/Task_gyro.c",line 161,column 3,is_stmt,isa 1
-        VLDR.32   S0, [SP, #36]         ; [DPU_LIN_PIPE] |161| 
-        VCVT.U32.F32 S0, S0             ; [DPU_LIN_PIPE] |161| 
-        VMOV      A1, S0                ; [DPU_LIN_PIPE] |161| 
-        STR       A1, [SP, #20]         ; [DPU_3_PIPE] |161| 
+        MOVS      A1, #1                ; [DPU_3_PIPE] |161| 
+        STR       A1, [SP, #8]          ; [DPU_3_PIPE] |161| 
 	.dwpsn	file "../Tasks/Task_gyro.c",line 162,column 3,is_stmt,isa 1
-        MOVS      A1, #0                ; [DPU_3_PIPE] |162| 
-        STR       A1, [SP, #24]         ; [DPU_3_PIPE] |162| 
+        VLDR.32   S0, [SP, #28]         ; [DPU_LIN_PIPE] |162| 
+        VCVT.U32.F32 S0, S0             ; [DPU_LIN_PIPE] |162| 
+        VMOV      A1, S0                ; [DPU_LIN_PIPE] |162| 
+        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |162| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 163,column 3,is_stmt,isa 1
+        VLDR.32   S0, [SP, #32]         ; [DPU_LIN_PIPE] |163| 
+        VCVT.U32.F32 S0, S0             ; [DPU_LIN_PIPE] |163| 
+        VMOV      A1, S0                ; [DPU_LIN_PIPE] |163| 
+        STR       A1, [SP, #16]         ; [DPU_3_PIPE] |163| 
 	.dwpsn	file "../Tasks/Task_gyro.c",line 164,column 3,is_stmt,isa 1
-        LDR       A1, $C$CON7           ; [DPU_3_PIPE] |164| 
-        LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |164| 
-        MOVS      A3, #0                ; [DPU_3_PIPE] |164| 
-        MOVS      A4, #0                ; [DPU_3_PIPE] |164| 
-        ADD       A2, SP, #4            ; [DPU_3_PIPE] |164| 
+        VLDR.32   S0, [SP, #36]         ; [DPU_LIN_PIPE] |164| 
+        VCVT.U32.F32 S0, S0             ; [DPU_LIN_PIPE] |164| 
+        VMOV      A1, S0                ; [DPU_LIN_PIPE] |164| 
+        STR       A1, [SP, #20]         ; [DPU_3_PIPE] |164| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 165,column 3,is_stmt,isa 1
+        MOVS      A1, #0                ; [DPU_3_PIPE] |165| 
+        STR       A1, [SP, #24]         ; [DPU_3_PIPE] |165| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 167,column 3,is_stmt,isa 1
+        LDR       A1, $C$CON7           ; [DPU_3_PIPE] |167| 
+        LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |167| 
+        MOVS      A3, #0                ; [DPU_3_PIPE] |167| 
+        MOVS      A4, #0                ; [DPU_3_PIPE] |167| 
+        ADD       A2, SP, #4            ; [DPU_3_PIPE] |167| 
 $C$DW$157	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$157, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$157, DW_AT_name("xQueueGenericSend")
 	.dwattr $C$DW$157, DW_AT_TI_call
 
-        BL        xQueueGenericSend     ; [DPU_3_PIPE] |164| 
-        ; CALL OCCURS {xQueueGenericSend }  ; [] |164| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 166,column 3,is_stmt,isa 1
-        MOV       A1, #2000             ; [DPU_3_PIPE] |166| 
+        BL        xQueueGenericSend     ; [DPU_3_PIPE] |167| 
+        ; CALL OCCURS {xQueueGenericSend }  ; [] |167| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 169,column 3,is_stmt,isa 1
+        MOV       A1, #2000             ; [DPU_3_PIPE] |169| 
 $C$DW$158	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$158, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$158, DW_AT_name("vTaskDelay")
 	.dwattr $C$DW$158, DW_AT_TI_call
 
-        BL        vTaskDelay            ; [DPU_3_PIPE] |166| 
-        ; CALL OCCURS {vTaskDelay }      ; [] |166| 
-	.dwpsn	file "../Tasks/Task_gyro.c",line 129,column 8,is_stmt,isa 1
-        B         ||$C$L4||             ; [DPU_3_PIPE] |129| 
-        ; BRANCH OCCURS {||$C$L4||}      ; [] |129| 
+        BL        vTaskDelay            ; [DPU_3_PIPE] |169| 
+        ; CALL OCCURS {vTaskDelay }      ; [] |169| 
+	.dwpsn	file "../Tasks/Task_gyro.c",line 132,column 8,is_stmt,isa 1
+        B         ||$C$L4||             ; [DPU_3_PIPE] |132| 
+        ; BRANCH OCCURS {||$C$L4||}      ; [] |132| 
 ;* --------------------------------------------------------------------------*
 	.dwattr $C$DW$149, DW_AT_TI_end_file("../Tasks/Task_gyro.c")
-	.dwattr $C$DW$149, DW_AT_TI_end_line(0xa9)
+	.dwattr $C$DW$149, DW_AT_TI_end_line(0xac)
 	.dwattr $C$DW$149, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$149

@@ -85,6 +85,9 @@ extern void GyroInit()
 			while(!task_done)
 			{
 			}
+
+		//set the MPU9150 initialization flag to true
+		isMPU9150Initialized = true;
 	}
 }
 

@@ -1,0 +1,79 @@
+/*
+ * AccelTest.c
+ *
+ *  Created on: Oct 13, 2016
+ *      Author: tbarclay
+ */
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "inc/hw_ints.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/interrupt.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/rom_map.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/uart.h"
+#include "utils/uartstdio.h"
+#include "sensorlib/hw_mpu9150.h"
+#include "sensorlib/hw_ak8975.h"
+#include "sensorlib/i2cm_drv.h"
+#include "sensorlib/ak8975.h"
+#include "sensorlib/mpu9150.h"
+#include "sensorlib/comp_dcm.h"
+
+
+#include	"inc/hw_types.h"
+#include	"inc/hw_uart.h"
+
+#include	<stddef.h>
+#include	<stdarg.h>
+#include	<stdio.h>
+
+#include	"Drivers/Processor_Initialization.h"
+#include	"Drivers/uartstdio.h"
+
+#include	"Tasks/Task_ReportData.h"
+
+#include	"FreeRTOS.h"
+#include	"task.h"
+#include	"MPU9150Manager.h"
+
+void Task_AccRead( void *pvParameters)
+{
+	ReportData_Item		theAccelReport;
+
+
+	float xaccel, yaccel, zaccel;
+	//
+	//	No set-up necessary
+	//
+
+	//
+	//	Delay a while to let ReportData_Queue to initialize.
+	//	This is a hack.
+	//
+	vTaskDelay( 2 * configTICK_RATE_HZ );
+
+	//
+	//	Gather accleration data and publish it every 2 seconds
+	//
+	while ( 1 ) {
+		xaccel = 1;
+		yaccel = 1;
+		zaccel = 1;
+		getAcceleration(&xaccel, &yaccel, &zaccel);
+		theAccelReport.TimeStamp = xPortSysTickCount;
+		theAccelReport.ReportName = 1;
+		theAccelReport.ReportValue_0 = (int)(xaccel*100);
+		theAccelReport.ReportValue_1 = (int)(yaccel*100);
+		theAccelReport.ReportValue_2 = (int)(zaccel*100);
+		theAccelReport.ReportValue_3 = 0;
+
+		xQueueSend(  ReportData_Queue, &theAccelReport, 0 );
+
+		vTaskDelay( 2 * configTICK_RATE_HZ );
+	}
+}

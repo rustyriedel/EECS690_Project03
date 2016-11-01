@@ -41,6 +41,7 @@ Main_Base.obj: C:/TI_CodeComposer/TivaWare/sensorlib/hw_ak8975.h
 Main_Base.obj: C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h
 Main_Base.obj: C:/TI_CodeComposer/TivaWare/sensorlib/hw_mpu9150.h
 Main_Base.obj: C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h
+Main_Base.obj: ../Tasks/MPU9150Manager.h
 Main_Base.obj: C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h
 Main_Base.obj: C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/linkage.h
 Main_Base.obj: C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdarg.h
@@ -86,6 +87,7 @@ C:/TI_CodeComposer/TivaWare/sensorlib/hw_ak8975.h:
 C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h: 
 C:/TI_CodeComposer/TivaWare/sensorlib/hw_mpu9150.h: 
 C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h: 
+../Tasks/MPU9150Manager.h: 
 C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdio.h: 
 C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/linkage.h: 
 C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include/stdarg.h: 
