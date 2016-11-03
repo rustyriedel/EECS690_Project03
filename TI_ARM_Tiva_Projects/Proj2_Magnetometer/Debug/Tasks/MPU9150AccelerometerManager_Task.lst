@@ -1,11 +1,11 @@
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-       3                    ;* Date/Time created: Tue Nov 01 14:05:54 2016                                *
+       3                    ;* Date/Time created: Thu Nov 03 13:01:19 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    1
       53                            .dwattr $C$DW$7, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
       54                            .dwattr $C$DW$7, DW_AT_decl_line(0x196)
       55                            .dwattr $C$DW$7, DW_AT_decl_column(0x15)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    2
@@ -118,7 +118,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    2
      108                            .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$25)
      109                    
      110                    $C$DW$23        .dwtag  DW_TAG_formal_parameter
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    3
@@ -178,7 +178,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    3
      163                    
      164                    $C$DW$35        .dwtag  DW_TAG_formal_parameter
      165                            .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$28)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    4
@@ -238,7 +238,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    4
      218                            .dwattr $C$DW$44, DW_AT_decl_column(0x0c)
      219                    $C$DW$45        .dwtag  DW_TAG_formal_parameter
      220                            .dwattr $C$DW$45, DW_AT_type(*$C$DW$T$107)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    5
@@ -298,7 +298,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    5
      273                            .dwattr $C$DW$52, DW_AT_decl_line(0x1c)
      274                            .dwattr $C$DW$52, DW_AT_decl_column(0x16)
      275                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    6
@@ -358,7 +358,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    6
      328                            .dwattr $C$DW$57, DW_AT_decl_file("../Tasks/MPU9150AccelerometerManager_Task.c")
      329                            .dwattr $C$DW$57, DW_AT_decl_line(0x34)
      330                            .dwattr $C$DW$57, DW_AT_decl_column(0x0f)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    7
@@ -418,7 +418,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    7
      383                            .dwattr $C$DW$62, DW_AT_type(*$C$DW$T$21)
      384                            .dwattr $C$DW$62, DW_AT_location[DW_OP_reg2]
      385                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    8
@@ -478,7 +478,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    8
      438                            .dwattr $C$DW$68, DW_AT_TI_symbol_name("pui8Data")
      439                            .dwattr $C$DW$68, DW_AT_type(*$C$DW$T$21)
      440                            .dwattr $C$DW$68, DW_AT_location[DW_OP_breg13 32]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE    9
@@ -538,7 +538,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE    9
      493                            .clink
      494                            .thumbfunc I2CMRead
      495 00000000                   .thumb
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   10
@@ -598,7 +598,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   10
      548                            .dwattr $C$DW$78, DW_AT_type(*$C$DW$T$156)
      549                            .dwattr $C$DW$78, DW_AT_location[DW_OP_breg13 52]
      550                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   11
@@ -658,7 +658,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   11
      603                            .dwattr $C$DW$84, DW_AT_TI_symbol_name("ui16WriteCount")
      604                            .dwattr $C$DW$84, DW_AT_type(*$C$DW$T$156)
      605                            .dwattr $C$DW$84, DW_AT_location[DW_OP_breg13 36]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   12
@@ -718,7 +718,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   12
      658                            .dwattr $C$DW$87, DW_AT_name("I2CMWriteBatched")
      659                            .dwattr $C$DW$87, DW_AT_low_pc(I2CMWriteBatched)
      660                            .dwattr $C$DW$87, DW_AT_high_pc(0x00)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   13
@@ -778,7 +778,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   13
      713                            .dwattr $C$DW$94, DW_AT_type(*$C$DW$T$3)
      714                            .dwattr $C$DW$94, DW_AT_location[DW_OP_breg13 56]
      715                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   14
@@ -838,7 +838,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   14
      768 00000014 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |494|  ; [ORIG 16-BIT INS]
      769 00000016 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |494|  ; [ORIG 16-BIT INS]
      770 00000018 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |494|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   15
@@ -898,7 +898,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   15
      823                            .dwattr $C$DW$101, DW_AT_TI_max_frame_size(0x30)
      824                            .dwpsn  file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 509,column 1,is_stmt,addr
      825                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   16
@@ -958,7 +958,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   16
      878                            .dwattr $C$DW$110, DW_AT_type(*$C$DW$T$28)
      879                            .dwattr $C$DW$110, DW_AT_location[DW_OP_breg13 64]
      880                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   17
@@ -1018,7 +1018,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   17
      933 0000000a 9107              STR       A2, [SP, #28]         ; [DPU_3_PIPE] |509|  ; [ORIG 16-BIT INS]
      934 0000000c 9006              STR       A1, [SP, #24]         ; [DPU_3_PIPE] |509|  ; [ORIG 16-BIT INS]
      935                            .dwpsn  file "C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h",line 510,column 5,is_stmt,isa 
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   18
@@ -1078,7 +1078,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   18
      988                            .dwattr $C$DW$118, DW_AT_TI_begin_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
      989                            .dwattr $C$DW$118, DW_AT_TI_begin_line(0x209)
      990                            .dwattr $C$DW$118, DW_AT_TI_begin_column(0x01)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   19
@@ -1138,7 +1138,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   19
     1043                            .dwattr $C$DW$126, DW_AT_type(*$C$DW$T$3)
     1044                            .dwattr $C$DW$126, DW_AT_location[DW_OP_breg13 52]
     1045                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   20
@@ -1198,7 +1198,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   20
     1098 00000016 01FFF001          AND       A2, A2, #255          ; [DPU_3_PIPE] |527|  ; [KEEP 32-BIT INS]
     1099 0000001a 0A00              LSRS      A1, A1, #8            ; [DPU_3_PIPE] |527|  ; [ORIG 16-BIT INS]
     1100 0000001c 2001EA40          ORR       A1, A1, A2, LSL #8    ; [DPU_3_PIPE] |527|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   21
@@ -1258,7 +1258,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   21
     1153                            .dwattr $C$DW$133, DW_AT_TI_begin_line(0x3a)
     1154                            .dwattr $C$DW$133, DW_AT_TI_begin_column(0x0d)
     1155                            .dwattr $C$DW$133, DW_AT_decl_file("../Tasks/MPU9150AccelerometerManager_Task.c")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   22
@@ -1318,7 +1318,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   22
     1208                            ; CALL OCCURS {IntRegister }     ; [] |63| 
     1209                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 66,column 3,is_stmt,isa 1
     1210                    $C$DW$137       .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   23
@@ -1378,7 +1378,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   23
     1263 0000003a FFFEF7FF!         BL        UARTprintf            ; [DPU_3_PIPE] |76|  ; [KEEP 32-BIT INS]
     1264                            ; CALL OCCURS {UARTprintf }      ; [] |76| 
     1265                            .dwendtag $C$DW$134
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   24
@@ -1438,7 +1438,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   24
     1318                    ;*****************************************************************************
     1319                    ;* FUNCTION NAME: MPU9150Callback2                                           *
     1320                    ;*                                                                           *
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   25
@@ -1498,7 +1498,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   25
     1373                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 91,column 1,is_stmt,isa 1
     1374                    $C$DW$147       .dwtag  DW_TAG_TI_branch
     1375                            .dwattr $C$DW$147, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   26
@@ -1558,7 +1558,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   26
     1428                    ;* --------------------------------------------------------------------------*
     1429                            .dwcfi  cfa_offset, 0
     1430 0000005a B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   27
@@ -1618,7 +1618,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   27
     1483                    ;*   Known Max Trip Count Factor     : 1
     1484                    ;* --------------------------------------------------------------------------*
     1485 00000072           ||$C$L5||:    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   28
@@ -1649,71 +1649,71 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   28
     1509 0000008c 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |107|  ; [ORIG 16-BIT INS]
     1510                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 108,column 3,is_stmt,isa 1
     1511 0000008e 493C              LDR       A2, $C$CON12          ; [DPU_3_PIPE] |108|  ; [ORIG 16-BIT INS]
-    1512 00000090 30E7F240          MOV       A1, #999              ; [DPU_3_PIPE] |108|  ; [KEEP 32-BIT INS]
-    1513 00000094 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |108|  ; [ORIG 16-BIT INS]
+    1512 00000090 206E              MOVS      A1, #110              ; [DPU_3_PIPE] |108|  ; [ORIG 16-BIT INS]
+    1513 00000092 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |108|  ; [ORIG 16-BIT INS]
     1514                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 109,column 3,is_stmt,isa 1
-    1515 00000096 482E              LDR       A1, $C$FL1            ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
-    1516 00000098 0A10EE00          VMOV      S0, A1                ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
-    1517 0000009c 4833              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
-    1518 0000009e 0A00EDD0          VLDR.32   S1, [A1, #0]          ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
-    1519 000000a2 0A20EE20          VMUL.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
-    1520 000000a6 0AC0EEBD          VCVT.S32.F32 S0, S0             ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
-    1521 000000aa 4936              LDR       A2, $C$CON13          ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
-    1522 000000ac 0A10EE10          VMOV      A1, S0                ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
-    1523 000000b0 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
+    1515 00000094 482E              LDR       A1, $C$FL1            ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
+    1516 00000096 0A10EE00          VMOV      S0, A1                ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
+    1517 0000009a 4834              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
+    1518 0000009c 0A00EDD0          VLDR.32   S1, [A1, #0]          ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
+    1519 000000a0 0A20EE20          VMUL.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
+    1520 000000a4 0AC0EEBD          VCVT.S32.F32 S0, S0             ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
+    1521 000000a8 4936              LDR       A2, $C$CON13          ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
+    1522 000000aa 0A10EE10          VMOV      A1, S0                ; [DPU_LIN_PIPE] |109|  ; [KEEP 32-BIT INS]
+    1523 000000ae 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
     1524                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 110,column 3,is_stmt,isa 1
-    1525 000000b2 4827              LDR       A1, $C$FL1            ; [DPU_3_PIPE] |110|  ; [ORIG 16-BIT INS]
-    1526 000000b4 0A10EE00          VMOV      S0, A1                ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
-    1527 000000b8 482D              LDR       A1, $C$CON8           ; [DPU_3_PIPE] |110|  ; [ORIG 16-BIT INS]
-    1528 000000ba 0A00EDD0          VLDR.32   S1, [A1, #0]          ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
-    1529 000000be 0A20EE20          VMUL.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
-    1530 000000c2 0AC0EEBD          VCVT.S32.F32 S0, S0             ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
-    1531 000000c6 4930              LDR       A2, $C$CON14          ; [DPU_3_PIPE] |110|  ; [ORIG 16-BIT INS]
-    1532 000000c8 0A10EE10          VMOV      A1, S0                ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
-    1533 000000cc 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |110|  ; [ORIG 16-BIT INS]
+    1525 000000b0 4827              LDR       A1, $C$FL1            ; [DPU_3_PIPE] |110|  ; [ORIG 16-BIT INS]
+    1526 000000b2 0A10EE00          VMOV      S0, A1                ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
+    1527 000000b6 482E              LDR       A1, $C$CON8           ; [DPU_3_PIPE] |110|  ; [ORIG 16-BIT INS]
+    1528 000000b8 0A00EDD0          VLDR.32   S1, [A1, #0]          ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
+    1529 000000bc 0A20EE20          VMUL.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
+    1530 000000c0 0AC0EEBD          VCVT.S32.F32 S0, S0             ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
+    1531 000000c4 4930              LDR       A2, $C$CON14          ; [DPU_3_PIPE] |110|  ; [ORIG 16-BIT INS]
+    1532 000000c6 0A10EE10          VMOV      A1, S0                ; [DPU_LIN_PIPE] |110|  ; [KEEP 32-BIT INS]
+    1533 000000ca 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |110|  ; [ORIG 16-BIT INS]
     1534                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 111,column 3,is_stmt,isa 1
-    1535 000000ce 4820              LDR       A1, $C$FL1            ; [DPU_3_PIPE] |111|  ; [ORIG 16-BIT INS]
-    1536 000000d0 0A10EE00          VMOV      S0, A1                ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
-    1537 000000d4 4827              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |111|  ; [ORIG 16-BIT INS]
-    1538 000000d6 0A00EDD0          VLDR.32   S1, [A1, #0]          ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
-    1539 000000da 0A20EE20          VMUL.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
-    1540 000000de 0AC0EEBD          VCVT.S32.F32 S0, S0             ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+    1535 000000cc 4820              LDR       A1, $C$FL1            ; [DPU_3_PIPE] |111|  ; [ORIG 16-BIT INS]
+    1536 000000ce 0A10EE00          VMOV      S0, A1                ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
+    1537 000000d2 4828              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |111|  ; [ORIG 16-BIT INS]
+    1538 000000d4 0A00EDD0          VLDR.32   S1, [A1, #0]          ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
+    1539 000000d8 0A20EE20          VMUL.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
+    1540 000000dc 0AC0EEBD          VCVT.S32.F32 S0, S0             ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   29
 
-    1541 000000e2 492A              LDR       A2, $C$CON15          ; [DPU_3_PIPE] |111|  ; [ORIG 16-BIT INS]
-    1542 000000e4 0A10EE10          VMOV      A1, S0                ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
-    1543 000000e8 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |111|  ; [ORIG 16-BIT INS]
+    1541 000000e0 492A              LDR       A2, $C$CON15          ; [DPU_3_PIPE] |111|  ; [ORIG 16-BIT INS]
+    1542 000000e2 0A10EE10          VMOV      A1, S0                ; [DPU_LIN_PIPE] |111|  ; [KEEP 32-BIT INS]
+    1543 000000e6 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |111|  ; [ORIG 16-BIT INS]
     1544                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 112,column 3,is_stmt,isa 1
-    1545 000000ea 4929              LDR       A2, $C$CON16          ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
-    1546 000000ec 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
-    1547 000000ee 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
+    1545 000000e8 4929              LDR       A2, $C$CON16          ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
+    1546 000000ea 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
+    1547 000000ec 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
     1548                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 115,column 3,is_stmt,isa 1
-    1549 000000f0 4828              LDR       A1, $C$CON17          ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
-    1550 000000f2 4921              LDR       A2, $C$CON10          ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
-    1551 000000f4 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
-    1552 000000f6 2200              MOVS      A3, #0                ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
-    1553 000000f8 2300              MOVS      A4, #0                ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
+    1549 000000ee 4829              LDR       A1, $C$CON17          ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
+    1550 000000f0 4921              LDR       A2, $C$CON10          ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
+    1551 000000f2 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
+    1552 000000f4 2200              MOVS      A3, #0                ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
+    1553 000000f6 2300              MOVS      A4, #0                ; [DPU_3_PIPE] |115|  ; [ORIG 16-BIT INS]
     1554                    $C$DW$154       .dwtag  DW_TAG_TI_branch
     1555                            .dwattr $C$DW$154, DW_AT_low_pc(0x00)
     1556                            .dwattr $C$DW$154, DW_AT_name("xQueueGenericSend")
     1557                            .dwattr $C$DW$154, DW_AT_TI_call
     1558                    
-    1559 000000fa FFFEF7FF!         BL        xQueueGenericSend     ; [DPU_3_PIPE] |115|  ; [KEEP 32-BIT INS]
+    1559 000000f8 FFFEF7FF!         BL        xQueueGenericSend     ; [DPU_3_PIPE] |115|  ; [KEEP 32-BIT INS]
     1560                            ; CALL OCCURS {xQueueGenericSend }  ; [] |115| 
     1561                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 118,column 3,is_stmt,isa 1
-    1562 000000fe 707AF44F          MOV       A1, #1000             ; [DPU_3_PIPE] |118|  ; [KEEP 32-BIT INS]
+    1562 000000fc 707AF44F          MOV       A1, #1000             ; [DPU_3_PIPE] |118|  ; [KEEP 32-BIT INS]
     1563                    $C$DW$155       .dwtag  DW_TAG_TI_branch
     1564                            .dwattr $C$DW$155, DW_AT_low_pc(0x00)
     1565                            .dwattr $C$DW$155, DW_AT_name("vTaskDelay")
     1566                            .dwattr $C$DW$155, DW_AT_TI_call
     1567                    
-    1568 00000102 FFFEF7FF!         BL        vTaskDelay            ; [DPU_3_PIPE] |118|  ; [KEEP 32-BIT INS]
+    1568 00000100 FFFEF7FF!         BL        vTaskDelay            ; [DPU_3_PIPE] |118|  ; [KEEP 32-BIT INS]
     1569                            ; CALL OCCURS {vTaskDelay }      ; [] |118| 
     1570                            .dwpsn  file "../Tasks/MPU9150AccelerometerManager_Task.c",line 99,column 9,is_stmt,isa 1
-    1571 00000106 E7AC              B         ||$C$L4||             ; [DPU_3_PIPE] |99|  ; [ORIG 16-BIT INS]
+    1571 00000104 E7AD              B         ||$C$L4||             ; [DPU_3_PIPE] |99|  ; [ORIG 16-BIT INS]
     1572                            ; BRANCH OCCURS {||$C$L4||}      ; [] |99| 
     1573                    ;* --------------------------------------------------------------------------*
     1574                            .dwattr $C$DW$148, DW_AT_TI_end_file("../Tasks/MPU9150AccelerometerManager_Task.c")
@@ -1725,7 +1725,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   29
     1580                    ;******************************************************************************
     1581                    ;* STRINGS                                                                    *
     1582                    ;******************************************************************************
-    1583 00000108                   .sect   ".text"
+    1583 00000106                   .sect   ".text"
     1584                            .align  4
     1585 00000108 3E        ||$C$SL1||:     .string ">>>>MPU9150Init; Status: %02X",10,0
          00000109 3E       
@@ -1738,7 +1738,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   29
          00000110 31       
          00000111 35       
          00000112 30       
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   30
@@ -1798,7 +1798,7 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   30
          00000147 3A       
          00000148 20       
          00000149 25       
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 MPU9150AccelerometerManager_Task.asm                                 PAGE   31
@@ -1819,50 +1819,67 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   31
     1596                    ;******************************************************************************
     1597 00000154                   .sect   ".text"
     1598                            .align  4
-    1599 00000154 00000000! ||$C$CON1||:    .bits   isMPU9150Initialized,32
+    1599 00000152 000042C8! ||$C$CON1||:    .bits   isMPU9150Initialized,32
+         00000156 00000000 
     1600                            .align  4
-    1601 00000158 00000000! ||$C$CON2||:    .bits   I2C7_IntServiceRoutine,32
+    1601 00000156 00000000! ||$C$CON2||:    .bits   I2C7_IntServiceRoutine,32
+         0000015a 00000000 
     1602                            .align  4
-    1603 0000015c 00000000! ||$C$CON3||:    .bits   I2C7_Instance_Ref,32
+    1603 0000015a 00000000! ||$C$CON3||:    .bits   I2C7_Instance_Ref,32
+         0000015e 00000000 
     1604                            .align  4
-    1605 00000160 00000000! ||$C$CON4||:    .bits   sMPU9150,32
+    1605 0000015e 00000000! ||$C$CON4||:    .bits   sMPU9150,32
+         00000162 00000000 
     1606                            .align  4
-    1607 00000164 00000000! ||$C$CON5||:    .bits   MPU9150Callback2,32
+    1607 00000162 00000000! ||$C$CON5||:    .bits   MPU9150Callback2,32
+         00000166 00000000 
     1608                            .align  4
-    1609 00000168 00000000! ||$C$CON6||:    .bits   g_bMPU9150Done,32
+    1609 00000166 00000000! ||$C$CON6||:    .bits   g_bMPU9150Done,32
+         0000016a 00000000 
     1610                            .align  4
-    1611 0000016c 00000000! ||$C$CON7||:    .bits   fAccel,32
+    1611 0000016a 00000000! ||$C$CON7||:    .bits   fAccel,32
+         0000016e 00000000 
     1612                            .align  4
-    1613 00000170 00000004! ||$C$CON8||:    .bits   fAccel+4,32
+    1613 0000016e 00040000! ||$C$CON8||:    .bits   fAccel+4,32
+         00000172 00000000 
     1614                            .align  4
-    1615 00000174 00000008! ||$C$CON9||:    .bits   fAccel+8,32
+    1615 00000172 00080000! ||$C$CON9||:    .bits   fAccel+8,32
+         00000176 00000000 
     1616                            .align  4
-    1617 00000178 00000000! ||$C$CON10||:   .bits   accelerometerReport,32
+    1617 00000176 00000000! ||$C$CON10||:   .bits   accelerometerReport,32
+         0000017a 00000000 
     1618                            .align  4
-    1619 0000017c 00000000! ||$C$CON11||:   .bits   xPortSysTickCount,32
+    1619 0000017a 00000000! ||$C$CON11||:   .bits   xPortSysTickCount,32
+         0000017e 00000000 
     1620                            .align  4
-    1621 00000180 00000004! ||$C$CON12||:   .bits   accelerometerReport+4,32
+    1621 0000017e 00040000! ||$C$CON12||:   .bits   accelerometerReport+4,32
+         00000182 00000000 
     1622                            .align  4
-    1623 00000184 00000008! ||$C$CON13||:   .bits   accelerometerReport+8,32
+    1623 00000182 00080000! ||$C$CON13||:   .bits   accelerometerReport+8,32
+         00000186 00000000 
     1624                            .align  4
-    1625 00000188 0000000C! ||$C$CON14||:   .bits   accelerometerReport+12,32
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   32
+
+    1625 00000186 000C0000! ||$C$CON14||:   .bits   accelerometerReport+12,32
+         0000018a 00000000 
     1626                            .align  4
-    1627 0000018c 00000010! ||$C$CON15||:   .bits   accelerometerReport+16,32
+    1627 0000018a 00100000! ||$C$CON15||:   .bits   accelerometerReport+16,32
+         0000018e 00000000 
     1628                            .align  4
-    1629 00000190 00000014! ||$C$CON16||:   .bits   accelerometerReport+20,32
+    1629 0000018e 00140000! ||$C$CON16||:   .bits   accelerometerReport+20,32
+         00000192 00000000 
     1630                            .align  4
-    1631 00000194 00000000! ||$C$CON17||:   .bits   ReportData_Queue,32
+    1631 00000192 00000000! ||$C$CON17||:   .bits   ReportData_Queue,32
+         00000196 00000000 
     1632                    ;*****************************************************************************
     1633                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
     1634                    ;*****************************************************************************
     1635                            .global IntRegister
     1636                            .global UARTprintf
     1637                            .global I2CMCommand
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   32
-
     1638                            .global I2CMReadModifyWrite16LE
     1639                            .global MPU9150Init
     1640                            .global MPU9150DataRead
@@ -1901,6 +1918,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   32
     1673                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
     1674                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
     1675                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   33
+
     1676                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
     1677                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
     1678                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(1)
@@ -1918,11 +1940,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   32
     1690                    $C$DW$156       .dwtag  DW_TAG_enumerator
     1691                            .dwattr $C$DW$156, DW_AT_name("eRunning")
     1692                            .dwattr $C$DW$156, DW_AT_const_value(0x00)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   33
-
     1693                            .dwattr $C$DW$156, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     1694                            .dwattr $C$DW$156, DW_AT_decl_line(0x72)
     1695                            .dwattr $C$DW$156, DW_AT_decl_column(0x02)
@@ -1961,6 +1978,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   33
     1728                            .dwendtag $C$DW$T$84
     1729                    
     1730                    $C$DW$T$85      .dwtag  DW_TAG_typedef
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   34
+
     1731                            .dwattr $C$DW$T$85, DW_AT_name("eTaskState")
     1732                            .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$84)
     1733                            .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
@@ -1978,11 +2000,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   33
     1745                            .dwattr $C$DW$161, DW_AT_decl_line(0x7c)
     1746                            .dwattr $C$DW$161, DW_AT_decl_column(0x02)
     1747                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   34
-
     1748                    $C$DW$162       .dwtag  DW_TAG_enumerator
     1749                            .dwattr $C$DW$162, DW_AT_name("eSetBits")
     1750                            .dwattr $C$DW$162, DW_AT_const_value(0x01)
@@ -2021,6 +2038,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   34
     1783                            .dwattr $C$DW$T$91, DW_AT_type(*$C$DW$T$90)
     1784                            .dwattr $C$DW$T$91, DW_AT_language(DW_LANG_C)
     1785                            .dwattr $C$DW$T$91, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   35
+
     1786                            .dwattr $C$DW$T$91, DW_AT_decl_line(0x81)
     1787                            .dwattr $C$DW$T$91, DW_AT_decl_column(0x03)
     1788                    
@@ -2038,11 +2060,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   34
     1800                            .dwattr $C$DW$167, DW_AT_name("eStandardSleep")
     1801                            .dwattr $C$DW$167, DW_AT_const_value(0x01)
     1802                            .dwattr $C$DW$167, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   35
-
     1803                            .dwattr $C$DW$167, DW_AT_decl_line(0xb6)
     1804                            .dwattr $C$DW$167, DW_AT_decl_column(0x02)
     1805                    
@@ -2081,6 +2098,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   35
     1838                    
     1839                    $C$DW$170       .dwtag  DW_TAG_member
     1840                            .dwattr $C$DW$170, DW_AT_type(*$C$DW$T$21)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   36
+
     1841                            .dwattr $C$DW$170, DW_AT_name("pui8WriteData")
     1842                            .dwattr $C$DW$170, DW_AT_TI_symbol_name("pui8WriteData")
     1843                            .dwattr $C$DW$170, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
@@ -2098,11 +2120,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   35
     1855                            .dwattr $C$DW$171, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     1856                            .dwattr $C$DW$171, DW_AT_decl_line(0x56)
     1857                            .dwattr $C$DW$171, DW_AT_decl_column(0x0e)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   36
-
     1858                    
     1859                    $C$DW$172       .dwtag  DW_TAG_member
     1860                            .dwattr $C$DW$172, DW_AT_type(*$C$DW$T$22)
@@ -2141,6 +2158,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   36
     1893                            .dwattr $C$DW$175, DW_AT_data_member_location[DW_OP_plus_uconst 0x12]
     1894                            .dwattr $C$DW$175, DW_AT_accessibility(DW_ACCESS_public)
     1895                            .dwattr $C$DW$175, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   37
+
     1896                            .dwattr $C$DW$175, DW_AT_decl_line(0x6a)
     1897                            .dwattr $C$DW$175, DW_AT_decl_column(0x0e)
     1898                    
@@ -2158,11 +2180,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   36
     1910                            .dwattr $C$DW$177, DW_AT_type(*$C$DW$T$3)
     1911                            .dwattr $C$DW$177, DW_AT_name("pvCallbackData")
     1912                            .dwattr $C$DW$177, DW_AT_TI_symbol_name("pvCallbackData")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   37
-
     1913                            .dwattr $C$DW$177, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
     1914                            .dwattr $C$DW$177, DW_AT_accessibility(DW_ACCESS_public)
     1915                            .dwattr $C$DW$177, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
@@ -2201,6 +2218,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   37
     1948                            .dwattr $C$DW$179, DW_AT_TI_symbol_name("ui32Base")
     1949                            .dwattr $C$DW$179, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     1950                            .dwattr $C$DW$179, DW_AT_accessibility(DW_ACCESS_public)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   38
+
     1951                            .dwattr $C$DW$179, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     1952                            .dwattr $C$DW$179, DW_AT_decl_line(0x82)
     1953                            .dwattr $C$DW$179, DW_AT_decl_column(0x0e)
@@ -2218,11 +2240,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   37
     1965                    $C$DW$181       .dwtag  DW_TAG_member
     1966                            .dwattr $C$DW$181, DW_AT_type(*$C$DW$T$19)
     1967                            .dwattr $C$DW$181, DW_AT_name("ui8TxDMA")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   38
-
     1968                            .dwattr $C$DW$181, DW_AT_TI_symbol_name("ui8TxDMA")
     1969                            .dwattr $C$DW$181, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
     1970                            .dwattr $C$DW$181, DW_AT_accessibility(DW_ACCESS_public)
@@ -2261,6 +2278,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   38
     2003                            .dwattr $C$DW$184, DW_AT_decl_column(0x0d)
     2004                    
     2005                    $C$DW$185       .dwtag  DW_TAG_member
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   39
+
     2006                            .dwattr $C$DW$185, DW_AT_type(*$C$DW$T$19)
     2007                            .dwattr $C$DW$185, DW_AT_name("ui8WritePtr")
     2008                            .dwattr $C$DW$185, DW_AT_TI_symbol_name("ui8WritePtr")
@@ -2278,11 +2300,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   38
     2020                            .dwattr $C$DW$186, DW_AT_accessibility(DW_ACCESS_public)
     2021                            .dwattr $C$DW$186, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2022                            .dwattr $C$DW$186, DW_AT_decl_line(0xa7)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   39
-
     2023                            .dwattr $C$DW$186, DW_AT_decl_column(0x0e)
     2024                    
     2025                    $C$DW$187       .dwtag  DW_TAG_member
@@ -2321,6 +2338,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   39
     2058                            .dwattr $C$DW$188, DW_AT_TI_symbol_name("psI2CInst")
     2059                            .dwattr $C$DW$188, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2060                            .dwattr $C$DW$188, DW_AT_accessibility(DW_ACCESS_public)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   40
+
     2061                            .dwattr $C$DW$188, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2062                            .dwattr $C$DW$188, DW_AT_decl_line(0xf0)
     2063                            .dwattr $C$DW$188, DW_AT_decl_column(0x14)
@@ -2338,11 +2360,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   39
     2075                    $C$DW$190       .dwtag  DW_TAG_member
     2076                            .dwattr $C$DW$190, DW_AT_type(*$C$DW$T$19)
     2077                            .dwattr $C$DW$190, DW_AT_name("ui8State")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   40
-
     2078                            .dwattr $C$DW$190, DW_AT_TI_symbol_name("ui8State")
     2079                            .dwattr $C$DW$190, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     2080                            .dwattr $C$DW$190, DW_AT_accessibility(DW_ACCESS_public)
@@ -2381,6 +2398,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   40
     2113                            .dwattr $C$DW$193, DW_AT_decl_column(0x0e)
     2114                    
     2115                    $C$DW$194       .dwtag  DW_TAG_member
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   41
+
     2116                            .dwattr $C$DW$194, DW_AT_type(*$C$DW$T$28)
     2117                            .dwattr $C$DW$194, DW_AT_name("pfnCallback")
     2118                            .dwattr $C$DW$194, DW_AT_TI_symbol_name("pfnCallback")
@@ -2398,11 +2420,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   40
     2130                            .dwattr $C$DW$195, DW_AT_accessibility(DW_ACCESS_public)
     2131                            .dwattr $C$DW$195, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2132                            .dwattr $C$DW$195, DW_AT_decl_line(0x114)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   41
-
     2133                            .dwattr $C$DW$195, DW_AT_decl_column(0x0b)
     2134                    
     2135                            .dwattr $C$DW$T$36, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
@@ -2441,6 +2458,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   41
     2168                            .dwattr $C$DW$197, DW_AT_TI_symbol_name("pui8Buffer")
     2169                            .dwattr $C$DW$197, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     2170                            .dwattr $C$DW$197, DW_AT_accessibility(DW_ACCESS_public)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   42
+
     2171                            .dwattr $C$DW$197, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2172                            .dwattr $C$DW$197, DW_AT_decl_line(0x128)
     2173                            .dwattr $C$DW$197, DW_AT_decl_column(0x0d)
@@ -2458,11 +2480,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   41
     2185                    $C$DW$199       .dwtag  DW_TAG_member
     2186                            .dwattr $C$DW$199, DW_AT_type(*$C$DW$T$21)
     2187                            .dwattr $C$DW$199, DW_AT_name("pui8Data")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   42
-
     2188                            .dwattr $C$DW$199, DW_AT_TI_symbol_name("pui8Data")
     2189                            .dwattr $C$DW$199, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     2190                            .dwattr $C$DW$199, DW_AT_accessibility(DW_ACCESS_public)
@@ -2501,6 +2518,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   42
     2223                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
     2224                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2225                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x13e)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   43
+
     2226                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x01)
     2227                    
     2228                    
@@ -2518,11 +2540,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   42
     2240                    
     2241                    $C$DW$203       .dwtag  DW_TAG_member
     2242                            .dwattr $C$DW$203, DW_AT_type(*$C$DW$T$35)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   43
-
     2243                            .dwattr $C$DW$203, DW_AT_name("pui8Buffer")
     2244                            .dwattr $C$DW$203, DW_AT_TI_symbol_name("pui8Buffer")
     2245                            .dwattr $C$DW$203, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
@@ -2561,6 +2578,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   43
     2278                            .dwattr $C$DW$206, DW_AT_decl_line(0xd0)
     2279                            .dwattr $C$DW$206, DW_AT_decl_column(0x0d)
     2280                    
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   44
+
     2281                    $C$DW$207       .dwtag  DW_TAG_member
     2282                            .dwattr $C$DW$207, DW_AT_type(*$C$DW$T$19)
     2283                            .dwattr $C$DW$207, DW_AT_name("ui8Value")
@@ -2578,11 +2600,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   43
     2295                            .dwattr $C$DW$208, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
     2296                            .dwattr $C$DW$208, DW_AT_accessibility(DW_ACCESS_public)
     2297                            .dwattr $C$DW$208, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   44
-
     2298                            .dwattr $C$DW$208, DW_AT_decl_line(0xdb)
     2299                            .dwattr $C$DW$208, DW_AT_decl_column(0x16)
     2300                    
@@ -2621,6 +2638,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   44
     2333                            .dwattr $C$DW$210, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
     2334                            .dwattr $C$DW$210, DW_AT_decl_line(0x32)
     2335                            .dwattr $C$DW$210, DW_AT_decl_column(0x14)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   45
+
     2336                    
     2337                    $C$DW$211       .dwtag  DW_TAG_member
     2338                            .dwattr $C$DW$211, DW_AT_type(*$C$DW$T$19)
@@ -2638,11 +2660,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   44
     2350                            .dwattr $C$DW$212, DW_AT_TI_symbol_name("ui8State")
     2351                            .dwattr $C$DW$212, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
     2352                            .dwattr $C$DW$212, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   45
-
     2353                            .dwattr $C$DW$212, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
     2354                            .dwattr $C$DW$212, DW_AT_decl_line(0x3c)
     2355                            .dwattr $C$DW$212, DW_AT_decl_column(0x0d)
@@ -2681,6 +2698,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   45
     2388                            .dwattr $C$DW$216, DW_AT_type(*$C$DW$T$54)
     2389                            .dwattr $C$DW$216, DW_AT_name("uCommand")
     2390                            .dwattr $C$DW$216, DW_AT_TI_symbol_name("uCommand")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   46
+
     2391                            .dwattr $C$DW$216, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
     2392                            .dwattr $C$DW$216, DW_AT_accessibility(DW_ACCESS_public)
     2393                            .dwattr $C$DW$216, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
@@ -2698,11 +2720,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   45
     2405                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
     2406                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
     2407                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x66)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   46
-
     2408                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x01)
     2409                    
     2410                    
@@ -2741,6 +2758,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   46
     2443                    $C$DW$220       .dwtag  DW_TAG_member
     2444                            .dwattr $C$DW$220, DW_AT_type(*$C$DW$T$19)
     2445                            .dwattr $C$DW$220, DW_AT_name("ui8State")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   47
+
     2446                            .dwattr $C$DW$220, DW_AT_TI_symbol_name("ui8State")
     2447                            .dwattr $C$DW$220, DW_AT_data_member_location[DW_OP_plus_uconst 0x31]
     2448                            .dwattr $C$DW$220, DW_AT_accessibility(DW_ACCESS_public)
@@ -2758,11 +2780,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   46
     2460                            .dwattr $C$DW$221, DW_AT_decl_line(0x47)
     2461                            .dwattr $C$DW$221, DW_AT_decl_column(0x0d)
     2462                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   47
-
     2463                    $C$DW$222       .dwtag  DW_TAG_member
     2464                            .dwattr $C$DW$222, DW_AT_type(*$C$DW$T$19)
     2465                            .dwattr $C$DW$222, DW_AT_name("ui8NewAccelAfsSel")
@@ -2801,6 +2818,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   47
     2498                            .dwattr $C$DW$225, DW_AT_accessibility(DW_ACCESS_public)
     2499                            .dwattr $C$DW$225, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
     2500                            .dwattr $C$DW$225, DW_AT_decl_line(0x5d)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   48
+
     2501                            .dwattr $C$DW$225, DW_AT_decl_column(0x0d)
     2502                    
     2503                    $C$DW$226       .dwtag  DW_TAG_member
@@ -2818,11 +2840,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   47
     2515                            .dwattr $C$DW$227, DW_AT_name("pvCallbackData")
     2516                            .dwattr $C$DW$227, DW_AT_TI_symbol_name("pvCallbackData")
     2517                            .dwattr $C$DW$227, DW_AT_data_member_location[DW_OP_plus_uconst 0x54]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   48
-
     2518                            .dwattr $C$DW$227, DW_AT_accessibility(DW_ACCESS_public)
     2519                            .dwattr $C$DW$227, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
     2520                            .dwattr $C$DW$227, DW_AT_decl_line(0x68)
@@ -2861,6 +2878,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   48
     2553                    $C$DW$229       .dwtag  DW_TAG_member
     2554                            .dwattr $C$DW$229, DW_AT_type(*$C$DW$T$34)
     2555                            .dwattr $C$DW$229, DW_AT_name("psI2CInst")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   49
+
     2556                            .dwattr $C$DW$229, DW_AT_TI_symbol_name("psI2CInst")
     2557                            .dwattr $C$DW$229, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2558                            .dwattr $C$DW$229, DW_AT_accessibility(DW_ACCESS_public)
@@ -2878,11 +2900,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   48
     2570                            .dwattr $C$DW$230, DW_AT_decl_line(0x151)
     2571                            .dwattr $C$DW$230, DW_AT_decl_column(0x0e)
     2572                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   49
-
     2573                    $C$DW$231       .dwtag  DW_TAG_member
     2574                            .dwattr $C$DW$231, DW_AT_type(*$C$DW$T$22)
     2575                            .dwattr $C$DW$231, DW_AT_name("ui16Count")
@@ -2921,6 +2938,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   49
     2608                    $C$DW$T$98      .dwtag  DW_TAG_typedef
     2609                            .dwattr $C$DW$T$98, DW_AT_name("tI2CMRead16BE")
     2610                            .dwattr $C$DW$T$98, DW_AT_type(*$C$DW$T$45)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   50
+
     2611                            .dwattr $C$DW$T$98, DW_AT_language(DW_LANG_C)
     2612                            .dwattr $C$DW$T$98, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2613                            .dwattr $C$DW$T$98, DW_AT_decl_line(0x162)
@@ -2938,11 +2960,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   49
     2625                            .dwattr $C$DW$234, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2626                            .dwattr $C$DW$234, DW_AT_decl_line(0x170)
     2627                            .dwattr $C$DW$234, DW_AT_decl_column(0x14)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   50
-
     2628                    
     2629                    $C$DW$235       .dwtag  DW_TAG_member
     2630                            .dwattr $C$DW$235, DW_AT_type(*$C$DW$T$37)
@@ -2981,6 +2998,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   50
     2663                            .dwattr $C$DW$238, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
     2664                            .dwattr $C$DW$238, DW_AT_accessibility(DW_ACCESS_public)
     2665                            .dwattr $C$DW$238, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   51
+
     2666                            .dwattr $C$DW$238, DW_AT_decl_line(0x184)
     2667                            .dwattr $C$DW$238, DW_AT_decl_column(0x16)
     2668                    
@@ -2998,11 +3020,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   50
     2680                            .dwattr $C$DW$T$46, DW_AT_decl_line(0x16b)
     2681                            .dwattr $C$DW$T$46, DW_AT_decl_column(0x01)
     2682                            .dwendtag $C$DW$T$46
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   51
-
     2683                    
     2684                    $C$DW$T$99      .dwtag  DW_TAG_typedef
     2685                            .dwattr $C$DW$T$99, DW_AT_name("tI2CMWrite16BE")
@@ -3041,6 +3058,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   51
     2718                            .dwattr $C$DW$242, DW_AT_TI_symbol_name("fScaleA")
     2719                            .dwattr $C$DW$242, DW_AT_data_member_location[DW_OP_plus_uconst 0x28]
     2720                            .dwattr $C$DW$242, DW_AT_accessibility(DW_ACCESS_public)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   52
+
     2721                            .dwattr $C$DW$242, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/comp_dcm.h")
     2722                            .dwattr $C$DW$242, DW_AT_decl_line(0x3e)
     2723                            .dwattr $C$DW$242, DW_AT_decl_column(0x0b)
@@ -3058,11 +3080,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   51
     2735                    $C$DW$244       .dwtag  DW_TAG_member
     2736                            .dwattr $C$DW$244, DW_AT_type(*$C$DW$T$16)
     2737                            .dwattr $C$DW$244, DW_AT_name("fScaleM")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   52
-
     2738                            .dwattr $C$DW$244, DW_AT_TI_symbol_name("fScaleM")
     2739                            .dwattr $C$DW$244, DW_AT_data_member_location[DW_OP_plus_uconst 0x30]
     2740                            .dwattr $C$DW$244, DW_AT_accessibility(DW_ACCESS_public)
@@ -3101,6 +3118,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   52
     2773                            .dwattr $C$DW$247, DW_AT_decl_column(0x0b)
     2774                    
     2775                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/comp_dcm.h")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   53
+
     2776                            .dwattr $C$DW$T$49, DW_AT_decl_line(0x2f)
     2777                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x01)
     2778                            .dwendtag $C$DW$T$49
@@ -3118,11 +3140,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   52
     2790                            .dwattr $C$DW$T$51, DW_AT_byte_size(0x18)
     2791                    $C$DW$248       .dwtag  DW_TAG_member
     2792                            .dwattr $C$DW$248, DW_AT_type(*$C$DW$T$10)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   53
-
     2793                            .dwattr $C$DW$248, DW_AT_name("fd")
     2794                            .dwattr $C$DW$248, DW_AT_TI_symbol_name("fd")
     2795                            .dwattr $C$DW$248, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
@@ -3161,6 +3178,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   53
     2828                            .dwattr $C$DW$251, DW_AT_decl_line(0x5f)
     2829                            .dwattr $C$DW$251, DW_AT_decl_column(0x16)
     2830                    
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   54
+
     2831                    $C$DW$252       .dwtag  DW_TAG_member
     2832                            .dwattr $C$DW$252, DW_AT_type(*$C$DW$T$50)
     2833                            .dwattr $C$DW$252, DW_AT_name("buff_stop")
@@ -3178,11 +3200,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   53
     2845                            .dwattr $C$DW$253, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
     2846                            .dwattr $C$DW$253, DW_AT_accessibility(DW_ACCESS_public)
     2847                            .dwattr $C$DW$253, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   54
-
     2848                            .dwattr $C$DW$253, DW_AT_decl_line(0x61)
     2849                            .dwattr $C$DW$253, DW_AT_decl_column(0x16)
     2850                    
@@ -3221,6 +3238,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   54
     2883                            .dwattr $C$DW$255, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
     2884                            .dwattr $C$DW$255, DW_AT_decl_line(0x5d)
     2885                            .dwattr $C$DW$255, DW_AT_decl_column(0x15)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   55
+
     2886                    
     2887                    $C$DW$256       .dwtag  DW_TAG_member
     2888                            .dwattr $C$DW$256, DW_AT_type(*$C$DW$T$53)
@@ -3238,11 +3260,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   54
     2900                            .dwendtag $C$DW$T$54
     2901                    
     2902                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   55
-
     2903                    $C$DW$T$56      .dwtag  DW_TAG_union_type
     2904                            .dwattr $C$DW$T$56, DW_AT_byte_size(0x14)
     2905                    $C$DW$257       .dwtag  DW_TAG_member
@@ -3281,6 +3298,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   55
     2938                            .dwendtag $C$DW$T$56
     2939                    
     2940                    
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   56
+
     2941                    $C$DW$T$58      .dwtag  DW_TAG_structure_type
     2942                            .dwattr $C$DW$T$58, DW_AT_name("HeapRegion")
     2943                            .dwattr $C$DW$T$58, DW_AT_byte_size(0x08)
@@ -3298,11 +3320,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   55
     2955                            .dwattr $C$DW$261, DW_AT_type(*$C$DW$T$57)
     2956                            .dwattr $C$DW$261, DW_AT_name("xSizeInBytes")
     2957                            .dwattr $C$DW$261, DW_AT_TI_symbol_name("xSizeInBytes")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   56
-
     2958                            .dwattr $C$DW$261, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     2959                            .dwattr $C$DW$261, DW_AT_accessibility(DW_ACCESS_public)
     2960                            .dwattr $C$DW$261, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\portable.h")
@@ -3341,6 +3358,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   56
     2993                            .dwattr $C$DW$263, DW_AT_name("ReportName")
     2994                            .dwattr $C$DW$263, DW_AT_TI_symbol_name("ReportName")
     2995                            .dwattr $C$DW$263, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   57
+
     2996                            .dwattr $C$DW$263, DW_AT_accessibility(DW_ACCESS_public)
     2997                            .dwattr $C$DW$263, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Tasks/Task_Repo
     2998                            .dwattr $C$DW$263, DW_AT_decl_line(0x21)
@@ -3358,11 +3380,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   56
     3010                    
     3011                    $C$DW$265       .dwtag  DW_TAG_member
     3012                            .dwattr $C$DW$265, DW_AT_type(*$C$DW$T$24)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   57
-
     3013                            .dwattr $C$DW$265, DW_AT_name("ReportValue_1")
     3014                            .dwattr $C$DW$265, DW_AT_TI_symbol_name("ReportValue_1")
     3015                            .dwattr $C$DW$265, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
@@ -3401,6 +3418,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   57
     3048                            .dwattr $C$DW$T$103, DW_AT_type(*$C$DW$T$59)
     3049                            .dwattr $C$DW$T$103, DW_AT_language(DW_LANG_C)
     3050                            .dwattr $C$DW$T$103, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Tasks/Task_Re
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   58
+
     3051                            .dwattr $C$DW$T$103, DW_AT_decl_line(0x25)
     3052                            .dwattr $C$DW$T$103, DW_AT_decl_column(0x24)
     3053                    
@@ -3418,11 +3440,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   57
     3065                    $C$DW$269       .dwtag  DW_TAG_enumerator
     3066                            .dwattr $C$DW$269, DW_AT_name("Mathematica_List")
     3067                            .dwattr $C$DW$269, DW_AT_const_value(0x01)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   58
-
     3068                            .dwattr $C$DW$269, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Tasks/Task_Repo
     3069                            .dwattr $C$DW$269, DW_AT_decl_line(0x27)
     3070                            .dwattr $C$DW$269, DW_AT_decl_column(0x33)
@@ -3461,6 +3478,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   58
     3103                            .dwattr $C$DW$T$108, DW_AT_language(DW_LANG_C)
     3104                            .dwattr $C$DW$T$108, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/semphr.h")
     3105                            .dwattr $C$DW$T$108, DW_AT_decl_line(0x4f)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   59
+
     3106                            .dwattr $C$DW$T$108, DW_AT_decl_column(0x17)
     3107                    
     3108                    $C$DW$T$109     .dwtag  DW_TAG_typedef
@@ -3478,11 +3500,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   58
     3120                            .dwattr $C$DW$T$110, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/queue.h")
     3121                            .dwattr $C$DW$T$110, DW_AT_decl_line(0x66)
     3122                            .dwattr $C$DW$T$110, DW_AT_decl_column(0x10)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   59
-
     3123                    
     3124                    $C$DW$T$83      .dwtag  DW_TAG_typedef
     3125                            .dwattr $C$DW$T$83, DW_AT_name("TaskHandle_t")
@@ -3521,6 +3538,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   59
     3158                    $C$DW$272       .dwtag  DW_TAG_formal_parameter
     3159                            .dwattr $C$DW$272, DW_AT_type(*$C$DW$T$3)
     3160                    
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   60
+
     3161                            .dwendtag $C$DW$T$71
     3162                    
     3163                    $C$DW$T$72      .dwtag  DW_TAG_pointer_type
@@ -3538,11 +3560,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   59
     3175                    
     3176                    $C$DW$T$111     .dwtag  DW_TAG_subroutine_type
     3177                            .dwattr $C$DW$T$111, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   60
-
     3178                            .dwendtag $C$DW$T$111
     3179                    
     3180                    $C$DW$T$112     .dwtag  DW_TAG_pointer_type
@@ -3581,6 +3598,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   60
     3213                            .dwattr $C$DW$T$130, DW_AT_name("int_least8_t")
     3214                            .dwattr $C$DW$T$130, DW_AT_type(*$C$DW$T$129)
     3215                            .dwattr $C$DW$T$130, DW_AT_language(DW_LANG_C)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   61
+
     3216                            .dwattr $C$DW$T$130, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
     3217                            .dwattr $C$DW$T$130, DW_AT_decl_line(0x37)
     3218                            .dwattr $C$DW$T$130, DW_AT_decl_column(0x17)
@@ -3598,11 +3620,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   60
     3230                            .dwattr $C$DW$T$19, DW_AT_name("uint8_t")
     3231                            .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
     3232                            .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   61
-
     3233                            .dwattr $C$DW$T$19, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.
     3234                            .dwattr $C$DW$T$19, DW_AT_decl_line(0x2b)
     3235                            .dwattr $C$DW$T$19, DW_AT_decl_column(0x1c)
@@ -3641,6 +3658,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   61
     3268                    
     3269                            .dwendtag $C$DW$T$40
     3270                    
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   62
+
     3271                    
     3272                    $C$DW$T$43      .dwtag  DW_TAG_array_type
     3273                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$19)
@@ -3658,11 +3680,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   61
     3285                            .dwattr $C$DW$T$55, DW_AT_byte_size(0x06)
     3286                    $C$DW$277       .dwtag  DW_TAG_subrange_type
     3287                            .dwattr $C$DW$277, DW_AT_upper_bound(0x05)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   62
-
     3288                    
     3289                            .dwendtag $C$DW$T$55
     3290                    
@@ -3701,6 +3718,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   62
     3323                    
     3324                    $C$DW$T$133     .dwtag  DW_TAG_typedef
     3325                            .dwattr $C$DW$T$133, DW_AT_name("int16_t")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   63
+
     3326                            .dwattr $C$DW$T$133, DW_AT_type(*$C$DW$T$8)
     3327                            .dwattr $C$DW$T$133, DW_AT_language(DW_LANG_C)
     3328                            .dwattr $C$DW$T$133, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
@@ -3718,11 +3740,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   62
     3340                    $C$DW$T$135     .dwtag  DW_TAG_typedef
     3341                            .dwattr $C$DW$T$135, DW_AT_name("portSHORT")
     3342                            .dwattr $C$DW$T$135, DW_AT_type(*$C$DW$T$133)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   63
-
     3343                            .dwattr $C$DW$T$135, DW_AT_language(DW_LANG_C)
     3344                            .dwattr $C$DW$T$135, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/por
     3345                            .dwattr $C$DW$T$135, DW_AT_decl_line(0x64)
@@ -3761,6 +3778,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   63
     3378                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
     3379                            .dwattr $C$DW$T$10, DW_AT_name("int")
     3380                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   64
+
     3381                    
     3382                    $C$DW$T$87      .dwtag  DW_TAG_typedef
     3383                            .dwattr $C$DW$T$87, DW_AT_name("int32_t")
@@ -3778,11 +3800,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   63
     3395                            .dwattr $C$DW$T$88, DW_AT_decl_line(0x69)
     3396                            .dwattr $C$DW$T$88, DW_AT_decl_column(0x12)
     3397                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   64
-
     3398                    $C$DW$T$138     .dwtag  DW_TAG_const_type
     3399                            .dwattr $C$DW$T$138, DW_AT_type(*$C$DW$T$88)
     3400                    
@@ -3821,6 +3838,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   64
     3433                            .dwattr $C$DW$T$145, DW_AT_language(DW_LANG_C)
     3434                            .dwattr $C$DW$T$145, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
     3435                            .dwattr $C$DW$T$145, DW_AT_decl_line(0x4a)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   65
+
     3436                            .dwattr $C$DW$T$145, DW_AT_decl_column(0x17)
     3437                    
     3438                    $C$DW$T$146     .dwtag  DW_TAG_typedef
@@ -3838,11 +3860,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   64
     3450                            .dwattr $C$DW$T$147, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
     3451                            .dwattr $C$DW$T$147, DW_AT_decl_line(0x3c)
     3452                            .dwattr $C$DW$T$147, DW_AT_decl_column(0x17)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   65
-
     3453                    
     3454                    $C$DW$T$148     .dwtag  DW_TAG_typedef
     3455                            .dwattr $C$DW$T$148, DW_AT_name("portBASE_TYPE")
@@ -3881,6 +3898,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   65
     3488                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
     3489                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
     3490                    
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   66
+
     3491                    $C$DW$T$57      .dwtag  DW_TAG_typedef
     3492                            .dwattr $C$DW$T$57, DW_AT_name("size_t")
     3493                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$11)
@@ -3898,11 +3920,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   65
     3505                            .dwattr $C$DW$T$24, DW_AT_decl_column(0x1c)
     3506                    
     3507                    $C$DW$T$78      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   66
-
     3508                            .dwattr $C$DW$T$78, DW_AT_name("StackType_t")
     3509                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$24)
     3510                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
@@ -3941,6 +3958,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   66
     3543                            .dwattr $C$DW$T$154, DW_AT_decl_line(0x65)
     3544                            .dwattr $C$DW$T$154, DW_AT_decl_column(0x12)
     3545                    
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   67
+
     3546                    $C$DW$T$155     .dwtag  DW_TAG_volatile_type
     3547                            .dwattr $C$DW$T$155, DW_AT_type(*$C$DW$T$24)
     3548                    
@@ -3958,11 +3980,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   66
     3560                            .dwattr $C$DW$T$157, DW_AT_language(DW_LANG_C)
     3561                            .dwattr $C$DW$T$157, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
     3562                            .dwattr $C$DW$T$157, DW_AT_decl_line(0x4b)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   67
-
     3563                            .dwattr $C$DW$T$157, DW_AT_decl_column(0x16)
     3564                    
     3565                    $C$DW$T$25      .dwtag  DW_TAG_typedef
@@ -4001,6 +4018,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   67
     3598                            .dwattr $C$DW$T$171, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
     3599                            .dwattr $C$DW$T$171, DW_AT_decl_line(0x6e)
     3600                            .dwattr $C$DW$T$171, DW_AT_decl_column(0x0e)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   68
+
     3601                    
     3602                    $C$DW$T$13      .dwtag  DW_TAG_base_type
     3603                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
@@ -4018,11 +4040,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   67
     3615                            .dwattr $C$DW$T$172, DW_AT_language(DW_LANG_C)
     3616                            .dwattr $C$DW$T$172, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
     3617                            .dwattr $C$DW$T$172, DW_AT_decl_line(0x32)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   68
-
     3618                            .dwattr $C$DW$T$172, DW_AT_decl_column(0x21)
     3619                    
     3620                    $C$DW$T$173     .dwtag  DW_TAG_typedef
@@ -4061,6 +4078,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   68
     3653                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
     3654                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
     3655                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   69
+
     3656                    
     3657                    $C$DW$T$177     .dwtag  DW_TAG_typedef
     3658                            .dwattr $C$DW$T$177, DW_AT_name("uint64_t")
@@ -4078,11 +4100,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   68
     3670                            .dwattr $C$DW$T$178, DW_AT_decl_line(0x4f)
     3671                            .dwattr $C$DW$T$178, DW_AT_decl_column(0x16)
     3672                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   69
-
     3673                    $C$DW$T$179     .dwtag  DW_TAG_typedef
     3674                            .dwattr $C$DW$T$179, DW_AT_name("uint_least64_t")
     3675                            .dwattr $C$DW$T$179, DW_AT_type(*$C$DW$T$177)
@@ -4121,6 +4138,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   69
     3708                            .dwattr $C$DW$T$48, DW_AT_byte_size(0x24)
     3709                    $C$DW$280       .dwtag  DW_TAG_subrange_type
     3710                            .dwattr $C$DW$280, DW_AT_upper_bound(0x02)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   70
+
     3711                    
     3712                    $C$DW$281       .dwtag  DW_TAG_subrange_type
     3713                            .dwattr $C$DW$281, DW_AT_upper_bound(0x02)
@@ -4138,11 +4160,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   69
     3725                            .dwattr $C$DW$T$181, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F/por
     3726                            .dwattr $C$DW$T$181, DW_AT_decl_line(0x61)
     3727                            .dwattr $C$DW$T$181, DW_AT_decl_column(0x10)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   70
-
     3728                    
     3729                    $C$DW$T$17      .dwtag  DW_TAG_base_type
     3730                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
@@ -4181,6 +4198,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   70
     3763                            .dwattr $C$DW$282, DW_AT_name("__ap")
     3764                            .dwattr $C$DW$282, DW_AT_TI_symbol_name("__ap")
     3765                            .dwattr $C$DW$282, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   71
+
     3766                            .dwattr $C$DW$282, DW_AT_accessibility(DW_ACCESS_public)
     3767                            .dwattr $C$DW$282, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1
     3768                            .dwattr $C$DW$282, DW_AT_decl_line(0x38)
@@ -4198,11 +4220,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   70
     3780                            .dwattr $C$DW$T$188, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
     3781                            .dwattr $C$DW$T$188, DW_AT_decl_line(0x39)
     3782                            .dwattr $C$DW$T$188, DW_AT_decl_column(0x03)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   71
-
     3783                    
     3784                    
     3785                    $C$DW$T$65      .dwtag  DW_TAG_structure_type
@@ -4241,6 +4258,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   71
     3818                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
     3819                            .dwattr $C$DW$T$65, DW_AT_decl_line(0xcd)
     3820                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x10)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   72
+
     3821                            .dwendtag $C$DW$T$65
     3822                    
     3823                    $C$DW$T$189     .dwtag  DW_TAG_typedef
@@ -4258,11 +4280,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   71
     3835                    $C$DW$286       .dwtag  DW_TAG_member
     3836                            .dwattr $C$DW$286, DW_AT_type(*$C$DW$T$66)
     3837                            .dwattr $C$DW$286, DW_AT_name("xItemValue")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   72
-
     3838                            .dwattr $C$DW$286, DW_AT_TI_symbol_name("xItemValue")
     3839                            .dwattr $C$DW$286, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3840                            .dwattr $C$DW$286, DW_AT_accessibility(DW_ACCESS_public)
@@ -4301,6 +4318,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   72
     3873                            .dwattr $C$DW$289, DW_AT_decl_column(0x09)
     3874                    
     3875                    $C$DW$290       .dwtag  DW_TAG_member
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   73
+
     3876                            .dwattr $C$DW$290, DW_AT_type(*$C$DW$T$3)
     3877                            .dwattr $C$DW$290, DW_AT_name("pvContainer")
     3878                            .dwattr $C$DW$290, DW_AT_TI_symbol_name("pvContainer")
@@ -4318,11 +4340,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   72
     3890                    $C$DW$T$62      .dwtag  DW_TAG_typedef
     3891                            .dwattr $C$DW$T$62, DW_AT_name("ListItem_t")
     3892                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$68)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   73
-
     3893                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
     3894                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
     3895                            .dwattr $C$DW$T$62, DW_AT_decl_line(0xbf)
@@ -4361,6 +4378,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   73
     3928                            .dwattr $C$DW$292, DW_AT_decl_column(0x0b)
     3929                    
     3930                    $C$DW$293       .dwtag  DW_TAG_member
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   74
+
     3931                            .dwattr $C$DW$293, DW_AT_type(*$C$DW$T$24)
     3932                            .dwattr $C$DW$293, DW_AT_name("ulParameters")
     3933                            .dwattr $C$DW$293, DW_AT_TI_symbol_name("ulParameters")
@@ -4378,11 +4400,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   73
     3945                    $C$DW$T$80      .dwtag  DW_TAG_typedef
     3946                            .dwattr $C$DW$T$80, DW_AT_name("MemoryRegion_t")
     3947                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$69)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   74
-
     3948                            .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
     3949                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     3950                            .dwattr $C$DW$T$80, DW_AT_decl_line(0x94)
@@ -4421,6 +4438,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   74
     3983                            .dwattr $C$DW$296, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
     3984                            .dwattr $C$DW$296, DW_AT_decl_line(0xc5)
     3985                            .dwattr $C$DW$296, DW_AT_decl_column(0x2a)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   75
+
     3986                    
     3987                    $C$DW$297       .dwtag  DW_TAG_member
     3988                            .dwattr $C$DW$297, DW_AT_type(*$C$DW$T$67)
@@ -4438,11 +4460,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   74
     4000                            .dwendtag $C$DW$T$70
     4001                    
     4002                    $C$DW$T$64      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   75
-
     4003                            .dwattr $C$DW$T$64, DW_AT_name("MiniListItem_t")
     4004                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$70)
     4005                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
@@ -4481,6 +4498,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   75
     4038                            .dwattr $C$DW$300, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     4039                            .dwattr $C$DW$300, DW_AT_accessibility(DW_ACCESS_public)
     4040                            .dwattr $C$DW$300, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   76
+
     4041                            .dwattr $C$DW$300, DW_AT_decl_line(0x9d)
     4042                            .dwattr $C$DW$300, DW_AT_decl_column(0x0b)
     4043                    
@@ -4498,11 +4520,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   75
     4055                            .dwattr $C$DW$302, DW_AT_type(*$C$DW$T$61)
     4056                            .dwattr $C$DW$302, DW_AT_name("uxPriority")
     4057                            .dwattr $C$DW$302, DW_AT_TI_symbol_name("uxPriority")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   76
-
     4058                            .dwattr $C$DW$302, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
     4059                            .dwattr $C$DW$302, DW_AT_accessibility(DW_ACCESS_public)
     4060                            .dwattr $C$DW$302, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
@@ -4541,6 +4558,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   76
     4093                            .dwattr $C$DW$T$190, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     4094                            .dwattr $C$DW$T$190, DW_AT_decl_line(0xa2)
     4095                            .dwattr $C$DW$T$190, DW_AT_decl_column(0x03)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   77
+
     4096                    
     4097                    
     4098                    $C$DW$T$86      .dwtag  DW_TAG_structure_type
@@ -4558,11 +4580,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   76
     4110                    
     4111                    $C$DW$306       .dwtag  DW_TAG_member
     4112                            .dwattr $C$DW$306, DW_AT_type(*$C$DW$T$76)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   77
-
     4113                            .dwattr $C$DW$306, DW_AT_name("pcTaskName")
     4114                            .dwattr $C$DW$306, DW_AT_TI_symbol_name("pcTaskName")
     4115                            .dwattr $C$DW$306, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
@@ -4601,6 +4618,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   77
     4148                            .dwattr $C$DW$309, DW_AT_decl_line(0xac)
     4149                            .dwattr $C$DW$309, DW_AT_decl_column(0x0e)
     4150                    
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   78
+
     4151                    $C$DW$310       .dwtag  DW_TAG_member
     4152                            .dwattr $C$DW$310, DW_AT_type(*$C$DW$T$61)
     4153                            .dwattr $C$DW$310, DW_AT_name("uxBasePriority")
@@ -4618,11 +4640,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   77
     4165                            .dwattr $C$DW$311, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
     4166                            .dwattr $C$DW$311, DW_AT_accessibility(DW_ACCESS_public)
     4167                            .dwattr $C$DW$311, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   78
-
     4168                            .dwattr $C$DW$311, DW_AT_decl_line(0xae)
     4169                            .dwattr $C$DW$311, DW_AT_decl_column(0x0b)
     4170                    
@@ -4661,6 +4678,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   78
     4203                            .dwattr $C$DW$313, DW_AT_accessibility(DW_ACCESS_public)
     4204                            .dwattr $C$DW$313, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     4205                            .dwattr $C$DW$313, DW_AT_decl_line(0x88)
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   79
+
     4206                            .dwattr $C$DW$313, DW_AT_decl_column(0x0d)
     4207                    
     4208                    $C$DW$314       .dwtag  DW_TAG_member
@@ -4678,11 +4700,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   78
     4220                            .dwattr $C$DW$T$89, DW_AT_decl_column(0x10)
     4221                            .dwendtag $C$DW$T$89
     4222                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   79
-
     4223                    $C$DW$T$192     .dwtag  DW_TAG_typedef
     4224                            .dwattr $C$DW$T$192, DW_AT_name("TimeOut_t")
     4225                            .dwattr $C$DW$T$192, DW_AT_type(*$C$DW$T$89)
@@ -4721,6 +4738,11 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   79
     4258                            .dwcfi  undefined, 65
     4259                            .dwcfi  undefined, 66
     4260                            .dwcfi  undefined, 67
+TI ARM Assembler PC v15.12.1 Thu Nov 03 13:01:19 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+MPU9150AccelerometerManager_Task.asm                                 PAGE   80
+
     4261                            .dwcfi  undefined, 68
     4262                            .dwcfi  undefined, 69
     4263                            .dwcfi  undefined, 70
@@ -4738,11 +4760,6 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   79
     4275                            .dwcfi  same_value, 82
     4276                            .dwcfi  same_value, 83
     4277                            .dwcfi  same_value, 84
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:54 2016
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-MPU9150AccelerometerManager_Task.asm                                 PAGE   80
-
     4278                            .dwcfi  same_value, 85
     4279                            .dwcfi  same_value, 86
     4280                            .dwcfi  same_value, 87
@@ -4762,8 +4779,8 @@ MPU9150AccelerometerManager_Task.asm                                 PAGE   80
 Thumb2 Statistics
 --------------------------
 Number of Thumb2 ins converted to Thumb = 0 (0%)
-Number of Thumb ins in input = 206 (82%)
-Number of Thumb2 ins encoded as Thumb2 = 43 (100%)
+Number of Thumb ins in input = 207 (83%)
+Number of Thumb2 ins encoded as Thumb2 = 42 (100%)
 Number of Thumb2 ins converted to 2 OPND Thumb = 5
 
 

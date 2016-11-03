@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-;* Date/Time created: Tue Nov 01 14:05:54 2016                                *
+;* Date/Time created: Thu Nov 03 12:53:12 2016                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --quiet --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -351,7 +351,7 @@ $C$DW$60	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$60, DW_AT_decl_line(0x2e)
 	.dwattr $C$DW$60, DW_AT_decl_column(0x0a)
 
-;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0036012 
+;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0326412 
 	.sect	".text:I2CMWrite"
 	.clink
 	.thumbfunc I2CMWrite
@@ -1482,7 +1482,7 @@ $C$DW$154	.dwtag  DW_TAG_TI_branch
 ;*   BEGIN LOOP ||$C$L4||
 ;*
 ;*   Loop source line                : 132
-;*   Loop closing brace source line  : 171
+;*   Loop closing brace source line  : 170
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
@@ -1557,7 +1557,7 @@ $C$DW$156	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |160| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |160| 
 	.dwpsn	file "../Tasks/Task_gyro.c",line 161,column 3,is_stmt,isa 1
-        MOVS      A1, #1                ; [DPU_3_PIPE] |161| 
+        MOVS      A1, #120              ; [DPU_3_PIPE] |161| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |161| 
 	.dwpsn	file "../Tasks/Task_gyro.c",line 162,column 3,is_stmt,isa 1
         VLDR.32   S0, [SP, #28]         ; [DPU_LIN_PIPE] |162| 
@@ -1591,7 +1591,7 @@ $C$DW$157	.dwtag  DW_TAG_TI_branch
         BL        xQueueGenericSend     ; [DPU_3_PIPE] |167| 
         ; CALL OCCURS {xQueueGenericSend }  ; [] |167| 
 	.dwpsn	file "../Tasks/Task_gyro.c",line 169,column 3,is_stmt,isa 1
-        MOV       A1, #2000             ; [DPU_3_PIPE] |169| 
+        MOV       A1, #1000             ; [DPU_3_PIPE] |169| 
 $C$DW$158	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$158, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$158, DW_AT_name("vTaskDelay")
@@ -1604,7 +1604,7 @@ $C$DW$158	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L4||}      ; [] |132| 
 ;* --------------------------------------------------------------------------*
 	.dwattr $C$DW$149, DW_AT_TI_end_file("../Tasks/Task_gyro.c")
-	.dwattr $C$DW$149, DW_AT_TI_end_line(0xac)
+	.dwattr $C$DW$149, DW_AT_TI_end_line(0xab)
 	.dwattr $C$DW$149, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$149

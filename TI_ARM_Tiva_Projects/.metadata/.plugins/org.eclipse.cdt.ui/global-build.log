@@ -477,3 +477,100 @@ warning: section Proj2_Magnetometer.out(.text) was padded by 2 to a size of
 ' '
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Main_Base.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
+"../Main_Base.c", line 43: warning #552-D: variable "Status" was set but never used
+'Finished building: ../Main_Base.c'
+' '
+'Building file: ../Tasks/MPU9150AccelerometerManager_Task.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/MPU9150AccelerometerManager_Task.d" --obj_directory="Tasks"  "../Tasks/MPU9150AccelerometerManager_Task.c"
+'Finished building: ../Tasks/MPU9150AccelerometerManager_Task.c'
+' '
+'Building file: ../Tasks/Task_gyro.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_gyro.d" --obj_directory="Tasks"  "../Tasks/Task_gyro.c"
+'Finished building: ../Tasks/Task_gyro.c'
+' '
+'Building target: Proj2_Magnetometer.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing -z -m"Proj2_Magnetometer.map" --stack_size=0x0800 --heap_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Proj2_Magnetometer_linkInfo.xml" --rom_model -o "Proj2_Magnetometer.out" "./FreeRTOS_TM4C1294_Base_Startup.obj" "./Main_Base.obj" "./heap_2.obj" "./Drivers/Processor_Initialization_TM4C1294.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM4F/port.obj" "./Source/portable/CCS/ARM_CM4F/portasm.obj" "./Tasks/MPU9150AccelerometerManager_Task.obj" "./Tasks/Magnetometer.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_I2C7_Handler.obj" "./Tasks/Task_ReportData.obj" "./Tasks/Task_ReportTime.obj" "./Tasks/Task_gyro.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 
+'Finished building target: Proj2_Magnetometer.out'
+' '
+'Invoking: ARM Hex Utility'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armhex"  -o "Proj2_Magnetometer.hex"  "Proj2_Magnetometer.out" 
+Translating to Extended Tektronix format...
+   "Proj2_Magnetometer.out" .intvecs ==> .intvecs
+   "Proj2_Magnetometer.out" .text ==> .text
+   "Proj2_Magnetometer.out" .const ==> .const
+   "Proj2_Magnetometer.out" .cinit ==> .cinit
+warning: section Proj2_Magnetometer.out(.text) was padded by 2 to a size of
+   20080 to satisfy the specified memory width of 4
+'Finished building: Proj2_Magnetometer.hex'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Tasks/MPU9150AccelerometerManager_Task.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/MPU9150AccelerometerManager_Task.d" --obj_directory="Tasks"  "../Tasks/MPU9150AccelerometerManager_Task.c"
+'Finished building: ../Tasks/MPU9150AccelerometerManager_Task.c'
+' '
+'Building file: ../Tasks/Task_gyro.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_gyro.d" --obj_directory="Tasks"  "../Tasks/Task_gyro.c"
+'Finished building: ../Tasks/Task_gyro.c'
+' '
+'Building target: Proj2_Magnetometer.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing -z -m"Proj2_Magnetometer.map" --stack_size=0x0800 --heap_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Proj2_Magnetometer_linkInfo.xml" --rom_model -o "Proj2_Magnetometer.out" "./FreeRTOS_TM4C1294_Base_Startup.obj" "./Main_Base.obj" "./heap_2.obj" "./Drivers/Processor_Initialization_TM4C1294.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM4F/port.obj" "./Source/portable/CCS/ARM_CM4F/portasm.obj" "./Tasks/MPU9150AccelerometerManager_Task.obj" "./Tasks/Magnetometer.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_I2C7_Handler.obj" "./Tasks/Task_ReportData.obj" "./Tasks/Task_ReportTime.obj" "./Tasks/Task_gyro.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 
+'Finished building target: Proj2_Magnetometer.out'
+' '
+'Invoking: ARM Hex Utility'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armhex"  -o "Proj2_Magnetometer.hex"  "Proj2_Magnetometer.out" 
+Translating to Extended Tektronix format...
+   "Proj2_Magnetometer.out" .intvecs ==> .intvecs
+   "Proj2_Magnetometer.out" .text ==> .text
+   "Proj2_Magnetometer.out" .const ==> .const
+   "Proj2_Magnetometer.out" .cinit ==> .cinit
+warning: section Proj2_Magnetometer.out(.text) was padded by 2 to a size of
+   20080 to satisfy the specified memory width of 4
+'Finished building: Proj2_Magnetometer.hex'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Proj2_Magnetometer ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Tasks/MPU9150AccelerometerManager_Task.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/MPU9150AccelerometerManager_Task.d" --obj_directory="Tasks"  "../Tasks/MPU9150AccelerometerManager_Task.c"
+'Finished building: ../Tasks/MPU9150AccelerometerManager_Task.c'
+' '
+'Building target: Proj2_Magnetometer.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing -z -m"Proj2_Magnetometer.map" --stack_size=0x0800 --heap_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Proj2_Magnetometer_linkInfo.xml" --rom_model -o "Proj2_Magnetometer.out" "./FreeRTOS_TM4C1294_Base_Startup.obj" "./Main_Base.obj" "./heap_2.obj" "./Drivers/Processor_Initialization_TM4C1294.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM4F/port.obj" "./Source/portable/CCS/ARM_CM4F/portasm.obj" "./Tasks/MPU9150AccelerometerManager_Task.obj" "./Tasks/Magnetometer.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_I2C7_Handler.obj" "./Tasks/Task_ReportData.obj" "./Tasks/Task_ReportTime.obj" "./Tasks/Task_gyro.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/TI_CodeComposer/TivaWare/driverlib/ccs/Debug/driverlib.lib" -l"C:/TI_CodeComposer/TivaWare/sensorlib/ccs/Debug/sensorlib.lib" 
+'Finished building target: Proj2_Magnetometer.out'
+' '
+'Invoking: ARM Hex Utility'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armhex"  -o "Proj2_Magnetometer.hex"  "Proj2_Magnetometer.out" 
+Translating to Extended Tektronix format...
+   "Proj2_Magnetometer.out" .intvecs ==> .intvecs
+   "Proj2_Magnetometer.out" .text ==> .text
+   "Proj2_Magnetometer.out" .const ==> .const
+   "Proj2_Magnetometer.out" .cinit ==> .cinit
+warning: section Proj2_Magnetometer.out(.text) was padded by 2 to a size of
+   20080 to satisfy the specified memory width of 4
+'Finished building: Proj2_Magnetometer.hex'
+' '
+
+**** Build Finished ****

@@ -1,11 +1,11 @@
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-       3                    ;* Date/Time created: Tue Nov 01 14:05:54 2016                                *
+       3                    ;* Date/Time created: Thu Nov 03 12:53:12 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ Task_gyro.asm                                                        PAGE    1
       53                            .dwendtag $C$DW$1
       54                    
       55                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    2
@@ -118,7 +118,7 @@ Task_gyro.asm                                                        PAGE    2
      108                            .dwattr $C$DW$22, DW_AT_declaration
      109                            .dwattr $C$DW$22, DW_AT_external
      110                            .dwattr $C$DW$22, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/mpu9150.h")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    3
@@ -178,7 +178,7 @@ Task_gyro.asm                                                        PAGE    3
      163                            .dwattr $C$DW$35, DW_AT_TI_symbol_name("MPU9150DataRead")
      164                            .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$25)
      165                            .dwattr $C$DW$35, DW_AT_declaration
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    4
@@ -238,7 +238,7 @@ Task_gyro.asm                                                        PAGE    4
      218                            .dwattr $C$DW$45, DW_AT_name("vTaskDelay")
      219                            .dwattr $C$DW$45, DW_AT_TI_symbol_name("vTaskDelay")
      220                            .dwattr $C$DW$45, DW_AT_declaration
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    5
@@ -298,7 +298,7 @@ Task_gyro.asm                                                        PAGE    5
      273                    
      274                    $C$DW$54        .dwtag  DW_TAG_variable
      275                            .dwattr $C$DW$54, DW_AT_name("xPortSysTickCount")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    6
@@ -358,7 +358,7 @@ Task_gyro.asm                                                        PAGE    6
      328                            .dwattr $C$DW$58, DW_AT_decl_column(0x08)
      329                    
      330                            .global fGyroz
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    7
@@ -418,7 +418,7 @@ Task_gyro.asm                                                        PAGE    7
      383                    
      384                    $C$DW$63        .dwtag  DW_TAG_formal_parameter
      385                            .dwattr $C$DW$63, DW_AT_name("ui8Addr")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    8
@@ -478,7 +478,7 @@ Task_gyro.asm                                                        PAGE    8
      438                            .dwattr $C$DW$68, DW_AT_location[DW_OP_breg13 24]
      439                    
      440                    $C$DW$69        .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE    9
@@ -538,7 +538,7 @@ Task_gyro.asm                                                        PAGE    9
      493 00000034 BD00              POP       {PC}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
      494                            .dwcfi  cfa_offset, 0
      495                            ; BRANCH OCCURS                  ; [] 
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   10
@@ -598,7 +598,7 @@ Task_gyro.asm                                                        PAGE   10
      548                    
      549                    $C$DW$79        .dwtag  DW_TAG_formal_parameter
      550                            .dwattr $C$DW$79, DW_AT_name("pui8ReadData")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   11
@@ -658,7 +658,7 @@ Task_gyro.asm                                                        PAGE   11
      603                            .dwattr $C$DW$84, DW_AT_location[DW_OP_breg13 28]
      604                    
      605                    $C$DW$85        .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   12
@@ -718,7 +718,7 @@ Task_gyro.asm                                                        PAGE   12
      658                            .dwendentry
      659                            .dwendtag $C$DW$74
      660                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   13
@@ -778,7 +778,7 @@ Task_gyro.asm                                                        PAGE   13
      713                    
      714                    $C$DW$95        .dwtag  DW_TAG_formal_parameter
      715                            .dwattr $C$DW$95, DW_AT_name("pfnCallback")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   14
@@ -838,7 +838,7 @@ Task_gyro.asm                                                        PAGE   14
      768                            .dwattr $C$DW$100, DW_AT_location[DW_OP_breg13 36]
      769                    
      770 00000006 9309              STR       A4, [SP, #36]         ; [DPU_3_PIPE] |493|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   15
@@ -898,7 +898,7 @@ Task_gyro.asm                                                        PAGE   15
      823                            .dwattr $C$DW$103, DW_AT_high_pc(0x00)
      824                            .dwattr $C$DW$103, DW_AT_TI_symbol_name("I2CMReadBatched")
      825                            .dwattr $C$DW$103, DW_AT_external
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   16
@@ -958,7 +958,7 @@ Task_gyro.asm                                                        PAGE   16
      878                    
      879                    $C$DW$111       .dwtag  DW_TAG_formal_parameter
      880                            .dwattr $C$DW$111, DW_AT_name("ui16ReadBatchSize")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   17
@@ -1018,7 +1018,7 @@ Task_gyro.asm                                                        PAGE   17
      933                            .dwattr $C$DW$116, DW_AT_location[DW_OP_breg13 32]
      934                    
      935                    $C$DW$117       .dwtag  DW_TAG_variable
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   18
@@ -1078,7 +1078,7 @@ Task_gyro.asm                                                        PAGE   18
      988 00000000                   .thumb
      989                            .global I2CMReadModifyWrite16BE
      990                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   19
@@ -1138,7 +1138,7 @@ Task_gyro.asm                                                        PAGE   19
     1043                    
     1044                    $C$DW$127       .dwtag  DW_TAG_formal_parameter
     1045                            .dwattr $C$DW$127, DW_AT_name("pfnCallback")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   20
@@ -1198,7 +1198,7 @@ Task_gyro.asm                                                        PAGE   20
     1098                            .dwattr $C$DW$132, DW_AT_location[DW_OP_breg13 28]
     1099                    
     1100 00000006 9307              STR       A4, [SP, #28]         ; [DPU_3_PIPE] |526|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   21
@@ -1258,7 +1258,7 @@ Task_gyro.asm                                                        PAGE   21
     1153 00000000                   .thumb
     1154                            .global GyroInit
     1155                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   22
@@ -1318,7 +1318,7 @@ Task_gyro.asm                                                        PAGE   22
     1208                            .dwpsn  file "../Tasks/Task_gyro.c",line 55,column 4,is_stmt,isa 1
     1209                    $C$DW$138       .dwtag  DW_TAG_TI_branch
     1210                            .dwattr $C$DW$138, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   23
@@ -1378,7 +1378,7 @@ Task_gyro.asm                                                        PAGE   23
     1263 00000036 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |75|  ; [ORIG 16-BIT INS]
     1264 00000038 7008              STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |75|  ; [ORIG 16-BIT INS]
     1265                            .dwpsn  file "../Tasks/Task_gyro.c",line 80,column 4,is_stmt,isa 1
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   24
@@ -1438,7 +1438,7 @@ Task_gyro.asm                                                        PAGE   24
     1318                            .dwattr $C$DW$135, DW_AT_TI_end_line(0x5c)
     1319                            .dwattr $C$DW$135, DW_AT_TI_end_column(0x01)
     1320                            .dwendentry
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   25
@@ -1498,7 +1498,7 @@ Task_gyro.asm                                                        PAGE   25
     1373                            .dwattr $C$DW$146, DW_AT_type(*$C$DW$T$3)
     1374                            .dwattr $C$DW$146, DW_AT_location[DW_OP_breg13 0]
     1375                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   26
@@ -1558,7 +1558,7 @@ Task_gyro.asm                                                        PAGE   26
     1428                            .dwattr $C$DW$150, DW_AT_TI_symbol_name("pvParameters")
     1429                            .dwattr $C$DW$150, DW_AT_type(*$C$DW$T$3)
     1430                            .dwattr $C$DW$150, DW_AT_location[DW_OP_reg0]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   27
@@ -1617,8 +1617,8 @@ Task_gyro.asm                                                        PAGE   27
     1482                    ;*   BEGIN LOOP ||$C$L4||
     1483                    ;*
     1484                    ;*   Loop source line                : 132
-    1485                    ;*   Loop closing brace source line  : 171
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+    1485                    ;*   Loop closing brace source line  : 170
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   28
@@ -1678,7 +1678,7 @@ Task_gyro.asm                                                        PAGE   28
     1538 000000aa 0A00ED91          VLDR.32   S0, [A2, #0]          ; [DPU_LIN_PIPE] |152|  ; [KEEP 32-BIT INS]
     1539 000000ae 4820              LDR       A1, $C$FL1            ; [DPU_3_PIPE] |152|  ; [ORIG 16-BIT INS]
     1540 000000b0 0A90EE00          VMOV      S1, A1                ; [DPU_LIN_PIPE] |152|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   29
@@ -1702,7 +1702,7 @@ Task_gyro.asm                                                        PAGE   29
     1557 000000e2 6800              LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |160|  ; [ORIG 16-BIT INS]
     1558 000000e4 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |160|  ; [ORIG 16-BIT INS]
     1559                            .dwpsn  file "../Tasks/Task_gyro.c",line 161,column 3,is_stmt,isa 1
-    1560 000000e6 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |161|  ; [ORIG 16-BIT INS]
+    1560 000000e6 2078              MOVS      A1, #120              ; [DPU_3_PIPE] |161|  ; [ORIG 16-BIT INS]
     1561 000000e8 9002              STR       A1, [SP, #8]          ; [DPU_3_PIPE] |161|  ; [ORIG 16-BIT INS]
     1562                            .dwpsn  file "../Tasks/Task_gyro.c",line 162,column 3,is_stmt,isa 1
     1563 000000ea 0A07ED9D          VLDR.32   S0, [SP, #28]         ; [DPU_LIN_PIPE] |162|  ; [KEEP 32-BIT INS]
@@ -1736,9 +1736,9 @@ Task_gyro.asm                                                        PAGE   29
     1591 00000122 FFFEF7FF!         BL        xQueueGenericSend     ; [DPU_3_PIPE] |167|  ; [KEEP 32-BIT INS]
     1592                            ; CALL OCCURS {xQueueGenericSend }  ; [] |167| 
     1593                            .dwpsn  file "../Tasks/Task_gyro.c",line 169,column 3,is_stmt,isa 1
-    1594 00000126 60FAF44F          MOV       A1, #2000             ; [DPU_3_PIPE] |169|  ; [KEEP 32-BIT INS]
+    1594 00000126 707AF44F          MOV       A1, #1000             ; [DPU_3_PIPE] |169|  ; [KEEP 32-BIT INS]
     1595                    $C$DW$158       .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   30
@@ -1754,7 +1754,7 @@ Task_gyro.asm                                                        PAGE   30
     1604                            ; BRANCH OCCURS {||$C$L4||}      ; [] |132| 
     1605                    ;* --------------------------------------------------------------------------*
     1606                            .dwattr $C$DW$149, DW_AT_TI_end_file("../Tasks/Task_gyro.c")
-    1607                            .dwattr $C$DW$149, DW_AT_TI_end_line(0xac)
+    1607                            .dwattr $C$DW$149, DW_AT_TI_end_line(0xab)
     1608                            .dwattr $C$DW$149, DW_AT_TI_end_column(0x01)
     1609                            .dwendentry
     1610                            .dwendtag $C$DW$149
@@ -1798,7 +1798,7 @@ Task_gyro.asm                                                        PAGE   30
     1648                            .global xQueueGenericSend
     1649                            .global I2C7_Instance_Ref
     1650                            .global isMPU9150Initialized
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   31
@@ -1858,7 +1858,7 @@ Task_gyro.asm                                                        PAGE   31
     1703                            .dwattr $C$DW$160, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     1704                            .dwattr $C$DW$160, DW_AT_decl_line(0x73)
     1705                            .dwattr $C$DW$160, DW_AT_decl_column(0x02)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   32
@@ -1918,7 +1918,7 @@ Task_gyro.asm                                                        PAGE   32
     1758                    $C$DW$166       .dwtag  DW_TAG_enumerator
     1759                            .dwattr $C$DW$166, DW_AT_name("eIncrement")
     1760                            .dwattr $C$DW$166, DW_AT_const_value(0x02)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   33
@@ -1978,7 +1978,7 @@ Task_gyro.asm                                                        PAGE   33
     1813                            .dwattr $C$DW$171, DW_AT_decl_line(0xb7)
     1814                            .dwattr $C$DW$171, DW_AT_decl_column(0x02)
     1815                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   34
@@ -2038,7 +2038,7 @@ Task_gyro.asm                                                        PAGE   34
     1868                            .dwattr $C$DW$175, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     1869                            .dwattr $C$DW$175, DW_AT_decl_line(0x5b)
     1870                            .dwattr $C$DW$175, DW_AT_decl_column(0x0e)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   35
@@ -2098,7 +2098,7 @@ Task_gyro.asm                                                        PAGE   35
     1923                            .dwattr $C$DW$T$29, DW_AT_decl_line(0x48)
     1924                            .dwattr $C$DW$T$29, DW_AT_decl_column(0x01)
     1925                            .dwendtag $C$DW$T$29
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   36
@@ -2158,7 +2158,7 @@ Task_gyro.asm                                                        PAGE   36
     1978                    $C$DW$185       .dwtag  DW_TAG_member
     1979                            .dwattr $C$DW$185, DW_AT_type(*$C$DW$T$19)
     1980                            .dwattr $C$DW$185, DW_AT_name("ui8RxDMA")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   37
@@ -2218,7 +2218,7 @@ Task_gyro.asm                                                        PAGE   37
     2033                            .dwattr $C$DW$190, DW_AT_accessibility(DW_ACCESS_public)
     2034                            .dwattr $C$DW$190, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2035                            .dwattr $C$DW$190, DW_AT_decl_line(0xac)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   38
@@ -2278,7 +2278,7 @@ Task_gyro.asm                                                        PAGE   38
     2088                    $C$DW$194       .dwtag  DW_TAG_member
     2089                            .dwattr $C$DW$194, DW_AT_type(*$C$DW$T$19)
     2090                            .dwattr $C$DW$194, DW_AT_name("ui8Addr")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   39
@@ -2338,7 +2338,7 @@ Task_gyro.asm                                                        PAGE   39
     2143                    $C$DW$T$91      .dwtag  DW_TAG_typedef
     2144                            .dwattr $C$DW$T$91, DW_AT_name("tI2CMReadModifyWrite16")
     2145                            .dwattr $C$DW$T$91, DW_AT_type(*$C$DW$T$36)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   40
@@ -2398,7 +2398,7 @@ Task_gyro.asm                                                        PAGE   40
     2198                    $C$DW$203       .dwtag  DW_TAG_member
     2199                            .dwattr $C$DW$203, DW_AT_type(*$C$DW$T$28)
     2200                            .dwattr $C$DW$203, DW_AT_name("pfnCallback")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   41
@@ -2458,7 +2458,7 @@ Task_gyro.asm                                                        PAGE   41
     2253                    
     2254                    $C$DW$207       .dwtag  DW_TAG_member
     2255                            .dwattr $C$DW$207, DW_AT_type(*$C$DW$T$19)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   42
@@ -2518,7 +2518,7 @@ Task_gyro.asm                                                        PAGE   42
     2308                            .dwattr $C$DW$212, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
     2309                            .dwattr $C$DW$212, DW_AT_accessibility(DW_ACCESS_public)
     2310                            .dwattr $C$DW$212, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   43
@@ -2578,7 +2578,7 @@ Task_gyro.asm                                                        PAGE   43
     2363                            .dwattr $C$DW$216, DW_AT_TI_symbol_name("pui8Data")
     2364                            .dwattr $C$DW$216, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
     2365                            .dwattr $C$DW$216, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   44
@@ -2638,7 +2638,7 @@ Task_gyro.asm                                                        PAGE   44
     2418                            .dwattr $C$DW$220, DW_AT_name("psI2CInst")
     2419                            .dwattr $C$DW$220, DW_AT_TI_symbol_name("psI2CInst")
     2420                            .dwattr $C$DW$220, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   45
@@ -2698,7 +2698,7 @@ Task_gyro.asm                                                        PAGE   45
     2473                            .dwattr $C$DW$225, DW_AT_decl_line(0x4d)
     2474                            .dwattr $C$DW$225, DW_AT_decl_column(0x0d)
     2475                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   46
@@ -2758,7 +2758,7 @@ Task_gyro.asm                                                        PAGE   46
     2528                            .dwattr $C$DW$231, DW_AT_name("uCommand")
     2529                            .dwattr $C$DW$231, DW_AT_TI_symbol_name("uCommand")
     2530                            .dwattr $C$DW$231, DW_AT_data_member_location[DW_OP_plus_uconst 0x58]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   47
@@ -2818,7 +2818,7 @@ Task_gyro.asm                                                        PAGE   47
     2583                            .dwattr $C$DW$234, DW_AT_decl_line(0x5e)
     2584                            .dwattr $C$DW$234, DW_AT_decl_column(0x16)
     2585                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   48
@@ -2878,7 +2878,7 @@ Task_gyro.asm                                                        PAGE   48
     2638                            .dwattr $C$DW$238, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/i2cm_drv.h")
     2639                            .dwattr $C$DW$238, DW_AT_decl_line(0x14c)
     2640                            .dwattr $C$DW$238, DW_AT_decl_column(0x14)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   49
@@ -2938,7 +2938,7 @@ Task_gyro.asm                                                        PAGE   49
     2693                            .dwattr $C$DW$T$96, DW_AT_decl_column(0x01)
     2694                    
     2695                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   50
@@ -2998,7 +2998,7 @@ Task_gyro.asm                                                        PAGE   50
     2748                    $C$DW$248       .dwtag  DW_TAG_member
     2749                            .dwattr $C$DW$248, DW_AT_type(*$C$DW$T$3)
     2750                            .dwattr $C$DW$248, DW_AT_name("pvCallbackData")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   51
@@ -3058,7 +3058,7 @@ Task_gyro.asm                                                        PAGE   51
     2803                    
     2804                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/TI_CodeComposer/TivaWare/sensorlib/ak8975.h")
     2805                            .dwattr $C$DW$T$51, DW_AT_decl_line(0x54)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   52
@@ -3118,7 +3118,7 @@ Task_gyro.asm                                                        PAGE   52
     2858                            .dwattr $C$DW$255, DW_AT_decl_line(0x96)
     2859                            .dwattr $C$DW$255, DW_AT_decl_column(0x0b)
     2860                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   53
@@ -3178,7 +3178,7 @@ Task_gyro.asm                                                        PAGE   53
     2913                            .dwattr $C$DW$259, DW_AT_accessibility(DW_ACCESS_public)
     2914                            .dwattr $C$DW$259, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Tasks/Task_Repo
     2915                            .dwattr $C$DW$259, DW_AT_decl_line(0x22)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   54
@@ -3238,7 +3238,7 @@ Task_gyro.asm                                                        PAGE   54
     2968                            .dwattr $C$DW$263, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Tasks/Task_Repo
     2969                            .dwattr $C$DW$263, DW_AT_decl_line(0x27)
     2970                            .dwattr $C$DW$263, DW_AT_decl_column(0x28)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   55
@@ -3298,7 +3298,7 @@ Task_gyro.asm                                                        PAGE   55
     3023                    $C$DW$T$80      .dwtag  DW_TAG_typedef
     3024                            .dwattr $C$DW$T$80, DW_AT_name("TaskHandle_t")
     3025                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$3)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   56
@@ -3358,7 +3358,7 @@ Task_gyro.asm                                                        PAGE   56
     3078                            .dwattr $C$DW$T$114, DW_AT_type(*$C$DW$T$113)
     3079                            .dwattr $C$DW$T$114, DW_AT_address_class(0x20)
     3080                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   57
@@ -3418,7 +3418,7 @@ Task_gyro.asm                                                        PAGE   57
     3133                            .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$19)
     3134                            .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
     3135                            .dwattr $C$DW$T$35, DW_AT_byte_size(0x04)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   58
@@ -3478,7 +3478,7 @@ Task_gyro.asm                                                        PAGE   58
     3188                    
     3189                    $C$DW$T$20      .dwtag  DW_TAG_const_type
     3190                            .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$19)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   59
@@ -3538,7 +3538,7 @@ Task_gyro.asm                                                        PAGE   59
     3243                    $C$DW$T$22      .dwtag  DW_TAG_typedef
     3244                            .dwattr $C$DW$T$22, DW_AT_name("uint16_t")
     3245                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$9)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   60
@@ -3598,7 +3598,7 @@ Task_gyro.asm                                                        PAGE   60
     3298                            .dwendtag $C$DW$T$129
     3299                    
     3300                    $C$DW$T$130     .dwtag  DW_TAG_pointer_type
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   61
@@ -3658,7 +3658,7 @@ Task_gyro.asm                                                        PAGE   61
     3353                            .dwattr $C$DW$T$137, DW_AT_name("portLONG")
     3354                            .dwattr $C$DW$T$137, DW_AT_type(*$C$DW$T$84)
     3355                            .dwattr $C$DW$T$137, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   62
@@ -3718,7 +3718,7 @@ Task_gyro.asm                                                        PAGE   62
     3408                    
     3409                    $C$DW$T$63      .dwtag  DW_TAG_typedef
     3410                            .dwattr $C$DW$T$63, DW_AT_name("TickType_t")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   63
@@ -3778,7 +3778,7 @@ Task_gyro.asm                                                        PAGE   63
     3463                    $C$DW$T$159     .dwtag  DW_TAG_typedef
     3464                            .dwattr $C$DW$T$159, DW_AT_name("uint_least32_t")
     3465                            .dwattr $C$DW$T$159, DW_AT_type(*$C$DW$T$24)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   64
@@ -3838,7 +3838,7 @@ Task_gyro.asm                                                        PAGE   64
     3518                    $C$DW$T$164     .dwtag  DW_TAG_typedef
     3519                            .dwattr $C$DW$T$164, DW_AT_name("int_least64_t")
     3520                            .dwattr $C$DW$T$164, DW_AT_type(*$C$DW$T$162)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   65
@@ -3898,7 +3898,7 @@ Task_gyro.asm                                                        PAGE   65
     3573                            .dwattr $C$DW$T$170, DW_AT_type(*$C$DW$T$15)
     3574                            .dwattr $C$DW$T$170, DW_AT_language(DW_LANG_C)
     3575                            .dwattr $C$DW$T$170, DW_AT_decl_file("C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   66
@@ -3958,7 +3958,7 @@ Task_gyro.asm                                                        PAGE   66
     3628                            .dwattr $C$DW$T$173, DW_AT_name("unsigned char")
     3629                            .dwattr $C$DW$T$173, DW_AT_byte_size(0x01)
     3630                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   67
@@ -4018,7 +4018,7 @@ Task_gyro.asm                                                        PAGE   67
     3683                            .dwattr $C$DW$277, DW_AT_decl_column(0x23)
     3684                    
     3685                    $C$DW$278       .dwtag  DW_TAG_member
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   68
@@ -4078,7 +4078,7 @@ Task_gyro.asm                                                        PAGE   68
     3738                            .dwattr $C$DW$281, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
     3739                            .dwattr $C$DW$281, DW_AT_decl_line(0xba)
     3740                            .dwattr $C$DW$281, DW_AT_decl_column(0x2a)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   69
@@ -4138,7 +4138,7 @@ Task_gyro.asm                                                        PAGE   69
     3793                            .dwattr $C$DW$284, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     3794                            .dwattr $C$DW$284, DW_AT_decl_line(0x91)
     3795                            .dwattr $C$DW$284, DW_AT_decl_column(0x08)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   70
@@ -4198,7 +4198,7 @@ Task_gyro.asm                                                        PAGE   70
     3848                            .dwattr $C$DW$288, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3849                            .dwattr $C$DW$288, DW_AT_accessibility(DW_ACCESS_public)
     3850                            .dwattr $C$DW$288, DW_AT_decl_file("C:\TI_ARM_Tiva_Projects\Source\include\list.h")
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   71
@@ -4258,7 +4258,7 @@ Task_gyro.asm                                                        PAGE   71
     3903                            .dwattr $C$DW$292, DW_AT_name("pcName")
     3904                            .dwattr $C$DW$292, DW_AT_TI_symbol_name("pcName")
     3905                            .dwattr $C$DW$292, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   72
@@ -4318,7 +4318,7 @@ Task_gyro.asm                                                        PAGE   72
     3958                            .dwattr $C$DW$297, DW_AT_decl_line(0xa1)
     3959                            .dwattr $C$DW$297, DW_AT_decl_column(0x11)
     3960                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   73
@@ -4378,7 +4378,7 @@ Task_gyro.asm                                                        PAGE   73
     4013                            .dwattr $C$DW$301, DW_AT_accessibility(DW_ACCESS_public)
     4014                            .dwattr $C$DW$301, DW_AT_decl_file("C:/TI_ARM_Tiva_Projects/Source/include/task.h")
     4015                            .dwattr $C$DW$301, DW_AT_decl_line(0xab)
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   74
@@ -4438,7 +4438,7 @@ Task_gyro.asm                                                        PAGE   74
     4068                            .dwattr $C$DW$T$178, DW_AT_decl_line(0xb0)
     4069                            .dwattr $C$DW$T$178, DW_AT_decl_column(0x03)
     4070                    
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   75
@@ -4498,7 +4498,7 @@ Task_gyro.asm                                                        PAGE   75
     4123                            .dwcfi  same_value, 6
     4124                            .dwcfi  same_value, 7
     4125                            .dwcfi  same_value, 8
-TI ARM Assembler PC v15.12.1 Tue Nov 01 14:05:55 2016
+TI ARM Assembler PC v15.12.1 Thu Nov 03 12:53:12 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 Task_gyro.asm                                                        PAGE   76
@@ -4553,7 +4553,7 @@ Thumb2 Statistics
 Number of Thumb2 ins converted to Thumb = 0 (0%)
 Number of Thumb ins in input = 216 (80%)
 Number of Thumb2 ins encoded as Thumb2 = 52 (100%)
-Number of Thumb2 ins converted to 2 OPND Thumb = 7
+Number of Thumb2 ins converted to 2 OPND Thumb = 8
 
 
 No Assembly Errors, No Assembly Warnings

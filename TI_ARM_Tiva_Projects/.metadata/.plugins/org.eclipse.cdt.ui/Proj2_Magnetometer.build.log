@@ -2,21 +2,10 @@
 **** Build of configuration Debug for project Proj2_Magnetometer ****
 
 "C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
-'Building file: ../Main_Base.c'
-'Invoking: ARM Compiler'
-"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Main_Base.d"  "../Main_Base.c"
-"../Main_Base.c", line 43: warning #552-D: variable "Status" was set but never used
-'Finished building: ../Main_Base.c'
-' '
 'Building file: ../Tasks/MPU9150AccelerometerManager_Task.c'
 'Invoking: ARM Compiler'
 "C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/MPU9150AccelerometerManager_Task.d" --obj_directory="Tasks"  "../Tasks/MPU9150AccelerometerManager_Task.c"
 'Finished building: ../Tasks/MPU9150AccelerometerManager_Task.c'
-' '
-'Building file: ../Tasks/Task_gyro.c'
-'Invoking: ARM Compiler'
-"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer" --include_path="C:/TI_ARM_Tiva_Projects/Proj2_Magnetometer/Drivers" --include_path="C:/TI_ARM_Tiva_Projects/Source/portable/CCS/ARM_CM4F" --include_path="C:/TI_ARM_Tiva_Projects/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --super_quiet --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_gyro.d" --obj_directory="Tasks"  "../Tasks/Task_gyro.c"
-'Finished building: ../Tasks/Task_gyro.c'
 ' '
 'Building target: Proj2_Magnetometer.out'
 'Invoking: ARM Linker'

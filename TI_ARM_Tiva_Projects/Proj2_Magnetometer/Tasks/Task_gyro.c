@@ -158,7 +158,7 @@ void Task_gyro(void *pvParameters)
 //!		//
 		//UARTprintf( "X-axis Rotation: %d, Y-axis Rotation: %d, Z-axis Rotation: %d \n", (int)fGyro[0], (int)fGyro[1], (int)fGyro[2]);
 		GyroReport.TimeStamp = xPortSysTickCount;
-		GyroReport.ReportName = 1;
+		GyroReport.ReportName = 120;
 		GyroReport.ReportValue_0 = fGyro[0];
 		GyroReport.ReportValue_1 = fGyro[1];
 		GyroReport.ReportValue_2 = fGyro[2];
@@ -166,8 +166,7 @@ void Task_gyro(void *pvParameters)
 
 		xQueueSend(  ReportData_Queue, &GyroReport, 0 );
 
-		vTaskDelay( 2 * configTICK_RATE_HZ );
-		//vTaskDelay(100);
+		vTaskDelay((10000 * configTICK_RATE_HZ) / 10000);
 	}
 }
 

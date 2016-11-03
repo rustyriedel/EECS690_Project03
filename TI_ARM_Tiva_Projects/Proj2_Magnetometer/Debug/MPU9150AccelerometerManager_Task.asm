@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                       PC v15.12.1.LTS *
-;* Date/Time created: Tue Nov 01 14:05:54 2016                                *
+;* Date/Time created: Thu Nov 03 13:01:19 2016                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --quiet --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -341,7 +341,7 @@ $C$DW$58	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$58, DW_AT_decl_line(0x36)
 	.dwattr $C$DW$58, DW_AT_decl_column(0x11)
 
-;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0304412 
+;	C:\TI_CodeComposer\ccsv6\tools\compiler\ti-cgt-arm_15.12.1.LTS\bin\armacpia.exe -@C:\\Users\\Rusty\\AppData\\Local\\Temp\\0609212 
 	.sect	".text:I2CMWrite"
 	.clink
 	.thumbfunc I2CMWrite
@@ -1509,7 +1509,7 @@ $C$DW$153	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |107| 
 	.dwpsn	file "../Tasks/MPU9150AccelerometerManager_Task.c",line 108,column 3,is_stmt,isa 1
         LDR       A2, $C$CON12          ; [DPU_3_PIPE] |108| 
-        MOV       A1, #999              ; [DPU_3_PIPE] |108| 
+        MOVS      A1, #110              ; [DPU_3_PIPE] |108| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |108| 
 	.dwpsn	file "../Tasks/MPU9150AccelerometerManager_Task.c",line 109,column 3,is_stmt,isa 1
         LDR       A1, $C$FL1            ; [DPU_3_PIPE] |109| 
