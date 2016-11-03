@@ -1,0 +1,69 @@
+\hypertarget{_m_p_u9150_manager_8h}{}\section{M\+P\+U9150\+Manager.\+h File Reference}
+\label{_m_p_u9150_manager_8h}\index{M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_m_p_u9150_manager_8h_a7f1314a4a5bcff32610546d3c1b876ae}{accelerometer\+Init} ()
+\item 
+void \hyperlink{_m_p_u9150_manager_8h_a30d75b64e0d3e81257053c9217fa853b}{M\+P\+U9150\+Callback2} (void $\ast$pv\+Callback\+Data, uint\+\_\+fast8\+\_\+t ui8\+Status)
+\item 
+void \hyperlink{_m_p_u9150_manager_8h_a908a25019c4a791911964ff48cd5ce6a}{Task\+\_\+\+Accelerometer} (void $\ast$pv\+Parameters)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_m_p_u9150_manager_8h_a00036fb35f2d1ff97b118df937c4d489}{is\+M\+P\+U9150\+Initialized}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+TJ Barclay, Stephen Wiss
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/22/2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}!accelerometer\+Init@{accelerometer\+Init}}
+\index{accelerometer\+Init@{accelerometer\+Init}!M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}}
+\subsubsection[{\texorpdfstring{accelerometer\+Init()}{accelerometerInit()}}]{\setlength{\rightskip}{0pt plus 5cm}void accelerometer\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_m_p_u9150_manager_8h_a7f1314a4a5bcff32610546d3c1b876ae}{}\label{_m_p_u9150_manager_8h_a7f1314a4a5bcff32610546d3c1b876ae}
+This function initializes the M\+P\+U9150, 12C, and U\+A\+RT if they have not already been initialized \index{M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}!M\+P\+U9150\+Callback2@{M\+P\+U9150\+Callback2}}
+\index{M\+P\+U9150\+Callback2@{M\+P\+U9150\+Callback2}!M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}}
+\subsubsection[{\texorpdfstring{M\+P\+U9150\+Callback2(void $\ast$pv\+Callback\+Data, uint\+\_\+fast8\+\_\+t ui8\+Status)}{MPU9150Callback2(void *pvCallbackData, uint_fast8_t ui8Status)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+P\+U9150\+Callback2 (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Callback\+Data, }
+\item[{uint\+\_\+fast8\+\_\+t}]{ui8\+Status}
+\end{DoxyParamCaption}
+)}\hypertarget{_m_p_u9150_manager_8h_a30d75b64e0d3e81257053c9217fa853b}{}\label{_m_p_u9150_manager_8h_a30d75b64e0d3e81257053c9217fa853b}
+Set a status flag when the data is ready to be read. 
+\begin{DoxyParams}{Parameters}
+{\em pv\+Callback\+Data} & Free\+R\+T\+OS required pointer \\
+\hline
+{\em ui8\+Status} & is a flag that is raised when the M\+P\+U9150 is ready to be read \\
+\hline
+\end{DoxyParams}
+\index{M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}!Task\+\_\+\+Accelerometer@{Task\+\_\+\+Accelerometer}}
+\index{Task\+\_\+\+Accelerometer@{Task\+\_\+\+Accelerometer}!M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}}
+\subsubsection[{\texorpdfstring{Task\+\_\+\+Accelerometer(void $\ast$pv\+Parameters)}{Task_Accelerometer(void *pvParameters)}}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+\_\+\+Accelerometer (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{_m_p_u9150_manager_8h_a908a25019c4a791911964ff48cd5ce6a}{}\label{_m_p_u9150_manager_8h_a908a25019c4a791911964ff48cd5ce6a}
+Free\+R\+T\+OS task to prepare and read data from the M\+P\+U9150 accelerometer and send the data to Report\+Data 
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parameters} & Free\+R\+T\+OS required pointer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\index{M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}!is\+M\+P\+U9150\+Initialized@{is\+M\+P\+U9150\+Initialized}}
+\index{is\+M\+P\+U9150\+Initialized@{is\+M\+P\+U9150\+Initialized}!M\+P\+U9150\+Manager.\+h@{M\+P\+U9150\+Manager.\+h}}
+\subsubsection[{\texorpdfstring{is\+M\+P\+U9150\+Initialized}{isMPU9150Initialized}}]{\setlength{\rightskip}{0pt plus 5cm}bool is\+M\+P\+U9150\+Initialized}\hypertarget{_m_p_u9150_manager_8h_a00036fb35f2d1ff97b118df937c4d489}{}\label{_m_p_u9150_manager_8h_a00036fb35f2d1ff97b118df937c4d489}
+initialization flag \char`\"{}extern bool is\+M\+P\+U9150\+Initialized = false;\char`\"{} must be declared in the main file for the M\+P\+U9150initialization functions. 

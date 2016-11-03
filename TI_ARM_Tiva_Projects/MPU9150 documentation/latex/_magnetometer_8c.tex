@@ -1,0 +1,106 @@
+\hypertarget{_magnetometer_8c}{}\section{Magnetometer.\+c File Reference}
+\label{_magnetometer_8c}\index{Magnetometer.\+c@{Magnetometer.\+c}}
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+ints.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+memmap.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+uart.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdarg.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}driverlib/sysctl.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}driverlib/pin\+\_\+map.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}driverlib/gpio.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}driverlib/timer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Drivers/uartstdio.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}semphr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Task\+\_\+\+I2\+C7\+\_\+\+Handler.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensorlib/ak8975.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensorlib/mpu9150.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Tasks/\+Task\+\_\+\+Report\+Data.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Magnetometer.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries I2\+C7\+\_\+\+Int\+Service\+Routine} (void)\hypertarget{_magnetometer_8c_a0a6ce8bec7c299ab91121e43b98d814a}{}\label{_magnetometer_8c_a0a6ce8bec7c299ab91121e43b98d814a}
+
+\item 
+void \hyperlink{_magnetometer_8c_a5f967df4fb59a5261de69e46119f52f7}{Magnetometer\+Init} ()
+\item 
+void \hyperlink{_magnetometer_8c_af9577dd7206dcada31b8241e187397e3}{M\+P\+U9150\+Callback1} (void $\ast$pv\+Callback\+Data, uint\+\_\+fast8\+\_\+t ui8\+Status)
+\item 
+void \hyperlink{_magnetometer_8c_a8bdc8d21e1a30f474e874eaad53334d4}{Task\+\_\+\+Magnetometer} (void $\ast$pv\+Parameters)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+M\+P\+U9150\+Initialized}\hypertarget{_magnetometer_8c_a00036fb35f2d1ff97b118df937c4d489}{}\label{_magnetometer_8c_a00036fb35f2d1ff97b118df937c4d489}
+
+\item 
+float {\bfseries f\+Magneto} \mbox{[}3\mbox{]}\hypertarget{_magnetometer_8c_ac8fc8d7f92b9457b0e6952c86907fc81}{}\label{_magnetometer_8c_ac8fc8d7f92b9457b0e6952c86907fc81}
+
+\item 
+t\+M\+P\+U9150 {\bfseries s\+M\+P\+U9150}\hypertarget{_magnetometer_8c_a42bf20ba86f876147160456864c234d3}{}\label{_magnetometer_8c_a42bf20ba86f876147160456864c234d3}
+
+\item 
+volatile bool {\bfseries g\+\_\+b\+M\+P\+U9150\+Done}\hypertarget{_magnetometer_8c_aa794b7d8a681226d32c110438d647ac6}{}\label{_magnetometer_8c_aa794b7d8a681226d32c110438d647ac6}
+
+\item 
+t\+I2\+C\+M\+Instance {\bfseries I2\+C7\+\_\+\+Instance}\hypertarget{_magnetometer_8c_a254a436e6e015d6922293a465a83c02c}{}\label{_magnetometer_8c_a254a436e6e015d6922293a465a83c02c}
+
+\item 
+\hyperlink{struct_report_data___item}{Report\+Data\+\_\+\+Item} {\bfseries magnetometer\+Report}\hypertarget{_magnetometer_8c_adab158546368caeea1cd415cab9766d5}{}\label{_magnetometer_8c_adab158546368caeea1cd415cab9766d5}
+
+\item 
+volatile uint32\+\_\+t {\bfseries x\+Port\+Sys\+Tick\+Count}\hypertarget{_magnetometer_8c_a431d6cb8832522d2bd9e722e8d3064d4}{}\label{_magnetometer_8c_a431d6cb8832522d2bd9e722e8d3064d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Alexander Kimani, Rusty Riedel  \href{mailto:a906k620@ku.edu}{\tt a906k620@ku.\+edu}
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/12/2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Magnetometer.\+c@{Magnetometer.\+c}!Magnetometer\+Init@{Magnetometer\+Init}}
+\index{Magnetometer\+Init@{Magnetometer\+Init}!Magnetometer.\+c@{Magnetometer.\+c}}
+\subsubsection[{\texorpdfstring{Magnetometer\+Init()}{MagnetometerInit()}}]{\setlength{\rightskip}{0pt plus 5cm}void Magnetometer\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_magnetometer_8c_a5f967df4fb59a5261de69e46119f52f7}{}\label{_magnetometer_8c_a5f967df4fb59a5261de69e46119f52f7}
+This function initializes the M\+P\+U9150, 12C, and U\+A\+RT if they have not already been initialized \index{Magnetometer.\+c@{Magnetometer.\+c}!M\+P\+U9150\+Callback1@{M\+P\+U9150\+Callback1}}
+\index{M\+P\+U9150\+Callback1@{M\+P\+U9150\+Callback1}!Magnetometer.\+c@{Magnetometer.\+c}}
+\subsubsection[{\texorpdfstring{M\+P\+U9150\+Callback1(void $\ast$pv\+Callback\+Data, uint\+\_\+fast8\+\_\+t ui8\+Status)}{MPU9150Callback1(void *pvCallbackData, uint_fast8_t ui8Status)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+P\+U9150\+Callback1 (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Callback\+Data, }
+\item[{uint\+\_\+fast8\+\_\+t}]{ui8\+Status}
+\end{DoxyParamCaption}
+)}\hypertarget{_magnetometer_8c_af9577dd7206dcada31b8241e187397e3}{}\label{_magnetometer_8c_af9577dd7206dcada31b8241e187397e3}
+Set a status flag when the data is ready to be read. 
+\begin{DoxyParams}{Parameters}
+{\em pv\+Callback\+Data} & Free\+R\+T\+OS required pointer \\
+\hline
+{\em ui8\+Status} & is a flag that is raised when the M\+P\+U9150 is ready to be read \\
+\hline
+\end{DoxyParams}
+\index{Magnetometer.\+c@{Magnetometer.\+c}!Task\+\_\+\+Magnetometer@{Task\+\_\+\+Magnetometer}}
+\index{Task\+\_\+\+Magnetometer@{Task\+\_\+\+Magnetometer}!Magnetometer.\+c@{Magnetometer.\+c}}
+\subsubsection[{\texorpdfstring{Task\+\_\+\+Magnetometer(void $\ast$pv\+Parameters)}{Task_Magnetometer(void *pvParameters)}}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+\_\+\+Magnetometer (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{_magnetometer_8c_a8bdc8d21e1a30f474e874eaad53334d4}{}\label{_magnetometer_8c_a8bdc8d21e1a30f474e874eaad53334d4}
+Free\+R\+T\+OS task to prepare and read data from the M\+P\+U9150 magnetometer and send the data to Report\+Data 
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parameters} & Free\+R\+T\+OS required pointer \\
+\hline
+\end{DoxyParams}

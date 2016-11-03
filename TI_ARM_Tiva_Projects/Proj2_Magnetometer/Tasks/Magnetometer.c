@@ -69,6 +69,11 @@ extern void MagnetometerInit(){
 	}
 }
 
+/**
+*	Set a status flag when the data is ready to be read.
+*	@param pvCallbackData FreeRTOS required pointer
+*	@param ui8Status is a flag that is raised when the MPU9150 is ready to be read 
+*/
 void MPU9150Callback1(void *pvCallbackData, uint_fast8_t ui8Status) {
 
 	// See if an error occurred.s

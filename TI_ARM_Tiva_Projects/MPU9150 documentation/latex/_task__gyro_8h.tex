@@ -1,0 +1,82 @@
+\hypertarget{_task__gyro_8h}{}\section{Task\+\_\+gyro.\+h File Reference}
+\label{_task__gyro_8h}\index{Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}}
+{\ttfamily \#include \char`\"{}driverlib/i2c.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensorlib/i2cm\+\_\+drv.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Tasks/\+Task\+\_\+\+I2\+C7\+\_\+\+Handler.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensorlib/hw\+\_\+ak8975.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensorlib/ak8975.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensorlib/hw\+\_\+mpu9150.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensorlib/mpu9150.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_task__gyro_8h_aa1bd7aa208fd6c243e7587dfbe10b61f}{M\+P\+U9150\+\_\+\+I2\+C\+\_\+\+A\+D\+D\+R\+E\+SS}~0x68\hypertarget{_task__gyro_8h_aa1bd7aa208fd6c243e7587dfbe10b61f}{}\label{_task__gyro_8h_aa1bd7aa208fd6c243e7587dfbe10b61f}
+
+\begin{DoxyCompactList}\small\item\em M\+P\+U9150 I2C Hardware Address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_task__gyro_8h_ab821ba637bfcf7d25190abb7ba2ccc7c}{Gyro\+Init} ()
+\item 
+void \hyperlink{_task__gyro_8h_aebd2b5612c280073e2cc2054aea14b9b}{Task\+\_\+gyro} (void $\ast$pv\+Parameters)
+\item 
+void \hyperlink{_task__gyro_8h_a3f594575b39326fc7bb9a48a56c04272}{M\+P\+U9150\+Callback} (void $\ast$pv\+Callback\+Data, uint\+\_\+fast8\+\_\+t ui8\+Status)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_task__gyro_8h_a00036fb35f2d1ff97b118df937c4d489}{is\+M\+P\+U9150\+Initialized}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Dustin Hauptman, Brandon Givens  \href{mailto:d348h876@ku.edu}{\tt d348h876@ku.\+edu}
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/22/2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}!Gyro\+Init@{Gyro\+Init}}
+\index{Gyro\+Init@{Gyro\+Init}!Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}}
+\subsubsection[{\texorpdfstring{Gyro\+Init()}{GyroInit()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gyro\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_task__gyro_8h_ab821ba637bfcf7d25190abb7ba2ccc7c}{}\label{_task__gyro_8h_ab821ba637bfcf7d25190abb7ba2ccc7c}
+This function initializes the M\+P\+U9150, 12C, and U\+A\+RT if they have not already been initialized \index{Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}!M\+P\+U9150\+Callback@{M\+P\+U9150\+Callback}}
+\index{M\+P\+U9150\+Callback@{M\+P\+U9150\+Callback}!Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}}
+\subsubsection[{\texorpdfstring{M\+P\+U9150\+Callback(void $\ast$pv\+Callback\+Data, uint\+\_\+fast8\+\_\+t ui8\+Status)}{MPU9150Callback(void *pvCallbackData, uint_fast8_t ui8Status)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+P\+U9150\+Callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Callback\+Data, }
+\item[{uint\+\_\+fast8\+\_\+t}]{ui8\+Status}
+\end{DoxyParamCaption}
+)}\hypertarget{_task__gyro_8h_a3f594575b39326fc7bb9a48a56c04272}{}\label{_task__gyro_8h_a3f594575b39326fc7bb9a48a56c04272}
+Set a status flag when the data is ready to be read. 
+\begin{DoxyParams}{Parameters}
+{\em pv\+Callback\+Data} & Free\+R\+T\+OS required pointer \\
+\hline
+{\em ui8\+Status} & is a flag that is raised when the M\+P\+U9150 is ready to be read \\
+\hline
+\end{DoxyParams}
+\index{Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}!Task\+\_\+gyro@{Task\+\_\+gyro}}
+\index{Task\+\_\+gyro@{Task\+\_\+gyro}!Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}}
+\subsubsection[{\texorpdfstring{Task\+\_\+gyro(void $\ast$pv\+Parameters)}{Task_gyro(void *pvParameters)}}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+\_\+gyro (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{_task__gyro_8h_aebd2b5612c280073e2cc2054aea14b9b}{}\label{_task__gyro_8h_aebd2b5612c280073e2cc2054aea14b9b}
+Free\+R\+T\+OS task to prepare and read data from the M\+P\+U9150 gyroscope and send the data to Report\+Data 
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parameters} & Free\+R\+T\+OS required pointer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\index{Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}!is\+M\+P\+U9150\+Initialized@{is\+M\+P\+U9150\+Initialized}}
+\index{is\+M\+P\+U9150\+Initialized@{is\+M\+P\+U9150\+Initialized}!Task\+\_\+gyro.\+h@{Task\+\_\+gyro.\+h}}
+\subsubsection[{\texorpdfstring{is\+M\+P\+U9150\+Initialized}{isMPU9150Initialized}}]{\setlength{\rightskip}{0pt plus 5cm}bool is\+M\+P\+U9150\+Initialized}\hypertarget{_task__gyro_8h_a00036fb35f2d1ff97b118df937c4d489}{}\label{_task__gyro_8h_a00036fb35f2d1ff97b118df937c4d489}
+initialization flag \char`\"{}extern bool is\+M\+P\+U9150\+Initialized = false;\char`\"{} must be declared in the main file for the M\+P\+U9150initialization functions. 

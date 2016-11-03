@@ -1,0 +1,69 @@
+\hypertarget{_magnetometer_8h}{}\section{Magnetometer.\+h File Reference}
+\label{_magnetometer_8h}\index{Magnetometer.\+h@{Magnetometer.\+h}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_magnetometer_8h_a5f967df4fb59a5261de69e46119f52f7}{Magnetometer\+Init} ()
+\item 
+void \hyperlink{_magnetometer_8h_af9577dd7206dcada31b8241e187397e3}{M\+P\+U9150\+Callback1} (void $\ast$pv\+Callback\+Data, uint\+\_\+fast8\+\_\+t ui8\+Status)
+\item 
+void \hyperlink{_magnetometer_8h_a8bdc8d21e1a30f474e874eaad53334d4}{Task\+\_\+\+Magnetometer} (void $\ast$pv\+Parameters)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_magnetometer_8h_a00036fb35f2d1ff97b118df937c4d489}{is\+M\+P\+U9150\+Initialized}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Alexander Kimani, Rusty Riedel  \href{mailto:a906k620@ku.edu}{\tt a906k620@ku.\+edu}
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/12/2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Magnetometer.\+h@{Magnetometer.\+h}!Magnetometer\+Init@{Magnetometer\+Init}}
+\index{Magnetometer\+Init@{Magnetometer\+Init}!Magnetometer.\+h@{Magnetometer.\+h}}
+\subsubsection[{\texorpdfstring{Magnetometer\+Init()}{MagnetometerInit()}}]{\setlength{\rightskip}{0pt plus 5cm}void Magnetometer\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_magnetometer_8h_a5f967df4fb59a5261de69e46119f52f7}{}\label{_magnetometer_8h_a5f967df4fb59a5261de69e46119f52f7}
+This function initializes the M\+P\+U9150, 12C, and U\+A\+RT if they have not already been initialized \index{Magnetometer.\+h@{Magnetometer.\+h}!M\+P\+U9150\+Callback1@{M\+P\+U9150\+Callback1}}
+\index{M\+P\+U9150\+Callback1@{M\+P\+U9150\+Callback1}!Magnetometer.\+h@{Magnetometer.\+h}}
+\subsubsection[{\texorpdfstring{M\+P\+U9150\+Callback1(void $\ast$pv\+Callback\+Data, uint\+\_\+fast8\+\_\+t ui8\+Status)}{MPU9150Callback1(void *pvCallbackData, uint_fast8_t ui8Status)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+P\+U9150\+Callback1 (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Callback\+Data, }
+\item[{uint\+\_\+fast8\+\_\+t}]{ui8\+Status}
+\end{DoxyParamCaption}
+)}\hypertarget{_magnetometer_8h_af9577dd7206dcada31b8241e187397e3}{}\label{_magnetometer_8h_af9577dd7206dcada31b8241e187397e3}
+Set a status flag when the data is ready to be read. 
+\begin{DoxyParams}{Parameters}
+{\em pv\+Callback\+Data} & Free\+R\+T\+OS required pointer \\
+\hline
+{\em ui8\+Status} & is a flag that is raised when the M\+P\+U9150 is ready to be read \\
+\hline
+\end{DoxyParams}
+\index{Magnetometer.\+h@{Magnetometer.\+h}!Task\+\_\+\+Magnetometer@{Task\+\_\+\+Magnetometer}}
+\index{Task\+\_\+\+Magnetometer@{Task\+\_\+\+Magnetometer}!Magnetometer.\+h@{Magnetometer.\+h}}
+\subsubsection[{\texorpdfstring{Task\+\_\+\+Magnetometer(void $\ast$pv\+Parameters)}{Task_Magnetometer(void *pvParameters)}}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+\_\+\+Magnetometer (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{_magnetometer_8h_a8bdc8d21e1a30f474e874eaad53334d4}{}\label{_magnetometer_8h_a8bdc8d21e1a30f474e874eaad53334d4}
+Free\+R\+T\+OS task to prepare and read data from the M\+P\+U9150 magnetometer and send the data to Report\+Data 
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parameters} & Free\+R\+T\+OS required pointer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\index{Magnetometer.\+h@{Magnetometer.\+h}!is\+M\+P\+U9150\+Initialized@{is\+M\+P\+U9150\+Initialized}}
+\index{is\+M\+P\+U9150\+Initialized@{is\+M\+P\+U9150\+Initialized}!Magnetometer.\+h@{Magnetometer.\+h}}
+\subsubsection[{\texorpdfstring{is\+M\+P\+U9150\+Initialized}{isMPU9150Initialized}}]{\setlength{\rightskip}{0pt plus 5cm}bool is\+M\+P\+U9150\+Initialized}\hypertarget{_magnetometer_8h_a00036fb35f2d1ff97b118df937c4d489}{}\label{_magnetometer_8h_a00036fb35f2d1ff97b118df937c4d489}
+initialization flag \char`\"{}extern bool is\+M\+P\+U9150\+Initialized = false;\char`\"{} must be declared in the main file for the M\+P\+U9150initialization functions. 

@@ -1,8 +1,10 @@
-/*
- * Task_gyro.h
+/**
  *
- *  Created on: Sep 22, 2016
- *      Author: dhauptma
+ * @author Dustin Hauptman, Brandon Givens
+ * @email d348h876@ku.edu
+ * @file Task_gyro.h
+ * @date 09/22/2016
+ *
  */
 
 #ifndef SOURCE_TASK_GYRO_H_
@@ -15,12 +17,12 @@
 #include "sensorlib/hw_mpu9150.h"
 #include "sensorlib/mpu9150.h"
 
-//
-// MPU9150 I2C Hardware Address
-//
+//! MPU9150 I2C Hardware Address
 #define MPU9150_I2C_ADDRESS 0x68
 
-//initialization flag
+//!initialization flag 
+//!"extern bool isMPU9150Initialized = false;"
+//!must be declared in the main file for the MPU9150initialization functions.
 extern bool isMPU9150Initialized;
 
 extern void GyroInit();

@@ -1,8 +1,9 @@
-/*
- * MPU9150AccelerometerManager_Task.c
+/**
  *
- *  Created on: Sep 22, 2016
- *      Author: tbarclay
+ * @author TJ Barclay, Stephen Wiss
+ * @file MPU9150AccelerometerManager_Task.c
+ * @date 09/22/2016
+ *
  */
 
 #include <stdint.h>
@@ -46,6 +47,7 @@
 #include	"MPU9150Manager.h"
 #include 	"Tasks/Task_I2C7_Handler.h"
 
+//global variables
 extern bool isMPU9150Initialized;
 float fAccel[3];
 tMPU9150 sMPU9150;
